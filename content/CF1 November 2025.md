@@ -1,5 +1,5 @@
 ## **No. 1**
-[!question]
+
 Di bawah ini adalah harga obligasi _zero-coupon_ $100$ yang ditebus pada nilai par:
 
 | Jangka Waktu Jatuh Tempo | Harga |
@@ -18,8 +18,24 @@ c. $5{,}49\%$
 d. $12{,}10\%$  
 e. $13{,}76\%$
 
-[!summary]+ Jawaban No.1:
-**A. 2{,}56\%**
+
+
+> [!summary]+ **Jawaban No. 1**
+> **5,49% (c)**
+>
+> > [!info] Rumus
+> >  $$f_{m,n}=\dfrac{(1+s_m)^m}{(1+s_n)^n}-1$$
+>
+> > [!tip] Tips Reminder
+> > - Forward = bunga pinjaman 1 tahun di masa depan
+> > - Spot → forward perlu exponent difference
+>
+> > [!warning] Tricky Traps
+> > - Salah desimal (harus 0.056 bukan 5.6)
+> > - Salah tahun start: $f_{4,1}$ mulai t=4
+> > - Salah rumus: bukan $(s_5 - s_4)$
+
+
 
 ---
 ## **No. 2**
