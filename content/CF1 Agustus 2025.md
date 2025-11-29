@@ -45,7 +45,7 @@ e. $5988$
 
 Tingkat spot untuk tahun ke-$k$ diberikan oleh persamaan:
 
-			$S_k = 0{,}08 + 0{,}003k - 0{,}0015k^2$
+$$S_k = 0{,}08 + 0{,}003k - 0{,}0015k^2$$
 
 Tentukan tingkat forward tiga tahun (three-year forward rate).
 
@@ -273,6 +273,7 @@ Seorang investor memiliki sebuah portofolio yang terdiri dari:
 - Obligasi $2$ tahun senilai $20000$ dengan _modified duration_ sebesar $1{,}92$
 - Obligasi $3$ tahun senilai $35000$ dengan _modified duration_ sebesar $2{,}84$
 - Obligasi $5$ tahun senilai $45000$ dengan _modified duration_ sebesar $4{,}79$
+
 Tentukan _modified duration_ dari seluruh portofolio tersebut. (Pilihlah jawaban dalam desimal terdekat!)
 
 a. $3{,}49$  
@@ -298,7 +299,7 @@ e. $5{,}9\%$
 
 Sebuah obligasi bernilai nominal $1000$ dengan jangka waktu $3$ tahun dan kupon tahunan sebesar $4{,}5\%$ dihitung harganya menggunakan suku bunga _spot (spot rate)_ yang dihasilkan dari suku bunga _forward_ berikut:
 
-						$i_{0,1} = 0{,}051,\quad i_{1,2} = 0{,}047,\quad i_{2,3} = 0{,}043$
+$$i_{0,1} = 0{,}051,\quad i_{1,2} = 0{,}047,\quad i_{2,3} = 0{,}043$$
 
 Tentukan harga obligasi tersebut. (Pilihlah jawaban dalam bilangan bulat terdekat!)
 
@@ -380,6 +381,7 @@ Amel ingin membuat portofolio dengan risiko yang sama dengan pasar, dan dia memi
 - Investasi saham B: $340000$ dengan beta $1{,}15$
 - Beta saham C: $1{,}29$
 - Investasi pada aset bebas risiko belum diketahui
+
 Tentukan besar aset bebas risiko. (Pilihlah jawaban dalam bilangan bulat terdekat!)
 
 a. $127500$  
