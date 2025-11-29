@@ -1,59 +1,57 @@
-## [!question]**No. 1**
+## [!question] **No. 1**
 
-Untuk suatu tingkat bunga $i$ yang tidak diketahui, pembayaran-pembayaran berikut memiliki nilai sekarang yang sama:
-- $675$ dibayarkan pada akhir tahun ke-2
-- $200$ dibayarkan pada akhir tahun ke-1 dan $500$ pada akhir tahun ke-3
-Tentukan nilai dari $i$. (Asumsikan $i < 100\%$).
+Di bawah ini adalah harga obligasi _zero-coupon_ $100$ yang ditebus pada nilai par:
 
-a. $9{,}0\%$  
-b. $9{,}2\%$  
-c. $9{,}4\%$  
-d. $9{,}6\%$  
-e. $9{,}8\%$
+| Jangka Waktu Jatuh Tempo | Harga |
+| :----------------------: | :---: |
+|            1             | 96,23 |
+|            2             | 94,12 |
+|            3             | 89,23 |
+|            4             | 84,59 |
+|            5             | 82,48 |
+
+Tentukan _forward rate_ untuk tahun ke-4.
+
+a. $2{,}56\%$  
+b. $5{,}20\%$  
+c. $5{,}49\%$  
+d. $12{,}10\%$  
+e. $13{,}76\%$
 
 ---
 ## **No. 2**
 
-Seorang pria menyetor uang ke dalam sebuah dana. Selama empat tahun pertama, dana tersebut bertumbuh dengan suku bunga nominal sebesar $6\%$ dikonversi kuartalan. Selama enam tahun berikutnya, dana tersebut bertumbuh dengan diskonto nominal sebesar $8\%$ dikonversi setiap semester. Tentukan tingkat bunga kontinu ekuivalen (force of interest, $\delta$) untuk periode $10$ tahun tersebut.
+Misalkan kurva hasil untuk tingkat spot diberikan oleh persamaan berikut:
+$$s_t = 0{,}08-0{,}01t+0{,002}t^2$$
+Tentukanlah tingkat bunga _forward_ efektif tahunan untuk pinjaman yang dimulai pada waktu $t=4{,}$ dengan jangka waktu 3 tahun.
 
-a. $0{,}0719$  
-b. $0{,}0728$  
-c. $0{,}0731$  
-d. $0{,}0737$  
-e. $0{,}0742$
+a. $0{,}3603$  
+b. $0{,}0569$  
+c. $0{,}0033$  
+d. $0{,}2606$  
+e. $0{,}1805$
 
 ---
 ## **No. 3**
 
-Sebuah perusahaan memiliki kewajiban sebesar $2000$ yang harus dibayar dalam $1$ tahun dan $5000$ yang harus dibayar dalam $3$ tahun. Investasi yang tersedia bagi perusahaan adalah obligasi tanpa kupon (zero-coupon bond) dengan data sebagai berikut:
+Grace membayar $100.000$ hari ini untuk suatu investasi 4-tahun yang menghasilkan arus kas $60.000$ pada akhir tahun ke-3 dan 4. Misalkan, dengan tingkat $15\%$, nilai kini dari arus kas Grace sama dengan nilai kini dari arus kas Shanice, dimana Shanice melakukan investasi sebesar X satu tahun dari sekarang yang menghasilkan arus kas $60.000$ pada akhir tahun ke-4 dan ke-5. Tentukanlah nilai dari $X$.
 
-| Jatuh Tempo (tahun) | Suku Bunga Efektif Tahunan (annual effective yield) | Nilai Nominal (Par) |
-| ------------------- | --------------------------------------------------- | ------------------- |
-| 1                   | $6{,}5\%$                                           | $1000$              |
-| 3                   | $7{,}5\%$                                           | $1000$              |
-
-Tentukan biaya (harga sekarang) untuk mencocokkan kewajiban tersebut secara tepat. 
-
-a. $5903$  
-b. $5935$  
-c. $5952$  
-d. $5972$  
-e. $5988$
+a. $94.316$  
+b. $98.503$  
+c. $105.380$  
+d. $103.937$  
+e. $90.379$
 
 ---
 ## **No. 4**
 
-Tingkat spot untuk tahun ke-$k$ diberikan oleh persamaan:
+Pada saat yang sama, Niel dan Elis menyetor uang ke dua dana berbeda. Niel menyetor $200$ dan $80$. Kedua akun mendapatkan tingkat bunga yang sama. Jumlah bunga yang diperoleh akun Niel pada tahun ke-10 sama dengan jumlah bunga yang diperoleh akun Elis pada tahun ke-20. Tentukan jumlah bunga yang diperoleh akun Niel selama tahun ke-13.
 
-$$S_k = 0{,}08 + 0{,}003k - 0{,}0015k^2$$
-
-Tentukan tingkat forward tiga tahun (three-year forward rate).
-
-a. $4{,}36\%$  
-b. $4{,}41\%$  
-c. $4{,}58\%$  
-d. $4{,}65\%$  
-e. $4{,}74\%$
+a. $23{,}1$  
+b. $57{,}6$  
+c. $49{,}1$  
+d. $63{,}2$  
+e. $52{,}6$
 
 ---
 **Tabel untuk soal nomor 5**

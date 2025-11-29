@@ -11,7 +11,8 @@ Ini adalah kumpulan catatan belajarku untuk ujian **CF1 - Matematika Keuangan**.
 ## Navigasi cepat
 
 - [[Journey]] — jurnal perjalanan belajar CF1
-- [[CF1-Agustus-2025]] — kumpulan soal dan pembahasan periode Agustus 2025
+- [[CF1-Agustus-2025]] — soal dan pembahasan periode Agustus 2025
+- [[CF1 November 2025]] — soal dan pembahasan periode November 2025
 - (Nanti bisa kamu tambah: TVM, Anuitas, Obligasi, dsb.)
 
 ---
