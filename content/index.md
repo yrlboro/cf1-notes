@@ -4,7 +4,7 @@ description: "Catatan belajar ujian CF1 - Matematika Keuangan"
 tags: ["CF1", "aktuaris", "financial-math"]
 ---
 
-# Selamat datang di catatan CF1 📘
+# Selamat datang di Study Notes CF1 📘
 
 Ini adalah kumpulan catatan belajarku untuk ujian **CF1 - Matematika Keuangan**.
 
