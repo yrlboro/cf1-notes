@@ -1,4 +1,4 @@
-## [!question]**No. 1**
+## **No. 1**
 
 Untuk suatu tingkat bunga $i$ yang tidak diketahui, pembayaran-pembayaran berikut memiliki nilai sekarang yang sama:
 - $675$ dibayarkan pada akhir tahun ke-2

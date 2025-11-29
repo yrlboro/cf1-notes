@@ -1,5 +1,5 @@
-## [!question] **No. 1**
-
+## **No. 1**
+[!question]
 Di bawah ini adalah harga obligasi _zero-coupon_ $100$ yang ditebus pada nilai par:
 
 | Jangka Waktu Jatuh Tempo | Harga |
@@ -17,6 +17,9 @@ b. $5{,}20\%$
 c. $5{,}49\%$  
 d. $12{,}10\%$  
 e. $13{,}76\%$
+
+[!summary]+ Jawaban No.1:
+**A. 2{,}56\%**
 
 ---
 ## **No. 2**
