@@ -9,12 +9,12 @@
    d. 9,6%  
    e. 9,8%  
 
-Jawaban:
-**Diketahui:**
-- Arus Kas A: 675 dibayar akhit tahun ke-2
-- Arus Kas B: 200 dibayar akhir tahun ke-1 dan 500 dibayar akhir tahun ke-3
-**Ditanyakan:** 
-Annual effective interest rate $i$ (dengan asumsi $i<100\%$)
+	Jawaban:
+	**Diketahui:**
+	- Arus Kas A: 675 dibayar akhit tahun ke-2
+	- Arus Kas B: 200 dibayar akhir tahun ke-1 dan 500 dibayar akhir tahun ke-3
+	**Ditanyakan:** 
+	Annual effective interest rate $i$ (dengan asumsi $i<100\%$)
 
 $$
 \begin{aligned}
@@ -36,18 +36,11 @@ $$
 | ------------------- | ----------------------------------------------------- | -------------------- |
 | 1                   | 6,5%                                                  | 1000                 |
 | 3                   | 7,5%                                                  | 1000                 |
-Tentukan biaya (harga sekarang) untuk mencocokkan kewajiban (liabilitas) tersebut secara tepat.
-   a. 5903  
-   b. 5935  
-   c. 5952  
-   d. 5970  
-   e. 5988  
-
-
-
-
-
-
-
+	Tentukan biaya (harga sekarang) untuk mencocokkan kewajiban (liabilitas) tersebut secara tepat.
+	a. 5903
+	b. 5935
+	c. 5952
+	d. 5970
+	e. 5958
 
 
