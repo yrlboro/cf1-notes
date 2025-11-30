@@ -1,19 +1,19 @@
 ---
-title: "Beranda CF1"
-description: "Catatan belajar ujian CF1 - Matematika Keuangan"
-tags: ["CF1", "aktuaris", "financial-math"]
+title: Beranda CF1
+description: Catatan belajar ujian CF1 - Matematika Keuangan
 ---
 
-# Selamat datang di Study Notes CF1 📘
+# Selamat datang di Yosef’s **ActuNotes** 📘
 
-Ini adalah kumpulan catatan belajarku untuk ujian **CF1 - Matematika Keuangan**.
+Catatan belajar **CF1 – Financial Mathematics** yang disusun secara sistematis, lengkap dengan **ringkasan materi**, **rumus**, dan **soal + pembahasan periode ujian sebelumnya**.
 
-## Navigasi cepat
+## 🚀 **Mulai Cepat**
 
-- [[Journey]] — jurnal perjalanan belajar CF1
-- [[CF1-Agustus-2025]] — soal dan pembahasan periode Agustus 2025
-- [[CF1 November 2025]] — soal dan pembahasan periode November 2025
-- (Nanti bisa kamu tambah: TVM, Anuitas, Obligasi, dsb.)
+Pilih salah satu untuk langsung mulai belajar:
+
+- [[📈Belajar CF1 dari Nol]] — Penjelasan konsep dasar hingga advanced, lengkap dan terstruktur.
+- [[📝 Soal & Pembahasan Ujian]] — Kumpulan soal dan pembahasan ujian periode sebelumnya.
+- [[📚 Cheat Sheet]] — Ringkasan formula penting + tricky traps.
 
 ---
-Catatan ini dibangun dengan **Quartz 4** dan disimpan di Obsidian.
+## © Yosef’s ActuNotes – 2025

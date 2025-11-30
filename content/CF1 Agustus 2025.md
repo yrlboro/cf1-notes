@@ -1,8 +1,10 @@
 ## **No. 1**
 
 Untuk suatu tingkat bunga $i$ yang tidak diketahui, pembayaran-pembayaran berikut memiliki nilai sekarang yang sama:
+
 - $675$ dibayarkan pada akhir tahun ke-2
 - $200$ dibayarkan pada akhir tahun ke-1 dan $500$ pada akhir tahun ke-3
+
 Tentukan nilai dari $i$. (Asumsikan $i < 100\%$).
 
 a. $9{,}0\%$  

@@ -18,14 +18,14 @@ c. $5{,}49\%$
 d. $12{,}10\%$  
 e. $13{,}76\%$
 
-
-
 > [!summary]+ **Jawaban No. 1**
-> **5,49% (c)**
+> **2,56% (a)**
 >
 > > [!info] Rumus
 > >  $$f_{m,n}=\dfrac{(1+s_m)^m}{(1+s_n)^n}-1$$
 >
+>Diketahui:
+>  
 > > [!tip] Tips Reminder
 > > - Forward = bunga pinjaman 1 tahun di masa depan
 > > - Spot → forward perlu exponent difference
@@ -34,7 +34,6 @@ e. $13{,}76\%$
 > > - Salah desimal (harus 0.056 bukan 5.6)
 > > - Salah tahun start: $f_{4,1}$ mulai t=4
 > > - Salah rumus: bukan $(s_5 - s_4)$
-
 
 
 ---
@@ -50,6 +49,9 @@ c. $0{,}0033$
 d. $0{,}2606$  
 e. $0{,}1805$
 
+> [!summary]+ **Jawaban No. 2**
+> **0,2606 (d)**
+
 ---
 ## **No. 3**
 
@@ -60,6 +62,9 @@ b. $98.503$
 c. $105.380$  
 d. $103.937$  
 e. $90.379$
+
+> [!summary]+ **Jawaban No.3**
+> **103.937 (d)**
 
 ---
 ## **No. 4**
@@ -72,74 +77,63 @@ c. $49{,}1$
 d. $63{,}2$  
 e. $52{,}6$
 
----
-**Tabel untuk soal nomor 5**
+> [!summary]+ **Jawaban No.4**
+> **57,6 (b)**
 
-| Tanggal     | Saldo sebelum aktivitas | Deposit | Penarikan |
-| ----------- | :---------------------: | :-----: | :-------: |
-| 1 Januari   |          10000          |         |           |
-| 1 April     |          10500          |  2000   |           |
-| 1 September |          12800          |         |   2600    |
-| 31 Desember |            X            |         |           |
+---
 ## **No. 5**
 
-Jika **_time-weighted yield_** sebesar $6{,}466\%$, tentukan besar _dollar-weighted yield_.  
-(Pilih jawaban dengan desimal terdekat!) 
+Sebuah dana memperoleh pendapatan investasi sebesar $8.000$ selama tahun 2004. Saldo awal dan akhir dana tersebut adalah $95.000$ dan $120.000$. Sebuah setoran dilakukan pada waktu $K$ selama tahun tersebut. Tidak ada setoran atau penarikan lain yang dilakukan. Dana memperoleh $7{,}5235\%$ pada tahun 2004 menggunakan metode _dollar-weighted_. Tentukan $K$.
 
-a. $6{,}58\%$  
-b. $6{,}62\%$  
-c. $6{,}65\%$  
-d. $6{,}71\%$  
-e. $6{,}74\%$
+a. $1\;Maret$  
+b. $1\;April$  
+c. $1\;Mei$  
+d. $1\;Juli$  
+e. $1\;Oktober$
 
 ---
 ## **No. 6**
 
-Kamu memulai tahun dengan saldo sebesar $8000$ di suatu akun. Kamu melakukan setoran sebesar $2000$ pada tanggal 1 Maret dan $1000$ pada tanggal 1 November. Kamu menarik $500$ pada tanggal 1 Juli. Tingkat **_dollar-weighted yield_** untuk tahun tersebut adalah $8{,}87\%$. 
-Tentukan besar bunga yang kamu peroleh.  
+Misalkan total 30 pembayaran semi-tahunan sebesar $5$ dilakukan mulai tepat enam tahun dari hari ini. Dengan asumsi tingkat bunga efektif tahunan $6\%$, tentukanlah nilai masa depan pada waktu 30 tahun dari hari ini. Asumsikan bahwa setelah pembayaran selesai, investasi dibiarkan dalam akun yang sama menghasilkan bunga.
 
-a. $850$  
-b. $861$  
-c. $869$  
-d. $873$  
-e. $882$
+a. $708$  
+b. $411$  
+c. $243$  
+d. $399$  
+e. $450$
 
 ---
 ## **No. 7**
 
-Seorang wanita membeli dua obligasi dengan jangka waktu $5$ tahun dan nilai nominal $1000$. Obligasi pertama memiliki kupon $7{,}5\%$ yang dibayarkan setiap semester dan dihargai berdasarkan hasil (_yield_) $8\%$ dengan konversi semesteran. Obligasi kedua memiliki kupon $6\%$ yang dibayarkan setiap semester dan dihargai berdasarkan hasil $7\%$ dengan konversi semesteran. Pembayaran kupon dari kedua obligasi tersebut disimpan dalam dana yang memberikan hasil $6{,}8\%$ dengan konversi semesteran. 
-Tentukanlah hasil suku bunga efektif tahunan (_annual effective yield_) untuk investasi gabungan ini.
+Misalkan jumlah dalam suatu dana satu setengah tahun dari sekarang adalah $100$. Tentukan nilai kini dari dana tersebut jika tingkat diskonto nominal adalah $5\%$ yang dapat dikonversi setiap kuartal.
 
-a. $7{,}3\%$  
-b. $7{,}5\%$  
-c. $7{,}7\%$  
-d. $7{,}9\%$  
-e. $8{,}1\%$
+a. $86{,}8$  
+b. $96{,}4$    
+c. $92{,}7$  
+d. $92{,}9$    
+e. $92{,}2$  
 
 ---
 ## **No. 8**
 
-Seorang pria membeli anuitas langsung (_annuity-immediate_) selama $20$ tahun seharga $10000$. Dia menerima pembayaran tahunan sebesar $910$. Dia menginvestasikan pembayaran tersebut ke dalam dana yang menghasilkan bunga $7{,}5\%$ per tahun.
-Tentukanlah hasil tahunan (_annual yield_) investasinya.  
+Davin membeli _annuity-immediate_ selama $16$ tahun yang membayar $100$ pada tahun pertama dan meningkat $4\%$ setiap tahun berikutnya. Kelvin membeli _annuity-immediate_ $16$ tahun yang membayar $X$ pada tahun pertama dan menurun $2\%$ setiap tahun berikutnya. Pada tingkat bunga efektif tahunan $5\%$, kedua anuitas memiliki nilai kini yang sama. Tentukanlah nilai X   
 
-a. $6{,}5\%$  
-b. $6{,}7\%$  
-c. $6{,}9\%$  
-d. $7{,}1\%$  
-e. $7{,}3\%$
+a. $148{,}7$
+b. $145{,}2$
+c. $124{,}5$  
+d. $123{,}2$  
+e. $120{,}0$
 
 ---
 ## **No. 9**
 
-Sebuah _annuitas-immediate_ selama $20$ tahun membayar $100$ per tahun untuk $10$ tahun pertama. Mulai pembayaran ke-$11$, setiap pembayaran meningkat $6\%$ dari pembayaran sebelumnya.
-Anuitas ini menghasilkan bunga dengan tingkat efektif tahunan $7\%$ (_annual effective yield_).  
-Tentukan nilai sekarang dari anuitas ini.
+Suaty _annuity-due_ membayar manfaat awal sebesar $1$ per tahun, dengan manfaat meningkat sebesar $10{,}25\%$ setiap empat tahun. Anuitas ini dibayarkan selama $40$ pembayaran tahunan. Dengan menggunakan tingkat bunga efektif tahunan sebesar $2\%$, tentukanlah nilai masa depan dari anuitas ini.
 
-a. $1150$  
-b. $1185$  
-c. $1235$  
-d. $1262$  
-e. $1288$
+a. $42$  
+b. $69$  
+c. $83$  
+d. $59$  
+e. $93$
 
 ---
 ## **No. 10**
