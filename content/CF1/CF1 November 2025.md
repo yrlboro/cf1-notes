@@ -338,34 +338,31 @@ Berikut adalah kurva hasil 4 tahun dengan satu nilai yang hilang
 | Jangka waktu jatuh tempo   | 1     | 2     | 3   | 4     |
 | -------------------------- | ----- | ----- | --- | ----- |
 | Hasil Obligasi Nilai Kupon | $3\%$ | $4\%$ | -   | $5\%$ |
+
 Tingkat yang benar secara teori untuk swap tingkat bunga tetap 4 tahun adalah $4{,}94\%$ . Tentukan rentang untuk spot rate yang hilang pada tabel di atas.
 
-a. $4{,}0\%-4{,}15\%$
-
-b. $4{,}16\%-4{,}3\%$
-
-c. $4{,}31\%-4{,}45\%$
-
-d. $4{,}46\%-4{,}6\%$
-
+a. $4{,}0\%-4{,}15\%$  
+b. $4{,}16\%-4{,}3\%$  
+c. $4{,}31\%-4{,}45\%$  
+d. $4{,}46\%-4{,}6\%$  
 e. $4{,}61\%-4{,}75\%$
 
 ---
 ## **No. 28**
 
-Filbert membeli indeks S&R dan opsi **put** dengan strike $K$. Desca meminjam **1014,80** dan membeli opsi **call** dengan strike $K$. $r=0,04$ dan $T=0,25$ untuk put, call, dan pinjaman. Indeks tersebut **tidak membayar dividen**. Filbert dan Desca memiliki **fungsi payoff yang sama**.
+Filbert membeli indeks S&R dan opsi **put** dengan strike $K$. Desca meminjam **1.014,80** dan membeli opsi **call** dengan strike $K$. $r=0,04$ dan $T=0,25$ untuk put, call, dan pinjaman. Indeks tersebut **tidak membayar dividen**. Filbert dan Desca memiliki **fungsi payoff yang sama**.
 Tentukan nilai dari $K$.
 
-a. $1000$  
-b. $1012$  
-c. $1018$  
-d. $1020$  
-e. $1025$
+a. $1.000$  
+b. $1.012$  
+c. $1.018$  
+d. $1.020$  
+e. $1.025$
 
 ---
 ## **No. 29**
 
-Indeks S&R yang **tidak membayar dividen** saat ini bernilai **1350**. Tingkat bebas risiko adalah $r=0,04$. Anda ditawari kontrak **forward enam bulan** pada indeks tersebut dengan **harga forward** untuk pembelian dalam enam bulan dikutip sebesar **1410**. Manakah dari pernyataan berikut yang berlaku **jika Anda memasuki kontrak forward ini**?
+Indeks S&R yang **tidak membayar dividen** saat ini bernilai **1.350**. Tingkat bebas risiko adalah $r=0,04$. Anda ditawari kontrak **forward enam bulan** pada indeks tersebut dengan **harga forward** untuk pembelian dalam enam bulan dikutip sebesar **1.410**. Manakah dari pernyataan berikut yang berlaku **jika Anda memasuki kontrak forward ini**?
 
 a. Anda harus menerima **32,73**.  
 b. Anda harus membayar **32,73**.  
@@ -376,10 +373,10 @@ e. Anda tidak membayar atau menerima apa pun.
 ---
 ## **No. 30**
 
-Amel ingin membuat portofolio dengan risiko yang sama dengan pasar, dan dia memiliki dana sebesar $1000000$ untuk diinvestasikan. Berdasarkan informasi ini, berikut adalah data yang diketahui:
-- Investasi saham A: $195000$ dengan beta $0{,}80$
-- Investasi saham B: $340000$ dengan beta $1{,}2$
-- Beta saham C: $1{,}4$
+Amel ingin membuat portofolio dengan risiko yang sama dengan pasar, dan dia memiliki dana sebesar $1.000.000$ untuk diinvestasikan. Berdasarkan informasi ini, berikut adalah data yang diketahui:
+- Investasi saham A: $195.000$ dengan _beta_ $0{,}80$
+- Investasi saham B: $340.000$ dengan _beta_ $1{,}2$
+- _Beta_ saham C: $1{,}4$
 - Investasi pada aset bebas risiko belum diketahui
 
 Tentukan besar aset bebas risiko. (Pilihlah jawaban dalam bilangan bulat terdekat!)
