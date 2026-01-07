@@ -340,10 +340,14 @@ Berikut adalah kurva hasil 4 tahun dengan satu nilai yang hilang
 | Hasil Obligasi Nilai Kupon | $3\%$ | $4\%$ | -   | $5\%$ |
 Tingkat yang benar secara teori untuk swap tingkat bunga tetap 4 tahun adalah $4{,}94\%$ . Tentukan rentang untuk spot rate yang hilang pada tabel di atas.
 
-a. $4{,}0\%-4{,}15\%$  
+a. $4{,}0\%-4{,}15\%$
+
 b. $4{,}16\%-4{,}3\%$
+
 c. $4{,}31\%-4{,}45\%$
+
 d. $4{,}46\%-4{,}6\%$
+
 e. $4{,}61\%-4{,}75\%$
 
 ---
@@ -380,7 +384,7 @@ Amel ingin membuat portofolio dengan risiko yang sama dengan pasar, dan dia memi
 
 Tentukan besar aset bebas risiko. (Pilihlah jawaban dalam bilangan bulat terdekat!)
 
-a. $151.500$ 
+a. $151.500$  
 b. $152.000$  
 c. $152.500$  
 d. $153.000$  
