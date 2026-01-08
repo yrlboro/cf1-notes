@@ -4,11 +4,11 @@ $A(t)$ merupakan nilai akumulasi dana di tahun ke-$t$ dan $i_{t}$ merupakan ting
 
 Jika $A(4)=10$ juta dan $i_{t}=0{,}011t$, dengan $t$ merupakan suatu bilangan integer positif. Tentukan $A(7)$! (Jawablah dalam puluh ribuan terdekat)
 
-a. $11{,}58$ juta
-b. $11{,}91$ juta
-c. $12{,}11$ juta
-d. $12{,}25$ juta
-e. $13{,}00$ juta
+a. $11{,}58$ juta  
+b. $11{,}91$ juta  
+c. $12{,}11$ juta  
+d. $12{,}25$ juta  
+e. $13{,}00$ juta  
 
 > [!summary]+ **Jawaban No. 1**
 > **[Jawaban Belum Tersedia]**
@@ -23,11 +23,11 @@ Pada suatu tingkat bunga efektif tahunan $i$ ($i>0$), dua rangkaian pembayaran d
 
 Tentukan nilai $K$! (Jawablah dalam jutaan terdekat!)
 
-a. $237$ juta
-b. $232$ juta
-c. $227$ juta
-d. $222$ juta
-e. $217$ juta
+a. $237$ juta  
+b. $232$ juta  
+c. $227$ juta  
+d. $222$ juta  
+e. $217$ juta  
 
 > [!summary]+ **Jawaban No. 2**
 > **[Jawaban Belum Tersedia]**
@@ -42,11 +42,11 @@ Tingkat bunga yang dikreditkan yaitu pada tingkat diskon nominal $d$ dikonversi 
 Nilai akumulasi dari dana yang diinvestasikan Christopher di akhir tahun ke-30 diketahui sebesar $1$ miliar. Tentukan nilai $d$!
 (Pilihlah jawaban dalam dua desimal terdekat!)
 
-a. $4{,}33\%$
-b. $4{,}43\%$
-c. $4{,}53\%$
-d. $4{,}63\%$
-e. $4{,}73\%$
+a. $4{,}33\%$  
+b. $4{,}43\%$  
+c. $4{,}53\%$  
+d. $4{,}63\%$  
+e. $4{,}73\%$  
 
 > [!summary]+ **Jawaban No. 3**
 > **[Jawaban Belum Tersedia]**
@@ -59,11 +59,11 @@ Yusuf mendepositokan dana masing-masing sebesar $100$ juta sekarang di Dana X da
 Di akhir tahun ke-9, nilai akumulasi pada Dana X akan memiliki nilai yang sama dengan nilai akumulasi pada Dana Y. Tentukan nilai $i$!
 (Pilihlah jawaban dalam dua desimal terdekat!)
 
-a. $4{,}53\%$
-b. $4{,}83\%$
-c. $5{,}13\%$
-d. $5{,}43\%$
-e. $5{,}73\%$
+a. $4{,}53\%$  
+b. $4{,}83\%$  
+c. $5{,}13\%$  
+d. $5{,}43\%$  
+e. $5{,}73\%$  
 
 > [!summary]+ **Jawaban No. 4**
 > **[Jawaban Belum Tersedia]**
@@ -81,11 +81,11 @@ Anda diberikan informasi berikut:
 
 Tentukanlah $n$!
 
-a. $\dfrac{a-g}{h-b}$
-b. $\dfrac{2(a-g)}{h-b}$
-c. $\dfrac{h-b}{a-g}$
-d. $\dfrac{h-b}{2(a-g)}$
-e. $\dfrac{2(h-b)}{(a-g)}$
+a. $\dfrac{a-g}{h-b}$  
+b. $\dfrac{2(a-g)}{h-b}$  
+c. $\dfrac{h-b}{a-g}$  
+d. $\dfrac{h-b}{2(a-g)}$  
+e. $\dfrac{2(h-b)}{(a-g)}$  
 
 > [!summary]+ **Jawaban No. 5**
 > **[Jawaban Belum Tersedia]**
@@ -100,11 +100,11 @@ Untuk membiayai rencana pembeliannya, Jimmy menginvestasikan dana sebesar $20$ j
 Tingkat bunga efektif tahunan untuk investasi Jimmy diketahui sebesar $10\%$. Tentukan nilai $X$!
 (Pilihlah jawaban dalam ratus ribuan terdekat!)
 
-a. $7{,}4$ juta
-b. $7{,}9$ juta
-c. $8{,}4$ juta
-d. $8{,}9$ juta
-e. $9{,}4$ juta
+a. $7{,}4$ juta  
+b. $7{,}9$ juta  
+c. $8{,}4$ juta  
+d. $8{,}9$ juta  
+e. $9{,}4$ juta  
 
 > [!summary]+ **Jawaban No. 6**
 > **[Jawaban Belum Tersedia]**
@@ -123,11 +123,11 @@ Besarnya nilai investasi pada 1 Januari 2024 diketahui sebesar $115$ juta. Selam
 
 Tentukan nilai $y$! (Pilihlah jawaban dalam satu desimal terdekat!)
 
-a. $-1{,}5\%$
-b. $-0{,}7\%$
-c. $0{,}0\%$
-d. $0{,}7\%$
-e. $1{,}5\%$
+a. $-1{,}5\%$  
+b. $-0{,}7\%$  
+c. $0{,}0\%$  
+d. $0{,}7\%$  
+e. $1{,}5\%$  
 
 > [!summary]+ **Jawaban No. 7**
 > **[Jawaban Belum Tersedia]**
@@ -137,11 +137,11 @@ e. $1{,}5\%$
 
 Tentukan nilai dari $\sum_{t=1}^{10}s_{\overline{t}|10\%}$! (Pilihlah jawaban dalam satuan terdekat!)
 
-a. $69$
-b. $72$
-c. $75$
-d. $78$
-e. $81$
+a. $69$  
+b. $72$  
+c. $75$  
+d. $78$  
+e. $81$  
 
 > [!summary]+ **Jawaban No. 8**
 > **[Jawaban Belum Tersedia]**
@@ -151,11 +151,11 @@ e. $81$
 
 Anda diberikan informasi bahwa $\int_{0}^{n}\overline{a}_{\overline{t}|}dt=100$. Tentukan nilai $\overline{a}_{\overline{n}|}$!
 
-a. $100n\delta$
-b. $n\delta$
-c. $n-100\delta$
-d. $100-n\delta$
-e. $n-\frac{\delta}{100}$
+a. $100n\delta$  
+b. $n\delta$  
+c. $n-100\delta$  
+d. $100-n\delta$  
+e. $n-\frac{\delta}{100}$  
 
 > [!summary]+ **Jawaban No. 9**
 > **[Jawaban Belum Tersedia]**
@@ -169,11 +169,11 @@ ii. $\ddot{a}_{\overline{2n}|}=12{,}8537$
 
 Tentukan nilai $i$! (Jawablah dalam dua desimal terdekat!)
 
-a. $4{,}98\%$
-b. $5{,}10\%$
-c. $5{,}15\%$
-d. $5{,}24\%$
-e. $5{,}29\%$
+a. $4{,}98\%$  
+b. $5{,}10\%$  
+c. $5{,}15\%$  
+d. $5{,}24\%$  
+e. $5{,}29\%$  
 
 > [!summary]+ **Jawaban No. 10**
 > **[Jawaban Belum Tersedia]**
@@ -185,11 +185,11 @@ Fatma membeli suatu obligasi dengan tenor 10 tahun yang memberikannya tingkat ku
 
 Hitunglah Nilai Par dari obligasi tersebut! (Jawablah dalam jutaan terdekat)
 
-a. $80$ juta
-b. $100$ juta
-c. $120$ juta
-d. $140$ juta
-e. $160$ juta
+a. $80$ juta  
+b. $100$ juta  
+c. $120$ juta  
+d. $140$ juta  
+e. $160$ juta  
 
 > [!summary]+ **Jawaban No. 11**
 > **[Jawaban Belum Tersedia]**
@@ -201,11 +201,11 @@ Adrian membeli suatu obligasi dengan nilai par dan nilai penebusan yang sama yai
 
 Jika obligasi yang sama ditebus pada $120\%$ nilai par, tentukanlah harga obligasi yang harus dibayarkan oleh Adrian untuk mendapatkan imbal hasil (_yield_) yang sama?
 
-a. $126$ juta
-b. $132$ juta
-c. $138$ juta
-d. $144$ juta
-e. $150$ juta
+a. $126$ juta  
+b. $132$ juta  
+c. $138$ juta  
+d. $144$ juta  
+e. $150$ juta  
 
 > [!summary]+ **Jawaban No. 12**
 > **[Jawaban Belum Tersedia]**
@@ -220,11 +220,11 @@ Suatu obligasi yang dibeli pada harga premium memiliki fitur sebagai berikut:
 
 Nilai amortisasi dari premium di tahun ke-10 diketahui sebesar $2$ juta. Nilai buku dari obligasi di akhir tahun ke-10 yaitu sebesar $X$. Hitunglah nilai $X$!
 
-a. $118$ juta
-b. $120$ juta
-c. $122$ juta
-d. $124$ juta
-e. $126$ juta
+a. $118$ juta  
+b. $120$ juta  
+c. $122$ juta  
+d. $124$ juta  
+e. $126$ juta  
 
 > [!summary]+ **Jawaban No. 13**
 > **[Jawaban Belum Tersedia]**
@@ -236,11 +236,11 @@ Suatu obligasi dengan tenor 10 tahun memiliki nilai par sebesar $100$ juta dan n
 
 Kupon pertama yang dibayarkan sebesar $X$. Kupon di tahun berikutnya meningkat sebesar $4\%$ dari kupon di tahun sebelumnya. Tentukan $X$!
 
-a. $4{,}6$ juta
-b. $4{,}8$ juta
-c. $5{,}0$ juta
-d. $5{,}2$ juta
-e. $5{,}4$ juta
+a. $4{,}6$ juta  
+b. $4{,}8$ juta  
+c. $5{,}0$ juta  
+d. $5{,}2$ juta  
+e. $5{,}4$ juta  
 
 > [!summary]+ **Jawaban No. 14**
 > **[Jawaban Belum Tersedia]**
@@ -261,11 +261,11 @@ Tabel berikut merupakan 1 tahun _forward rate_ di tahun ke $n+1$ (yaitu satu tah
 
 Skenario X dan skenario Y memiliki peluang yang sama untuk terjadi. Tentukanlah ekspektasi nilai sekarang dari obligasi tersebut! (Jawablah dalam ratus ribuan terdekat!)
 
-a. $100{,}0$ juta
-b. $101{,}8$ juta
-c. $102{,}3$ juta
-d. $102{,}9$ juta
-e. $103{,}1$ juta
+a. $100{,}0$ juta  
+b. $101{,}8$ juta  
+c. $102{,}3$ juta  
+d. $102{,}9$ juta  
+e. $103{,}1$ juta  
 
 > [!summary]+ **Jawaban No. 15**
 > **[Jawaban Belum Tersedia]**
@@ -277,11 +277,11 @@ Suatu obligasi memiliki nilai par sebesar $100$ miliar dengan kupon tahunan sebe
 
 Tentukan durasi termodifikasi dari obligasi tersebut! (Jawablah dalam dua desimal terdekat!)
 
-a. $3{,}43$ tahun
-b. $3{,}46$ tahun
-c. $3{,}63$ tahun
-d. $3{,}67$ tahun
-e. $3{,}72$ tahun
+a. $3{,}43$ tahun  
+b. $3{,}46$ tahun  
+c. $3{,}63$ tahun  
+d. $3{,}67$ tahun  
+e. $3{,}72$ tahun  
 
 > [!summary]+ **Jawaban No. 16**
 > **[Jawaban Belum Tersedia]**
@@ -300,11 +300,11 @@ Hitunglah nilai sekarang bersih (_net present value_) dari arus kas berikut deng
 | 1 | $160$ |
 | 2 | $160$ |
 
-a. $-23{,}21$ juta
-b. $-19{,}30$ juta
-c. $-6{,}66$ juta
-d. $-2{,}49$ juta
-e. $1{,}78$ juta
+a. $-23{,}21$ juta  
+b. $-19{,}30$ juta  
+c. $-6{,}66$ juta  
+d. $-2{,}49$ juta  
+e. $1{,}78$ juta  
 
 > [!summary]+ **Jawaban No. 17**
 > **[Jawaban Belum Tersedia]**
@@ -321,11 +321,11 @@ Berikut ini merupakan harga dari obligasi tanpa kupon dengan nilai Par sebesar $
 
 Hitunglah 1 tahun _forward rate_ di tahun ke-2 (yaitu satu tahun tingkat bunga efektif pada tahun ke-2)! (Jawablah dalam satu desimal terdekat)
 
-a. $6{,}2\%$
-b. $8{,}3\%$
-c. $10{,}5\%$
-d. $11{,}8\%$
-e. $31{,}5\%$
+a. $6{,}2\%$  
+b. $8{,}3\%$  
+c. $10{,}5\%$  
+d. $11{,}8\%$  
+e. $31{,}5\%$  
 
 > [!summary]+ **Jawaban No. 18**
 > **[Jawaban Belum Tersedia]**
@@ -338,11 +338,11 @@ Dimas membeli suatu instrumen investasi yang memberikannya $10$ juta di akhir ta
 Tentukan rasio antara konveksitas terhadap durasi termodifikasi dari serangkaian pembayaran instrumen investasi tersebut, dievaluasi pada tingkat bunga efektif tahunan $7{,}5\%$!
 (Jawablah dalam dua desimal terdekat!)
 
-a. $4{,}96$
-b. $5{,}33$
-c. $5{,}73$
-d. $6{,}34$
-e. $7{,}65$
+a. $4{,}96$  
+b. $5{,}33$  
+c. $5{,}73$  
+d. $6{,}34$  
+e. $7{,}65$  
 
 > [!summary]+ **Jawaban No. 19**
 > **[Jawaban Belum Tersedia]**
@@ -354,11 +354,11 @@ Valerie memiliki pinjaman dengan besar cicilan sebesar $25$ juta yang dibayarkan
 
 Jika besar bunga yang dibayarkan pada pembayaran ke-4 sebesar $24{,}58$ juta, tentukanlah besar pokok pinjaman yang dibayarkan pada pembayaran cicilan ke-7! Asumsikan tingkat bunga efektif tahunan sebesar $13\%$!
 
-a. Kurang dari $600$ ribu
-b. Setidaknya $600$ ribu, namun kurang dari $700$ ribu
-c. Setidaknya $700$ ribu, namun kurang dari $800$ ribu
-d. Setidaknya $800$ ribu, namun kurang dari $900$ ribu
-e. Lebih dari $900$ ribu
+a. Kurang dari $600$ ribu  
+b. Setidaknya $600$ ribu, namun kurang dari $700$ ribu  
+c. Setidaknya $700$ ribu, namun kurang dari $800$ ribu  
+d. Setidaknya $800$ ribu, namun kurang dari $900$ ribu  
+e. Lebih dari $900$ ribu  
 
 > [!summary]+ **Jawaban No. 20**
 > **[Jawaban Belum Tersedia]**
@@ -372,11 +372,11 @@ Jika ia memilih untuk membayarkan pokok pinjaman beserta total bunganya secara _
 
 Tentukan nilai $X$! (Jawablah dalam jutaan terdekat!)
 
-a. $800$ juta
-b. $825$ juta
-c. $850$ juta
-d. $875$ juta
-e. $900$ juta
+a. $800$ juta  
+b. $825$ juta  
+c. $850$ juta  
+d. $875$ juta  
+e. $900$ juta  
 
 > [!summary]+ **Jawaban No. 21**
 > **[Jawaban Belum Tersedia]**
@@ -386,11 +386,11 @@ e. $900$ juta
 
 Fajri memiliki pinjaman dengan nilai sekarang sebesar $a_{\overline{n}|}$. Penjumlahan dari besarnya bunga yang dibayarkan pada periode $t$ dan besarnya pokok pinjaman yang dibayarkan pada periode $t+1$ adalah sebesar $X$. Tentukan nilai $X$!
 
-a. $1+\dfrac{v^{n-t}}{i}$
-b. $1+v^{n-t}$
-c. $1+v^{n-t}i$
-d. $1+v^{n-t}d$
-e. $1+v^{n-t}$
+a. $1+\dfrac{v^{n-t}}{i}$  
+b. $1+v^{n-t}$  
+c. $1+v^{n-t}i$  
+d. $1+v^{n-t}d$  
+e. $1+v^{n-t}$  
 
 > [!summary]+ **Jawaban No. 22**
 > **[Jawaban Belum Tersedia]**
@@ -404,11 +404,11 @@ Tingkat bunga atas pembayaran cicilan pinjaman yaitu sebesar $8\%$ efektif per t
 
 Tentukan nilai $X$! (Jawablah pada puluh ribuan terdekat!)
 
-a. $2{,}98$ juta
-b. $3{,}30$ juta
-c. $3{,}61$ juta
-d. $3{,}85$ juta
-e. $4{,}11$ juta
+a. $2{,}98$ juta  
+b. $3{,}30$ juta  
+c. $3{,}61$ juta  
+d. $3{,}85$ juta  
+e. $4{,}11$ juta  
 
 > [!summary]+ **Jawaban No. 23**
 > **[Jawaban Belum Tersedia]**
@@ -424,11 +424,11 @@ Sedangkan Jennie membayarkan kembali pinjamannya menggunakan metode _sinking fun
 
 Total pembayaran yang dilakukan oleh Jennie di setiap akhir tahun yaitu sebesar $10\%$ dari pinjaman awal. Tentukan nilai $L$! (Jawablah pada ratus ribuan terdekat!)
 
-a. $48{,}4$ juta
-b. $49{,}4$ juta
-c. $50{,}4$ juta
-d. $51{,}4$ juta
-e. $52{,}4$ juta
+a. $48{,}4$ juta  
+b. $49{,}4$ juta  
+c. $50{,}4$ juta  
+d. $51{,}4$ juta  
+e. $52{,}4$ juta  
 
 > [!summary]+ **Jawaban No. 24**
 > **[Jawaban Belum Tersedia]**
@@ -444,11 +444,11 @@ Manakah dari opsi-opsi di bawah ini yang tergolong _in-the-money_?
 | (ii) Call | 90 | 95 | 9,31 |
 | (iii) Put | 50 | 53 | 3,25 |
 
-a. (i)
-b. (ii)
-c. (iii)
-d. (i) dan (ii)
-e. (ii) dan (iii)
+a. (i)  
+b. (ii)  
+c. (iii)  
+d. (i) dan (ii)  
+e. (ii) dan (iii)  
 
 > [!summary]+ **Jawaban No. 25**
 > **[Jawaban Belum Tersedia]**
@@ -463,11 +463,11 @@ iii. Premi untuk _European put_ 1 tahun dengan harga _strike_ $150$ juta sebesar
 
 Tingkat bunga bebas risiko efektif tahunan diketahui sebesar $X$. Tentukanlah nilai $X$! (Jawablah dalam dua desimal terdekat!)
 
-a. $8{,}07\%$
-b. $8{,}78\%$
-c. $9{,}19\%$
-d. $10{,}28\%$
-e. $11{,}39\%$
+a. $8{,}07\%$  
+b. $8{,}78\%$  
+c. $9{,}19\%$  
+d. $10{,}28\%$  
+e. $11{,}39\%$  
 
 > [!summary]+ **Jawaban No. 26**
 > **[Jawaban Belum Tersedia]**
@@ -486,11 +486,11 @@ Kristina membeli satu lembar pada masing-masing saham dan pada saat yang sama ju
 
 _Spot price at expiration_ dari kedua saham sebesar $70$ juta. $X$ merupakan total _profit at expiration_ pada kedua saham dan kedua opsi _put_. Tentukan nilai $X$! (Jawablah dalam puluh ribuan terdekat!)
 
-a. $-8{,}74$ juta
-b. $-4{,}54$ juta
-c. $0{,}46$ juta
-d. $5{,}46$ juta
-e. $11{,}46$ juta
+a. $-8{,}74$ juta  
+b. $-4{,}54$ juta  
+c. $0{,}46$ juta  
+d. $5{,}46$ juta  
+e. $11{,}46$ juta  
 
 > [!summary]+ **Jawaban No. 27**
 > **[Jawaban Belum Tersedia]**
@@ -502,11 +502,11 @@ Diketahui suku bunga bebas risiko sebesar $8\%$ dan nilai ekspektasi imbal hasil
 
 Jika Saham A memiliki $\beta=0{,}8$, berapakah nilai ekspektasi imbal hasil Saham A jika dihitung berdasarkan CAPM (_Capital Asset Pricing Model_)? (Jawablah dalam satu desimal terdekat!)
 
-a. $8{,}8\%$
-b. $9{,}6\%$
-c. $13{,}6\%$
-d. $14{,}4\%$
-e. $20{,}8\%$
+a. $8{,}8\%$  
+b. $9{,}6\%$  
+c. $13{,}6\%$  
+d. $14{,}4\%$  
+e. $20{,}8\%$  
 
 > [!summary]+ **Jawaban No. 28**
 > **[Jawaban Belum Tersedia]**
@@ -525,11 +525,11 @@ Anda diberikan informasi mengenai investasi di suatu bursa saham sebagai berikut
 
 Berdasarkan informasi pada tabel di atas, tentukanlah nilai ekspektasi portofolio dan beta portofolio dari bursa saham tersebut! (Pilihlah jawaban yang paling mendekati!)
 
-a. $13{,}25\%$ dan $0{,}595$
-b. $13{,}25\%$ dan $1{,}16$
-c. $13{,}25\%$ dan $1{,}0625$
-d. $14{,}9\%$ dan $0{,}595$
-e. $14{,}9\%$ dan $1{,}16$
+a. $13{,}25\%$ dan $0{,}595$  
+b. $13{,}25\%$ dan $1{,}16$  
+c. $13{,}25\%$ dan $1{,}0625$  
+d. $14{,}9\%$ dan $0{,}595$  
+e. $14{,}9\%$ dan $1{,}16$  
 
 > [!summary]+ **Jawaban No. 29**
 > **[Jawaban Belum Tersedia]**
@@ -541,11 +541,11 @@ Di awal tahun, Rico membeli 100 lembar Saham A seharga $3.700$ per lembar. Di ak
 
 Jika Rico menjual saham A di akhir tahun, hitunglah besarnya uang yang ia terima!
 
-a. $33.000$
-b. $51.800$
-c. $403.300$
-d. $421.800$
-e. $436.300$
+a. $33.000$  
+b. $51.800$  
+c. $403.300$  
+d. $421.800$  
+e. $436.300$  
 
 > [!summary]+ **Jawaban No. 30**
 > **[Jawaban Belum Tersedia]**
