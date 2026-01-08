@@ -85,11 +85,11 @@ e. $52{,}6$
 
 Sebuah dana memperoleh pendapatan investasi sebesar $8.000$ selama tahun 2004. Saldo awal dan akhir dana tersebut adalah $95.000$ dan $120.000$. Sebuah setoran dilakukan pada waktu $K$ selama tahun tersebut. Tidak ada setoran atau penarikan lain yang dilakukan. Dana memperoleh $7{,}5235\%$ pada tahun 2004 menggunakan metode _dollar-weighted_. Tentukan $K$.
 
-a. $1\;Maret$  
-b. $1\;April$  
-c. $1\;Mei$  
-d. $1\;Juli$  
-e. $1\;Oktober$
+a. **1 Maret**  
+b. **1 April**   
+c. **1 Mei**  
+d. **1 Juli**  
+e. **1 Oktober**
 
 ---
 ## **No. 6**
@@ -118,11 +118,11 @@ e. $92{,}2$
 
 Davin membeli _annuity-immediate_ selama $16$ tahun yang membayar $100$ pada tahun pertama dan meningkat $4\%$ setiap tahun berikutnya. Kelvin membeli _annuity-immediate_ $16$ tahun yang membayar $X$ pada tahun pertama dan menurun $2\%$ setiap tahun berikutnya. Pada tingkat bunga efektif tahunan $5\%$, kedua anuitas memiliki nilai kini yang sama. Tentukanlah nilai $X$.   
 
-a. $148{,}7$
-b. $145{,}2$
+a. $148{,}7$  
+b. $145{,}2$  
 c. $124{,}5$  
 d. $123{,}2$  
-e. $120{,}0$
+e. $120{,}0$  
 
 ---
 ## **No. 9**
@@ -140,7 +140,7 @@ e. $93$
 
 Chris mengambil pinjaman sebesar $X$ dan melakukan pembayaran tahunan sebesar $2000$ pada akhir setiap tahun selama 15 tahun. Total bunga yang dibayar selama masa pinjaman adalah $6.124$. Tentukanlah bunga yang dibayar pada pembayaran pertama.
 
-a. $408$
+a. $408$  
 b. $60$  
 c. $716$  
 d. $672$  
