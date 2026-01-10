@@ -74,10 +74,10 @@ e. $5{,}73\%$
 Terdapat dua dana: A dan B. Dana A berakumulasi pada _force of interest_ $\delta_{t}=a+bt$, sedangkan Dana B berakumulasi pada _force of interest_ $\delta_{t}=g+ht$.
 
 Anda diberikan informasi berikut:
-(i) $a>g>0$
-(ii) $h>b>0$
-(iii) Dana A $=$ Dana B pada $t=0$
-(iv) Dana A $=$ Dana B pada $t=n$; $n>0$
+(i) $a>g>0$  
+(ii) $h>b>0$  
+(iii) Dana A $=$ Dana B pada $t=0$  
+(iv) Dana A $=$ Dana B pada $t=n$; $n>0$  
 
 Tentukanlah $n$!
 
@@ -135,7 +135,8 @@ e. $1{,}5\%$
 ---
 ## **No. 8**
 
-Tentukan nilai dari $\sum_{t=1}^{10}s_{\overline{t}|10\%}$! (Pilihlah jawaban dalam satuan terdekat!)
+Tentukan nilai dari $\sum_{t=1}^{10}s_{\overline{t}|10\%}$!   
+(Pilihlah jawaban dalam satuan terdekat!)
 
 a. $69$  
 b. $72$  
