@@ -13,6 +13,26 @@ c. $9{,}4\%$
 d. $9{,}6\%$  
 e. $9{,}8\%$
 
+> [!summary]+ **Jawaban No. 1**
+> **e. $9{,}8\%$**
+> 
+>$$\begin{aligned}
+PV_{(1)} &= PV_{(2)} \\
+675 v^2 &= 200 v + 500 v^3 \\
+27 v &= 8 + 20 v^2 \\
+0 &= 20 v^2 - 27 v + 8 \\
+v_{1,2} &= \frac{27 \pm \sqrt{89}}{40}
+\end{aligned}$$
+>
+> $v_{1}=0,91085$ atau $v_{2}=0,43915$
+> maka $i_{1}=0,09788$ atau $i_{2}=1,27713$
+> Karena $i<100\%$ sehingga dipilih $i_{1}=0,09788 \approx 9,788\%$
+> > [!info] Ingat
+> >  Untuk $ax^2+bx+c=0, a\neq0$
+> >  $$
+x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+
 ---
 ## **No. 2**
 
@@ -23,6 +43,38 @@ b. $0{,}0728$
 c. $0{,}0731$  
 d. $0{,}0737$  
 e. $0{,}0742$
+
+> [!summary]+ **Jawaban No. 1**
+> **b. $0{,}0728$**
+> 
+> >
+>- **4 tahun pertama**: nominal **6%**, konversi **kuartalan**  
+  $(n = 16)$  → per kuartal  
+  $$ i_q = \frac{6\%}{4} = 1.5\%   $$
+  >
+  >
+>
+>- **6 tahun berikutnya**: **diskonto nominal 8%**, konversi **semesteran**  
+  $(n = 12)$  → per semester  
+  $$ d_s = \frac{8\%}{2} = 4\% $$
+>
+> # Ubah diskonto ke bunga per semester
+>
+$$ d_s = \frac{i_s}{1+i_s} \quad \Longleftrightarrow \quad 0.04 = \frac{i_s}{1+i_s} $$
+>
+$$ i_s = 0.04167 $$
+> 
+> # Akumulasi total
+>
+$$ A_1 \cdot A_2 = A_{\text{total}} $$
+$$ (1 + 0.015)^{16} \cdot (1 + 0.04167)^{12} = e^{\delta \cdot 10} $$
+$$ 2.07118 = e^{\delta \cdot 10} $$
+> 
+
+
+
+
+> 
 
 ---
 ## **No. 3**
@@ -393,3 +445,22 @@ d. $129000$
 e. $129500$
 
 ---
+
+|No | Jawaban | No | Jawaban |
+|----|----|----|----|
+| 1  | E | 16 | E |
+| 2  | B | 17 | C |
+| 3  | A | 18 | E |
+| 4  | C | 19 | A |
+| 5  | A | 20 | C |
+| 6  | A | 21 | A |
+| 7  | B | 22 | B |
+| 8  | D | 23 | C |
+| 9  | B | 24 | D |
+| 10 | D | 25 | B |
+| 11 | A | 26 | D |
+| 12 | B | 27 | A |
+| 13 | C | 28 | D |
+| 14 | B | 29 | E |
+| 15 | E | 30 | D |
+

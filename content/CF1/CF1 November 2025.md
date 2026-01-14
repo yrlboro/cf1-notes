@@ -69,7 +69,7 @@ e. $90.379$
 ---
 ## **No. 4**
 
-Pada saat yang sama, Niel dan Elis menyetor uang ke dua dana berbeda. Niel menyetor $200$ dan $80$. Kedua akun mendapatkan tingkat bunga yang sama. Jumlah bunga yang diperoleh akun Niel pada tahun ke-10 sama dengan jumlah bunga yang diperoleh akun Elis pada tahun ke-20. Tentukan jumlah bunga yang diperoleh akun Niel selama tahun ke-13.
+Pada saat yang sama, Niel dan Elis menyetor uang ke dua dana berbeda. Niel menyetor $200$ dan Elis menyetor $80$. Kedua akun mendapatkan tingkat bunga yang sama. Jumlah bunga yang diperoleh akun Niel pada tahun ke-10 sama dengan jumlah bunga yang diperoleh akun Elis pada tahun ke-20. Tentukan jumlah bunga yang diperoleh akun Niel selama tahun ke-13.
 
 a. $23{,}1$  
 b. $57{,}6$  
@@ -91,6 +91,9 @@ c. **1 Mei**
 d. **1 Juli**  
 e. **1 Oktober**
 
+> [!summary]+ **Jawaban No.5**
+> **1 Mei (C)**
+
 ---
 ## **No. 6**
 
@@ -101,6 +104,9 @@ b. $411$
 c. $243$  
 d. $399$  
 e. $450$
+
+> [!summary]+ **Jawaban No.6**
+> **411 (b)**
 
 ---
 ## **No. 7**
@@ -113,6 +119,9 @@ c. $92{,}7$
 d. $92{,}9$    
 e. $92{,}2$  
 
+> [!summary]+ **Jawaban No.7**
+> **92,7 (c)**
+
 ---
 ## **No. 8**
 
@@ -123,6 +132,9 @@ b. $145{,}2$
 c. $124{,}5$  
 d. $123{,}2$  
 e. $120{,}0$  
+
+> [!summary]+ **Jawaban No.8**
+> **148,7 (a)**
 
 ---
 ## **No. 9**
@@ -135,6 +147,9 @@ c. $83$
 d. $59$  
 e. $93$
 
+> [!summary]+ **Jawaban No.9**
+> **93 (e)**
+
 ---
 ## **No. 10**
 
@@ -145,6 +160,10 @@ b. $60$
 c. $716$  
 d. $672$  
 e. $464$
+
+> [!summary]+ **Jawaban No.10**
+> **716 (c)**
+
 
 ---
 ## **No. 11**
@@ -157,6 +176,10 @@ c. $283$
 d. $282$  
 e. $285$
 
+> [!summary]+ **Jawaban No.11**
+> **286 (a)**
+
+
 ---
 ## **No. 12**
 
@@ -167,6 +190,9 @@ b. $133$
 c. $132$  
 d. $131$  
 e. $134$
+
+> [!summary]+ **Jawaban No.12**
+> **129 (a)**
 
 ---
 ## **No. 13**
@@ -179,6 +205,9 @@ c. $9.426$
 d. $9.200$  
 e. $9.731$
 
+> [!summary]+ **Jawaban No.13**
+> **9.200 (d)**
+
 ---
 ## **No. 14**
 
@@ -189,6 +218,9 @@ b. $42{,}53$
 c. $28{,}60$  
 d. $59{,}24$  
 e. $47{,}99$
+
+> [!summary]+ **Jawaban No.14**
+> **59,24 (d)**
 
 ---
 ## **No. 15**
@@ -201,6 +233,9 @@ c. $829{,}1$
 d. $827{,}5$  
 e. $871{,}6$
 
+> [!summary]+ **Jawaban No.15**
+> **829,1 (c)**
+
 ---
 ## **No. 16**
 
@@ -211,6 +246,9 @@ b. $565$
 c. $681$  
 d. $574$  
 e. $384$
+
+> [!summary]+ **Jawaban No.16**
+> **681 (c)**
 
 ---
 ## **No. 17**
@@ -223,6 +261,9 @@ c. $135.648$
 d. $136.558$  
 e. $136.159$
 
+> [!summary]+ **Jawaban No.17**
+> **136.216 (a)**
+
 ---
 ## **No. 18**
 
@@ -233,6 +274,9 @@ b. $420$
 c. $175$  
 d. $332$  
 e. $308$
+
+> [!summary]+ **Jawaban No.18**
+> **332 (d)**
 
 ---
 ## **No. 19**
@@ -245,6 +289,9 @@ c. $814$
 d. $536$  
 e. $506$
 
+> [!summary]+ **Jawaban No.19**
+> **536 (d)**
+
 ---
 ## **No. 20**
 
@@ -255,6 +302,9 @@ b. Harganya akan naik
 c. Saham akan memiliki volatilitas tinggi
 d. Saham akan memiliki volatilitas rendah
 e. Harga secara teoritis salah dan terdapat peluang arbitrase
+
+> [!summary]+ **Jawaban No.20**
+> **Harganya akan naik (b)**
 
 ---
 ## **No. 21**
@@ -267,6 +317,9 @@ c. $3{,}550$
 d. $3{,}802$  
 e. $3{,}287$
 
+> [!summary]+ **Jawaban No.21**
+> **4,004 (b)**
+
 ---
 ## **No. 22**
 
@@ -277,6 +330,9 @@ b. $2{,}175$
 c. $2{,}204$  
 d. $2{,}229$  
 e. $2{,}253$
+
+> [!summary]+ **Jawaban No.22**
+> **2,137 (a)**
 
 ---
 ## **No. 23**
@@ -289,6 +345,9 @@ c. $5.637$
 d. $6.418$  
 e. $4.862$
 
+> [!summary]+ **Jawaban No.23**
+> **6.172 (b)**
+
 ---
 ## **No. 24**
 
@@ -299,6 +358,9 @@ b. $5{,}9\%$
 c. $7{,}3\%$  
 d. $6{,}2\%$  
 e. $5{,}5\%$
+
+> [!summary]+ **Jawaban No.24**
+> **6,7% (a)**
 
 ---
 ## **No. 25**
@@ -318,6 +380,9 @@ c. $52{,}5$
 d. $89{,}6$  
 e. $100$
 
+> [!summary]+ **Jawaban No.25**
+> **52,5 (c)**
+
 ---
 ## **No. 26**
 
@@ -328,6 +393,9 @@ b. $1.014$
 c. $1.019$  
 d. $1.024$  
 e. $1.029$
+
+> [!summary]+ **Jawaban No.26**
+> **1.024 (d)**
 
 ---
 
@@ -347,6 +415,9 @@ c. $4{,}31\%-4{,}45\%$
 d. $4{,}46\%-4{,}6\%$  
 e. $4{,}61\%-4{,}75\%$
 
+> [!summary]+ **Jawaban No.27**
+> **4,61% - 4,75% (e)**
+
 ---
 ## **No. 28**
 
@@ -359,6 +430,9 @@ c. $1.018$
 d. $1.020$  
 e. $1.025$
 
+> [!summary]+ **Jawaban No.28**
+> **1.025 (e)**
+
 ---
 ## **No. 29**
 
@@ -369,6 +443,9 @@ b. Anda harus membayar **32,73**.
 c. Anda harus menerima **32,08**.  
 d. Anda harus membayar **32,08**.  
 e. Anda tidak membayar atau menerima apa pun.
+
+> [!summary]+ **Jawaban No.29**
+> **Anda harus menerima 32,08 (c)**
 
 ---
 ## **No. 30**
@@ -386,5 +463,8 @@ b. $152.000$
 c. $152.500$  
 d. $153.000$  
 e. $153.500$
+
+> [!summary]+ **Jawaban No.30**
+> **153.500 (e)**
 
 ---
