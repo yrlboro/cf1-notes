@@ -23,6 +23,7 @@ e. $13{,}76\%$
 > **2,56% (a)**
 >
 > > [!info] Rumus
+> > 
 > > Hubungan antara Harga Obligasi Zero-Coupon ($P_t$) dan Forward Rate ($f$):
 > >
 > > $$f_{t, t+1} = \frac{P_t}{P_{t+1}} - 1$$
@@ -33,6 +34,7 @@ e. $13{,}76\%$
 > > - Target: Forward rate tahun ke-4 ($t=4 \to t=5$)
 >
 > > [!example]- Langkah Pengerjaan
+> > 
 > > Kita mencari forward rate yang berlaku mulai akhir tahun ke-4 hingga akhir tahun ke-5 ($f_{4,5}$).
 > >
 > > **1. Substitusi Angka:**
@@ -68,6 +70,7 @@ e. $0{,}1805$
 > **0,2606 (d)**
 >
 > > [!info] Rumus
+> > 
 > > Karena fungsi berbentuk polinomial dan jawaban berupa desimal spesifik, persamaan $s_t$ diperlakukan sebagai *Force of Interest* ($\delta_t$). Total bunga akumulatif dihitung dengan integral:
 > >
 > > $$\text{Total Interest} = \int_{t_1}^{t_2} \delta_t \, dt$$
@@ -77,6 +80,7 @@ e. $0{,}1805$
 > > - Periode: Mulai $t=4$ selama 3 tahun (berakhir di $t=7$)
 >
 > > [!example]- Langkah Pengerjaan
+> > 
 > > **1. Setup Integral Tentu:**
 > > $$I = \int_{4}^{7} (0,08 - 0,01t + 0,002t^2) \, dt$$
 > >
@@ -116,6 +120,7 @@ e. $90.379$
 > **103.937 (d)**
 >
 > > [!info] Rumus
+> > 
 > > **Equation of Value (PV):**
 > > $$NPV_{Grace} = NPV_{Shanice}$$
 > > $$-100.000 + 60.000v^3 + 60.000v^4 = -Xv + 60.000v^4 + 60.000v^5$$
@@ -127,6 +132,7 @@ e. $90.379$
 > > - Shanice: Out $X$ ($t=1$), In 60.000 ($t=4,5$)
 >
 > > [!example]- Langkah Pengerjaan
+> > 
 > > 1. **Sederhanakan Persamaan:**
 > >    Coret suku $+60.000v^4$ yang muncul di kedua sisi.
 > >    $$-100.000 + 60.000v^3 = -Xv + 60.000v^5$$
@@ -147,6 +153,7 @@ e. $90.379$
 > **103.937 (d)**
 >
 > > [!info] Rumus
+> > 
 > > **Equation of Value (Time $t=0$):**
 > > $$NPV_{Grace} = NPV_{Shanice}$$
 > > $$-100.000 + 60.000v^3 + 60.000v^4 = -Xv + 60.000v^4 + 60.000v^5$$
@@ -210,6 +217,7 @@ e. $52{,}6$
 > **57,6 (b)**
 >
 > > [!info] Rumus
+> > 
 > > **Interest Earned in Year $n$:**
 > > $$I_n = AV_{n-1} \cdot i = P(1+i)^{n-1} \cdot i$$
 > >
@@ -219,6 +227,7 @@ e. $52{,}6$
 > > - Ditanya: $I_{N,13}$
 >
 > > [!example]- Langkah Pengerjaan
+> > 
 > > 1. **Cari Faktor Akumulasi dari Persamaan:**
 > >    $$200(1+i)^9 \cdot i = 80(1+i)^{19} \cdot i$$
 > >    Bagi kedua sisi dengan $i$ dan kumpulkan suku $(1+i)$:
@@ -241,6 +250,7 @@ e. $52{,}6$
 > **57,6 (b)**
 >
 > > [!info] Rumus
+> > 
 > > **Bunga pada Tahun ke-n ($I_n$):**
 > > $$I_n = AV_{n-1} \cdot i = P(1+i)^{n-1} \cdot i$$
 > >
@@ -297,25 +307,52 @@ c. **1 Mei**
 d. **1 Juli**  
 e. **1 Oktober**
 
-> [!summary]+ **Jawaban No.5**
-> **1 Mei (C)**
+> [!summary]+ **Jawaban No. 5**
+> **1 Mei (c)**
+> 
+> > [!info] Rumus
+> > 
+> > $$i_{dw} = \frac{I}{A + C(1-K)}$$
+> > 
+> > - **Diketahui:** $A=95.000$, $B=120.000$, $I=8.000$, $i_{dw}=7,5235\%$
+> > - **Dicari:** $K$ (Waktu terjadinya setoran $C$)
+> 
+> > [!example]- Langkah Pengerjaan
+> > 
+> > **1. Mencari Nilai Deposit ($C$):**
+> > $$B = A + C + I$$
+> > $$120.000 = 95.000 + C + 8.000 \implies C = 17.000$$
+> > 
+> > **2. Setup Persamaan Dollar-Weighted:**
+> > $$0,075235 = \frac{8.000}{95.000(1) + 17.000(1-K)}$$
+> > 
+> > **3. Solusi Aljabar (Mencari term waktu):**
+> > Kalikan silang penyebut:
+> > $$95.000 + 17.000(1-K) = \frac{8.000}{0,075235} = 106.333,488$$
+> > 
+> > Isolasi variabel waktu:
+> > $$17.000(1-K) = 106.333,488 - 95.000 = 11.333,488$$
+> > $$(1-K) = \frac{11.333,488}{17.000} \approx 0,666675$$
+> > 
+> > **4. Konversi ke Tanggal:**
+> > $$K = 1 - 0,666675 = 0,333325 \text{ tahun}$$
+> > $$K_{\text{bulan}} = 0,333325 \times 12 = 3,9999 \approx 4 \text{ bulan}$$
+> > 
+> > $$4 \text{ bulan penuh berlalu (Jan-Apr)} \rightarrow \text{Masuk Awal Bulan ke-5} \rightarrow \text{1 Mei}$$
+> 
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** *Dollar-weighted* menggunakan pendekatan *Simple Interest* untuk membobot "eksposur" dana; semakin lama uang berada di akun, semakin besar pembaginya.
+> > - **Trap:** Mendapatkan angka "4" dan langsung memilih jawaban April. Ingat, $t=4$ artinya 4 bulan *telah berlalu*, sehingga kejadian jatuh pada tanggal 1 bulan berikutnya (Mei).
 
-## **No. 5**
-
-Sebuah dana memperoleh pendapatan investasi sebesar 8.000 selama tahun 2004. Saldo awal dan akhir dana tersebut adalah 95.000 dan 120.000. Sebuah setoran dilakukan pada waktu $K$ selama tahun tersebut. Tidak ada setoran atau penarikan lain yang dilakukan. Dana memperoleh 7,5235% pada tahun 2004 menggunakan metode *dollar-weighted*. Tentukan $K$.
-
-a. 1 Maret
-b. 1 April
-c. 1 Mei
-d. 1 Juli
-e. 1 Oktober
 
 > [!summary]+ **Jawaban No. 5**
 > **1 Mei (c)**
 >
 > > [!info] Rumus
+> > 
 > > **1. Identitas Dana (Cari Besar Setoran/C):**
 > > $$A_1 = A_0 + C + I$$
+> > 
 > > **2. Dollar-Weighted Rate ($i_{dw}$):**
 > > $$i_{dw} = \frac{I}{A_0(1) + C(1-K)}$$
 > > Dimana $(1-K)$ adalah durasi uang mengendap (exposure).
@@ -341,8 +378,37 @@ c. $243$
 d. $399$  
 e. $450$
 
-> [!summary]+ **Jawaban No.6**
+> [!summary]+ **Jawaban No. 6**
 > **411 (b)**
+> 
+> > [!info] Rumus
+> > 
+> > $$AV_{30} = \left[ PMT \cdot \frac{(1+j)^n - 1}{j} \right] \cdot (1+i)^{\Delta t}$$
+> > 
+> > - **Diketahui:** $PMT=5$, $n=30$ kali, $i=6\%$ (tahunan), Start=$t_6$
+> > - **Timeline:** Anuitas berjalan dari $t=6$ s.d. $t=20,5$, lalu *idle* s.d. $t=30$.
+> 
+> > [!example]- Langkah Pengerjaan
+> > **1. Konversi Bunga Efektif ($i \to j$):**
+> > Karena pembayaran per semester, cari *effective semi-annual rate*:
+> > $$j = (1,06)^{0,5} - 1 = 0,029563014$$
+> > 
+> > **2. Nilai Masa Depan Anuitas (di $t=20,5$):**
+> > Waktu pembayaran terakhir = Start + (n-1)periode = $6 + 14,5 = 20,5$.
+> > $$FV_{20,5} = 5 \cdot \frac{(1,029563...)^{30} - 1}{0,029563...}$$
+> > Catatan: $(1+j)^{30} = (1,06)^{15}$
+> > $$FV_{20,5} = 5 \cdot 47,23992 = 236,1996$$
+> > 
+> > **3. Akumulasi ke Tahun 30 ($t=30$):**
+> > Sisa waktu "menggelinding" ($\Delta t$) = $30 - 20,5 = 9,5$ tahun.
+> > $$AV_{30} = 236,1996 \cdot (1,06)^{9,5}$$
+> > $$AV_{30} = 236,1996 \cdot 1,73938$$
+> > 
+> > $$AV_{30} = 410,8408 \rightarrow \text{Dibulatkan: } 411$$
+> 
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Hitung tumpukan uang tepat saat setoran terakhir masuk ($FV$ Anuitas), lalu bungakan tumpukan tersebut sebagai *Lump Sum* hingga tahun target.
+> > - **Trap:** Menggunakan $6\% / 2 = 3\%$ (Salah! Ini *effective annual*, bukan *nominal*). Juga sering salah menghitung $t_{akhir}$ sehingga durasi akumulasi akhirnya meleset.
 
 ---
 ## **No. 7**
