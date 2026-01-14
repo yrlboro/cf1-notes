@@ -158,6 +158,7 @@ e. $90.379$
 > > - **Shanice:** Keluar $X$ di $t=1$; Masuk 60k di $t=4$ & $t=5$.
 >
 > > [!example]- Langkah Pengerjaan
+> > 
 > > **Langkah 1: Penyederhanaan Persamaan**
 > > Perhatikan bahwa suku $+60.000v^4$ (penerimaan di tahun ke-4) ada pada kedua sisi persamaan (Grace dan Shanice). Kita coret suku ini untuk menyederhanakan hitungan.
 > > $$-100.000 + 60.000v^3 = -Xv + 60.000v^5$$
@@ -250,6 +251,7 @@ e. $52{,}6$
 > > - Target: Cari $I_{Niel,13}$
 >
 > > [!example]- Langkah Pengerjaan
+> > 
 > > **Langkah 1: Susun Persamaan Keseimbangan**
 > > Masukkan kondisi soal ke rumus $I_n$:
 > > $$P_{Niel}(1+i)^{10-1} \cdot i = P_{Elis}(1+i)^{20-1} \cdot i$$
