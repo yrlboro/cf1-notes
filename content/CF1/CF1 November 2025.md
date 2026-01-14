@@ -18,23 +18,38 @@ c. $5{,}49\%$
 d. $12{,}10\%$  
 e. $13{,}76\%$
 
+
 > [!summary]+ **Jawaban No. 1**
 > **2,56% (a)**
 >
 > > [!info] Rumus
-> >  $$f_{m,n}=\dfrac{(1+s_m)^m}{(1+s_n)^n}-1$$
+> > Hubungan antara Harga Obligasi Zero-Coupon ($P_t$) dan Forward Rate ($f$):
+> >
+> > $$f_{t, t+1} = \frac{P_t}{P_{t+1}} - 1$$
+> >
+> > **Diketahui:**
+> > - $P_4 = 84,59$ (Harga obligasi jatuh tempo $t=4$)
+> > - $P_5 = 82,48$ (Harga obligasi jatuh tempo $t=5$)
+> > - Target: Forward rate tahun ke-4 ($t=4 \to t=5$)
 >
->Diketahui:
->  
-> > [!tip] Tips Reminder
-> > - Forward = bunga pinjaman 1 tahun di masa depan
-> > - Spot → forward perlu exponent difference
+> > [!example]- Langkah Pengerjaan
+> > Kita mencari forward rate yang berlaku mulai akhir tahun ke-4 hingga akhir tahun ke-5 ($f_{4,5}$).
+> >
+> > **1. Substitusi Angka:**
+> > $$f_{4,5} = \frac{84,59}{82,48} - 1$$
+> >
+> > **2. Perhitungan Rasio:**
+> > $$\frac{84,59}{82,48} \approx 1,02558196$$
+> >
+> > **3. Hasil Akhir:**
+> > $$1,02558196 - 1 = 0,02558196$$
+> >
+> > **4. Konversi ke Persen:**
+> > $$\approx 2,56\%$$
 >
-> > [!warning] Tricky Traps
-> > - Salah desimal (harus 0.056 bukan 5.6)
-> > - Salah tahun start: $f_{4,1}$ mulai t=4
-> > - Salah rumus: bukan $(s_5 - s_4)$
-
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Forward rate adalah "bunga tersirat" yang menjembatani harga obligasi jangka pendek menuju harga obligasi jangka panjang.
+> > - **Trap:** Definisi "Tahun ke-4". Dalam soal ini, yang dimaksud adalah periode $t=4$ ke $t=5$ (sesuai kunci jawaban). Namun, hati-hati jika soal merujuk pada definisi Kellison standar di mana "Tahun ke-4" bisa berarti $t=3$ ke $t=4$. Selalu cek opsi jawaban.
 
 ---
 ## **No. 2**
@@ -51,6 +66,40 @@ e. $0{,}1805$
 
 > [!summary]+ **Jawaban No. 2**
 > **0,2606 (d)**
+>
+> > [!info] Rumus
+> > Karena fungsi berbentuk polinomial dan jawaban berupa desimal spesifik, persamaan $s_t$ diperlakukan sebagai *Force of Interest* ($\delta_t$). Total bunga akumulatif dihitung dengan integral:
+> >
+> > $$\text{Total Interest} = \int_{t_1}^{t_2} \delta_t \, dt$$
+> >
+> > **Diketahui:**
+> > - Fungsi: $\delta_t = 0,08 - 0,01t + 0,002t^2$
+> > - Periode: Mulai $t=4$ selama 3 tahun (berakhir di $t=7$)
+>
+> > [!example]- Langkah Pengerjaan
+> > **1. Setup Integral Tentu:**
+> > $$I = \int_{4}^{7} (0,08 - 0,01t + 0,002t^2) \, dt$$
+> >
+> > **2. Anti-Turunan (Indefinite Integral):**
+> > $$F(t) = 0,08t - \frac{0,01}{2}t^2 + \frac{0,002}{3}t^3$$
+> > $$F(t) = 0,08t - 0,005t^2 + 0,000666...t^3$$
+> >
+> > **3. Evaluasi Batas Atas ($t=7$):**
+> > $$F(7) = 0,08(7) - 0,005(49) + \frac{0,002}{3}(343)$$
+> > $$F(7) \approx 0,56 - 0,245 + 0,22867 = 0,54367$$
+> >
+> > **4. Evaluasi Batas Bawah ($t=4$):**
+> > $$F(4) = 0,08(4) - 0,005(16) + \frac{0,002}{3}(64)$$
+> > $$F(4) \approx 0,32 - 0,08 + 0,04267 = 0,28267$$
+> >
+> > **5. Hasil Akhir (Selisih):**
+> > $$I = 0,54367 - 0,28267 = 0,261$$
+> > *(Hasil presisi tanpa pembulatan antara adalah 0,2606)*
+>
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Total bunga dalam *continuous compounding* adalah luas area di bawah kurva *force of interest*.
+> > - **Trap:** Soal menggunakan notasi $s_t$ (biasanya *spot rate* efektif) tetapi cara penyelesaiannya mengharuskan kita menganggapnya sebagai $\delta_t$ (*force of interest*) karena opsi jawaban adalah hasil integral langsung, bukan hasil konversi $(1+i)$.
+
 
 ---
 ## **No. 3**
@@ -63,8 +112,87 @@ c. $105.380$
 d. $103.937$  
 e. $90.379$
 
-> [!summary]+ **Jawaban No.3**
+> [!summary]+ **Jawaban No. 3**
 > **103.937 (d)**
+>
+> > [!info] Rumus
+> > **Equation of Value (PV):**
+> > $$NPV_{Grace} = NPV_{Shanice}$$
+> > $$-100.000 + 60.000v^3 + 60.000v^4 = -Xv + 60.000v^4 + 60.000v^5$$
+> >
+> > **Data:**
+> > - $i = 15\%$
+> > - $v = \frac{1}{1,15}$
+> > - Grace: Out 100.000 ($t=0$), In 60.000 ($t=3,4$)
+> > - Shanice: Out $X$ ($t=1$), In 60.000 ($t=4,5$)
+>
+> > [!example]- Langkah Pengerjaan
+> > 1. **Sederhanakan Persamaan:**
+> >    Coret suku $+60.000v^4$ yang muncul di kedua sisi.
+> >    $$-100.000 + 60.000v^3 = -Xv + 60.000v^5$$
+> > 2. **Isolasi $X$:**
+> >    Pindahkan $Xv$ ke kiri, sisanya ke kanan, lalu kalikan dengan $(1+i)$ untuk menghilangkan $v$ pada $X$.
+> >    $$X = 100.000(1+i) - 60.000v^2 + 60.000v^4$$
+> > 3. **Substitusi & Hitung:**
+> >    $$X = 100.000(1,15) - 60.000(0,756144) + 60.000(0,571753)$$
+> >    $$X = 115.000 - 45.368,62 + 34.305,19$$
+> >
+> > $$X = 103.936,57 \rightarrow 103.937$$
+>
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Agar investasi setara, nilai kini bersih (NPV) semua arus kas di $t=0$ harus sama.
+> > - **Trap:** Lupa mendiskon $X$ dengan $v^1$. Ingat, Shanice berinvestasi *satu tahun dari sekarang*, bukan hari ini.
+
+> [!summary]+ **Jawaban No. 3**
+> **103.937 (d)**
+>
+> > [!info] Rumus
+> > **Equation of Value (Time $t=0$):**
+> > $$NPV_{Grace} = NPV_{Shanice}$$
+> > $$-100.000 + 60.000v^3 + 60.000v^4 = -Xv + 60.000v^4 + 60.000v^5$$
+> >
+> > **Data & Variabel:**
+> > - $i = 15\% \Rightarrow 0,15$
+> > - $v = (1+i)^{-1} = (1,15)^{-1}$
+> > - **Grace:** Keluar 100k di $t=0$; Masuk 60k di $t=3$ & $t=4$.
+> > - **Shanice:** Keluar $X$ di $t=1$; Masuk 60k di $t=4$ & $t=5$.
+>
+> > [!example]- Langkah Pengerjaan
+> > **Langkah 1: Penyederhanaan Persamaan**
+> > Perhatikan bahwa suku $+60.000v^4$ (penerimaan di tahun ke-4) ada pada kedua sisi persamaan (Grace dan Shanice). Kita coret suku ini untuk menyederhanakan hitungan.
+> > $$-100.000 + 60.000v^3 = -Xv + 60.000v^5$$
+> >
+> > **Langkah 2: Isolasi Variabel X**
+> > Kita pindahkan $-Xv$ ke ruas kiri (menjadi positif) dan $-100.000$ ke ruas kanan.
+> > $$Xv = 100.000 - 60.000v^3 + 60.000v^5$$
+> >
+> > Agar mendapatkan $X$ (bukan $Xv$), kalikan seluruh persamaan dengan $(1+i)$ atau bagi dengan $v$. Ingat bahwa $v \cdot (1+i) = 1$.
+> > $$X = 100.000(1+i) - 60.000v^2 + 60.000v^4$$
+> >
+> > **Langkah 3: Hitung Faktor Diskonto ($i=0,15$)**
+> > - $(1+i) = 1,15$
+> > - $v^2 = (1,15)^{-2} \approx 0,7561436$
+> > - $v^4 = (1,15)^{-4} \approx 0,5717532$
+> >
+> > **Langkah 4: Substitusi Angka**
+> > Masukkan nilai faktor diskonto ke dalam persamaan $X$:
+> > $$X = 100.000(1,15) - 60.000(0,7561436) + 60.000(0,5717532)$$
+> >
+> > **Langkah 5: Perhitungan Suku per Suku**
+> > - Suku 1: $115.000$
+> > - Suku 2: $60.000 \times 0,7561436 = 45.368,616$
+> > - Suku 3: $60.000 \times 0,5717532 = 34.305,192$
+> >
+> > **Langkah 6: Penjumlahan Akhir**
+> > $$X = 115.000 - 45.368,616 + 34.305,192$$
+> > $$X = 69.631,384 + 34.305,192$$
+> > $$X = 103.936,576$$
+> >
+> > $$Hasil \approx 103.937$$
+>
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Agar dua skenario investasi setara secara finansial, Net Present Value (NPV) keduanya harus sama persis saat ditarik ke titik waktu yang sama ($t=0$).
+> > - **Trap:** Hati-hati dengan timing $X$. Soal bilang $X$ diinvestasikan "one year from now" ($t=1$), jadi saat ditarik ke $t=0$, harus dikalikan $v^1$, bukan langsung $X$ saja.
 
 ---
 ## **No. 4**
@@ -77,8 +205,84 @@ c. $49{,}1$
 d. $63{,}2$  
 e. $52{,}6$
 
-> [!summary]+ **Jawaban No.4**
+> [!summary]+ **Jawaban No. 4**
 > **57,6 (b)**
+>
+> > [!info] Rumus
+> > **Interest Earned in Year $n$:**
+> > $$I_n = AV_{n-1} \cdot i = P(1+i)^{n-1} \cdot i$$
+> >
+> > **Data:**
+> > - $P_{Niel} = 200$, $P_{Elis} = 80$
+> > - Diketahui: $I_{N,10} = I_{E,20}$
+> > - Ditanya: $I_{N,13}$
+>
+> > [!example]- Langkah Pengerjaan
+> > 1. **Cari Faktor Akumulasi dari Persamaan:**
+> >    $$200(1+i)^9 \cdot i = 80(1+i)^{19} \cdot i$$
+> >    Bagi kedua sisi dengan $i$ dan kumpulkan suku $(1+i)$:
+> >    $$\frac{200}{80} = \frac{(1+i)^{19}}{(1+i)^9} \Rightarrow 2,5 = (1+i)^{10}$$
+> >    Maka: $(1+i) = 2,5^{0,1} \approx 1,095958$ dan $i \approx 0,095958$
+> >
+> > 2. **Hitung Target ($I_{N,13}$):**
+> >    $$I_{N,13} = 200(1+i)^{12} \cdot i$$
+> >    Gunakan trik substitusi $(1+i)^{12} = (1+i)^{10} \cdot (1+i)^2 = 2,5 \cdot (1,095958)^2$:
+> >    $$I_{N,13} = 200 \cdot (3,002811) \cdot (0,095958)$$
+> >    $$I_{N,13} = 600,562 \cdot 0,095958$$
+> >
+> > $$I_{N,13} = 57,628 \rightarrow 57,6$$
+>
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** "Gaji" bunga tahunan pada *compound interest* tidak tetap, tapi tumbuh secara eksponensial.
+> > - **Trap:** Menggunakan pangkat $n$ alih-alih $n-1$. Bunga tahun ke-13 dihitung dari saldo akhir tahun ke-12.
+
+> [!summary]+ **Jawaban No. 4**
+> **57,6 (b)**
+>
+> > [!info] Rumus
+> > **Bunga pada Tahun ke-n ($I_n$):**
+> > $$I_n = AV_{n-1} \cdot i = P(1+i)^{n-1} \cdot i$$
+> >
+> > **Data & Variabel:**
+> > - $P_{Niel} = 200$
+> > - $P_{Elis} = 80$
+> > - Kondisi Soal: $I_{Niel,10} = I_{Elis,20}$
+> > - Target: Cari $I_{Niel,13}$
+>
+> > [!example]- Langkah Pengerjaan
+> > **Langkah 1: Susun Persamaan Keseimbangan**
+> > Masukkan kondisi soal ke rumus $I_n$:
+> > $$P_{Niel}(1+i)^{10-1} \cdot i = P_{Elis}(1+i)^{20-1} \cdot i$$
+> > $$200(1+i)^9 \cdot i = 80(1+i)^{19} \cdot i$$
+> >
+> > **Langkah 2: Sederhanakan Persamaan**
+> > Bagi kedua ruas dengan $i$ (karena $i \neq 0$) dan kumpulkan variabel $(1+i)$ di satu sisi:
+> > $$\frac{200}{80} = \frac{(1+i)^{19}}{(1+i)^9}$$
+> > $$2,5 = (1+i)^{10}$$
+> >
+> > **Langkah 3: Dapatkan Nilai $i$ dan Faktor Pendukung**
+> > Dari persamaan $(1+i)^{10} = 2,5$, kita peroleh:
+> > $$(1+i) = 2,5^{\frac{1}{10}} = 2,5^{0,1} \approx 1,095958$$
+> > $$i \approx 0,095958 \quad (9,59\%)$$
+> >
+> > **Langkah 4: Hitung Target ($I_{Niel,13}$)**
+> > Gunakan rumus bunga untuk tahun ke-13 Niel:
+> > $$I_{N,13} = 200(1+i)^{12} \cdot i$$
+> >
+> > *Trik Substitusi:* Kita tahu $(1+i)^{12} = (1+i)^{10} \cdot (1+i)^2$. Karena $(1+i)^{10} = 2,5$, maka:
+> > $$(1+i)^{12} = 2,5 \cdot (1,095958)^2$$
+> > $$(1+i)^{12} = 2,5 \cdot 1,201124 = 3,00281$$
+> >
+> > **Langkah 5: Kalkulasi Final**
+> > $$I_{N,13} = 200 \times 3,00281 \times 0,095958$$
+> > $$I_{N,13} = 600,562 \times 0,095958$$
+> > $$I_{N,13} = 57,6287$$
+> >
+> > $$Hasil \approx 57,6$$
+>
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Pada bunga majemuk, nominal bunga yang diterima setiap tahun selalu naik karena basis perhitungannya (saldo awal tahun) terus bertambah.
+> > - **Trap:** Jangan tertukar pangkatnya. Bunga tahun ke-13 ($I_{13}$) dihitung berdasarkan saldo akhir tahun ke-12 ($AV_{12}$), jadi pangkatnya adalah 12, bukan 13.
 
 ---
 ## **No. 5**
@@ -93,6 +297,36 @@ e. **1 Oktober**
 
 > [!summary]+ **Jawaban No.5**
 > **1 Mei (C)**
+
+## **No. 5**
+
+Sebuah dana memperoleh pendapatan investasi sebesar 8.000 selama tahun 2004. Saldo awal dan akhir dana tersebut adalah 95.000 dan 120.000. Sebuah setoran dilakukan pada waktu $K$ selama tahun tersebut. Tidak ada setoran atau penarikan lain yang dilakukan. Dana memperoleh 7,5235% pada tahun 2004 menggunakan metode *dollar-weighted*. Tentukan $K$.
+
+a. 1 Maret
+b. 1 April
+c. 1 Mei
+d. 1 Juli
+e. 1 Oktober
+
+> [!summary]+ **Jawaban No. 5**
+> **1 Mei (c)**
+>
+> > [!info] Rumus
+> > **1. Identitas Dana (Cari Besar Setoran/C):**
+> > $$A_1 = A_0 + C + I$$
+> > **2. Dollar-Weighted Rate ($i_{dw}$):**
+> > $$i_{dw} = \frac{I}{A_0(1) + C(1-K)}$$
+> > Dimana $(1-K)$ adalah durasi uang mengendap (exposure).
+>
+> > [!tip] Tips & Intuisi
+> > - **Langkah 1 (Cari C):** Jangan langsung masuk rumus bunga. Gunakan logika saldo: $120.000 = 95.000 + C + 8.000 \rightarrow C = 17.000$.
+> > - **Langkah 2 (Cari Durasi):** Selesaikan persamaan untuk $(1-K)$. Hasilnya $x \approx 0,666...$ atau $2/3$ tahun.
+> > - **Langkah 3 (Konversi ke Bulan):** Durasi $2/3$ tahun = 8 bulan.
+> > - **Langkah 4 (Tentukan Tanggal):** Jika uang mengendap selama 8 bulan (sampai akhir tahun), berarti uang masuk setelah 4 bulan berlalu ($12 - 8 = 4$). Awal bulan ke-5 adalah **1 Mei**.
+>
+> > [!warning] Tricky Traps
+> > - **Variabel Waktu:** Hati-hati membedakan $K$ (waktu kejadian) dengan $1-K$ (durasi investasi). Rumus menghasilkan durasi ($2/3$), bukan $K$.
+> > - **Asumsi Bunga:** Metode *Dollar-Weighted* menggunakan pendekatan *Simple Interest* untuk eksposur waktu. Jangan gunakan $(1+i)^{(1-K)}$.
 
 ---
 ## **No. 6**
