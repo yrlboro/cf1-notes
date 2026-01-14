@@ -25,9 +25,10 @@ e. $13{,}76\%$
 > > [!info] Rumus
 > > 
 > > Hubungan antara Harga Obligasi Zero-Coupon ($P_t$) dan Forward Rate ($f$):
-> >
+> > 
 > > $$f_{t, t+1} = \frac{P_t}{P_{t+1}} - 1$$
-> >
+> 
+> 
 > > **Diketahui:**
 > > - $P_4 = 84,59$ (Harga obligasi jatuh tempo $t=4$)
 > > - $P_5 = 82,48$ (Harga obligasi jatuh tempo $t=5$)
@@ -37,16 +38,20 @@ e. $13{,}76\%$
 > > 
 > > Kita mencari forward rate yang berlaku mulai akhir tahun ke-4 hingga akhir tahun ke-5 ($f_{4,5}$).
 > >
-> > **1. Substitusi Angka:**
-> > $$f_{4,5} = \frac{84,59}{82,48} - 1$$
+> > **1. Substitusi Angka:**  
+> > 
+> > $$f_{4,5} = \frac{84,59}{82,48} - 1$$  
 > >
-> > **2. Perhitungan Rasio:**
+> > **2. Perhitungan Rasio:**  
+> > 
 > > $$\frac{84,59}{82,48} \approx 1,02558196$$
 > >
-> > **3. Hasil Akhir:**
+> > **3. Hasil Akhir:**  
+> > 
 > > $$1,02558196 - 1 = 0,02558196$$
 > >
-> > **4. Konversi ke Persen:**
+> > **4. Konversi ke Persen:**  
+> > 
 > > $$\approx 2,56\%$$
 >
 > > [!tip] Intuisi & Jebakan
@@ -72,9 +77,10 @@ e. $0{,}1805$
 > > [!info] Rumus
 > > 
 > > Karena fungsi berbentuk polinomial dan jawaban berupa desimal spesifik, persamaan $s_t$ diperlakukan sebagai *Force of Interest* ($\delta_t$). Total bunga akumulatif dihitung dengan integral:
-> >
+> > 
 > > $$\text{Total Interest} = \int_{t_1}^{t_2} \delta_t \, dt$$
-> >
+> 
+> 
 > > **Diketahui:**
 > > - Fungsi: $\delta_t = 0,08 - 0,01t + 0,002t^2$
 > > - Periode: Mulai $t=4$ selama 3 tahun (berakhir di $t=7$)
@@ -675,7 +681,9 @@ e. $285$
 > > [!example]- Langkah Pengerjaan
 > > 
 > > **1. Hitung Bunga Efektif Bulanan ($j$)**  
+> > 
 > > $$j = (1,06)^{1/12} - 1$$  
+> > 
 > > $$j \approx 0,00486755$$
 > >
 > > **2. Hitung Faktor Akumulasi ($\ddot{s}_{\overline{204}|j}$)**  
