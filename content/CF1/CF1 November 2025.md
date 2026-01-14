@@ -410,6 +410,45 @@ e. $450$
 > > - **Konsep:** Hitung tumpukan uang tepat saat setoran terakhir masuk ($FV$ Anuitas), lalu bungakan tumpukan tersebut sebagai *Lump Sum* hingga tahun target.
 > > - **Trap:** Menggunakan $6\% / 2 = 3\%$ (Salah! Ini *effective annual*, bukan *nominal*). Juga sering salah menghitung $t_{akhir}$ sehingga durasi akumulasi akhirnya meleset.
 
+> [!summary]+ **Jawaban No. 6**
+> **411 (b)**
+>
+> > [!info] Rumus
+> > 
+> > $$FV_{30} = PMT \cdot \left( \frac{(1+j)^n - 1}{j} \right) \cdot (1+i)^{\Delta t}$$
+> >
+> > **Diketahui:**
+> > - $PMT = 5$ (dibayar semi-tahunan)
+> > - $i = 6\%$ (Effective Annual Rate)
+> > - $n = 30$ kali pembayaran
+> > - Waktu mulai pembayaran: $t=6$
+> > - Target valuasi: $t=30$
+>
+> > [!example]- Langkah Pengerjaan
+> > 
+> > **1. Konversi Bunga ($i \to j$)**
+> > Karena pembayaran per semester, cari bunga efektif per semester ($j$):
+> > $$j = (1 + i)^{0,5} - 1$$
+> > $$j = (1,06)^{0,5} - 1 \approx 0,029563$$
+> >
+> > **2. Tentukan Timeline**
+> > - Pembayaran ke-1 di $t=6$.
+> > - Pembayaran ke-30 berakhir di: $t = 6 + (29 \times 0,5) = 20,5$.
+> > - Sisa waktu "mengendap" ($\Delta t$): $30 - 20,5 = 9,5$ tahun.
+> >
+> > **3. Hitung Nilai Anuitas di $t=20,5$**
+> > $$FV_{20,5} = 5 \cdot \frac{(1,029563)^{30} - 1}{0,029563}$$
+> > $$FV_{20,5} \approx 5 \cdot 47,239381 = 236,1969$$
+> >
+> > **4. Akumulasi Akhir ke $t=30$**
+> > $$FV_{30} = 236,1969 \cdot (1,06)^{9,5}$$
+> > $$FV_{30} = 236,1969 \cdot 1,739084$$
+> > $$FV_{30} \approx 410,766 \rightarrow \mathbf{411}$$
+>
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Masalah ini menggabungkan **Anuitas Tertunda** (uang tumbuh saat menabung) dan **Bunga Majemuk Pasif** (uang dibiarkan tumbuh setelah setoran berhenti).
+> > - **Trap:** Sering salah menghitung kapan pembayaran terakhir terjadi (dikira tahun ke-30, padahal tahun ke-20,5), atau menggunakan bunga nominal ($6\%/2$) padahal diketahui bunga efektif tahunan.
+
 ---
 ## **No. 7**
 
@@ -421,8 +460,37 @@ c. $92{,}7$
 d. $92{,}9$    
 e. $92{,}2$  
 
-> [!summary]+ **Jawaban No.7**
+> [!summary]+ **Jawaban No. 7**
 > **92,7 (c)**
+>
+> > [!info] Rumus
+> > 
+> > $$PV = FV \cdot \left( 1 - \frac{d^{(m)}}{m} \right)^{m \cdot t}$$
+> >
+> > **Diketahui:**
+> > - $FV = 100$
+> > - $t = 1,5$ tahun
+> > - $d^{(4)} = 5\%$ (Diskonto nominal dikonversi kuartalan)
+> > - $m = 4$ (Kuartal)
+>
+> > [!example]- Langkah Pengerjaan
+> > 
+> > **1. Tentukan Rate per Periode**
+> > Tingkat diskonto per kuartal:
+> > $$\frac{d^{(4)}}{4} = \frac{0,05}{4} = 0,0125$$
+> >
+> > **2. Tentukan Total Periode ($N$)**
+> > $$N = m \cdot t = 4 \times 1,5 = 6 \text{ kuartal}$$
+> >
+> > **3. Hitung Present Value**
+> > $$PV = 100 \cdot (1 - 0,0125)^6$$
+> > $$PV = 100 \cdot (0,9875)^6$$
+> > $$PV = 100 \cdot 0,927233$$
+> > $$PV \approx 92,723 \rightarrow \mathbf{92,7}$$
+>
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Diskonto nominal bekerja "mundur" dengan memotong nilai masa depan di setiap akhir sub-periode (kuartal).
+> > - **Trap:** Hati-hati tertukar rumus dengan bunga nominal ($PV = FV / (1+i)^n$). Untuk diskonto, kita **mengalikan dengan faktor pengurangan**, bukan membagi dengan faktor penambahan.
 
 ---
 ## **No. 8**
@@ -435,8 +503,41 @@ c. $124{,}5$
 d. $123{,}2$  
 e. $120{,}0$  
 
-> [!summary]+ **Jawaban No.8**
+> [!summary]+ **Jawaban No. 8**
 > **148,7 (a)**
+>
+> > [!info] Rumus
+> > 
+> > $$PV = PMT_1 \cdot \left( \frac{1 - \left( \frac{1+g}{1+i} \right)^n}{i - g} \right)$$
+> >
+> > **Diketahui:**
+> > - $i = 5\%$ (Bunga Efektif)
+> > - $n = 16$ tahun
+> > - **Davin:** $PMT_1 = 100$, Growth $g = 4\%$
+> > - **Kelvin:** $PMT_1 = X$, Growth $g = -2\%$ (menurun)
+> > - Kondisi: $PV_{Davin} = PV_{Kelvin}$
+>
+> > [!example]- Langkah Pengerjaan
+> > 
+> > **1. Hitung PV Anuitas Davin**
+> > $$PV_{D} = 100 \cdot \left( \frac{1 - \left( \frac{1,04}{1,05} \right)^{16}}{0,05 - 0,04} \right)$$
+> > $$PV_{D} = 100 \cdot \left( \frac{1 - 0,858026}{0,01} \right)$$
+> > $$PV_{D} \approx 1.419,735$$
+> >
+> > **2. Susun Persamaan PV Kelvin**
+> > Perhatikan penyebut menjadi $0,05 - (-0,02) = 0,07$:
+> > $$PV_{K} = X \cdot \left( \frac{1 - \left( \frac{0,98}{1,05} \right)^{16}}{0,07} \right)$$
+> > $$PV_{K} = X \cdot \left( \frac{1 - 0,331766}{0,07} \right)$$
+> > $$PV_{K} \approx X \cdot 9,546195$$
+> >
+> > **3. Solusi Akhir ($PV_D = PV_K$)**
+> > $$1.419,735 = 9,546195 \cdot X$$
+> > $$X = \frac{1.419,735}{9,546195}$$
+> > $$X \approx 148,722 \rightarrow \mathbf{148,7}$$
+>
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Mencari titik ekuilibrium antara dua aliran kas: satu dimulai rendah tapi naik (Davin), satu dimulai tinggi tapi turun (Kelvin).
+> > - **Trap:** Kesalahan paling fatal adalah tanda negatif pada $g$ Kelvin. Penyebut rumus harusnya $i - (-g) = i+g$. Jangan lupa ini *Annuity-Immediate* (bukan Due).
 
 ---
 ## **No. 9**
@@ -449,8 +550,45 @@ c. $83$
 d. $59$  
 e. $93$
 
-> [!summary]+ **Jawaban No.9**
+> [!summary]+ **Jawaban No. 9**
 > **93 (e)**
+>
+> > [!info] Rumus
+> > 
+> > **Strategi 2 Tahap:**
+> > 
+> > 1. Hitung PV satu blok (4 tahun) di awal blok: $PV_{block} = 1 \cdot \ddot{a}_{\overline{4}|}$
+> > 2. Akumulasi blok-blok tersebut sebagai anuitas geometris ke masa depan.
+> >
+> > **Diketahui:**
+> > - Total periode = 40 tahun
+> > - Pola: Naik setiap 4 tahun (Total 10 blok)
+> > - Growth antar blok ($G$) = $10,25\%$
+> > - Bunga tahunan ($i$) = $2\%$
+>
+> > [!example]- Langkah Pengerjaan
+> > 
+> > **1. Hitung Nilai Satu Blok (4-Year Annuity Due)**  
+> > 
+> > $$PV_{block} = \frac{1 - (1,02)^{-4}}{0,02} \times 1,02$$  
+> > $$PV_{block} \approx 3,883883 \text{ (Ini adalah } P_0 \text{)}$$
+> >
+> > **2. Hitung PV Total Anuitas Blok (di $t=0$)**  
+> > Kita punya 10 blok. Rasio geometris antar blok ($r$):  
+> > $$r = \frac{1 + G}{(1+i)^4} = \frac{1,1025}{1,082432} \approx 1,01854$$  
+> > Gunakan rumus jumlah deret geometris:
+> > $$PV_{total} = P_0 \cdot \frac{r^{10} - 1}{r - 1}$$  
+> > $$PV_{total} = 3,883883 \cdot \frac{(1,01854)^{10} - 1}{0,01854}$$  
+> > $$PV_{total} \approx 3,883883 \cdot 10,87372 \approx 42,232$$
+> >
+> > **3. Hitung Nilai Masa Depan ($t=40$)**  
+> > $$FV = PV_{total} \cdot (1,02)^{40}$$  
+> > $$FV = 42,232 \cdot 2,20804$$  
+> > $$FV \approx 93,25 \rightarrow \mathbf{93}$$  
+>
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Sederhanakan anuitas bertingkat (*step-up*) dengan menganggap setiap periode pertumbuhan (4 tahun) sebagai satu "super-payment" tunggal.
+> > - **Trap:** Sering keliru mencampur periode pertumbuhan (4 tahunan) dengan periode bunga (tahunan) secara langsung tanpa konversi basis waktu yang konsisten.
 
 ---
 ## **No. 10**
@@ -463,8 +601,47 @@ c. $716$
 d. $672$  
 e. $464$
 
-> [!summary]+ **Jawaban No.10**
+> [!summary]+ **Jawaban No. 10**
 > **716 (c)**
+>
+> > [!info] Rumus
+> > 
+> > Hubungan Pokok, Bunga, dan Pembayaran:  
+> > $$\text{Total Bunga} = (n \cdot PMT) - L$$
+> >
+> > Bunga periode ke-$t$:  
+> > $$I_t = i \cdot B_{t-1} \implies I_1 = i \cdot L$$
+> >
+> > **Diketahui:**
+> > - $PMT = 2.000$ (per tahun)
+> > - $n = 15$ tahun
+> > - $\Sigma I = 6.124$ (Total Bunga)
+>
+> > [!example]- Langkah Pengerjaan
+> > 
+> > **1. Mencari Pokok Pinjaman ($L$)**  
+> > Total uang yang dibayarkan:  
+> > $$15 \times 2.000 = 30.000$$  
+> > Pokok pinjaman adalah selisih total bayar dengan total bunga:  
+> > $$L = 30.000 - 6.124 = 23.876$$ 
+> >
+> > **2. Mencari Tingkat Bunga ($i$)**  
+> > Menggunakan persamaan *Present Value Annuity Immediate*:  
+> > $$23.876 = 2.000 \cdot a_{\overline{15}|i}$$  
+> > Menggunakan *Financial Calculator* ($PV=-23.876, PMT=2.000, N=15$):  
+> > $$i \approx 2,9999\% \rightarrow i = 0,03$$
+> >
+> > **3. Menghitung Bunga Tahun Pertama ($I_1$)**  
+> > Bunga dihitung dari saldo awal ($L$):  
+> > $$I_1 = 0,03 \times 23.876$$  
+> > $$I_1 = 716,28$$  
+> >
+> > **Hasil Akhir:**   
+> > $$716,28 \approx 716$$
+>
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Total bunga bukan dibagi rata per tahun, tapi menurun seiring waktu. Bunga tahun pertama selalu paling besar karena pokok utang belum berkurang.
+> > - **Trap:** Hati-hati jangan membagi total bunga ($6.124$) dengan $15$. Itu asumsi *flat rate*, bukan *compound interest*.
 
 
 ---
@@ -478,8 +655,45 @@ c. $283$
 d. $282$  
 e. $285$
 
-> [!summary]+ **Jawaban No.11**
+> [!summary]+ **Jawaban No. 11**
 > **286 (a)**
+>
+> > [!info] Rumus
+> > 
+> > Konversi Bunga Efektif (Tahunan ke Bulanan):  
+> > $$(1+i) = (1+j)^{12}$$
+> >
+> > Future Value Annuity Due (Awal Periode):  
+> > $$FV = R \cdot \ddot{s}_{\overline{mn}|j} = R \cdot \left[ \frac{(1+j)^{mn}-1}{j} \right] \cdot (1+j)$$
+> >
+> > **Diketahui:**
+> > - Target ($FV$) = $100.000$
+> > - $n = 17$ tahun $\rightarrow 204$ bulan
+> > - $i = 6\%$ (efektif tahunan)
+> > - Pembayaran: Bulanan, dimulai hari ini (*Annuity Due*)
+>
+> > [!example]- Langkah Pengerjaan
+> > 
+> > **1. Hitung Bunga Efektif Bulanan ($j$)**  
+> > $$j = (1,06)^{1/12} - 1$$  
+> > $$j \approx 0,00486755$$
+> >
+> > **2. Hitung Faktor Akumulasi ($\ddot{s}_{\overline{204}|j}$)**  
+> > $$s_{\overline{204}|j} = \frac{(1,06)^{17} - 1}{0,00486755} = \frac{2,692773 - 1}{0,00486755} \approx 347,7669$$  
+> > Karena *Due* (awal periode), kalikan dengan $(1+j)$:  
+> > $$\ddot{s} = 347,7669 \times 1,00486755 \approx 349,4596$$  
+> >
+> > **3. Hitung Cicilan ($R$)**  
+> > $$100.000 = R \cdot 349,4596$$  
+> > $$R = \frac{100.000}{349,4596}$$  
+> > $$R = 286,156$$  
+> >
+> > **Hasil Akhir:**  
+> > $$286,156 \approx 286$$  
+>
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Membayar "hari ini" (di awal) memberikan waktu tambahan 1 periode untuk bunga berbunga dibandingkan membayar di akhir bulan, sehingga cicilan yang dibutuhkan lebih kecil.
+> > - **Trap:** Jangan membagi bunga langsung ($6\% / 12 = 0,5\%$). Itu untuk bunga *nominal*, soal ini memberi bunga *efektif*. Gunakan akar pangkat ($1,06^{1/12}$).
 
 
 ---
