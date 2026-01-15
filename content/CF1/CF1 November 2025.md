@@ -26,13 +26,15 @@ e. $13{,}76\%$
 > > 
 > > Hubungan antara Harga Obligasi Zero-Coupon ($P_t$) dan Forward Rate ($f$):
 > > 
-> > $$f_{t, t+1} = \frac{P_t}{P_{t+1}} - 1$$
+> > $$
+> > f_{t, t+1} = \frac{P_t}{P_{t+1}} - 1
+> > $$
 > 
 > 
-> > **Diketahui:**
-> > - $P_4 = 84,59$ (Harga obligasi jatuh tempo $t=4$)
-> > - $P_5 = 82,48$ (Harga obligasi jatuh tempo $t=5$)
-> > - Target: Forward rate tahun ke-4 ($t=4 \to t=5$)
+>**Diketahui:**
+>- $P_4 = 84,59$ (Harga obligasi jatuh tempo $t=4$)
+>- $P_5 = 82,48$ (Harga obligasi jatuh tempo $t=5$)
+>- Target: Forward rate tahun ke-4 ($t=4 \to t=5$)
 >
 > > [!example]- Langkah Pengerjaan
 > > 
@@ -40,11 +42,15 @@ e. $13{,}76\%$
 > >
 > > **1. Substitusi Angka:**  
 > > 
-> > $$f_{4,5} = \frac{84,59}{82,48} - 1$$  
+> > $$
+> > f_{4,5} = \frac{84,59}{82,48} - 1
+> > $$  
 > >
 > > **2. Perhitungan Rasio:**  
 > > 
-> > $$\frac{84,59}{82,48} \approx 1,02558196$$
+> > $$
+> > \frac{84,59}{82,48} \approx 1,02558196
+> > $$
 > >
 > > **3. Hasil Akhir:**  
 > > 
@@ -78,31 +84,51 @@ e. $0{,}1805$
 > > 
 > > Karena fungsi berbentuk polinomial dan jawaban berupa desimal spesifik, persamaan $s_t$ diperlakukan sebagai *Force of Interest* ($\delta_t$). Total bunga akumulatif dihitung dengan integral:
 > > 
-> > $$\text{Total Interest} = \int_{t_1}^{t_2} \delta_t \, dt$$
+> > $$
+> > \text{Total Interest} = \int_{t_1}^{t_2} \delta_t \, dt
+> > $$
 > 
 > 
-> > **Diketahui:**
-> > - Fungsi: $\delta_t = 0,08 - 0,01t + 0,002t^2$
-> > - Periode: Mulai $t=4$ selama 3 tahun (berakhir di $t=7$)
+>**Diketahui:**
+>- Fungsi: $\delta_t = 0,08 - 0,01t + 0,002t^2$
+>- Periode: Mulai $t=4$ selama 3 tahun (berakhir di $t=7$)
 >
 > > [!example]- Langkah Pengerjaan
 > > 
 > > **1. Setup Integral Tentu:**
-> > $$I = \int_{4}^{7} (0,08 - 0,01t + 0,002t^2) \, dt$$
+> > 
+> > $$
+> > I = \int_{4}^{7} (0,08 - 0,01t + 0,002t^2) \, dt
+> > $$
 > >
 > > **2. Anti-Turunan (Indefinite Integral):**
-> > $$F(t) = 0,08t - \frac{0,01}{2}t^2 + \frac{0,002}{3}t^3$$
-> > $$F(t) = 0,08t - 0,005t^2 + 0,000666...t^3$$
+> > 
+> > $$
+> > F(t) = 0,08t - \frac{0,01}{2}t^2 + \frac{0,002}{3}t^3
+> > $$
+> > 
+> > $$
+> > F(t) = 0,08t - 0,005t^2 + 0,000666...t^3
+> > $$
 > >
 > > **3. Evaluasi Batas Atas ($t=7$):**
-> > $$F(7) = 0,08(7) - 0,005(49) + \frac{0,002}{3}(343)$$
-> > $$F(7) \approx 0,56 - 0,245 + 0,22867 = 0,54367$$
+> > $$
+> > F(7) = 0,08(7) - 0,005(49) + \frac{0,002}{3}(343)
+> > $$  
+> > $$
+> > F(7) \approx 0,56 - 0,245 + 0,22867 = 0,54367
+> > $$  
 > >
 > > **4. Evaluasi Batas Bawah ($t=4$):**
-> > $$F(4) = 0,08(4) - 0,005(16) + \frac{0,002}{3}(64)$$
-> > $$F(4) \approx 0,32 - 0,08 + 0,04267 = 0,28267$$
+> > 
+> > $$
+> > F(4) = 0,08(4) - 0,005(16) + \frac{0,002}{3}(64)
+> > $$  
+> > $$
+> > F(4) \approx 0,32 - 0,08 + 0,04267 = 0,28267
+> > $$
 > >
-> > **5. Hasil Akhir (Selisih):**
+> > **5. Hasil Akhir (Selisih):**  
 > > $$I = 0,54367 - 0,28267 = 0,261$$
 > > *(Hasil presisi tanpa pembulatan antara adalah 0,2606)*
 >
