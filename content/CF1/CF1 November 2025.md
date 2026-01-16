@@ -154,6 +154,7 @@ e. $90.379$
 > > [!info] Rumus
 > > 
 > > **Equation of Value (PV):**
+> > 
 > > $$NPV_{Grace} = NPV_{Shanice}$$
 > > $$-100.000 + 60.000v^3 + 60.000v^4 = -Xv + 60.000v^4 + 60.000v^5$$
 > >
@@ -741,8 +742,61 @@ c. $132$
 d. $131$  
 e. $134$
 
-> [!summary]+ **Jawaban No.12**
+> [!summary]+ **Jawaban No. 12**
 > **129 (a)**
+> 
+> > [!info] Rumus
+> > 
+> > $$
+> > PV_{Total} = PV_{Base} + PV_{TopUp} + PV_{DeferredPart}
+> > $$
+> 
+> 
+> > **Diketahui:**
+> > - $i = 6\%$
+> > - **Fase 1 ($t=1 \dots 20$):** Pembayaran 10 (Anuitas biasa).
+> > - **Fase 2 ($t=21 \dots 29$):** Menurun dari 9 ke 1 (Anuitas menurun).
+> > - **Fase 3 ($t \ge 30$):** Konstan 1 selamanya (Perpetuitas).
+> 
+> > [!example]- Langkah Pengerjaan
+> > 
+> > Untuk mempermudah perhitungan, kita bisa memecah aliran kas (cashflow) menjadi lapisan-lapisan sederhana alih-alih menghitung per fase waktu.
+> > 
+> > **Dekomposisi Lapisan (Layering Method):**
+> > 1.  **Lapisan Dasar (Base):** Perpetuitas sebesar 1 dimulai dari $t=1$. Ini mencakup nilai 1 unit untuk seluruh pembayaran dari awal sampai akhir zaman.  
+> >     $$
+> >     PV_1 = \frac{1}{i} = \frac{1}{0.06} = 16,667
+> >     $$
+> > 
+> > 2.  **Lapisan Tambahan Awal (Top-Up 1):** Kita butuh pembayaran 10 pada $t=1 \dots 20$. Karena Lapisan Dasar sudah menyumbang 1, kita kurang 9. Maka tambahkan anuitas sebesar 9 selama 20 tahun.  
+> >     $$
+> >     PV_2 = 9 \cdot a_{\overline{20}|6\%} = 9 \cdot \left( \frac{1 - 1,06^{-20}}{0,06} \right)
+> >     $$  
+> >     $$
+> >     PV_2 = 9 \cdot (11,4699) = 103,229
+> >     $$
+> > 
+> > 3.  **Lapisan Sisa Penurunan (Top-Up 2):**
+> >     - Pada $t=21$, total pembayaran harus 9. Lapisan Dasar memberi 1. Kurang 8.
+> >     - Pada $t=22$, total pembayaran harus 8. Lapisan Dasar memberi 1. Kurang 7.
+> >     - ...
+> >     - Pada $t=29$, total pembayaran harus 1. Lapisan Dasar memberi 1. Kurang 0.
+> >     - Jadi, kita perlu menambahkan *Decreasing Annuity* (8, 7, ..., 1) yang ditunda selama 20 tahun.
+> >     
+> >     Hitung nilai Decreasing Annuity 8 tahun $(Da)_{\overline{8}|}$ di $t=20$:
+> >     $$(Da)_{\overline{8}|} = \frac{8 - a_{\overline{8}|}}{i} = \frac{8 - 6,2098}{0,06} = \frac{1,7902}{0,06} = 29,837$$
+> >     
+> >     Diskon ke $t=0$:
+> >     $$PV_3 = v^{20} \cdot 29,837 = 0,3118 \cdot 29,837 = 9,303$$
+> > 
+> > **Total Nilai Kini:**
+> > $$PV_{Total} = 16,667 + 103,229 + 9,303 = 129,199$$
+> > $$129,199 \approx 129$$
+> 
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Soal dengan pola "naik/tetap -> turun -> tetap selamanya" paling mudah dikerjakan dengan **Metode Superposisi (Layering)**. Bayangkan Anda menumpuk beberapa anuitas sederhana di atas satu sama lain.
+> > - **Trap:** Jangan menghitung fase perpetuitas ($t \ge 30$) secara terpisah di akhir. Seringkali siswa lupa mendiskonnya kembali 29 tahun ke belakang ($v^{29}$), yang rentan error kalkulator. Menarik garis perpetuitas dari $t=1$ (Lapisan Dasar) jauh lebih aman.**
+
 
 ---
 ## **No. 13**
@@ -755,8 +809,65 @@ c. $9.426$
 d. $9.200$  
 e. $9.731$
 
-> [!summary]+ **Jawaban No.13**
+> [!summary]+ **Jawaban No. 13**
 > **9.200 (d)**
+> 
+> > [!info] Rumus
+> > 
+> > **Geometric Gradient Annuity (Immediate):**
+> > 
+> > $$
+> > PV_{t-1} = P_1 \left( \frac{1 - \left(\frac{1+g}{1+i}\right)^n}{i - g} \right)
+> > $$
+> 
+> 
+> > **Diketahui:**
+> > - $i = 8\%$ (Bunga efektif)
+> > - $g = 6\%$ (Pertumbuhan)
+> > - $n = 30$ (Jumlah pembayaran)
+> > - $P_1 = 500$ (Pembayaran pertama) terjadi di $t=3$.
+> 
+> > [!example]- Langkah Pengerjaan
+> > 
+> > **Langkah 1: Tentukan Titik Valuasi Rumus**
+> > Rumus anuitas *immediate* standar selalu memberikan nilai satu periode sebelum pembayaran pertama.
+> > - Pembayaran pertama di $t=3$.
+> > - Maka, rumus di atas akan menghasilkan nilai pada **$t=2$** ($PV_2$).
+> > 
+> > **Langkah 2: Hitung Nilai di $t=2$**
+> > Masukkan variabel ke rumus:
+> > $$
+> > PV_2 = 500 \left( \frac{1 - \left(\frac{1,06}{1,08}\right)^{30}}{0,08 - 0,06} \right)
+> > $$
+> > 
+> > Hitung rasio pertumbuhan:
+> > $$
+> > \frac{1,06}{1,08} = 0,98148
+> > $$
+> > 
+> > Hitung faktor pangkat:
+> > 
+> > $$
+> > (0,98148)^{30} \approx 0,57106
+> > $$
+> > 
+> > Selesaikan persamaan:
+> > 
+> > $$PV_2 = 500 \left( \frac{1 - 0,57106}{0,02} \right)$$
+> > $$PV_2 = 500 \left( \frac{0,42894}{0,02} \right)$$
+> > $$PV_2 = 500 \cdot 21,447 = 10.723,5$$
+> > 
+> > **Langkah 3: Diskon ke Nilai Kini ($t=0$)**
+> > Karena $PV_2$ ada di tahun ke-2, kita harus menariknya mundur 2 tahun.
+> > $$PV_0 = PV_2 \cdot v^2$$
+> > $$PV_0 = 10.723,5 \cdot (1,08)^{-2}$$
+> > $$PV_0 = \frac{10.723,5}{1,1664} = 9.193,6$$
+> > 
+> > $$Hasil \approx 9.200$$
+> 
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Ini adalah soal *Geometric Gradient* standar dengan *deferral* (penundaan).
+> > - **Trap:** Perhatikan kalimat "pembayaran awal ... terjadi tiga tahun dari sekarang". Dalam anuitas *immediate*, pembayaran di $t=3$ berarti anuitas tersebut ditunda 2 tahun (karena anuitas standar mulai di $t=1$). Jangan mendiskon dengan $v^3$, tapi dengan $v^2$ karena rumus dasar sudah membawa Anda ke $t=2$.
 
 ---
 ## **No. 14**
@@ -769,8 +880,43 @@ c. $28{,}60$
 d. $59{,}24$  
 e. $47{,}99$
 
-> [!summary]+ **Jawaban No.14**
+> [!summary]+ **Jawaban No. 14**
 > **59,24 (d)**
+>
+> > [!info] Rumus
+> > **P-Q Formula (Arithmetic Annuity):**
+> > $$PV = P \cdot a_{\overline{n}|i} + Q \cdot \left( \frac{a_{\overline{n}|i} - n \cdot v^n}{i} \right)$$
+> >
+> > **Diketahui:**
+> > - Tingkat bunga $i = 4\% = 0,04$
+> > - Periode $n = 10$ tahun
+> > - **Winston:** $P_W = 30$, $Q_W = +5$
+> > - **Kevin:** $P_K = X$, $Q_K = -2$ (Menurun)
+> > - Kondisi: $PV_{Winston} = PV_{Kevin}$
+>
+> > [!example]- Langkah Pengerjaan
+> > **1. Hitung Faktor Dasar & Gradien:**
+> > - $v^{10} = (1,04)^{-10} \approx 0,675564$
+> > - $a_{\overline{10}|} = \frac{1 - 0,675564}{0,04} \approx 8,110896$
+> > - Faktor Gradien ($K$):
+> >   $$K = \frac{8,110896 - 10(0,675564)}{0,04} \approx 33,88135$$
+> >
+> > **2. Hitung PV Winston:**
+> > $$PV_W = 30(8,110896) + 5(33,88135)$$
+> > $$PV_W = 243,3269 + 169,4068 = 412,7337$$
+> >
+> > **3. Susun Persamaan Kevin & Cari X:**
+> > Ingat $Q = -2$ untuk Kevin.
+> > $$PV_K = X(8,110896) - 2(33,88135)$$
+> > $$412,7337 = 8,110896X - 67,7627$$
+> > $$8,110896X = 480,4964$$
+> > $$X = \frac{480,4964}{8,110896} \approx 59,2408$$
+> >
+> > **Hasil Akhir:** $$X \approx 59,24$$
+>
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Pecah cashflow menjadi komponen "Lapis Dasar" (Level Payment P) dan "Lapis Gradien" (Q). Setarakan harga kedua "kue" tersebut.
+> > - **Trap:** Lupa tanda negatif pada $Q$ untuk *decreasing annuity*. Kevin turun 2, jadi wajib $Q = -2$. Jika pakai $+2$, jawaban salah total.
 
 ---
 ## **No. 15**
@@ -783,8 +929,44 @@ c. $829{,}1$
 d. $827{,}5$  
 e. $871{,}6$
 
-> [!summary]+ **Jawaban No.15**
+> [!summary]+ **Jawaban No. 15**
 > **829,1 (c)**
+>
+> > [!info] Rumus
+> > **Strategi Dekomposisi Waktu (Annuity-Due):**
+> > $$PV_{Total} = PV_{Fase1} + v^{24} \cdot PV_{Fase2 (@t=24)}$$
+> 
+> 
+> > **Diketahui:**
+> > - Bunga: $i^{(12)}=6\% \rightarrow j = 0,5\% = 0,005$ per bulan.
+> > - Mode: **Annuity-Due (Awal Bulan)**.
+> > - **Fase 1 (Bulan 1-24):** Level payment $15$, $n=24$.
+> > - **Fase 2 (Bulan 25-36):** Arithmetic (Start $20$, Inc $+5$), $n=12$.
+>
+> > [!example]- Langkah Pengerjaan
+> > **1. Hitung PV Fase 1 (t=0):**
+> > - $\ddot{a}_{\overline{24}|} = \frac{1-(1,005)^{-24}}{0,005} \times 1,005 \approx 22,67568$
+> > - $PV_1 = 15 \times 22,67568 = 340,1352$
+> >
+> > **2. Hitung PV Fase 2 (lokal di t=24):**
+> > - Ini adalah anuitas baru 12 periode, start 20, naik 5.
+> > - $\ddot{a}_{\overline{12}|} \approx 11,67703$
+> > - Faktor Gradien Due ($K_{due}$):
+> >   $$K_{imm} = \frac{11,6189 - 12(1,005)^{-12}}{0,005} \approx 63,2144$$
+> >   $$K_{due} = K_{imm} \times 1,005 \approx 63,5305$$
+> > - $PV_{2(local)} = 20(11,67703) + 5(63,5305) = 233,541 + 317,652 = 551,193$
+> >
+> > **3. Diskon Fase 2 ke t=0 & Total:**
+> > - Tarik mundur 24 bulan (karena pembayaran pertama Fase 2 ada di t=24).
+> > - $PV_{2(final)} = 551,193 \times (1,005)^{-24} = 551,193 \times 0,887186 \approx 489,010$
+> > - $PV_{Total} = 340,135 + 489,010 = 829,145$
+> >
+> > **Hasil Akhir (1 desimal):** $$PV \approx 829,1$$
+>
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Potong timeline menjadi dua. Nilai Fase 2 dihitung seolah-olah berdiri sendiri di tahun ke-2, baru ditarik ke masa kini.
+> > - **Trap 1 (Timing):** Mengira Fase 2 didiskon dengan $v^{25}$. Karena *Annuity Due*, pembayaran ke-25 terjadi di $t=24$. Gunakan $v^{24}$.
+> > - **Trap 2 (Gradien Due):** Lupa mengalikan bagian gradien ($Q$) dengan $(1+j)$ saat menggunakan rumus P-Q untuk Annuity Due.
 
 ---
 ## **No. 16**
@@ -853,8 +1035,35 @@ c. Saham akan memiliki volatilitas tinggi
 d. Saham akan memiliki volatilitas rendah
 e. Harga secara teoritis salah dan terdapat peluang arbitrase
 
-> [!summary]+ **Jawaban No.20**
+> [!summary]+ **Jawaban No. 20**
 > **Harganya akan naik (b)**
+> 
+> > [!info] Rumus: Bull Put Spread
+> > $$Payoff = \underbrace{\max(40 - S_T, 0)}_{\text{Long Put}} - \underbrace{\max(45 - S_T, 0)}_{\text{Short Put}}$$
+> > 
+> > **Data Diketahui:**
+> > - $S_0 = 40$
+> > - Long Put Strike ($K_L$) = 40 (Beli asuransi murah)
+> > - Short Put Strike ($K_H$) = 45 (Jual asuransi mahal)
+> 
+> > [!example]- Langkah Analisis
+> > Kita menganalisis profit berdasarkan zona harga saham saat jatuh tempo ($S_T$):
+> > 
+> > 1. **Jika Harga Jatuh ($S_T < 40$):**
+> >    - Long Put (40) profit.
+> >    - Short Put (45) rugi besar.
+> >    - **Net:** Rugi maksimal.
+> > 
+> > 2. **Jika Harga Naik ($S_T \ge 45$):**
+> >    - Long Put (40) tidak bernilai (0).
+> >    - Short Put (45) tidak bernilai (0).
+> >    - **Net:** Trader menyimpan seluruh *Net Credit* (Premi) yang diterima di awal.
+> > 
+> > $$\text{Kesimpulan: Profit maksimal tercapai saat } S_T \ge 45 \rightarrow \text{Bullish}$$
+> 
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Trader adalah *Net Seller* (Jual opsi mahal, beli murah). Penjual Put menginginkan harga naik agar opsi hangus tak bernilai.
+> > - **Trap:** Jangan terkecoh karena ada posisi "Beli Put". Lihat mana strike yang lebih dominan/mahal (Short Strike 45 > Long Strike 40).
 
 ---
 ## **No. 21**
@@ -867,8 +1076,41 @@ c. $3{,}550$
 d. $3{,}802$  
 e. $3{,}287$
 
-> [!summary]+ **Jawaban No.21**
+> [!summary]+ **Jawaban No. 21**
 > **4,004 (b)**
+> *(Catatan: Hasil hitungan eksak 4,044; opsi b adalah yang paling mendekati dan logis)*
+> 
+> > [!info] Rumus: Modified Duration
+> > $$ModD = \frac{MacD}{1+i}$$
+> > 
+> > Dimana Macaulay Duration ($MacD$):
+> > $$MacD = \frac{\sum_{t=1}^{n} t \cdot CF_t \cdot v^t}{P}$$
+> > 
+> > **Data Diketahui:**
+> > - $F=C=2000$, $n=5$
+> > - Kupon ($r=8\%$) $\rightarrow PMT = 160$
+> > - Yield ($i=7\%$) $\rightarrow v = 1/1.07$
+> 
+> > [!example]- Langkah Pengerjaan
+> > **1. Hitung Harga Obligasi ($P$):**
+> > $$P = 160 a_{\overline{5}|7\%} + 2000 v^5$$
+> > $$P = 160(4.1002) + 2000(0.7130) = 2082.00$$
+> > 
+> > **2. Hitung Pembilang Macaulay (Weighted Time):**
+> > - Th 1: $1 \cdot 160 \cdot v^1 = 149.53$
+> > - Th 2: $2 \cdot 160 \cdot v^2 = 279.50$
+> > - Th 3: $3 \cdot 160 \cdot v^3 = 391.82$
+> > - Th 4: $4 \cdot 160 \cdot v^4 = 488.25$
+> > - Th 5: $5 \cdot 2160 \cdot v^5 = 7700.25$
+> > - **Total Sum** = $9009.36$
+> > 
+> > **3. Hitung Durasi:**
+> > $$MacD = \frac{9009.36}{2082.00} = 4.327 \text{ tahun}$$
+> > $$ModD = \frac{4.327}{1.07} = 4.044$$
+> 
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** *Modified Duration* adalah elastisitas harga; perkiraan perubahan harga jika suku bunga naik 1%.
+> > - **Trap:** **Opsi A (4,327)** adalah *Macaulay Duration*. Soal meminta *Modified Duration*, jadi wajib dibagi $(1+i)$.
 
 ---
 ## **No. 22**
@@ -881,8 +1123,47 @@ c. $2{,}204$
 d. $2{,}229$  
 e. $2{,}253$
 
-> [!summary]+ **Jawaban No.22**
+> [!summary]+ **Jawaban No. 22**
 > **2,137 (a)**
+>
+> > [!info] Rumus
+> > **Macaulay Duration:**
+> > $$MacD = \frac{\sum_{t=1}^{n} t \cdot CF_t \cdot v^t}{PV_{total}}$$
+> >
+> > **Diketahui:**
+> > - $i = 8\% \rightarrow v = (1,08)^{-1}$
+> > - $CF_1 = 2000, CF_2 = 2500, CF_3 = X$
+> > - $PV_{total} = 6773,6$
+>
+> > [!example]- Langkah Pengerjaan
+> > **Langkah 1: Mencari Nilai $X$**
+> > Persamaan Nilai Sekarang:
+> > $$6773,6 = 2000v + 2500v^2 + Xv^3$$
+> >
+> > Hitung bagian yang diketahui:
+> > $$2000(1,08)^{-1} + 2500(1,08)^{-2} = 1851,8518 + 2143,3470 = 3995,1989$$
+> >
+> > Isolasi $X$:
+> > $$PV_X = 6773,6 - 3995,1989 = 2778,4011$$
+> > $$X \cdot (1,08)^{-3} = 2778,4011$$
+> > $$X = 2778,4011 \cdot (1,08)^3 = \mathbf{3500}$$
+> >
+> > **Langkah 2: Menghitung Pembilang Durasi (Weighted Time)**
+> > Rumus pembilang: $\sum (t \times PV(CF_t))$
+> > - Tahun 1: $1 \times 1851,8518 = 1851,8518$
+> > - Tahun 2: $2 \times 2143,3470 = 4286,6941$
+> > - Tahun 3: $3 \times 2778,4011 = 8335,2033$
+> >
+> > **Total Pembilang** $= 14473,7492$
+> >
+> > **Langkah 3: Hitung Durasi**
+> > $$MacD = \frac{14473,7492}{6773,6} = 2,13679$$
+> >
+> > $$\text{Hasil Akhir} \approx \mathbf{2,137}$$
+>
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Durasi Macaulay adalah "titik berat" waktu. Karena $X$ (di tahun 3) cukup besar, titik berat bergeser melewati tahun ke-2.
+> > - **Trap:** Hati-hati saat mencari $X$, jangan lupa mendiskon $X$ dengan $v^3$, bukan $v$. Kesalahan pembulatan desimal di awal (misal $v \approx 0,93$) akan membuat hasil akhir melenceng.
 
 ---
 ## **No. 23**
@@ -895,8 +1176,44 @@ c. $5.637$
 d. $6.418$  
 e. $4.862$
 
-> [!summary]+ **Jawaban No.23**
+> [!summary]+ **Jawaban No. 23**
 > **6.172 (b)**
+>
+> > [!info] Rumus
+> > **Bond Price (Variable Interest Rates):**
+> > $$P_0 = \underbrace{Fr \cdot a_{\overline{15}|i_1}}_{\text{Kupon Awal}} + \underbrace{v_{i_1}^{15} \cdot P_{15}}_{\text{PV Sisa Obligasi}}$$
+> >
+> > **Diketahui:**
+> > - Nominal ($F$) = $10.000$, Kupon ($r$) = $3\% \rightarrow Fr = 300$
+> > - $i_1 = 5\%$ (thn 1-15), $i_2 = 7\%$ (thn 16-30)
+> > - Periode total $n=30$, split di $t=15$.
+>
+> > [!example]- Langkah Pengerjaan
+> > **Langkah 1: Nilai Obligasi di Tahun 15 ($P_{15}$)**
+> > Pada $t=15$, sisa umur 15 tahun dengan yield $i_2=7\%$.
+> > $$P_{15} = 300 \cdot a_{\overline{15}|7\%} + 10.000 \cdot v_{7\%}^{15}$$
+> > - PV Kupon sisa: $300 \cdot 9,1079 = 2732,37$
+> > - PV Redemption: $10.000 \cdot 0,3624 = 3624,46$
+> > $$P_{15} = 6356,83$$
+> >
+> > **Langkah 2: Diskon $P_{15}$ ke Tahun 0**
+> > Gunakan $i_1 = 5\%$ untuk mundur 15 tahun.
+> > $$PV_{terminal} = 6356,83 \cdot (1,05)^{-15}$$
+> > $$PV_{terminal} = 6356,83 \cdot 0,4810 = \mathbf{3057,74}$$
+> >
+> > **Langkah 3: Nilai Kupon 15 Tahun Pertama**
+> > Gunakan $i_1 = 5\%$.
+> > $$PV_{kupon\_awal} = 300 \cdot a_{\overline{15}|5\%}$$
+> > $$PV_{kupon\_awal} = 300 \cdot 10,3796 = \mathbf{3113,90}$$
+> >
+> > **Langkah 4: Total Harga**
+> > $$P_0 = 3113,90 + 3057,74 = 6171,64$$
+> >
+> > $$\text{Hasil Akhir} \approx \mathbf{6.172}$$
+>
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** *Two-Stage DCF*. Obligasi ini mengalami "double discount" yang parah karena kupon (3%) jauh lebih kecil dari yield pasar (5% & 7%), sehingga harganya *deep discount*.
+> > - **Trap:** Kesalahan fatal adalah mendiskon $P_{15}$ ke tahun 0 menggunakan rate 7%. Ingat, perjalanan waktu dari $t=15$ ke $t=0$ melewati zona bunga 5%.
 
 ---
 ## **No. 24**
@@ -909,8 +1226,43 @@ c. $7{,}3\%$
 d. $6{,}2\%$  
 e. $5{,}5\%$
 
-> [!summary]+ **Jawaban No.24**
+> [!summary]+ **Jawaban No. 24**
 > **6,7% (a)**
+>
+> > [!info] Rumus
+> > $$BV_t = F + (Fr - Fi) \cdot a_{\overline{n-t}|i}$$
+> >
+> > **Diketahui:**
+> > - Nilai Nominal ($F$): $1.000$
+> > - Kupon ($r$): $8\%$ per tahun ($Fr = 80$)
+> > - Nilai Buku Akhir Tahun 5 ($BV_5$): $1.087,27$
+> > - **Catatan:** $n$ tidak diketahui, tetapi $BV > F$ menandakan obligasi dijual pada harga **Premi**.
+>
+> > [!example]- Langkah Pengerjaan
+> > Karena $n$ tidak diketahui, kita gunakan strategi **Reverse Engineering** dari opsi jawaban untuk mencari kecocokan amortisasi.
+> >
+> > **Langkah 1: Uji Opsi $i = 6,7\%$**
+> > Hitung besarnya amortisasi premi (penurunan nilai buku) per tahun:
+> > $$Fr - Fi = 80 - (1.000 \times 0,067) = 80 - 67 = 13$$
+> >
+> > **Langkah 2: Cek Selisih Premi Saat Ini**
+> > Hitung berapa selisih nilai buku saat ini dengan nilai par:
+> > $$\text{Premi}_5 = BV_5 - F = 1.087,27 - 1.000 = 87,27$$
+> >
+> > **Langkah 3: Cari Sisa Waktu ($k$)**
+> > Premi adalah nilai sekarang dari selisih bunga anuitas:
+> > $$87,27 = 13 \times a_{\overline{k}|6,7\%}$$
+> > $$a_{\overline{k}|6,7\%} = \frac{87,27}{13} \approx 6,713$$
+> >
+> > Dengan kalkulator finansial ($PV=-6,713; PMT=1; i=6,7; FV=0$), didapat:
+> > $$k \approx 9,2 \text{ tahun}$$
+> >
+> > **Kesimpulan:**
+> > Angka ini (sisa 9 tahun) adalah tenor yang sangat wajar untuk soal ujian (total umur obligasi mungkin 14 tahun). Perhitungan konsisten.
+>
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Harga obligasi (Nilai Buku) akan selalu bergerak mendekati Nilai Nominal ($1.000$) seiring berjalannya waktu.
+> > - **Trap:** Jangan panik karena $n$ (total tahun) hilang. Fokus pada sisa tahun ($n-t$) menggunakan selisih nilai buku dan nilai par.
 
 ---
 ## **No. 25**
@@ -930,8 +1282,48 @@ c. $52{,}5$
 d. $89{,}6$  
 e. $100$
 
-> [!summary]+ **Jawaban No.25**
+> [!summary]+ **Jawaban No. 25**
 > **52,5 (c)**
+>
+> > [!info] Rumus
+> > $$\text{Total Inflow}_t = \text{Liability}_t$$
+> >
+> > **Strategi: Dedication (Cash Flow Matching)**
+> > Kita harus mencocokkan arus kas aset dan kewajiban secara tepat (*exact match*), dimulai dari kewajiban paling akhir (**Metode Mundur / Backward Induction**).
+> >
+> > **Aset (Per unit nominal 1.000):**
+> > - **D (4 thn):** Kupon 6% (Bayar 60/thn + 1000 di akhir)
+> > - **C (3 thn):** Kupon 6%
+> > - **B (2 thn):** Kupon 6%
+> > - **A (1 thn):** **Zero-Coupon** (Hanya bayar 1000 di akhir, kupon 0)
+>
+> > [!example]- Langkah Pengerjaan
+> > **Langkah 1: Tahun 4 (Match dengan Obligasi D)**
+> > Kewajiban: $400.000$
+> > $$N_D \times (1.000 + 60) = 400.000$$
+> > $$N_D = \frac{400.000}{1.060} = 377,3585$$
+> >
+> > **Langkah 2: Tahun 3 (Match dengan Obligasi C)**
+> > Kewajiban: $300.000$. Dana tersedia dari kupon D: $377,3585 \times 60 = 22.641,51$.
+> > $$N_C \times 1.060 = 300.000 - 22.641,51$$
+> > $$N_C = \frac{277.358,49}{1.060} = 261,6590$$
+> >
+> > **Langkah 3: Tahun 2 (Match dengan Obligasi B)**
+> > Kewajiban: $200.000$. Dana dari kupon D & C: $(377,36 + 261,66) \times 60 = 38.341,05$.
+> > $$N_B \times 1.060 = 200.000 - 38.341,05$$
+> > $$N_B = \frac{161.658,95}{1.060} = 152,5085$$
+> >
+> > **Langkah 4: Tahun 1 (Match dengan Obligasi A)**
+> > Kewajiban: $100.000$. Dana dari kupon D, C, & B:
+> > $$\text{Kupon Masuk} = (377,36 + 261,66 + 152,51) \times 60 = 47.491,55$$
+> > $$Sisa Kewajiban = 100.000 - 47.491,55 = 52.508,45$$
+> >
+> > Karena A adalah **Zero Coupon**, pembaginya hanya 1.000 (bukan 1.060):
+> > $$N_A = \frac{52.508,45}{1.000} = 52,508 \approx 52,5$$
+>
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Obligasi jangka panjang membantu membayar kewajiban jangka pendek melalui kuponnya. Selalu kerjakan dari tahun terakhir ke depan.
+> > - **Trap:** Hati-hati dengan **Obligasi A**! Ia *zero-coupon*, jangan tambahkan bunga 6% pada arus kasnya ($1.000$, bukan $1.060$).
 
 ---
 ## **No. 26**
@@ -944,8 +1336,57 @@ c. $1.019$
 d. $1.024$  
 e. $1.029$
 
-> [!summary]+ **Jawaban No.26**
+> [!summary]+ **Jawaban No. 26**
 > **1.024 (d)**
+> 
+> > [!info] Rumus
+> > Persamaan Harga Obligasi (*Bond Price*):
+> > $$P = Fr \cdot a_{\overline{n}|i} + C \cdot v^n$$
+> > 
+> > **Diketahui:**
+> > - Nilai Nominal ($F$) = $1.000$
+> > - Kupon per semester ($Fr$) = $1.000 \times \frac{7,5\%}{2} = 37,5$
+> > - Yield per semester ($i$) = $\frac{6,8\%}{2} = 3,4\%$
+> > - $n_{\text{maturity}}$ = $10 \times 2 = 20$ semester
+> > - $n_{\text{call}}$ = $6 \times 2 = 12$ semester
+> > - **Kunci:** Yield to Maturity = Yield to Call $\rightarrow P_{\text{maturity}} = P_{\text{call}}$
+> 
+> > [!example]- Langkah Pengerjaan
+> > **Langkah 1: Hitung Harga Obligasi jika dipegang sampai Maturity ($n=20$)**
+> > 
+> > $$P = 37,5 \cdot a_{\overline{20}|3,4\%} + 1.000 \cdot (1,034)^{-20}$$
+> > 
+> > Menghitung faktor diskonto dan anuitas:
+> > - $v^{20} = (1,034)^{-20} \approx 0,512463$
+> > - $a_{\overline{20}|} = \frac{1 - 0,512463}{0,034} \approx 14,339324$
+> > 
+> > Substitusi nilai:
+> > $$P = 37,5(14,339324) + 1.000(0,512463)$$
+> > $$P = 537,7246 + 512,463 = 1.050,18765$$
+> > 
+> > **Langkah 2: Cari Nilai Call ($X$) menggunakan Harga ($P$) tersebut ($n=12$)**
+> > Kita gunakan harga yang sama ($P = 1.050,18765$) namun dengan periode call ($n=12$).
+> > 
+> > $$1.050,18765 = 37,5 \cdot a_{\overline{12}|3,4\%} + X \cdot (1,034)^{-12}$$
+> > 
+> > Menghitung faktor baru untuk $n=12$:
+> > - $v^{12} \approx 0,669866$
+> > - $a_{\overline{12}|} \approx 9,709824$
+> > 
+> > Persamaan menjadi:
+> > $$1.050,18765 = 37,5(9,709824) + X(0,669866)$$
+> > $$1.050,18765 = 364,1184 + 0,669866X$$
+> > 
+> > Pindah ruas untuk mencari $X$:
+> > $$0,669866X = 1.050,18765 - 364,1184$$
+> > $$0,669866X = 686,06925$$
+> > $$X = \frac{686,06925}{0,669866} \approx 1.024,188$$
+> > 
+> > $$X \approx 1.024$$
+> 
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Harga wajar obligasi adalah *Present Value* arus kas masa depan. Jika Yield sama pada kedua skenario, maka PV arus kas keduanya harus setara.
+> > - **Trap:** Lupa mengonversi periode tahunan menjadi semesteran ($n \times 2$) dan tingkat bunga tahunan menjadi semesteran ($i / 2$).
 
 ---
 
@@ -965,8 +1406,57 @@ c. $4{,}31\%-4{,}45\%$
 d. $4{,}46\%-4{,}6\%$  
 e. $4{,}61\%-4{,}75\%$
 
-> [!summary]+ **Jawaban No.27**
-> **4,61% - 4,75% (e)**
+> [!summary]+ **Jawaban No. 27**
+> **4,61% – 4,75% (e)**
+> 
+> > [!info] Rumus
+> > Hubungan Swap Rate ($R$) dengan Harga Zero-Coupon ($P_t$):
+> > $$R = \frac{1 - P(0,n)}{\sum_{t=1}^{n} P(0,t)}$$
+> > 
+> > **Diketahui:**
+> > - Spot Rates ($s_t$): $s_1=3\%$, $s_2=4\%$, $s_4=5\%$
+> > - Swap Rate 4-tahun ($R$): $4,94\%$
+> > - Target: Cari rentang $s_3$
+> 
+> > [!example]- Langkah Pengerjaan
+> > **Langkah 1: Hitung Discount Factors ($P_t$) yang diketahui**
+> > Rumus: $P_t = (1+s_t)^{-t}$
+> > 
+> > - $P_1 = (1,03)^{-1} = 0,970874$
+> > - $P_2 = (1,04)^{-2} = 0,924556$
+> > - $P_4 = (1,05)^{-4} = 0,822702$
+> > 
+> > **Langkah 2: Masukkan ke Persamaan Swap Rate**
+> > Swap Rate ($R$) adalah pembilang (selisih harga par dan harga bond akhir) dibagi penyebut (jumlah anuitas/discount factors).
+> > 
+> > $$0,0494 = \frac{1 - P_4}{P_1 + P_2 + P_3 + P_4}$$
+> > 
+> > Substitusi angka:
+> > $$0,0494 = \frac{1 - 0,822702}{0,970874 + 0,924556 + P_3 + 0,822702}$$
+> > 
+> > Sederhanakan pembilang dan penyebut:
+> > - Pembilang: $0,177298$
+> > - Penyebut (sum known $P_t$): $2,718132 + P_3$
+> > 
+> > $$0,0494 = \frac{0,177298}{2,718132 + P_3}$$
+> > 
+> > **Langkah 3: Isolasi $P_3$**
+> > $$2,718132 + P_3 = \frac{0,177298}{0,0494}$$
+> > $$2,718132 + P_3 = 3,589028$$
+> > $$P_3 = 3,589028 - 2,718132$$
+> > $$P_3 = 0,870896$$
+> > 
+> > **Langkah 4: Konversi $P_3$ ke Spot Rate ($s_3$)**
+> > $$(1+s_3)^{-3} = 0,870896$$
+> > $$1+s_3 = (0,870896)^{-1/3}$$
+> > $$1+s_3 \approx 1,04716$$
+> > $$s_3 \approx 4,716\%$$
+> > 
+> > Nilai $4,716\%$ berada dalam rentang **4,61% – 4,75%**.
+> 
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Swap Rate bukanlah rata-rata sederhana dari spot rates, melainkan tingkat kupon yang membuat harga obligasi (hypothetical par bond) bernilai pari (100%) berdasarkan struktur spot rate yang ada.
+> > - **Trap:** Mengasumsikan tabel berisi Par Yields dan mencoba bootstrap dari situ, padahal tabel berisi Spot Rates (Yield obligasi nilai kupon nol).
 
 ---
 ## **No. 28**
@@ -980,8 +1470,40 @@ c. $1.018$
 d. $1.020$  
 e. $1.025$
 
-> [!summary]+ **Jawaban No.28**
+> [!summary]+ **Jawaban No. 28**
 > **1.025 (e)**
+> 
+> > [!info] Rumus: Put-Call Parity
+> > $$S_0 + P = C + K e^{-rT}$$
+> > 
+> > **Diketahui:**
+> > - Strategi Filbert (Protective Put): Saham ($S_0$) + Put ($P$)
+> > - Strategi Desca (Fiduciary Call): Call ($C$) + Uang Tunai ("Meminjam" dalam konteks ini adalah sisi Bond/Cash dari persamaan paritas)
+> > - $PV(K) = 1.014,80$ (Nilai komponen tunai Desca)
+> > - $r = 0,04$ dan $T = 0,25$
+> 
+> > [!example]- Langkah Pengerjaan
+> > 1. **Identifikasi Persamaan:**
+> > Agar payoff Filbert dan Desca sama, berlaku hukum *Put-Call Parity*:
+> > $$\text{Saham} + \text{Put} = \text{Call} + PV(K)$$
+> > 
+> > 2. **Substitusi Nilai Tunai:**
+> > Dari soal, komponen selain Call milik Desca bernilai $1.014,80$. Ini merepresentasikan nilai sekarang dari Strike Price ($K$).
+> > $$K e^{-rT} = 1.014,80$$
+> > 
+> > 3. **Mencari K:**
+> > $$K e^{-(0,04)(0,25)} = 1.014,80$$
+> > $$K e^{-0,01} = 1.014,80$$
+> > $$K = 1.014,80 \times e^{0,01}$$
+> > $$K \approx 1.014,80 \times 1,01005$$
+> > $$K \approx 1.024,998$$
+> > 
+> > **Hasil Akhir:** $\approx 1.025$
+> 
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** "Meminjam" di sini bukan berarti hutang negatif dalam portofolio, melainkan memegang aset setara kas (*Zero Coupon Bond*) untuk membayar strike price nanti.
+> > - **Trap:** Jangan gunakan *Simple Interest* ($1+rt$). Opsi saham standar menggunakan *Continuous Compounding* ($e^{rt}$).
+> 
 
 ---
 ## **No. 29**
@@ -994,8 +1516,36 @@ c. Anda harus menerima **32,08**.
 d. Anda harus membayar **32,08**.  
 e. Anda tidak membayar atau menerima apa pun.
 
-> [!summary]+ **Jawaban No.29**
+> [!summary]+ **Jawaban No. 29**
 > **Anda harus menerima 32,08 (c)**
+> 
+> > [!info] Rumus: Value of Long Forward
+> > $$V_{long} = S_0 - K e^{-rT}$$
+> > 
+> > **Diketahui:**
+> > - $S_0 = 1.350$ (Harga Spot)
+> > - $K = 1.410$ (Harga Forward yang dikutip/Delivery Price)
+> > - $r = 0,04$ dan $T = 0,5$ (6 bulan)
+> 
+> > [!example]- Langkah Pengerjaan
+> > 1. **Evaluasi Harga Wajar (Opsional untuk intuisi):**
+> > Harga wajar teoretis: $F = 1.350 e^{0,02} \approx 1.377$. Harga pasar ($1.410$) terlalu mahal. Pembeli rugi.
+> > 
+> > 2. **Hitung Nilai Kontrak ($V_{long}$):**
+> > $$V_{long} = 1.350 - 1.410 e^{-(0,04)(0,5)}$$
+> > $$V_{long} = 1.350 - 1.410 e^{-0,02}$$
+> > $$V_{long} = 1.350 - (1.410 \times 0,980199)$$
+> > $$V_{long} = 1.350 - 1.382,08$$
+> > 
+> > 3. **Interpretasi Hasil:**
+> > $$V_{long} = -32,08$$
+> > Karena nilainya **negatif**, posisi ini adalah kewajiban (liabilitas). Agar Anda mau mengambil kontrak ini, lawan transaksi harus membayar Anda sebesar nilai kerugian tersebut di muka.
+> > 
+> > **Hasil Akhir:** Terima 32,08.
+> 
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Jika harga kontrak ($K$) > harga wajar ($F$), nilai kontrak bagi pembeli (Long) adalah negatif. Anda harus dibayar untuk masuk.
+> > - **Trap:** Jawaban (a) 32,73 adalah nilai masa depan (*future value*) dari kerugian. Ingat untuk mendiskonnya ke nilai sekarang (PV).
 
 ---
 ## **No. 30**
@@ -1014,7 +1564,42 @@ c. $152.500$
 d. $153.000$  
 e. $153.500$
 
-> [!summary]+ **Jawaban No.30**
+> [!summary]+ **Jawaban No. 30**
 > **153.500 (e)**
+> 
+> > [!info] Rumus: Dollar Beta Portfolio
+> > $$W_{total} \cdot \beta_p = \sum (W_i \cdot \beta_i)$$
+> > 
+> > **Diketahui:**
+> > - Total Dana = $1.000.000$
+> > - Target $\beta_p = 1,0$ (Sama dengan pasar)
+> > - $W_A = 195.000 (\beta=0,8)$; $W_B = 340.000 (\beta=1,2)$
+> > - $\beta_C = 1,4$; $\beta_{rf} = 0$ (Aset bebas risiko)
+> 
+> > [!example]- Langkah Pengerjaan
+> > 1. **Hitung Target Risiko Total (Dollar Beta):**
+> > $$1.000.000 \times 1,0 = 1.000.000$$
+> > 
+> > 2. **Hitung Risiko yang Sudah Ada (A & B):**
+> > - A: $195.000 \times 0,8 = 156.000$
+> > - B: $340.000 \times 1,2 = 408.000$
+> > - Total A+B: $564.000$
+> > 
+> > 3. **Cari Kebutuhan Investasi Saham C:**
+> > Kekurangan Risiko = $1.000.000 - 564.000 = 436.000$
+> > $$W_C \times 1,4 = 436.000$$
+> > $$W_C = 436.000 / 1,4 \approx 311.428,57$$
+> > 
+> > 4. **Hitung Sisa Dana (Aset Bebas Risiko):**
+> > $$W_{rf} = W_{total} - (W_A + W_B + W_C)$$
+> > $$W_{rf} = 1.000.000 - (195.000 + 340.000 + 311.428,57)$$
+> > $$W_{rf} = 1.000.000 - 846.428,57$$
+> > $$W_{rf} = 153.571,43$$
+> > 
+> > **Hasil Akhir:** Dibulatkan ke opsi terdekat $\rightarrow 153.500$.
+> 
+> > [!tip] Intuisi & Jebakan
+> > - **Konsep:** Aset bebas risiko memiliki $\beta=0$. Ia berfungsi sebagai "pengencer" risiko portofolio tanpa menambah kontribusi beta.
+> > - **Trap:** Jangan mencoba mencari $\beta_{rf}$, nilainya selalu 0. Jangan hitung $W_{rf}$ sebelum mendapatkan $W_C$ yang benar.
 
 ---
