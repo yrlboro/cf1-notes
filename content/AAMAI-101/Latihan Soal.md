@@ -64,10 +64,10 @@
 
 > [!QUESTION] Soal 5: Accounting Year
 > Uraikan konsep pemantauan kinerja underwriting berdasarkan **accounting year**.
-> > [!CHECK]- Jawaban 
+> > [!CHECK]- Jawaban
 > > 
-> **Konsep Dasar**
-> Pemantauan kinerja underwriting berdasarkan **Accounting Year** (Tahun Akuntansi) adalah metode evaluasi yang mengikuti **periode tahun keuangan (fiskal)** perusahaan asuransi (misal: 1 Okt – 30 Sep), bukan tahun kalender standar.
+> > **Konsep Dasar**
+>> Pemantauan kinerja underwriting berdasarkan **Accounting Year** (Tahun Akuntansi) adalah metode evaluasi yang mengikuti **periode tahun keuangan (fiskal)** perusahaan asuransi (misal: 1 Okt – 30 Sep), bukan tahun kalender standar.
 > > 1. Tujuan & Ruang Lingkup 
 > > Data ini utamanya digunakan untuk pengambilan keputusan di tingkat **Manajemen & Dewan Direksi (*Board Level*)**:
 > >>* **Evaluasi Profitabilitas:** Memantau margin keuntungan serta pertumbuhan premi bruto & neto.
