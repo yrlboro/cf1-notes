@@ -20,7 +20,7 @@ status: active
 
 # Parameter Estimation Methods
 
-> [!abstract] Posisi dalam Exam P
+> [!abstract] Outline
 > - **Learning Objective ID**: 2.a (Linear combinations), 2.f (Basic estimation concepts)
 > - **Kategori Silabus**: Univariate Probability Distributions / Parameter Estimation
 > - **Skill yang Diuji**: Calculate, Interpret, Apply, Recognize

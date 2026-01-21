@@ -1,5 +1,5 @@
 ---
-title: Distribusi Poisson (Poisson Distribution)
+title: Distribusi Poisson-ChatGPT
 aliases:
   - Poisson Distribution
   - Distribusi Poisson Exam P

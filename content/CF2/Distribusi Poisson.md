@@ -1,6 +1,9 @@
 ---
-title: "Distribusi Poisson (The Poisson Distribution)"
-aliases: ["Poisson Distribution", "Poisson Random Variable", "Rare Event Distribution"]
+title: Distribusi Poisson
+aliases:
+  - Poisson Distribution
+  - Poisson Random Variable
+  - Rare Event Distribution
 tags:
   - ActuarialScience
   - ExamP
@@ -9,9 +12,11 @@ tags:
   - DiscreteDistributions
 exam_weight: 10-15%
 difficulty: Low to Medium
-learning_objective: "Topic 1 (General Probability), Topic 2 (Univariate Probability Distributions)"
-created: {{date:YYYY-MM-DD}}
-updated: {{date:YYYY-MM-DD}}
+learning_objective: Topic 1 (General Probability), Topic 2 (Univariate Probability Distributions)
+created:
+  "{ date:YYYY-MM-DD }":
+updated:
+  "{ date:YYYY-MM-DD }":
 status: active
 ---
 
