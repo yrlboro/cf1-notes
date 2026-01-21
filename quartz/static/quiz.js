@@ -11,7 +11,7 @@
  * Usage: Place in quartz/static/ folder
  */
 
-(function() {
+(function () {
   'use strict';
 
   // Configuration
@@ -95,7 +95,19 @@
     }
 
     try {
-      state.questions = JSON.parse(dataScript.textContent);
+      // Quartz/Markdown may escape the JSON content (e.g. " becomes &quot;)
+      // We need to unescape it before parsing
+      let rawData = dataScript.innerHTML;
+
+      // Basic unescaping for common HTML entities
+      rawData = rawData
+        .replace(/&quot;/g, '"')
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/&amp;/g, '&');
+
+      state.questions = JSON.parse(rawData);
+
       if (!Array.isArray(state.questions) || state.questions.length === 0) {
         console.error('[Exam Simulator] Invalid quiz data format');
         return false;
@@ -104,8 +116,8 @@
       // Validate question structure
       for (let i = 0; i < state.questions.length; i++) {
         const q = state.questions[i];
-        if (!q.id || !q.question || !Array.isArray(q.options) || 
-            typeof q.correctIndex !== 'number' || !q.explanation) {
+        if (!q.id || !q.question || !Array.isArray(q.options) ||
+          typeof q.correctIndex !== 'number' || !q.explanation) {
           console.error(`[Exam Simulator] Invalid question structure at index ${i}`);
           return false;
         }
@@ -114,6 +126,7 @@
       return true;
     } catch (error) {
       console.error('[Exam Simulator] Error parsing quiz data:', error);
+      console.log('Raw data was:', dataScript.innerHTML);
       return false;
     }
   }
