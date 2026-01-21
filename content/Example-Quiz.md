@@ -7,7 +7,6 @@ date: 2026-01-21
 
 Test your knowledge on common probability distributions. This exam simulates real exam conditions with a timer and immediate feedback.
 
-```html
 <div id="exam-simulator" data-timer="30">
   Loading exam...
 </div>
@@ -76,4 +75,4 @@ Test your knowledge on common probability distributions. This exam simulates rea
   }
 ]
 </script>
-```
+
