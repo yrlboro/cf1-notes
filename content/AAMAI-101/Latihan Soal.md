@@ -20,11 +20,13 @@
 > >
 > > Dalam praktiknya, banyak perusahaan asuransi kini tetap mencantumkan ketentuan-ketentuan tersirat ini ke dalam polis mereka (menjadikannya _express_) untuk memberikan klarifikasi yang lebih jelas kepada tertanggung. Begitu pula dalam proses underwriting, penanggung berupaya memastikan semua syarat dan ketentuan ini dipahami oleh kedua belah pihak sebelum kontrak dimulai guna mencapai **kepastian kontrak (*contract certainty*)**.
 
-
 > [!QUESTION] Soal 2: Recital Clause
 > Uraikan pengertian **recital clause** dalam polis asuransi.
-> > [!CHECK]- Jawaban
+> 
+> > [!CHECK]- Jawaban 
+> > 
 > > **Recital clause** (atau *preamble*) adalah bagian pembuka dalam polis yang menetapkan latar belakang kontrak dan berfungsi menghubungkan berbagai elemen perjanjian menjadi satu kesatuan hukum. Poin-poin utamanya meliputi:
+> > 
 > > * **Identitas Para Pihak**: Merujuk pada penanggung (*insurer*) dan tertanggung (*insured*).
 > > * **Inti Kesepakatan**: Pernyataan kesanggupan penanggung untuk memberikan ganti rugi (*indemnify*) sesuai jaminan polis.
 > > * **Imbalan Kontrak**: Penegasan bahwa jaminan diberikan sebagai imbalan atas pembayaran premi oleh tertanggung.
@@ -33,6 +35,7 @@
 > [!QUESTION] Soal 3: Pengukuran Risiko
 > Jelaskan parameter-parameter yang digunakan dalam **pengukuran tingkat risiko**.
 > > [!CHECK]- Jawaban
+> > 
 > > Parameter-parameter yang digunakan dalam pengukuran tingkat risiko di antaranya:
 > > * **Frekuensi** mengacu pada seberapa sering suatu peristiwa atau kerugian mungkin terjadi dalam periode waktu tertentu.
 > > * **Severity (Keparahan)** mengukur seberapa besar dampak finansial atau biaya yang ditimbulkan apabila suatu kerugian benar-benar terjadi.
@@ -47,6 +50,7 @@
 > [!QUESTION] Soal 4: Pelanggaran Duty of Disclosure
 > Uraikan syarat agar penanggung dapat melaksanakan opsi yang tersedia baginya dalam hal tertanggung tidak memenuhi **duty of disclosure** saat proses penutupan risiko asuransi.
 > > [!CHECK]- Jawaban 
+> > 
 > > Agar penanggung dapat melaksanakan opsi atau ganti rugi hukum (_remedies_) yang tersedia baginya dalam hal tertanggung tidak memenuhi kewajiban pengungkapan (_duty of disclosure_ atau _fair presentation_), syarat-syarat berikut harus dipenuhi:
 > > 
 > > - **Adanya Bukti Pengaruh (_Inducement_):** Penanggung harus dapat membuktikan bahwa jika bukan karena pelanggaran kewajiban tersebut, mereka tidak akan masuk ke dalam kontrak asuransi sama sekali atau hanya akan masuk ke dalam kontrak dengan syarat dan ketentuan yang berbeda.
@@ -61,6 +65,7 @@
 > [!QUESTION] Soal 5: Accounting Year
 > Uraikan konsep pemantauan kinerja underwriting berdasarkan **accounting year**.
 > > [!CHECK]- Jawaban 
+> > 
 > **Konsep Dasar**
 > Pemantauan kinerja underwriting berdasarkan **Accounting Year** (Tahun Akuntansi) adalah metode evaluasi yang mengikuti **periode tahun keuangan (fiskal)** perusahaan asuransi (misal: 1 Okt – 30 Sep), bukan tahun kalender standar.
 > > 1. Tujuan & Ruang Lingkup 
