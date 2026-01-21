@@ -56,6 +56,21 @@
       return; // Not an exam page, exit silently
     }
 
+    // Clean up any existing state/timer from previous page loads (SPA navigation)
+    if (state.timerInterval) {
+      clearInterval(state.timerInterval);
+    }
+    state = {
+      questions: [],
+      currentQuestionIndex: 0,
+      userAnswers: [],
+      timerSeconds: 0,
+      timerInterval: null,
+      examStarted: false,
+      examSubmitted: false,
+      answeredCurrentQuestion: false,
+    };
+
     console.log('[Exam Simulator] Initializing...');
 
     // Load quiz data
@@ -95,16 +110,12 @@
     }
 
     try {
-      // Quartz/Markdown may escape the JSON content (e.g. " becomes &quot;)
-      // We need to unescape it before parsing
-      let rawData = dataScript.innerHTML;
-
-      // Basic unescaping for common HTML entities
-      rawData = rawData
-        .replace(/&quot;/g, '"')
-        .replace(/&lt;/g, '<')
-        .replace(/&gt;/g, '>')
-        .replace(/&amp;/g, '&');
+      // Quartz/Markdown HTML-escapes JSON content (e.g. " becomes &quot;)
+      // Robust unescaping using a temporary DOM element handles all entities safely.
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = dataScript.innerHTML;
+      // .textContent or .innerText deduces the unescaped text
+      const rawData = tempDiv.textContent || tempDiv.innerText || "";
 
       state.questions = JSON.parse(rawData);
 
@@ -126,7 +137,6 @@
       return true;
     } catch (error) {
       console.error('[Exam Simulator] Error parsing quiz data:', error);
-      console.log('Raw data was:', dataScript.innerHTML);
       return false;
     }
   }
@@ -686,10 +696,16 @@
   }
 
   // Initialize when DOM is ready
+  // Initialize when DOM is ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
     init();
   }
+
+  // Support for Quartz SPA Navigation (re-init on page change)
+  document.addEventListener('nav', () => {
+    init();
+  });
 
 })();
