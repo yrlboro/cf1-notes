@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Simulator Example - Actuarial FM/P</title>
+  
+  <!-- MathJax v3 Configuration -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      },
+      startup: {
+        pageReady: () => {
+          return MathJax.startup.defaultPageReady().then(() => {
+            console.log('MathJax initial typesetting complete');
+          });
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+  
+  <!-- Quiz Script -->
+  <script src="quiz.js" defer></script>
+  
+  <!-- Basic Styling (You can move this to your main CSS) -->
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .exam-simulator-container {
+      margin-top: 30px;
+    }
+
+    .exam-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .exam-title h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .exam-title p {
+      margin: 5px 0 0 0;
+      opacity: 0.9;
+      font-size: 14px;
+    }
+
+    .exam-timer {
+      text-align: right;
+    }
+
+    .timer-label {
+      display: block;
+      font-size: 12px;
+      opacity: 0.9;
+      margin-bottom: 5px;
+    }
+
+    .timer-value {
+      font-size: 28px;
+      font-weight: bold;
+      font-family: 'Courier New', monospace;
+    }
+
+    .timer-warning {
+      color: #ff6b6b;
+      animation: pulse 1s infinite;
+    }
+
+    .timer-expired {
+      color: #ff0000;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.6; }
+    }
+
+    .progress-bar-container {
+      margin-bottom: 20px;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 10px;
+      background: #e0e0e0;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+      transition: width 0.3s ease;
+    }
+
+    .question-container {
+      padding: 20px;
+      background: #fafafa;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .question-text {
+      margin-bottom: 25px;
+    }
+
+    .question-text strong {
+      display: block;
+      color: #2c3e50;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .question-content {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #444;
+    }
+
+    .options-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .option-item {
+      padding: 15px;
+      background: white;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .option-item:hover {
+      border-color: #667eea;
+      background: #f8f9ff;
+    }
+
+    .option-item input[type="radio"] {
+      display: none;
+    }
+
+    .option-item label {
+      display: flex;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .option-label {
+      font-weight: bold;
+      color: #667eea;
+      margin-right: 10px;
+      min-width: 25px;
+    }
+
+    .option-text {
+      flex: 1;
+    }
+
+    .option-item input[type="radio"]:checked + label {
+      color: #667eea;
+    }
+
+    .correct-answer {
+      border-color: #27ae60 !important;
+      background: #e8f8f5 !important;
+    }
+
+    .wrong-answer {
+      border-color: #e74c3c !important;
+      background: #fdecea !important;
+    }
+
+    .feedback-container {
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      animation: slideIn 0.3s ease;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .feedback-header {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .feedback-header.correct {
+      background: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+
+    .feedback-header.incorrect {
+      background: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+
+    .feedback-header.unanswered {
+      background: #fff3cd;
+      color: #856404;
+      border: 1px solid #ffeaa7;
+    }
+
+    .feedback-body {
+      background: white;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    .feedback-body p {
+      margin-bottom: 10px;
+    }
+
+    .explanation {
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .explanation-content {
+      margin-top: 10px;
+      line-height: 1.8;
+    }
+
+    .navigation-container {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px 0;
+    }
+
+    .btn {
+      padding: 12px 30px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+
+    .btn-primary:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    }
+
+    .btn-secondary {
+      background: #6c757d;
+      color: white;
+    }
+
+    .btn-secondary:hover:not(:disabled) {
+      background: #5a6268;
+    }
+
+    .btn-danger {
+      background: #e74c3c;
+      color: white;
+    }
+
+    .btn-danger:hover:not(:disabled) {
+      background: #c0392b;
+    }
+
+    .results-container {
+      padding: 20px;
+    }
+
+    .results-summary {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .results-summary h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+
+    .score-display {
+      margin: 30px 0;
+    }
+
+    .score-circle {
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    }
+
+    .score-percentage {
+      font-size: 48px;
+      font-weight: bold;
+      display: block;
+    }
+
+    .score-text {
+      font-size: 18px;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    .results-breakdown {
+      margin-top: 30px;
+    }
+
+    .results-breakdown h3 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #667eea;
+    }
+
+    .result-item {
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      border-left: 4px solid #ccc;
+    }
+
+    .result-item.correct {
+      background: #e8f8f5;
+      border-left-color: #27ae60;
+    }
+
+    .result-item.incorrect {
+      background: #fdecea;
+      border-left-color: #e74c3c;
+    }
+
+    .result-item.unanswered {
+      background: #fff9e6;
+      border-left-color: #f39c12;
+    }
+
+    .result-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .result-number {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    .result-status {
+      font-weight: 600;
+    }
+
+    .results-actions {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .exam-error {
+      text-align: center;
+      padding: 40px;
+      background: #f8d7da;
+      border: 1px solid #f5c6cb;
+      border-radius: 8px;
+      color: #721c24;
+    }
+
+    .exam-error h2 {
+      margin-bottom: 15px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .exam-header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .exam-timer {
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      .score-circle {
+        width: 150px;
+        height: 150px;
+      }
+
+      .score-percentage {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📊 Actuarial Exam FM - Sample Practice Questions</h1>
+    <p style="text-align: center; color: #666; margin-bottom: 20px;">
+      Test your knowledge with this timed practice exam. All questions include detailed explanations with LaTeX formulas.
+    </p>
+
+    <!-- Exam Simulator Container -->
+    <div id="exam-simulator" data-timer="3">
+      <!-- Quiz UI will be injected here by quiz.js -->
+    </div>
+
+    <!-- Quiz Data (JSON) -->
+    <script id="quiz-data" type="application/json">
+[
+  {
+    "id": "fm-q1",
+    "question": "An investor deposits $\\$1000$ into an account that earns a nominal annual interest rate of $8\\%$ compounded quarterly. What is the accumulated value after 5 years?<br><br>Use the compound interest formula: $A = P\\left(1 + \\frac{r}{n}\\right)^{nt}$",
+    "options": [
+      "$\\$1469.33$",
+      "$\\$1480.24$",
+      "$\\$1485.95$",
+      "$\\$1400.00$",
+      "$\\$1520.00$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Using the formula $A = P\\left(1 + \\frac{r}{n}\\right)^{nt}$ where:<br><ul><li>$P = 1000$ (principal)</li><li>$r = 0.08$ (annual rate)</li><li>$n = 4$ (quarterly compounding)</li><li>$t = 5$ years</li></ul>We calculate:<br>$$A = 1000\\left(1 + \\frac{0.08}{4}\\right)^{4 \\times 5} = 1000(1.02)^{20} = 1000 \\times 1.48024 = \\$1480.24$$"
+  },
+  {
+    "id": "fm-q2",
+    "question": "Calculate the present value of an annuity that pays $\\$500$ at the end of each year for 10 years, assuming an annual effective interest rate of $6\\%$.<br><br>The present value of an annuity formula is: $PV = PMT \\times \\frac{1 - (1+i)^{-n}}{i}$",
+    "options": [
+      "$\\$3600.87$",
+      "$\\$3680.04$",
+      "$\\$4000.00$",
+      "$\\$3721.74$",
+      "$\\$3500.00$"
+    ],
+    "correctIndex": 1,
+    "explanation": "Using the present value of ordinary annuity formula:<br>$$PV = PMT \\times \\frac{1 - (1+i)^{-n}}{i}$$<br>where $PMT = 500$, $i = 0.06$, and $n = 10$:<br>$$PV = 500 \\times \\frac{1 - (1.06)^{-10}}{0.06} = 500 \\times \\frac{1 - 0.55839}{0.06}$$<br>$$= 500 \\times \\frac{0.44161}{0.06} = 500 \\times 7.36009 = \\$3680.04$$<br>This can also be written using actuarial notation as: $PV = 500 \\times a_{\\overline{10}|0.06}$"
+  },
+  {
+    "id": "fm-q3",
+    "question": "A perpetuity pays $\\$X$ at the end of each year forever. If the present value of this perpetuity is $\\$25,000$ at an annual effective interest rate of $4\\%$, what is $X$?<br><br>Recall: $PV_{\\text{perpetuity}} = \\frac{PMT}{i}$",
+    "options": [
+      "$\\$800$",
+      "$\\$900$",
+      "$\\$1000$",
+      "$\\$1100$",
+      "$\\$1200$"
+    ],
+    "correctIndex": 2,
+    "explanation": "For a perpetuity, the present value formula is:<br>$$PV = \\frac{PMT}{i}$$<br>Solving for $PMT$:<br>$$PMT = PV \\times i = 25000 \\times 0.04 = \\$1000$$<br>Therefore, the annual payment is $\\$1000$.<br><br><strong>Intuition:</strong> A perpetuity is an infinite stream of payments. At $4\\%$ interest, you need $\\$25$ to generate $\\$1$ per year forever."
+  },
+  {
+    "id": "p-q1",
+    "question": "Let $X$ be a continuous random variable with probability density function:<br>$$f(x) = \\begin{cases} 2x & 0 < x < 1 \\\\ 0 & \\text{otherwise} \\end{cases}$$<br>Calculate $P(X > 0.5)$.",
+    "options": [
+      "$0.25$",
+      "$0.50$",
+      "$0.65$",
+      "$0.75$",
+      "$0.85$"
+    ],
+    "correctIndex": 3,
+    "explanation": "We need to integrate the PDF from $0.5$ to $1$:<br>$$P(X > 0.5) = \\int_{0.5}^{1} 2x \\, dx = \\left[x^2\\right]_{0.5}^{1} = 1^2 - (0.5)^2 = 1 - 0.25 = 0.75$$<br><br><strong>Note:</strong> We can verify this is a valid PDF by checking: $\\int_{0}^{1} 2x \\, dx = [x^2]_0^1 = 1$ ✓"
+  },
+  {
+    "id": "p-q2",
+    "question": "A fair die is rolled twice. Let $X$ represent the maximum of the two rolls. What is $E[X]$, the expected value of $X$?",
+    "options": [
+      "$3.5$",
+      "$4.0$",
+      "$4.472$",
+      "$5.0$",
+      "$3.0$"
+    ],
+    "correctIndex": 2,
+    "explanation": "First, find the probability distribution of $X = \\max(X_1, X_2)$:<br>$$P(X = k) = P(\\text{both} \\leq k) - P(\\text{both} \\leq k-1) = \\frac{k^2}{36} - \\frac{(k-1)^2}{36} = \\frac{2k-1}{36}$$<br>For $k = 1, 2, 3, 4, 5, 6$:<br><table border='1' cellpadding='5'><tr><td>$k$</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td>$P(X=k)$</td><td>$\\frac{1}{36}$</td><td>$\\frac{3}{36}$</td><td>$\\frac{5}{36}$</td><td>$\\frac{7}{36}$</td><td>$\\frac{9}{36}$</td><td>$\\frac{11}{36}$</td></tr></table><br>$$E[X] = \\sum_{k=1}^{6} k \\cdot P(X=k) = \\frac{1+6+15+28+45+66}{36} = \\frac{161}{36} \\approx 4.472$$"
+  }
+]
+    </script>
+  </div>
+
+  <div class="container" style="margin-top: 30px;">
+    <h2>📝 How to Use in Your Obsidian Notes</h2>
+    <p>To add this exam simulator to any Obsidian note (which will be rendered by Quartz), simply paste this HTML structure:</p>
+    
+    <pre style="background: #f5f5f5; padding: 15px; border-radius: 5px; overflow-x: auto;"><code>&lt;!-- Exam Simulator Container --&gt;
+&lt;div id="exam-simulator" data-timer="120"&gt;
+  &lt;!-- Quiz UI will be injected here --&gt;
+&lt;/div&gt;
+
+&lt;!-- Quiz Data (JSON) --&gt;
+&lt;script id="quiz-data" type="application/json"&gt;
+[
+  {
+    "id": "unique-question-id",
+    "question": "Your question with $\\LaTeX$ support",
+    "options": [
+      "Option A with $\\frac{1}{2}$",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "correctIndex": 0,
+    "explanation": "Detailed explanation with formulas: $E = mc^2$"
+  }
+]
+&lt;/script&gt;</code></pre>
+
+    <h3 style="margin-top: 20px;">Important Notes:</h3>
+    <ul style="line-height: 2; margin-left: 30px;">
+      <li><strong>data-timer</strong>: Set the exam duration in minutes</li>
+      <li><strong>LaTeX Support</strong>: Use single dollar signs <code>$...$</code> for inline math and double <code>$$...$$</code> for display math</li>
+      <li><strong>HTML in Questions</strong>: You can use <code>&lt;br&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code>, etc. for formatting</li>
+      <li><strong>correctIndex</strong>: Zero-indexed (0 = first option, 1 = second, etc.)</li>
+      <li><strong>MathJax Rendering</strong>: The script automatically calls <code>window.MathJax.typesetPromise()</code> after each navigation</li>
+    </ul>
+  </div>
+</body>
+</html>
