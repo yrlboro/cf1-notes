@@ -51,7 +51,7 @@ export default (() => {
           </>
         )}
         <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossOrigin="anonymous" />
-        
+
         {/* MathJax v3 for Exam Simulator - coexists with KaTeX */}
         <script
           dangerouslySetInnerHTML={{
@@ -79,7 +79,10 @@ export default (() => {
           src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
           async
         />
-        
+
+        {/* Load quiz.js for exam simulator */}
+        <script src={joinSegments(baseDir, "static/quiz.js")} defer />
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <meta name="og:site_name" content={cfg.pageTitle}></meta>
