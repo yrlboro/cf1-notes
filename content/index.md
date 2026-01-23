@@ -1,11 +1,11 @@
 ---
-title: Beranda CF1
-description: Catatan belajar ujian CF1 - Matematika Keuangan
+title: Beranda
+description: Catatan belajar ujian Aktuaris
 ---
 
 # Selamat datang di Yosef’s **ActuNotes** 📘
 
-Catatan belajar **CF1 – Financial Mathematics** yang disusun secara sistematis, lengkap dengan **ringkasan materi**, **rumus**, dan **soal + pembahasan periode ujian sebelumnya**.
+Catatan belajar aktuaria yang disusun secara sistematis, lengkap dengan **ringkasan materi**, **rumus**, dan **soal + pembahasan periode ujian sebelumnya**.
 
 ## 🚀 **Mulai Cepat**
 
