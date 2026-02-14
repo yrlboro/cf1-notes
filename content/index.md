@@ -1,11 +1,11 @@
 ---
-title: Beranda CF1
-description: Catatan belajar ujian CF1 - Matematika Keuangan
+title: ActuNotes Home Page
+description: Catatan belajar Actuarial Exam
 ---
 
-# Selamat datang di Yosef’s **ActuNotes** 📘
+# Selamat datang di **ActuNotes** 📘
 
-Catatan belajar **CF1 – Financial Mathematics** yang disusun secara sistematis, lengkap dengan **ringkasan materi**, **rumus**, dan **soal + pembahasan periode ujian sebelumnya**.
+Catatan belajar Actuarial Exams yang disusun secara sistematis, lengkap dengan **ringkasan materi**, **rumus**, dan **soal + pembahasan periode ujian sebelumnya**.
 
 ## 🚀 **Mulai Cepat**
 
@@ -16,4 +16,4 @@ Pilih salah satu untuk langsung mulai belajar:
 - [[📚 Cheat Sheet - CF1]] — Ringkasan formula penting + tricky traps.
 
 ---
-## © Yosef’s ActuNotes – 2025
+## © ActuNotes – 2025
