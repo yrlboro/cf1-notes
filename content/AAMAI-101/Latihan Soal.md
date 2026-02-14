@@ -96,7 +96,10 @@
 > [!QUESTION] Soal 7: Peran Pialang (POJK 70/2016)
 > Berkaitan dengan struktur pasar asuransi, uraikan **peran pialang asuransi** dalam penanganan klaim berdasarkan POJK no.70/POJK.05/2016.
 > > [!CHECK]- Jawaban
-> > (Isi jawaban Anda di sini)
+> > Pialang Asuransi adalah orang yang bekerja pada Perusahaan Pialang Asuransi dan memenuhi persyaratan untuk memberi rekomendasi atau mewakili pemegang polis, tertanggung, atau peserta dalam melakukan penutupan asuransi atau asuransi syariah dan/atau penyelesaian klaim sebagaimana dimaksud dalam Undang-Undang Nomor 40 Tahun 2014 tentang Perasuransian.
+> >
+> >Bagian Kedua: Pasal 9-13
+
 
 > [!QUESTION] Soal 8: Eliminasi Risiko
 > Berkaitan dengan manajemen risiko, uraikan pertimbangan yang perlu diambil manajer risiko sebelum memutuskan untuk melakukan **eliminasi risiko**.
