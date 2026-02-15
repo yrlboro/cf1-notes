@@ -1,7 +1,7 @@
 @use "./base.scss";
 
 /* ============================================================
-   1. GRID LAYOUT SYSTEM (Safe Mode)
+   1. GRID SYSTEM (Revisi Anti-Collapse)
    ============================================================ */
 
 /* Container Utama Grid */
@@ -10,65 +10,72 @@
   border: none !important;
   box-shadow: none !important;
   padding: 0 !important;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
-/* Mengatur Kolom Grid */
-.callout[data-callout="grid"] .callout-content {
+/* Sembunyikan judul "Grid" (hanya judulnya, bukan isinya) */
+.callout[data-callout="grid"] > .callout-title {
+  display: none !important;
+}
+
+/* Layout Grid untuk konten */
+.callout[data-callout="grid"] > .callout-content {
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   padding: 0 !important;
-}
-
-/* HACK PENTING: Sembunyikan paragraf kosong yang sering merusak layout Grid */
-.callout[data-callout="grid"] .callout-content > p {
-  display: none !important;
+  
+  /* HAPUS rule display:none yang bikin error kemarin */
+  /* Biarkan default behavior agar konten tidak hilang */
 }
 
 /* ============================================================
    2. CARD STYLING (High Visibility)
    ============================================================ */
 
-.callout[data-callout="cards"] {
-  /* Pastikan kartu punya bentuk fisik */
-  display: block !important; 
-  height: 100%;
+/* Target kartu di dalam grid */
+.callout[data-callout="grid"] .callout {
+  /* Paksa kartu punya bentuk fisik */
+  display: flex !important;
+  flex-direction: column;
+  min-height: 180px; /* JAGA-JAGA: Tinggi minimum agar tidak gepeng */
   margin: 0 !important;
   
-  /* Pewarnaan yang pasti kontras */
-  border: 1px solid rgba(45, 212, 191, 0.3) !important; /* Border Teal */
-  border-radius: 10px;
-  background-color: var(--light) !important; /* Mengikut warna background tema */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  /* Styling Visual */
+  background-color: var(--light) !important;
+  border: 1px solid rgba(45, 212, 191, 0.4) !important; /* Border Teal lebih tebal dikit */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Judul Kartu (CF1, CF2, dst) */
-.callout[data-callout="cards"] .callout-title {
-  background-color: rgba(45, 212, 191, 0.1) !important; /* Latar judul tipis */
-  color: var(--secondary) !important; /* Warna teks judul Teal */
+.callout[data-callout="grid"] .callout-title {
+  background-color: rgba(45, 212, 191, 0.1) !important;
+  color: var(--secondary) !important;
   font-weight: 700;
-  padding: 0.8rem 1rem !important;
+  font-size: 1.1rem;
+  padding: 1rem !important;
   border-bottom: 1px solid rgba(45, 212, 191, 0.1);
 }
 
 /* Isi Teks Kartu */
-.callout[data-callout="cards"] .callout-content {
+.callout[data-callout="grid"] .callout-content {
   padding: 1rem !important;
-  color: var(--darkgray) !important; /* Pastikan teks terbaca */
-  font-size: 0.95rem;
+  color: var(--darkgray) !important;
+  flex-grow: 1; /* Agar isi mengisi ruang tersisa */
 }
 
 /* Efek Hover */
-.callout[data-callout="cards"]:hover {
+.callout[data-callout="grid"] .callout:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(45, 212, 191, 0.15);
   border-color: var(--secondary) !important;
+  box-shadow: 0 10px 20px rgba(45, 212, 191, 0.15);
+  cursor: pointer;
 }
 
 /* ============================================================
-   3. VISUAL DEKORATIF (Opsional)
+   3. VISUAL TAMBAHAN
    ============================================================ */
 
 /* Judul H1 Gradient */
@@ -83,14 +90,14 @@ h1 {
 body[saved-theme="dark"] {
   background-color: #0a192f;
   background-image: 
-    radial-gradient(circle at 50% 0%, rgba(45, 212, 191, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 50% 0%, rgba(45, 212, 191, 0.08) 0%, transparent 50%),
     linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 100% 100%, 30px 30px, 30px 30px;
+  background-size: 100% 100%, 40px 40px, 40px 40px;
 }
 
-/* Agar Kartu Dark Mode lebih menonjol */
-body[saved-theme="dark"] .callout[data-callout="cards"] {
-  background-color: rgba(255, 255, 255, 0.03) !important;
-  border-color: rgba(255, 255, 255, 0.1) !important;
+/* Agar Kartu Dark Mode lebih enak dilihat */
+body[saved-theme="dark"] .callout[data-callout="grid"] .callout {
+  background-color: rgba(255, 255, 255, 0.02) !important;
+  border-color: rgba(45, 212, 191, 0.2) !important;
 }
