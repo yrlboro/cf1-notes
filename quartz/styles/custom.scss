@@ -1,132 +1,96 @@
 @use "./base.scss";
 
-// ========================================
-// 1. CORE LAYOUTS (PENTING UNTUK HOME PAGE)
-// ========================================
+/* ============================================================
+   1. GRID LAYOUT SYSTEM (Safe Mode)
+   ============================================================ */
 
-/* Membuat Container Grid untuk Menu */
+/* Container Utama Grid */
 .callout[data-callout="grid"] {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
   padding: 0 !important;
-  margin-top: 1rem;
-  
-  .callout-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsif: minimal lebar 280px */
-    gap: 1.5rem;
-    padding: 0 !important;
-  }
-  
-  .callout-title { display: none; } /* Sembunyikan judul container */
+  margin: 1rem 0;
 }
 
-/* Tampilan Kartu (Cards) - Glassmorphism Style */
+/* Mengatur Kolom Grid */
+.callout[data-callout="grid"] .callout-content {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 0 !important;
+}
+
+/* HACK PENTING: Sembunyikan paragraf kosong yang sering merusak layout Grid */
+.callout[data-callout="grid"] .callout-content > p {
+  display: none !important;
+}
+
+/* ============================================================
+   2. CARD STYLING (High Visibility)
+   ============================================================ */
+
 .callout[data-callout="cards"] {
-  margin: 0 !important;
+  /* Pastikan kartu punya bentuk fisik */
+  display: block !important; 
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  margin: 0 !important;
   
-  /* Glassmorphism Effect pada Kartu */
-  background: rgba(255, 255, 255, 0.03); /* Transparan */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(45, 212, 191, 0.2); /* Border Teal tipis */
-  border-radius: 12px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-
-  .callout-title {
-    background: transparent;
-    font-size: 1.15em;
-    font-weight: 700;
-    color: var(--secondary); /* Menggunakan warna Teal tema */
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid rgba(45, 212, 191, 0.1);
-    margin-bottom: 0.5rem;
-  }
-
-  .callout-content {
-    flex-grow: 1; /* Agar konten mengisi ruang */
-    font-size: 0.95em;
-    color: var(--darkgray);
-  }
-
-  /* Hover Effect: Glow Teal */
-  &:hover {
-    transform: translateY(-5px);
-    border-color: var(--secondary);
-    box-shadow: 0 10px 20px -5px rgba(45, 212, 191, 0.2);
-    background: rgba(45, 212, 191, 0.05);
-  }
+  /* Pewarnaan yang pasti kontras */
+  border: 1px solid rgba(45, 212, 191, 0.3) !important; /* Border Teal */
+  border-radius: 10px;
+  background-color: var(--light) !important; /* Mengikut warna background tema */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Judul H1 dengan Gradient (Teal ke Navy) */
+/* Judul Kartu (CF1, CF2, dst) */
+.callout[data-callout="cards"] .callout-title {
+  background-color: rgba(45, 212, 191, 0.1) !important; /* Latar judul tipis */
+  color: var(--secondary) !important; /* Warna teks judul Teal */
+  font-weight: 700;
+  padding: 0.8rem 1rem !important;
+  border-bottom: 1px solid rgba(45, 212, 191, 0.1);
+}
+
+/* Isi Teks Kartu */
+.callout[data-callout="cards"] .callout-content {
+  padding: 1rem !important;
+  color: var(--darkgray) !important; /* Pastikan teks terbaca */
+  font-size: 0.95rem;
+}
+
+/* Efek Hover */
+.callout[data-callout="cards"]:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(45, 212, 191, 0.15);
+  border-color: var(--secondary) !important;
+}
+
+/* ============================================================
+   3. VISUAL DEKORATIF (Opsional)
+   ============================================================ */
+
+/* Judul H1 Gradient */
 h1 {
-  background: -webkit-linear-gradient(120deg, #008F7A, #2dd4bf);
+  background: linear-gradient(120deg, #008F7A, #2dd4bf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 0.5em;
+  display: inline-block;
 }
 
-// ========================================
-// 2. BACKGROUND & THEME (Dark Mode)
-// ========================================
-
+/* Dark Mode Background Fix */
 body[saved-theme="dark"] {
-  background-color: #0a192f; /* Dark Navy Base */
-  
-  /* Perbaikan sintaks multiple background image */
+  background-color: #0a192f;
   background-image: 
-    /* 1. Vignette (Bayangan pinggir) */
-    radial-gradient(circle at center, transparent 0%, #0a192f 100%),
-    /* 2. Garis Grid Horizontal */
-    linear-gradient(to bottom, rgba(45, 212, 191, 0.05) 1px, transparent 1px),
-    /* 3. Garis Grid Vertikal */
-    linear-gradient(to right, rgba(45, 212, 191, 0.05) 1px, transparent 1px);
-    
-  background-size: 100% 100%, 40px 40px, 40px 40px; /* Ukuran kotak grid */
-  background-attachment: fixed;
+    radial-gradient(circle at 50% 0%, rgba(45, 212, 191, 0.1) 0%, transparent 50%),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 30px 30px, 30px 30px;
 }
 
-// ========================================
-// 3. UI ELEMENTS (Sidebar & Scrollbar)
-// ========================================
-
-/* Sidebar Glassmorphism */
-.explorer, .sidebar, .left-sidebar, .right-sidebar {
-  /* Hanya beri efek glass jika di mode dark agar tidak aneh di light mode */
-  [saved-theme="dark"] & {
-    background: rgba(10, 25, 47, 0.7);
-    backdrop-filter: blur(8px);
-    border-right: 1px solid rgba(45, 212, 191, 0.1);
-  }
-}
-
-/* Custom Scrollbar (Teal Brand) */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #0F2642; /* Navy Blue (Inactive) */
-  border: 1px solid rgba(45, 212, 191, 0.3);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #008F7A; /* Teal Green (Active/Hover) */
-}
-
-/* Firefox Support */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #008F7A transparent;
+/* Agar Kartu Dark Mode lebih menonjol */
+body[saved-theme="dark"] .callout[data-callout="cards"] {
+  background-color: rgba(255, 255, 255, 0.03) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
 }
