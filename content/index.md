@@ -1,20 +1,11 @@
 ---
-<<<<<<< HEAD
-title: Beranda
-description: Catatan belajar ujian Aktuaris
-=======
 title: ActuNotes Home Page
 description: Catatan belajar Actuarial Exam
->>>>>>> 842962ca257f634f13b147a0a39e348ac2d8c84d
 ---
 
 # Selamat datang di **ActuNotes** 📘
 
-<<<<<<< HEAD
-Catatan belajar aktuaria yang disusun secara sistematis, lengkap dengan **ringkasan materi**, **rumus**, dan **soal + pembahasan periode ujian sebelumnya**.
-=======
 Catatan belajar Actuarial Exams yang disusun secara sistematis, lengkap dengan **ringkasan materi**, **rumus**, dan **soal + pembahasan periode ujian sebelumnya**.
->>>>>>> 842962ca257f634f13b147a0a39e348ac2d8c84d
 
 ## 🚀 **Mulai Cepat**
 
