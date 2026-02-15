@@ -1,3 +1,64 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+// ========================================
+// FUTURISTIC CYBER-GRID BACKGROUND (Dark Mode)
+// ========================================
+body[saved-theme="dark"] {
+  // Cyber-grid pattern background
+  background-image: 
+    // Vignette overlay to darken edges
+    radial-gradient(circle at center, rgba(10, 25, 47, 0) 0%, rgba(10, 25, 47, 0.8) 100%),
+    // Horizontal grid lines
+    linear-gradient(rgba(45, 212, 191, 0.05) 1px, transparent 1px),
+    // Vertical grid lines
+    linear-gradient(90deg, rgba(45, 212, 191, 0.05) 1px, transparent 1px);
+  background-size: 100% 100%, 50px 50px, 50px 50px;
+  background-position: center, 0 0, 0 0;
+  background-attachment: fixed;
+}
+
+// ========================================
+// GLASSMORPHISM CARDS
+// ========================================
+// Explorer sidebar glassmorphism
+.explorer, .sidebar {
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(45, 212, 191, 0.1);
+  border-radius: 8px;
+}
+
+// Content cards glassmorphism
+.page-listing, .popover-inner, article {
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(45, 212, 191, 0.1);
+  border-radius: 8px;
+}
+
+// ========================================
+// CUSTOM SCROLLBAR (Brand Teal)
+// ========================================
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #008F7A;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2dd4bf;
+}
+
+// Firefox scrollbar styling
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #008F7A transparent;
+}
