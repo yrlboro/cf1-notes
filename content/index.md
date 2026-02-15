@@ -12,20 +12,29 @@ Dokumentasi belajar terstruktur untuk persiapan ujian **PAI** dan **AAMAI**. Dis
 Kumpulan materi untuk sertifikasi *Persatuan Aktuaris Indonesia*.
 
 > [!grid]
-> > [!cards] [[content/CF1/index|CF1: Matematika Keuangan]]
+> > [!cards] [[CF1/index|CF1: Matematika Keuangan]]
+> > 
 > > **Status:** ✅ Lengkap
+> > 
 > > Pondasi *Time Value of Money*, Anuitas, dan Amortisasi. Wajib dikuasai pertama kali.
-> > [Buka Materi ➔](content/CF1/index.md)
+> > 
+> > [Buka Materi ➔](CF1/index.md)
 >
-> > [!cards] [[content/CF2/index|CF2: Probabilita & Statistika]]
+> > [!cards] [[CF2/index|CF2: Probabilita & Statistika]]
+> > 
 > > **Status:** 🚧 On Progress
+> > 
 > > Distribusi peluang, variabel acak, dan teori estimasi.
-> > [Buka Materi ➔](content/CF2/index.md)
+> > 
+> > [Buka Materi ➔](CF2/index.md)
 >
-> > [!cards] [[content/CF4/index|CF4: Model Aktuaria]]
+> > [!cards] [[CF4/index|CF4: Model Aktuaria]]
+> > 
 > > **Status:** 🚧 On Progress
+> > 
 > > Life contingencies, survival models, dan asuransi jiwa.
-> > [Buka Materi ➔](content/CF4/index.md)
+> > 
+> > [Buka Materi ➔](CF4/index.md)
 
 ## 🛡️ AAMAI Exams
 Sertifikasi *Ahli Asuransi Manajemen Indonesia*.
