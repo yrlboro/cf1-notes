@@ -1,19 +1,44 @@
 ---
-title: ActuNotes Home Page
+title: ActuNotes
 description: Catatan belajar Actuarial Exam
 ---
+# Master Your Actuarial Exams.
+Dokumentasi belajar terstruktur untuk persiapan ujian **PAI** dan **AAMAI**. Disusun dengan alur: **Pahami Materi** $\to$ **Bedah Rumus** $\to$ **Taklukan Soal**.
 
-# Selamat datang di **ActuNotes** 📘
+> [!tip] 🚀 Mulai Belajar
+> Pilih modul ujian di bawah ini untuk mengakses ringkasan materi dan bank soal.
 
-Catatan belajar Actuarial Exams yang disusun secara sistematis, lengkap dengan **ringkasan materi**, **rumus**, dan **soal + pembahasan periode ujian sebelumnya**.
+## 🎯 PAI Exams 
+Kumpulan materi untuk sertifikasi *Persatuan Aktuaris Indonesia*.
 
-## 🚀 **Mulai Cepat**
+> [!grid]
+> > [!cards] [[CF1/index|CF1: Matematika Keuangan]]
+> > **Status:** ✅ Lengkap
+> > Pondasi *Time Value of Money*, Anuitas, dan Amortisasi. Wajib dikuasai pertama kali.
+> > [Buka Materi ➔](CF1/index)
+>
+> > [!cards] [[CF2/index|CF2: Probabilita & Statistika]]
+> > **Status:** 🚧 On Progress
+> > Distribusi peluang, variabel acak, dan teori estimasi.
+> > [Buka Materi ➔](CF2/index)
+>
+> > [!cards] [[CF4/index|CF4: Model Aktuaria]]
+> > **Status:** 🚧 On Progress
+> > Life contingencies, survival models, dan asuransi jiwa.
+> > [Buka Materi ➔](CF4/index)
 
-Pilih salah satu untuk langsung mulai belajar:
+## 🛡️ AAMAI Exams
+Sertifikasi *Ahli Asuransi Manajemen Indonesia*.
 
-- [[📈Belajar CF1 dari Nol]] — Penjelasan konsep dasar hingga advanced, lengkap dan terstruktur.
-- [[📝 Soal & Pembahasan Ujian]] — Kumpulan soal dan pembahasan ujian periode sebelumnya.
-- [[📚 Cheat Sheet - CF1]] — Ringkasan formula penting + tricky traps.
+> [!grid]
+> > [!cards] [[AAMAI-101/index|AAMAI 101]]
+> > Prinsip dasar asuransi dan manajemen risiko.
+> > [Lihat Catatan ➔](AAMAI-101/index)
 
 ---
-## © ActuNotes – 2025
+## ⚡ Quick Resources
+Akses cepat tanpa perlu masuk ke folder materi.
+
+* [[Formula Sheet CF1]] — Rangkuman rumus "haram" dilupakan.
+* [[Daftar Soal Latihan]] — Langsung lompat ke bank soal.
+* [[Study Log]] — (Opsional: Jika Anda ingin melacak progress).
