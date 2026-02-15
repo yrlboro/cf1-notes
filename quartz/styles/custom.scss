@@ -1,41 +1,65 @@
-/* ============================================================
-   REVISI KARTU: BERSIH & PROFESIONAL
-   ============================================================ */
+@use "./base.scss";
 
-/* Targetkan kartu di dalam grid */
-.callout[data-callout="grid"] .callout[data-callout="cards"] {
-  background-color: var(--light) !important; /* Warna dasar putih/sesuai tema */
-  border: 1px solid var(--lightgray) !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
-  display: flex !important;
-  flex-direction: column;
-}
-
-/* HILANGKAN BACKGROUND TEAL PADA JUDUL (CF1, CF2, DST) */
-.callout[data-callout="grid"] .callout-title {
-  background: transparent !important; /* Menghapus background teal */
-  border-bottom: 1px solid var(--lightgray);
-  padding: 1rem !important;
-}
-
-/* HILANGKAN HIGHLIGHT TEAL PADA LINK/TEKS */
-.callout[data-callout="grid"] .callout-title .callout-title-inner,
-.callout[data-callout="grid"] .callout-title a,
-.callout[data-callout="grid"] .callout-content a {
-  background: transparent !important; /* Menghapus highlight pada teks link */
-  text-decoration: none;
-  color: var(--secondary) !important; /* Gunakan warna teal hanya untuk teks saja */
-  font-weight: 700;
-}
-
-/* HILANGKAN ICON PENSIL/EDIT (Opsional agar lebih bersih) */
-.callout[data-callout="grid"] .callout-icon {
+/* 1. SEMBUNYIKAN JUDUL & ICON CALLOUT DI HOME */
+.callout[data-callout="grid"] > .callout-title,
+.callout[data-callout="cards"] > .callout-title .callout-icon {
   display: none !important;
 }
 
-/* ISI KONTEN KARTU */
-.callout[data-callout="grid"] .callout-content {
+/* 2. PENGATURAN GRID */
+.callout[data-callout="grid"] {
   background: transparent !important;
-  padding: 1rem !important;
-  color: var(--darkgray) !important;
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+
+  & > .callout-content {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 !important;
+    margin-top: 10px;
+  }
+}
+
+/* 3. STYLING KARTU (TANPA HIGHLIGHT) */
+.callout[data-callout="cards"] {
+  background-color: var(--light) !important;
+  border: 1px solid var(--lightgray) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05) !important;
+  margin: 0 !important;
+  display: block !important;
+
+  /* Hapus background teal pada judul kartu */
+  .callout-title {
+    background: transparent !important;
+    padding: 15px 15px 5px 15px !important;
+    
+    /* Warna teks judul */
+    .callout-title-inner strong, .callout-title-inner a {
+      color: var(--secondary) !important;
+      background: transparent !important; /* Hapus highlight teks */
+      text-decoration: none;
+    }
+  }
+
+  /* Konten di dalam kartu */
+  .callout-content {
+    padding: 0 15px 15px 15px !important;
+    background: transparent !important;
+    
+    /* Hapus highlight pada semua link di dalam kartu */
+    a {
+      background: transparent !important;
+      color: var(--secondary) !important;
+      font-weight: bold;
+    }
+  }
+
+  &:hover {
+    border-color: var(--secondary) !important;
+    transform: translateY(-3px);
+    transition: all 0.2s ease;
+  }
 }
