@@ -31,8 +31,8 @@ Kumpulan materi untuk sertifikasi *Persatuan Aktuaris Indonesia*.
 Sertifikasi *Ahli Asuransi Manajemen Indonesia*.
 
 > [!grid]
-> > [!cards] [[AAMAI-101/index|AAMAI 101]]
-> > Prinsip dasar asuransi dan manajemen risiko.
+> > [!cards] [[AAMAI-101/index|AAMAI 101]]  
+> > Prinsip dasar asuransi dan manajemen risiko.  
 > > [Lihat Catatan ➔](AAMAI-101/index)
 
 ---
