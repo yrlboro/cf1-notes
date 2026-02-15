@@ -12,12 +12,9 @@ Dokumentasi belajar terstruktur untuk persiapan ujian **PAI** dan **AAMAI**. Dis
 Kumpulan materi untuk sertifikasi *Persatuan Aktuaris Indonesia*.
 
 > [!grid]
-> > [!cards] [[CF1/index|CF1: Matematika Keuangan]]
-> > 
+> > [!cards] [[CF1/index|CF1: Matematika Keuangan]]  
 > > **Status:** ✅ Lengkap
-> > 
 > > Pondasi *Time Value of Money*, Anuitas, dan Amortisasi. Wajib dikuasai pertama kali.
-> > 
 > > [Buka Materi ➔](CF1/index.md)
 >
 > > [!cards] [[CF2/index|CF2: Probabilita & Statistika]]
