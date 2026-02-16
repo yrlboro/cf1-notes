@@ -136,6 +136,6 @@ Welcome to the CF1 practice quiz! This interactive simulator allows you to:
 
 ## 📌 Additional Resources
 
-- [[📚 Cheat Sheet - CF1|CF1 Cheat Sheet]]
+- [[📚 Cheat Sheet|CF1 Cheat Sheet]]
 - [[📝 Soal & Pembahasan Ujian|Past Exam Solutions]]
-- [[📈Belajar CF1 dari Nol|Study from Scratch]]
+- [[Silabus CF1|Study from Scratch]]

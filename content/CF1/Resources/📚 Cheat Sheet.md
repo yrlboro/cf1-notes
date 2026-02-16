@@ -1,6 +1,4 @@
 
-Cheat Sheet
-
 ## ⏱️ Time Value of Money
 
 ### Accumulation & Amount Functions

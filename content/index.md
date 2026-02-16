@@ -1,34 +1,63 @@
 ---
 title: ActuNotes
-description: Catatan belajar Actuarial Exam
+description: Study Notes for Actuarial Exam
 ---
-# Master Your Actuarial Exams.
-Dokumentasi belajar terstruktur untuk persiapan ujian **PAI** dan **AAMAI**. Disusun dengan alur: **Pahami Materi** $\to$ **Bedah Rumus** $\to$ **Taklukan Soal**.
+# Navigating the Actuarial Maze.
+Catatan personal untuk persiapan ujian **PAI** dan **AAMAI**. Disusun sebagai dokumentasi mandiri agar materi bisa diakses kapan saja dan di mana saja.
 
-> [!tip] 🚀 Mulai Belajar
-> Pilih modul ujian di bawah ini untuk mengakses ringkasan materi dan bank soal.
+> [!tip] 🧭 Navigasi
+> Pilih modul di bawah untuk melihat ringkasan materi dan bank soal.
 
 ## 🎯 PAI Exams 
-Kumpulan materi untuk sertifikasi *Persatuan Aktuaris Indonesia*.
+Kumpulan materi untuk ujian sertifikasi *Persatuan Aktuaris Indonesia*.
 
 > [!grid]
 > > [!cards] [[CF1/index|CF1: Matematika Keuangan]]  
-> > **Status:** ✅ Lengkap  
-> > Pondasi *Time Value of Money*, Anuitas, dan Amortisasi. Wajib dikuasai pertama kali.  
-> > [Buka Materi ➔](CF1/index.md)
+> > **Materi:** Nilai waktu uang, anuitas, pinjaman, dan obligasi.  
+> > [Buka Materi ➔](CF1/index)  
 >
-> > [!cards] [[CF2/index|CF2: Probabilita & Statistika]]  
-> > **Status:** 🚧 On Progress  
-> > Distribusi peluang, variabel acak, dan teori estimasi.  
-> > [Buka Materi ➔](CF2/index.md)  
+> > [!cards] [[CF2/index|CF2: Probabilitas & Statistika]]  
+> > **Materi:** Distribusi peluang, variabel acak, dan teori estimasi.  
+> > [Buka Materi ➔](CF2/index)  
 >
-> > [!cards] [[CF4/index|CF4: Model Aktuaria]]  
-> > **Status:** 🚧 On Progress  
-> > Life contingencies, survival models, dan asuransi jiwa.  
-> > [Buka Materi ➔](CF4/index.md)  
+> > [!cards] [[CF3/index|CF3: Ekonomi & Pasar Keuangan]]  
+> > **Materi:** Makroekonomi, mikroekonomi, dan ekonomi keuangan.  
+> > [Buka Materi ➔](CF3/index)  
+>
+> > [!cards] [[CF4/index|CF4: Akuntansi & Manaj. Keuangan]]  
+> > **Materi:** Laporan keuangan, manajemen modal, dan analisis rasio.  
+> > [Buka Materi ➔](CF4/index)  
+>
+> > [!cards] [[TA1/index|TA1: Metode Statistika]]  
+> > **Materi:** Analisis regresi, model linear, dan pengolahan data.  
+> > [Buka Materi ➔](TA1/index)  
+>
+> > [!cards] [[TA2/index|TA2: Teori Risiko]]  
+> > **Materi:** Model risiko, teori kredibilitas, dan *ruin theory*.  
+> > [Buka Materi ➔](TA2/index)  
+>
+> > [!cards] [[TA3/index|TA3: Matematika Aktuaria]]  
+> > **Materi:** Model asuransi jiwa jangka panjang dan anuitas hidup.  
+> > [Buka Materi ➔](TA3/index)  
+>
+> > [!cards] [[BA1/index|BA1: Investasi]]  
+> > **Materi:** Teori portofolio, pasar modal, dan instrumen derivatif.  
+> > [Buka Materi ➔](BA1/index)  
+>
+> > [!cards] [[BA2/index|BA2: Manajemen Risiko Perusahaan]]  
+> > **Materi:** Identifikasi, mitigasi, dan manajemen risiko korporat (ERM).  
+> > [Buka Materi ➔](BA2/index)  
+>
+> > [!cards] [[BA4G/index|BA4G: Asuransi Umum]]  
+> > **Materi:** Rating, cadangan klaim, dan reasuransi asuransi umum.  
+> > [Buka Materi ➔](BA4G/index)  
+>
+> > [!cards] [[PM2/index|PM2: Manajemen Aktuaria]]  
+> > **Materi:** Siklus kontrol aktuaria dan manajemen produk asuransi.  
+> > [Buka Materi ➔](PM2/index)  
 
 ## 🛡️ AAMAI Exams
-Sertifikasi *Ahli Asuransi Manajemen Indonesia*.
+Ujian Sertifikasi *Ahli Asuransi Manajemen Indonesia*.
 
 > [!grid]
 > > [!cards] [[AAMAI-101/index|AAMAI 101]]  

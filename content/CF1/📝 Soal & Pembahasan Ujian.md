@@ -1,10 +1,10 @@
 
 Kumpulan soal dan pembahasan ujian periode sebelumnya:
-- [[CF1 Mei 2023]]
-- [[CF1 Agustus 2023]]
-- [[CF1 November 2023]]
-- [[CF1 April 2024]]
-- [[CF1 Juli 2024]]
-- [[CF1 Oktober 2024]]
-- [[CF1 Agustus 2025]]
-- [[CF1 November 2025]]
+- [[2023-05-CF1]]
+- [[2023-08-CF1]]
+- [[2023-11-CF1]]
+- [[2024-04-CF1]]
+- [[2024-07-CF1]]
+- [[2024-10-CF1]]
+- [[2025-08-CF1]]
+- [[2025-11-CF1]]
