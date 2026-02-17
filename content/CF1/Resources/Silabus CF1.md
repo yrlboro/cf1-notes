@@ -1,16 +1,17 @@
 
-# CF1: Matematika Keuangan
+# CF1 – Matematika Keuangan: Index Materi
 
-## Informasi Ujian
-
-- **Tujuan:** Mengukur kemampuan kandidat terhadap penguasaan konsep matematika keuangan dan aplikasinya pada berbagai jenis arus kas dalam permasalahan bisnis.
-- **Jenis Ujian:** Berlangsung selama 3 jam yang terdiri dari 30 soal pilihan ganda.
+**Ujian:** 3 jam | 30 soal pilihan ganda **Referensi Utama:** Vaaler (Mathematical Interest Theory) | Kellison (Theory of Interest) | McDonald (Derivatives Markets) | Ross et al. (Fundamentals of Corporate Finance)
 
 ---
 
-## 1. Nilai Waktu Dari Uang (10–20%)
+## Topik 1: Nilai Waktu dari Uang (10–20%)
 
-Kandidat mampu menjelaskan penggunaan konsep *time value of money* berdasarkan model suku bunga biasa, majemuk, *force of interest*, dan tingkat diskonto.
+- [[1.1 Interest Rates and Discount Rates]] — Suku bunga biasa & majemuk, tingkat diskonto $d$, faktor $v$
+- [[1.2 Effective, Nominal, and Force of Interest]] — $i$, $i^{(m)}$, $d^{(m)}$, $\delta$, dan konversinya
+- [[1.3 Cash Flow Equations and Inflation]] — Equation of value, Fisher equation, real rate
+- [[1.4 Accumulation and Present Value]] — FV & PV investasi tunggal, suku bunga variabel
+- [[1.5 NPV, IRR, DWRR, TWRR]] — Ukuran imbal hasil investasi dan kinerja portofolio
 
 ### Hasil Pembelajaran
 
@@ -20,7 +21,6 @@ Kandidat mampu menjelaskan penggunaan konsep *time value of money* berdasarkan m
 - Menjelaskan nilai arus kas yang berkaitan dengan inflasi.
 - Menghitung nilai akumulasi dan nilai kini investasi tunggal berdasarkan suku bunga konstan dengan menggunakan asumsi suku bunga biasa atau majemuk.
 - Menghitung NPV, IRR, *dollar-weighted rate of return*, dan *time-weighted rate of return*.
-
 ### Referensi
 
 - Vaaler, L., Vaaler, L. J. F., & Daniel, J. (2009). *Mathematical Interest Theory* (2nd ed.), Bab 1 & 2.
@@ -28,9 +28,14 @@ Kandidat mampu menjelaskan penggunaan konsep *time value of money* berdasarkan m
 
 ---
 
-## 2. Anuitas dan Nilai Arus Kas (20–30%)
+## Topik 2: Anuitas dan Nilai Arus Kas (20–30%)
 
-Kandidat mampu menghitung nilai kini dan nilai akumulasi dari arus kas menggunakan suku bunga deterministik (termasuk suku bunga yang berbeda dan suku bunga kontinu).
+- [[2.1 Annuity-Immediate and Annuity-Due]] — $a_{\overline{n}|}$, $\ddot{a}_{\overline{n}|}$, $s_{\overline{n}|}$, $\ddot{s}_{\overline{n}|}$
+- [[2.2 Perpetuity]] — Perpetuitas biasa, perpetuitas due, growing perpetuity
+- [[2.3 Varying Annuities]] — Geometric, arithmetic increasing & decreasing
+- [[2.4 Continuous Annuities]] — $\bar{a}_{\overline{n}|}$, $\bar{s}_{\overline{n}|}$, hubungan dengan $\delta$
+- [[2.5 Deferred Annuities]] — $_{m|}a_{\overline{n}|}$, metode selisih anuitas
+- [[2.6 Varying Interest Rates]] — PV/AV dengan rate berbeda per periode
 
 ### Hasil Pembelajaran
 
@@ -47,9 +52,13 @@ Kandidat mampu menghitung nilai kini dan nilai akumulasi dari arus kas menggunak
 
 ---
 
-## 3. Struktur Jangka Waktu Suku Bunga (20–30%)
+## Topik 3: Struktur Jangka Waktu Suku Bunga (20–30%)
 
-Kandidat mampu menjelaskan konsep dan istilah yang digunakan pada teori struktur jangka waktu suku bunga dan aplikasinya pada pemodelan arus kas, termasuk sensitivitas nilai atas perubahan dalam struktur jangka waktu.
+- [[3.1 Spot Rates and Forward Rates]] — $s_t$, $f_{t_1,t_2}$, no-arbitrage pricing
+- [[3.2 Yield Curve]] — Bentuk kurva, teori, bootstrapping, YTM
+- [[3.3 Duration (Macaulay and Modified)]] — $D_{Mac}$, $D_{Mod}$, DV01, portofolio duration
+- [[3.4 Convexity]] — Koreksi orde-2 estimasi perubahan harga
+- [[3.5 Immunization]] — Redington, full immunization, cash flow matching
 
 ### Hasil Pembelajaran
 
@@ -66,9 +75,11 @@ Kandidat mampu menjelaskan konsep dan istilah yang digunakan pada teori struktur
 
 ---
 
-## 4. Pengembalian Pinjaman (5–15%)
+## Topik 4: Pengembalian Pinjaman (5–15%)
 
-Kandidat mampu memahami konsep yang berkaitan dengan pinjaman dan perhitungannya.
+- [[4.1 Loan Terminology]] — Pokok, bunga, saldo, balloon/drop payment
+- [[4.2 Amortization Method]] — Jadwal amortisasi, formula prospektif & retrospektif
+- [[4.3 Sinking Fund Method]] — Setoran SF, perbandingan dengan amortisasi
 
 ### Hasil Pembelajaran
 
@@ -83,9 +94,11 @@ Kandidat mampu memahami konsep yang berkaitan dengan pinjaman dan perhitungannya
 
 ---
 
-## 5. Model Penentuan Harga Obligasi (10–20%)
+## Topik 5: Model Penentuan Harga Obligasi (10–20%)
 
-Kandidat mampu memahami metode penentuan harga obligasi dan istilah yang terkait.
+- [[5.1 Bond Pricing]] — Formula harga, premium/diskon, Makeham formula
+- [[5.2 Book Value, Premium and Discount Amortization]] — $B_t$, amortisasi premium, akumulasi diskon
+- [[5.3 Yield Rate and Coupon Calculations]] — Menghitung YTM, kupon, jangka waktu
 
 ### Hasil Pembelajaran
 
@@ -102,9 +115,11 @@ Kandidat mampu memahami metode penentuan harga obligasi dan istilah yang terkait
 
 ---
 
-## 6. Produk Derivatif (5–15%)
+## Topik 6: Produk Derivatif (5–15%)
 
-Kandidat mampu memahami produk derivatif dasar: opsi beli (*call*), opsi jual (*put*), *futures*, *forward*, dan pemanfaatannya dalam manajemen risiko.
+- [[6.1 Options – Call and Put]] — Payoff, profit, long/short, European vs American
+- [[6.2 Forwards and Futures]] — Forward price, prepaid forward, cost of carry
+- [[6.3 Option Strategies]] — Bull/bear spread, collar, straddle, strangle, butterfly
 
 ### Hasil Pembelajaran
 
@@ -120,9 +135,10 @@ Kandidat mampu memahami produk derivatif dasar: opsi beli (*call*), opsi jual (*
 
 ---
 
-## 7. Matematika Keuangan untuk Pembentukan Portofolio (5–15%)
+## Topik 7: Matematika Keuangan untuk Portofolio (5–15%)
 
-Kandidat mampu memahami metode dalam penilaian portofolio aset, termasuk model *single-factor*, *multi-factor*, dan *mean-variance portfolio theory*.
+- [[7.1 CAPM and Factor Models]] — Beta, SML, single & multi-factor models
+- [[7.2 Mean-Variance Portfolio Theory]] — Efficient frontier, CML, diversifikasi, Sharpe ratio
 
 ### Hasil Pembelajaran
 
@@ -134,3 +150,24 @@ Kandidat mampu memahami metode dalam penilaian portofolio aset, termasuk model *
 ### Referensi
 
 - Ross, Westerfield, Jordan. (2008). *Fundamentals of Corporate Finance*, Bab 12 & 13.
+
+---
+
+## Bobot Soal
+
+|Topik|Bobot|
+|---|---|
+|1. Nilai Waktu dari Uang|10–20%|
+|2. Anuitas dan Nilai Arus Kas|20–30%|
+|3. Struktur Jangka Waktu|20–30%|
+|4. Pengembalian Pinjaman|5–15%|
+|5. Model Obligasi|10–20%|
+|6. Produk Derivatif|5–15%|
+|7. Portofolio|5–15%|
+
+---
+
+## Tags
+
+#CF1 #Index #MatematikaKeuangan
+
