@@ -1,20 +1,3 @@
----
-template_type: "AI Study Prompt"
-exam: "CF1"
-subject: "Matematika Keuangan"
-version: "4.0"
-tags: [CF1, template, prompt, MatematikaKeuangan]
-status: "template"
----
-
-> [!INFO] CARA PENGGUNAAN
-> Copy **seluruh isi file ini** ke sesi baru AI (Gemini / Claude / ChatGPT).
-> Ganti teks di bagian `## INPUT PENGGUNA` paling bawah dengan topik yang ingin dipelajari.
-> Contoh: `2.3 Varying Annuities` atau `3.5 Immunization`.
-
----
-
-# CF1 STUDY PROMPT — MASTER TEMPLATE (v4.0)
 
 ## SYSTEM INSTRUCTION & PERSONA
 
@@ -416,4 +399,4 @@ Isi wajib (dalam urutan ini):
 ## INPUT PENGGUNA
 
 > [!INFO] Topik yang ingin dipelajari
-> 5.1 Bond Pricing
+> **[Nama Topik — gunakan format silabus]**
