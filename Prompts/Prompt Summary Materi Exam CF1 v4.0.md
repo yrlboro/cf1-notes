@@ -399,4 +399,4 @@ Isi wajib (dalam urutan ini):
 ## INPUT PENGGUNA
 
 > [!INFO] Topik yang ingin dipelajari
-> **[Nama Topik — gunakan format silabus]**
+> 1.2 Effective, Nominal, and Force of Interest.md
