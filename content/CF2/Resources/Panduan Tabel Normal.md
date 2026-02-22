@@ -20,23 +20,6 @@ status: "reference"
 
 ---
 
-## Section 0 — Tabel Aktual CF2 (Referensi Cepat)
-
-> [!TIP] Cara Menggunakan Section Ini
-> Section ini berisi **(a)** placeholder untuk embed gambar tabel asli dari PDF ujian, dan **(b)** tabel Markdown ringkas nilai-nilai yang paling sering dipakai. Untuk lookup detail, gunakan gambar. Untuk lookup cepat saat review, gunakan tabel Markdown di bawah.
->
-> **Cara embed gambar di Obsidian:**
-> 1. Screenshot halaman 16 (Tabel 1) dan halaman 17 (Tabel 2) dari PDF lembar ujian
-> 2. Simpan sebagai `Tabel1-HalfTable.png` dan `Tabel2-LeftTail.png` di folder attachments vault kamu
-> 3. Ganti dua baris placeholder di bawah ini dengan nama file yang sesuai
-
-```
-![[Tabel1-HalfTable.png]]
-![[Tabel2-LeftTail.png]]
-```
-
----
-
 ### Quick Lookup — Tabel 1: Half-Table $P(0 \leq Z \leq z)$
 
 Sumber: Tabel 1 lembar ujian CF2 PAI (Oktober 2024). Nilai dipilih dari $z$ yang paling strategis untuk soal-soal CF2.
