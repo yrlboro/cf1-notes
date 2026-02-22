@@ -29,7 +29,7 @@ e. $0{,}40$
 > | **Connected Topics** | [[1.2 Aksioma dan Perhitungan Probabilitas]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.4; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > **Teorema Bayes:**
 > > $$P(A_i \mid B) = \frac{P(B \mid A_i)\,P(A_i)}{\sum_{j} P(B \mid A_j)\,P(A_j)}$$
 > > **Hukum Probabilitas Total:**
@@ -94,7 +94,7 @@ e. $64$
 > | **Connected Topics** | [[1.4 Probabilitas Bersyarat]] |
 > | **Referensi** | Miller Bab 2; Hogg-Tanis-Zimm Bab 1.2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Karena pengambilan dari Wadah A dan B saling bebas:
 > > $$P(\text{sama warna}) = P(\text{keduanya merah}) + P(\text{keduanya biru})$$
 > > $$= P(M_A)\,P(M_B) + P(B_A)\,P(B_B)$$
@@ -160,7 +160,7 @@ e. $\dfrac{36}{65}$
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Miller Bab 2; Hogg-Tanis-Zimm Bab 1.3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$P(A) = \frac{\text{Jumlah cara favorable}}{\text{Total cara pengambilan}}$$
 > > $$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
 >
@@ -233,7 +233,7 @@ e. $\dfrac{12}{5}$
 > | **Connected Topics** | [[2.4 Transformasi Variabel Acak Univariat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$E[X] = \int_{-\infty}^{\infty} x\,f(x)\,dx$$
 > > Untuk fungsi nilai mutlak: $|x| = -x$ jika $x < 0$, dan $|x| = x$ jika $x \geq 0$.
 >
@@ -300,7 +300,7 @@ e. $904$ ribu
 > | **Connected Topics** | [[2.4 Transformasi Variabel Acak Univariat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.2; Miller Bab 5.3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Misalkan $N \sim \text{Poisson}(\lambda)$ dengan $\lambda = 0{,}6$: $P(N = k) = \dfrac{e^{-0{,}6}(0{,}6)^k}{k!}$
 > >
 > > Manfaat $B$ (dalam juta): $B = \min(N, 2)$ karena manfaat dibayar per hari hujan maksimum 2 hari.
@@ -383,7 +383,7 @@ e. $g(y) = \begin{cases} 15y^{3/2}\left(1 - y^{1/2}\right), & \text{untuk } 0 \l
 > | **Connected Topics** | [[3.3 Distribusi Bersyarat]] |
 > | **Referensi** | Hogg-McKean-Craig Bab 2.1–2.3; Miller Bab 3.5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > **Distribusi marginal** dari $Y$:
 > > $$g_Y(y) = \int_{-\infty}^{\infty} f(x, y)\,dx$$
 > > Batas integrasi $x$ harus ditentukan dari region $\{x^2 \leq y \leq x\}$ untuk nilai $y$ tertentu.
@@ -455,7 +455,7 @@ e. $0{,}96$
 > | **Connected Topics** | [[3.5 Independensi dan Korelasi]] |
 > | **Referensi** | Hogg-McKean-Craig Bab 2.1; Miller Bab 3.5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Perangkat gagal dalam 1 jam jika $\min(X, Y) \leq 1$:
 > > $$P(\min(X,Y) \leq 1) = 1 - P(\min(X,Y) > 1) = 1 - P(X > 1, Y > 1)$$
 > > $$P(X > 1, Y > 1) = \int_1^3 \int_1^3 f(x,y)\,dx\,dy$$
@@ -528,7 +528,7 @@ e. $\dfrac{1}{4}$
 > | **Connected Topics** | [[3.4 Nilai Harapan dan Variansi Bersyarat]] |
 > | **Referensi** | Hogg-McKean-Craig Bab 2.3; Miller Bab 3.6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > **PDF bersyarat** $Y \mid X = x$:
 > > $$f_{Y|X}(y \mid x) = \frac{f(x,y)}{f_X(x)}$$
 > > **Probabilitas bersyarat:**
@@ -592,7 +592,7 @@ e. $e^{t_1^2 + t_2^2}$
 > | **Connected Topics** | [[3.1 Distribusi Gabungan]] |
 > | **Referensi** | Hogg-McKean-Craig Bab 3.1; Hogg-Tanis-Zimm Bab 5.8 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > **Joint MGF** dari $(W, Z)$:
 > > $$M_{W,Z}(t_1, t_2) = E[e^{t_1 W + t_2 Z}]$$
 > > Substitusi $W = X + Y$, $Z = Y - X$:
@@ -667,7 +667,7 @@ e. $\dfrac{8}{9}$
 > | **Connected Topics** | [[2.6 Distribusi Kontinu Umum]] |
 > | **Referensi** | Hogg-McKean-Craig Bab 2.3; Miller Bab 3.6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > **PDF bersyarat:** $f_{Y|X}(y \mid x) = \dfrac{f(x,y)}{f_X(x)}$
 > >
 > > **Marginal $X$:** $f_X(x) = \int_1^{\infty} f(x,y)\,dy$
@@ -736,7 +736,7 @@ e. $\dfrac{7}{9}$
 > | **Connected Topics** | [[1.5 Kejadian Independen]] |
 > | **Referensi** | Miller Bab 2; Hogg-Tanis-Zimm Bab 1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Setiap karyawan memilih tepat 2 dari $\{A, B, C\}$ atau tidak memilih sama sekali. Total proporsi harus $= 1$:
 > > $$P(AB) + P(AC) + P(BC) + P(\text{tidak memilih}) = 1$$
 > > Tiap karyawan yang memilih A memilih tepat salah satu pasangan: $AB$ atau $AC$. Maka $P(A) = P(AB) + P(AC)$.
@@ -804,7 +804,7 @@ e. $985{.}000$
 > | **Connected Topics** | [[2.1 Variabel Acak Diskrit]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.1; Miller Bab 5.2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $N = $ banyaknya turis yang datang, $N \sim B(21, 0{,}98)$ (karena $p(\text{datang}) = 0{,}98$).
 > >
 > > $$E[\text{Pendapatan}] = 21 \times 50 - 100 \times E[\max(N - 20, 0)]$$
@@ -876,7 +876,7 @@ e. $0{,}514$
 > | **Connected Topics** | [[1.6 Teorema Bayes dan Hukum Probabilitas Total]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.4; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$P(A \mid B^c) = \frac{P(A \cap B^c)}{P(B^c)}$$
 >
 > **Diketahui:**
@@ -938,7 +938,7 @@ e. $1{,}00$
 > | **Connected Topics** | [[4.4 Hukum Bilangan Besar]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5.5; Miller Bab 8 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Misal $S = \sum_{i=1}^{1250} X_i$ dengan $X_i \sim \text{Poisson}(2)$ saling bebas.
 > > Maka $E[S] = 1250 \times 2 = 2500$ dan $\text{Var}(S) = 1250 \times 2 = 2500$.
 > >
@@ -1008,7 +1008,7 @@ e. $0{,}51$
 > | **Connected Topics** | [[2.6 Distribusi Kontinu Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2.2; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Tentukan $k$ dengan syarat normalisasi: $\int_0^1 k(1-y)^4\,dy = 1$.
 > >
 > > $$P(V > 40000 \mid V > 10000) = \frac{P(V > 40000)}{P(V > 10000)} = \frac{P(Y > 0{,}4)}{P(Y > 0{,}1)}$$
@@ -1083,7 +1083,7 @@ e. $20\%$
 > | **Connected Topics** | [[1.5 Kejadian Independen]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.4; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Notasi: $T$ = tekanan darah (T=tinggi, R=rendah, N=normal); $D$ = detak jantung (normal atau tidak normal = $D'$).
 > > $$P(T \cap D') = P(D') \cdot P(T \mid D') \quad \text{(menggunakan def. probabilitas bersyarat)}$$
 >
@@ -1153,7 +1153,7 @@ e. $2 f_X(2y)$
 > | **Connected Topics** | [[3.8 Transformasi Variabel Acak Gabungan]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2.7; Miller Bab 4.4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > **Metode Jacobian untuk transformasi monoton:** Jika $Y = g(X)$, maka:
 > > $$f_Y(y) = f_X\!\left(g^{-1}(y)\right) \cdot \left|\frac{d}{dy}g^{-1}(y)\right|$$
 >
@@ -1213,7 +1213,7 @@ e. $12{.}642$ juta
 > | **Connected Topics** | [[2.1 Variabel Acak Diskrit]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.3; Miller Bab 5.4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $T \sim \text{Exp}(\lambda)$ dengan $\lambda = 1/2$ (karena rataan $= 1/\lambda = 2$). Di sini $\lambda$ adalah parameter rate distribusi Eksponensial, bukan parameter lain.
 > >
 > > $F_T(t) = 1 - e^{-t/2}$ untuk $t > 0$.
@@ -1319,7 +1319,7 @@ e. $3$
 > | **Connected Topics** | [[2.6 Distribusi Kontinu Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2.2; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $f(x) = c(1+x)^{-4}$ untuk $x > 0$. Tentukan $c$ dari normalisasi, lalu $E[X] = \int_0^\infty x\,f(x)\,dx$.
 >
 > **Diketahui:**
@@ -1380,7 +1380,7 @@ e. $0{,}88$
 > | **Connected Topics** | [[4.4 Hukum Bilangan Besar]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5.5; Miller Bab 8 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Misal $D_i = $ perbedaan usia (sebenarnya $-$ dibulatkan), $D_i \sim U(-2{,}5, 2{,}5)$.
 > > $$E[D_i] = 0, \quad \text{Var}(D_i) = \frac{(2{,}5-(-2{,}5))^2}{12} = \frac{25}{12}$$
 > > TLC: $\bar{D} = \frac{1}{n}\sum D_i \overset{a}{\sim} N\!\left(0, \frac{25}{12 \times 48}\right)$
@@ -1444,7 +1444,7 @@ e. $24$
 > | **Connected Topics** | [[3.6 Matriks Variansi-Kovariansi]] |
 > | **Referensi** | Hogg-McKean-Craig Bab 2.4; Miller Bab 3.7 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$\text{Cov}(X,Y) = E[XY] - E[X]\,E[Y]$$
 > > Gunakan ekspektasi iterasi (hukum ekspektasi total):
 > > $$E[XY] = E[E[XY \mid X]] = E[X \cdot E[Y \mid X]]$$
@@ -1512,7 +1512,7 @@ e. $0{,}250$
 > | **Connected Topics** | [[2.2 Variabel Acak Kontinu]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.3; Miller Bab 5.4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $X \sim \text{Exp}(\lambda)$ (klaim lama). Di sini $\lambda$ adalah parameter rate distribusi Eksponensial.
 > > $P(X < 1000) = 1 - e^{-1000\lambda} = 0{,}25 \implies e^{-1000\lambda} = 0{,}75$
 > >
@@ -1574,7 +1574,7 @@ e. $4$
 > | **Connected Topics** | [[2.1 Variabel Acak Diskrit]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.2; Miller Bab 5.2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > MGF distribusi Binomial $B(n, p)$: $M(t) = (1 - p + pe^t)^n = (q + pe^t)^n$.
 > >
 > > Identifikasi: $M(t) = \left(\frac{2+e^t}{3}\right)^9 = \left(\frac{2}{3} + \frac{1}{3}e^t\right)^9$
@@ -1643,7 +1643,7 @@ e. $3$
 > | **Connected Topics** | [[2.6 Distribusi Kontinu Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2.2; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > **Modus** distribusi kontinu = titik di mana PDF mencapai maksimum.
 > > $$f_X(x) = F_X'(x), \quad \text{modus}: \frac{d}{dx}f_X(x) = 0 \text{ dan cek nilai maksimum}$$
 >
@@ -1705,7 +1705,7 @@ e. $\dfrac{2}{5}$
 > | **Connected Topics** | [[4.2 Distribusi Sampel]] |
 > | **Referensi** | Miller Bab 2; Hogg-Tanis-Zimm Bab 1.3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Range sampel $= \max - \min$. Hitung kombinasi yang memenuhi range $= 3$.
 > > Total cara: $\binom{5}{3} = 10$.
 >
@@ -1779,7 +1779,7 @@ e. $\dbinom{4}{2}\!\left(\dfrac{10}{35}\right)^{\!2}\!\left(\dfrac{25}{35}\right
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Miller Bab 2; Hogg-Tanis-Zimm Bab 1.3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Kejadian yang ditanya: tepat 2 tiruan sebelum asli ke-2 terpilih. Ini berarti:
 > > - Di antara 4 permata pertama yang diambil: terdapat tepat 1 asli dan 2 tiruan (3 pengambilan pertama)
 > > - Pengambilan ke-4 adalah permata **asli** (permata asli ke-2)
@@ -1868,7 +1868,7 @@ e. $\dfrac{17}{24\sqrt{\theta}}$
 > | **Connected Topics** | [[2.6 Distribusi Kontinu Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2.2; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$E[X] = \int_0^{1/\sqrt{\theta}} x \cdot f_X(x)\,dx$$
 >
 > **Diketahui:**
@@ -1933,7 +1933,7 @@ e. $e^{-1}$
 > | **Connected Topics** | [[2.1 Variabel Acak Diskrit]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.2; Miller Bab 5.3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $N \sim \text{Poisson}(\lambda t)$: $P(N = k) = \dfrac{e^{-\lambda t}(\lambda t)^k}{k!}$
 > >
 > > Di sini $\lambda$ adalah parameter Poisson (laju kejadian per satuan waktu), bukan parameter lain.
@@ -1999,7 +1999,7 @@ e. $\dfrac{11}{36}$
 > | **Connected Topics** | [[2.1 Variabel Acak Diskrit]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.4; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$P(Y=6) = P(Y=6 \mid \text{Angka}) \cdot P(\text{Angka}) + P(Y=6 \mid \text{Gambar}) \cdot P(\text{Gambar})$$
 >
 > **Diketahui:**
@@ -2059,7 +2059,7 @@ e. $1$
 > | **Connected Topics** | [[1.4 Probabilitas Bersyarat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.2–1.5; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Komplemen: $P(A^C \cup C) = 1 - P(A \cap C^C)$
 > >
 > > Misal $D = A \cap B$. Target: $P(D^C \cup C) = 1 - P(D \cap C^C)$.

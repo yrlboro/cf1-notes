@@ -29,7 +29,7 @@ e. $0{,}885$
 > | **Connected Topics** | [[2.6 Distribusi Kontinu Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.4; Miller Bab 4.1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Probabilitas bersyarat untuk variabel acak kontinu:
 > > $$P(A \mid B) = \frac{P(A \cap B)}{P(B)}$$
 > > Di sini $A = \{1 < Y < 3\}$, $B = \{2 < Y < 4\}$, sehingga $A \cap B = \{2 < Y < 3\}$.
@@ -104,7 +104,7 @@ e. $0{,}83$
 > | **Connected Topics** | [[1.2 Aksioma dan Perhitungan Probabilitas]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.1–3.2; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Distribusi Binomial: Jika $X \sim B(n, p)$ maka
 > > $$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$$
 > > Total klaim $N = N_H + N_T$ di mana $N_H \sim B(10, 0{,}2)$ dan $N_T \sim B(10, 0{,}1)$ saling bebas.
@@ -185,7 +185,7 @@ e. $4{,}93$
 > | **Connected Topics** | [[2.4 Transformasi Variabel Acak Univariat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2.1–2.2; Miller Bab 4.1–4.3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$\text{Var}(X) = E[X^2] - (E[X])^2$$
 > > Dengan $|x|$ yang terbagi: $|x| = -x$ untuk $x < 0$ dan $|x| = x$ untuk $x \geq 0$.
 >
@@ -257,7 +257,7 @@ e. $18$
 > | **Connected Topics** | [[2.2 Variabel Acak Kontinu]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2.1; Miller Bab 4.1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Untuk $X \sim U(0, 40)$:
 > > $$P(X \leq x) = \frac{x}{40}, \quad 0 \leq x \leq 40$$
 > > Probabilitas bersyarat:
@@ -365,7 +365,7 @@ e. Persentil ke-85
 > | **Connected Topics** | [[4.3 Teorema Limit Pusat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.3; Miller Bab 6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Untuk $X \sim N(\mu, \sigma^2)$:
 > > - Modus = Mean = $\mu$ (distribusi normal simetris)
 > > - Standardisasi: $Z = \dfrac{X - \mu}{\sigma} \sim N(0,1)$
@@ -442,7 +442,7 @@ e. $9{,}41$
 > | **Connected Topics** | [[2.2 Variabel Acak Kontinu]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2.1; Miller Bab 4.1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Untuk $X \sim U(a, b)$:
 > > $$\text{Median} = \frac{a+b}{2}, \qquad \text{SD}(X) = \frac{b-a}{\sqrt{12}}$$
 >
@@ -515,7 +515,7 @@ e. $0{,}73$
 > | **Connected Topics** | [[1.3 Metode Enumerasi]] |
 > | **Referensi** | Miller Bab 2–3; Hogg-Tanis-Zimm Bab 1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Untuk kejadian independen, gunakan perkalian probabilitas. "Lebih dari dua produk" = tepat 3 atau tepat 4 produk terjual.
 > > Misal $p_1=0{,}55$, $p_2=0{,}45$, $p_3=0{,}50$, $p_4=0{,}60$, $q_i = 1-p_i$.
 > > $$P(\text{lebih dari 2}) = P(\text{tepat 3}) + P(\text{tepat 4})$$
@@ -590,7 +590,7 @@ e. $7{,}32$
 > | **Connected Topics** | [[2.6 Distribusi Kontinu Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2.1; Miller Bab 4.1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > - Syarat normalisasi: $\int_{-\infty}^{\infty} f(x)\,dx = 1$
 > > - Persentil ke-$p$: nilai $x_p$ sedemikian sehingga $F(x_p) = p/100$
 >
@@ -658,7 +658,7 @@ e. $10{.}800$
 > | **Connected Topics** | [[1.3 Metode Enumerasi]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.1; Miller Bab 5.2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Distribusi Binomial $X \sim B(n, p)$:
 > > $$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$$
 > > Dengan $n = 6$ dan $p$ = peluang seorang pasien mengidap penyakit.
@@ -766,7 +766,7 @@ e. $(18{,}7;\ 21{,}3)$
 > | **Connected Topics** | [[4.7 Selang Kepercayaan]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.3; Miller Bab 6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Untuk $X \sim N(\mu, \sigma^2)$, interval terpusat di $\mu$ dengan peluang $p$:
 > > $$P(\mu - z^* \sigma \leq X \leq \mu + z^* \sigma) = p$$
 > > di mana $z^* = \Phi^{-1}\!\left(\dfrac{1+p}{2}\right)$.
@@ -828,7 +828,7 @@ e. $0{,}959$
 > | **Connected Topics** | [[2.6 Distribusi Kontinu Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2.1; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Distribusi Beta dengan $\alpha=4$, $\beta=2$:
 > > $$E[X] = \frac{\alpha}{\alpha+\beta} = \frac{4}{6}, \qquad \text{Var}(X) = \frac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)} = \frac{8}{252} = \frac{2}{63}$$
 >
@@ -885,7 +885,7 @@ e. $577$
 > | **Connected Topics** | [[2.4 Transformasi Variabel Acak Univariat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2.1; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Limited Expected Value (LEV) untuk $X \sim \text{Exp}$ dengan rate $\lambda = 1/\theta$:
 > > $$E[\min(X, u)] = \frac{1}{\lambda}(1 - e^{-\lambda u}) = \theta(1 - e^{-u/\theta})$$
 >
@@ -939,7 +939,7 @@ e. $16$
 > | **Connected Topics** | [[1.5 Kejadian Independen]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.1; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Distribusi Geometrik $X \sim \text{Geom}(p)$: $P(X=k) = (1-p)^{k-1}p$ untuk $k = 1,2,\ldots$
 > > Modus distribusi Geometrik selalu $= 1$ karena PMF menurun monoton.
 >
@@ -992,7 +992,7 @@ e. $0{,}60$
 > | **Connected Topics** | [[1.6 Teorema Bayes dan Hukum Probabilitas Total]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.4; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Teorema Bayes: $P(L \mid B) = \dfrac{P(B \mid L) \cdot P(L)}{P(B)}$
 >
 > **Diketahui:**
@@ -1049,7 +1049,7 @@ e. $\dfrac{7c^{0{,}2}-4}{3}$
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.1; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Normalisasi PMF: $s + t + 0{,}75s = 1$. Distribusi Binomial: $Y \sim B(5, s+t)$, $c = P(Y=5) = (s+t)^5$.
 >
 > **Diketahui:**
@@ -1100,7 +1100,7 @@ e. $0{,}90$
 > | **Connected Topics** | [[4.4 Hukum Bilangan Besar]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.3; Miller Bab 6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Untuk $X \sim N(0, a)$: $P(X^2 < a) = P(-\sqrt{a} < X < \sqrt{a}) = P(-1 < Z < 1) \approx 0{,}6827$.
 >
 > **Diketahui:**
@@ -1149,7 +1149,7 @@ e. $\dfrac{7}{3}$
 > | **Connected Topics** | [[3.4 Nilai Harapan dan Variansi Bersyarat]] |
 > | **Referensi** | Hogg-McKean-Craig Bab 4.4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Kondisi ortogonalitas: $\text{Cov}(W, X_j) = 0$ untuk $j=2,3$, dengan $W = X_1 - aX_2 - bX_3$:
 > > $$\sigma_{1j} - a\sigma_{2j} - b\sigma_{3j} = 0$$
 >
@@ -1200,7 +1200,7 @@ e. $1$
 > | **Connected Topics** | [[2.4 Transformasi Variabel Acak Univariat]] |
 > | **Referensi** | Hogg-McKean-Craig Bab 2.6; Hogg-Tanis-Zimm Bab 5.6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Teknik Jacobian: $f_{U,V}(u,v) = f_{X,Y}(x(u,v),y(u,v)) \cdot |J|$ dengan $J = \det(\partial(x,y)/\partial(u,v))$.
 >
 > **Diketahui:**
@@ -1256,7 +1256,7 @@ e. $0{,}92$
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.1; Miller Bab 5.2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Distribusi Binomial $X \sim B(n, p)$:
 > > $$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$$
 > > Dengan $n = 20$, $p = 0{,}05$.
@@ -1323,7 +1323,7 @@ e. $0{,}3$
 > | **Connected Topics** | [[2.4 Transformasi Variabel Acak Univariat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2.1; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Untuk $X \sim U(1000, 2000)$: mean $= 1500$, variansi $= (2000-1000)^2/12 = 1000^2/12$.
 > >
 > > Kontrak 1: $Y_1 = 0{,}9X$ → $E[Y_1] = 0{,}9 \times 1500 = 1350$, $\text{Var}(Y_1) = 0{,}81 \times \dfrac{10^6}{12}$.
@@ -1415,7 +1415,7 @@ e. $0{,}0096$
 > | **Connected Topics** | [[2.6 Distribusi Kontinu Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5.5; Walpole Bab 8.5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Aproksimasi Normal dengan koreksi kontinuitas (Kasus 6):
 > > $$P(X \geq k) \approx P\!\left(Z \geq \frac{k - 0{,}5 - \mu}{\sigma}\right)$$
 > > di mana $\mu = np$ dan $\sigma = \sqrt{np(1-p)}$.
@@ -1477,7 +1477,7 @@ e. $0{,}8$
 > | **Connected Topics** | [[1.4 Probabilitas Bersyarat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.2; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$
 > > $$P(A \cup B^c) = P(A) + P(B^c) - P(A \cap B^c)$$
 > > Perhatikan: $P(B) + P(B^c) = 1$ dan $P(A) = P(A \cap B) + P(A \cap B^c)$.
@@ -1533,7 +1533,7 @@ e. $0{,}0576$
 > | **Connected Topics** | [[1.2 Aksioma dan Perhitungan Probabilitas]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.3–1.4; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$P(A \mid B) = \frac{P(A \cap B)}{P(B)}$$
 > > Kartu remi standar: 52 kartu, 13 kartu hati. Pengambilan tanpa pengembalian.
 >
@@ -1596,7 +1596,7 @@ e. $0{,}3679$
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.2; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Fungsi Pembangkit Peluang (PGF) untuk $N \sim \text{Poisson}(\lambda)$:
 > > $$G_N(t) = E[t^N] = e^{\lambda(t-1)}$$
 >
@@ -1651,7 +1651,7 @@ e. $np(2-p)$
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Hogg-McKean-Craig Bab 2.1–2.6; Hogg-Tanis-Zimm Bab 4.4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Hukum Variansi Total (Eve's Law):
 > > $$\text{Var}(Y) = E[\text{Var}(Y \mid X)] + \text{Var}(E[Y \mid X])$$
 > > Untuk $Y \mid X = x \sim \text{Poisson}(x)$: $E[Y \mid X] = X$ dan $\text{Var}(Y \mid X) = X$.
@@ -1720,7 +1720,7 @@ e. $\dfrac{7}{8}$
 > | **Connected Topics** | [[2.2 Variabel Acak Kontinu]] |
 > | **Referensi** | Hogg-McKean-Craig Bab 2.1; Hogg-Tanis-Zimm Bab 4.1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Marginal PDF:
 > > $$f_X(x) = \int_{-\infty}^{\infty} f_{X,Y}(x,y)\,dy$$
 > > Untuk support segitiga $\{x+y \leq 1, x \geq 0, y \geq 0\}$: batas integral $y$ dari $0$ hingga $1-x$.
@@ -1779,7 +1779,7 @@ e. $\dfrac{5}{32}$
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.4; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$P(A \mid B) = \frac{P(A \cap B)}{P(B)}$$
 > > Misal $F$ = kejadian "setidaknya 1 perempuan", $M$ = "setidaknya 1 laki-laki".
 >
@@ -1840,7 +1840,7 @@ e. $e^{-1}$
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.2; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Distribusi Poisson bersifat aditif terhadap waktu: jika $N_{12h} \sim \text{Poisson}(1)$, maka $N_{24h} \sim \text{Poisson}(2)$.
 > > $$P(N = k) = \frac{e^{-\lambda}\lambda^k}{k!}$$
 >

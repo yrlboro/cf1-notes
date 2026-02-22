@@ -1,8 +1,3 @@
-# Pembahasan Ujian CF2 PAI — Sesi Agustus 2023
-> Kunci Jawaban Resmi: Persatuan Aktuaris Indonesia (PAI), Komisi Ujian dan Kurikulum
-
----
-
 ## **No. 1**
 
 Enam orang masuk ke lift dari lantai dasar sebuah hotel yang memiliki 10 lantai diatasnya. Dengan asumsi setiap orang turun di lantai yang dipilih secara acak, tentukanlah probabilitas bahwa semua orang turun di lantai yang berbeda.
@@ -25,7 +20,7 @@ e. Sekurang-kurangnya $0{,}6$
 > | **Connected Topics** | [[1.1 Eksperimen Acak dan Ruang Sampel]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.3; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$P(\text{semua berbeda}) = \frac{P(10,6)}{10^6} = \frac{10 \times 9 \times 8 \times 7 \times 6 \times 5}{10^6}$$
 > > di mana $P(n,k) = \dfrac{n!}{(n-k)!}$ adalah banyaknya permutasi $k$ objek dari $n$ objek berbeda.
 >
@@ -93,7 +88,7 @@ e. Hanya pernyataan i yang benar
 > | **Connected Topics** | [[1.4 Probabilitas Bersyarat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.4; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $A$ dan $B$ independen $\iff P(A \cap B) = P(A) \cdot P(B)$
 > > Sifat komplemen: $P(A^c) = 1 - P(A)$
 >
@@ -162,7 +157,7 @@ e. Sekurang-kurangnya $0{,}6$
 > | **Connected Topics** | [[3.7 Distribusi Majemuk]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.2; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Distribusi geometrik (support $x = 0, 1, 2, \ldots$, parametrisasi dengan mean $\mu = \frac{1-p}{p}$):
 > > $$P(X = k) = p(1-p)^k, \quad k = 0, 1, 2, \ldots$$
 > > $$E[X] = \frac{1-p}{p} \implies p = \frac{1}{1+\mu}$$
@@ -258,7 +253,7 @@ e. $0{,}375$
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.1–3.2; Miller Bab 7 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > PGF: $P_X(t) = E[t^X] = \sum_x t^x P(X=x)$, sehingga $P_X'(0) = P(X=1)$
 > > MGF: $M_X(t) = E[e^{tX}]$, sehingga $M_X'(0) = E[X]$
 > > Normalisasi: $p + q + r = 1$
@@ -339,7 +334,7 @@ e. $\dfrac{5}{18}$
 > | **Connected Topics** | [[3.2 Distribusi Marginal]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4.1; Miller Bab 3.5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $P(X=x, Y=y) = P(X=x \mid Y=y) \cdot P(Y=y)$
 > > $XY = 1 \iff (X=1, Y=1)$ atau $(X=-1, Y=-1)$
 >
@@ -398,7 +393,7 @@ e. Sekurang-kurangnya $1$
 > | **Connected Topics** | [[3.4 Nilai Harapan dan Variansi Bersyarat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.3; Miller Bab 5.4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $X \sim \text{Exp}(\lambda)$ dengan mean $\mu = 1/\lambda$; di sini $\mu = k$ sehingga $\lambda = 1/k$.
 > > Sifat memoryless: $E[X \mid X > k] = k + E[X] = k + k = 2k$
 > > Hukum total ekspektasi: $E[X] = E[X \mid X \leq k] P(X \leq k) + E[X \mid X > k] P(X > k)$
@@ -463,7 +458,7 @@ e. Sekurang-kurangnya $0{,}8$
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Miller Bab 2; Hogg-Tanis-Zimm Bab 1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > "Diperlukan paling sedikit 4 lemparan" = komplemen dari "total $\geq 14$ dicapai dalam 1, 2, atau 3 lemparan".
 > > $P(\text{butuh} \geq 4) = 1 - P(\text{total} \geq 14 \text{ dalam} \leq 3 \text{ lemparan})$
 >
@@ -551,7 +546,7 @@ e. $10$
 > | **Connected Topics** | [[4.7 Selang Kepercayaan]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5.8; Walpole Bab 8 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Jika $X_1, \ldots, X_n \sim N(\mu, \sigma^2)$ i.i.d., maka $S_n = \sum X_i \sim N(n\mu, n\sigma^2)$.
 > > $$P(S_n \geq 48) = P\left(Z \geq \frac{48 - n\mu}{\sigma\sqrt{n}}\right) \geq 0{,}99$$
 >
@@ -613,7 +608,7 @@ e. $4{,}25$
 > | **Connected Topics** | [[3.2 Distribusi Marginal]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4.4; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Jika $X, Y \sim U(a,b)$ i.i.d., maka CDF dari minimum $M = \min(X,Y)$:
 > > $$F_M(m) = 1 - [1-F_X(m)]^2, \quad f_M(m) = 2[1-F_X(m)]f_X(m)$$
 > > $$E[M] = \int_3^6 m \cdot f_M(m)\, dm$$
@@ -680,7 +675,7 @@ e. $a \geq 0{,}4$
 > | **Connected Topics** | [[2.4 Transformasi Variabel Acak Univariat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Untuk distribusi campuran (mixed): $E[X] = a \cdot 0 + \int_0^1 x \cdot f(x)\, dx \cdot c + b \cdot 1$ di mana $c$ adalah konstanta normalisasi.
 > > Normalisasi: $a + \int_0^1 c \cdot x\, dx + b = 1$, sehingga $a + c/2 + b = 1$.
 >
@@ -809,7 +804,7 @@ e. $7{,}8$
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.1–1.6; Miller Bab 3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $E[X] = \sum_x x \cdot p_X(x)$, $E[X^2] = \sum_x x^2 \cdot p_X(x)$, $\text{Var}(X) = E[X^2] - (E[X])^2$
 > > Untuk distribusi yang dimodifikasi: hitung pergeseran nilai harapan dan momen kedua.
 >
@@ -884,7 +879,7 @@ e. Sekurang-kurangnya $0{,}8$
 > | **Connected Topics** | [[3.7 Distribusi Majemuk]] |
 > | **Referensi** | Walpole Bab 8; Hogg-Tanis-Zimm Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Untuk $X_i \sim \text{Exp}(\lambda)$: $E[X_i] = 1/\lambda$, $\text{Var}(X_i) = 1/\lambda^2$.
 > > Persentil ke-95 dengan aproksimasi normal: $\mu_S + z_{0{,}95} \sigma_S = \mu_S + 1{,}645 \sigma_S$
 >
@@ -948,7 +943,7 @@ e. $\dfrac{1}{36}$
 > | **Connected Topics** | [[3.6 Matriks Variansi-Kovariansi]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4.4; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $\text{Cov}(U,W) = E[UW] - E[U]E[W]$
 > > Kunci: $U + W = X + Y$, $UW = XY$ (karena $\{U,W\} = \{X,Y\}$ sebagai himpunan)
 >
@@ -1010,7 +1005,7 @@ e. $\dfrac{1}{6}$
 > | **Connected Topics** | [[1.5 Kejadian Independen]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.4; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Teorema Bayes:
 > > $$P(H_i \mid D) = \frac{P(D \mid H_i) P(H_i)}{\sum_j P(D \mid H_j) P(H_j)}$$
 >
@@ -1068,7 +1063,7 @@ e. $\dfrac{80}{729}$
 > | **Connected Topics** | [[1.3 Metode Enumerasi]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.2; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Distribusi Binomial Negatif: probabilitas sukses ke-$r$ terjadi pada percobaan ke-$n$:
 > > $$P(X = n) = \binom{n-1}{r-1} p^r (1-p)^{n-r}$$
 > > Di sini "sukses" = gambar, $r=3$, $n=6$.
@@ -1126,7 +1121,7 @@ e. $2$
 > | **Connected Topics** | [[3.6 Matriks Variansi-Kovariansi]] |
 > | **Referensi** | Hogg-McKean-Craig Bab 2.4; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $\text{Cov}(X+Y, X-Y) = \text{Var}(X) - \text{Var}(Y)$
 > > (menggunakan bilinearitas kovariansi dan $\text{Cov}(X,Y) = \text{Cov}(Y,X)$)
 >
@@ -1197,7 +1192,7 @@ e. $\dfrac{5}{18}$
 > | **Connected Topics** | [[2.2 Variabel Acak Kontinu]] |
 > | **Referensi** | Hogg-McKean-Craig Bab 2.3; Miller Bab 3.6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $f(x,y) = \dfrac{\partial^2 F(x,y)}{\partial x \partial y}$
 > > $f_{Y|X}(y|x) = \dfrac{f(x,y)}{f_X(x)}$
 > > $E[Y|X=x] = \int y \cdot f_{Y|X}(y|x)\, dy$
@@ -1260,7 +1255,7 @@ e. Sekurang-kurangnya $2{.}300$
 > | **Connected Topics** | [[3.4 Nilai Harapan dan Variansi Bersyarat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.2; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $X \sim \text{Poisson}(\lambda)$: $P(X=k) = \dfrac{e^{-\lambda}\lambda^k}{k!}$
 > > Donasi = $K \cdot \min(X, 3)$, sehingga $E[\text{Donasi}] = K \cdot E[\min(X,3)]$
 >
@@ -1323,7 +1318,7 @@ e. Sekurang-kurangnya $0{,}9$
 > | **Connected Topics** | [[2.6 Distribusi Kontinu Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4.2; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $P(T + U \leq 4)$ dengan $T$ dan $U$ i.i.d., $f_T(t) = e^{1-t}$ untuk $t > 1$ (distribusi Exp shifted: $T - 1 \sim \text{Exp}(1)$)
 > > $$P(T + U \leq 4) = \int_1^{3} f_T(t) \cdot P(U \leq 4-t)\, dt$$
 >
@@ -1386,7 +1381,7 @@ e. $\dfrac{1}{3}$
 > | **Connected Topics** | [[3.2 Distribusi Marginal]] |
 > | **Referensi** | Hogg-McKean-Craig Bab 4.4; Miller Bab 6.7 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > PDF dari order statistic ke-$k$ dari $n$ variabel i.i.d. dengan PDF $f$ dan CDF $F$:
 > > $$f_{Y_{(k)}}(y) = \frac{n!}{(k-1)!(n-k)!}[F(y)]^{k-1}[1-F(y)]^{n-k}f(y)$$
 > > Untuk $U(0,1)$: $f(y)=1$, $F(y)=y$. Distribusi Beta: $Y_{(k)} \sim \text{Beta}(k, n-k+1)$.
@@ -1448,7 +1443,7 @@ e. $\dfrac{5}{8}$
 > | **Connected Topics** | [[2.2 Variabel Acak Kontinu]] |
 > | **Referensi** | Hogg-McKean-Craig Bab 2.2; Miller Bab 3.4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Normalisasi: $\int_0^1 \int_x^1 c(y-x)\, dy\, dx = 1$
 > > $f_X(x) = \int_x^1 c(y-x)\, dy$, $E[X] = \int_0^1 x \cdot f_X(x)\, dx$
 >
@@ -1507,7 +1502,7 @@ e. Sekurang-kurangnya $225{.}000$
 > | **Connected Topics** | [[3.4 Nilai Harapan dan Variansi Bersyarat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.2; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Donasi = $100{.}000 \times \max(X-3, 0)$ di mana $X \sim \text{Poisson}(4)$
 > > $E[\max(X-3,0)] = E[X] - 3 + 3P(X \leq 3) - E[X \cdot \mathbf{1}_{X \leq 3}]$
 > > Cara langsung: $E[\max(X-3,0)] = \sum_{k=4}^{\infty} (k-3) P(X=k)$
@@ -1586,7 +1581,7 @@ e. Sekurang-kurangnya $0{,}175$
 > | **Connected Topics** | [[2.3 Fungsi Pembangkit]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $P(X=k) = 0{,}9 \times 0{,}1^k$ adalah PMF geometrik dengan $p = 0{,}9$, $q = 0{,}1$.
 > > $S = X_J + X_J + X_A$ (total 3 bulan); cari $P(S \geq 3)$.
 > > PGF: $G_X(t) = \frac{p}{1-qt}$, $G_S(t) = [G_X(t)]^3$.
@@ -1657,7 +1652,7 @@ e. $\dfrac{7}{9}$
 > | **Connected Topics** | [[1.6 Teorema Bayes dan Hukum Probabilitas Total]] |
 > | **Referensi** | Miller Bab 2; Hogg-Tanis-Zimm Bab 1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $P(M \cup S) = P(M) + P(S) - P(M \cap S)$
 > > $P(S \mid M) = P(M \cap S)/P(M)$, $P(M \mid S) = P(M \cap S)/P(S)$
 >
@@ -1720,7 +1715,7 @@ e. $0{,}8$
 > | **Connected Topics** | [[3.8 Transformasi Variabel Acak Gabungan]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2.8; Miller Bab 4.5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $F_Y(y) = P(Y \leq y) = P(X^2 \leq y) = P(X \leq \sqrt{y})$ (karena $X > 0$)
 > > $$F_Y(2) = P(X \leq \sqrt{2}) = \int_0^{\sqrt{2}} f(x)\, dx$$
 >
@@ -1783,7 +1778,7 @@ e. $\dfrac{1}{4}(e^{3t/4} + 3e^{t/4})$
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.1; Miller Bab 7 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $M_X(t) = E[e^{tX}] = \sum_x e^{tx} P(X=x)$
 >
 > **Diketahui:**
@@ -1846,7 +1841,7 @@ e. Sekurang-kurangnya $0{,}00017$
 > | **Connected Topics** | [[1.5 Kejadian Independen]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.4; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Teorema Bayes: $P(D \mid T^-) = \dfrac{P(T^- \mid D) P(D)}{P(T^-)}$
 >
 > **Diketahui:**
@@ -1901,7 +1896,7 @@ e. Sekurang-kurangnya $0{,}44$
 > | **Connected Topics** | [[4.5 Estimasi Parameter]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.4; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Bayes + Binomial:
 > > $$P(A \mid \text{data}) = \frac{P(\text{data} \mid A) P(A)}{P(\text{data} \mid A) P(A) + P(\text{data} \mid B) P(B)}$$
 > > $P(\text{data} \mid A) = \binom{10}{2}(0{,}1)^2(0{,}9)^8$
@@ -1963,7 +1958,7 @@ e. Sekurang-kurangnya $0{,}8$
 > | **Connected Topics** | [[4.2 Distribusi Sampel]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5; Miller Bab 6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Rata-rata Andi dan Chandra: $\bar{W} = (A + C)/2$ dimana $A$ = waktu Andi, $C$ = waktu Chandra.
 > > Kombinasi linear variabel normal independen adalah normal.
 > > Cari: $P\left(B < \frac{A+C}{2}\right) = P\left(B - \frac{A+C}{2} < 0\right)$
@@ -2026,7 +2021,7 @@ e. $1$
 > | **Connected Topics** | [[4.7 Selang Kepercayaan]] |
 > | **Referensi** | Hogg-McKean-Craig Bab 3.5; Miller Bab 4.6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $W = X + Y \sim N(\mu_W, \sigma_W^2)$
 > > $\mu_W = E[X] + E[Y] = 0$
 > > $\sigma_W^2 = \text{Var}(X) + \text{Var}(Y) + 2\text{Cov}(X,Y) = 2 + 2\text{Cov}(X,Y)$

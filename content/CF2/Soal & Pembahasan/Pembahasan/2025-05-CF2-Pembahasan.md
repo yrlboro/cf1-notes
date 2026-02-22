@@ -24,7 +24,7 @@ e. $\dfrac{3}{7}$
 > | **Connected Topics** | [[2.6 Distribusi Kontinu Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$P(A \mid B) = \frac{P(A \cap B)}{P(B)}$$
 > > Di sini $A = \{X > 16\}$, $B = \{X > 8\}$, sehingga $A \cap B = \{X > 16\}$.
 >
@@ -91,7 +91,7 @@ e. 298 juta
 > | **Connected Topics** | [[4.5 Estimasi Parameter]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Distribusi Pareto: CDF adalah $F(x) = 1 - \left(\dfrac{\theta}{x}\right)^{\alpha}$ untuk $x > \theta$.
 > > Persentil ke-$p$: $F(\pi_p) = p \Rightarrow \pi_p = \theta(1-p)^{-1/\alpha}$.
 > > Di sini $\alpha = 2{,}5$ (parameter shape) dan $\theta = 200$ (parameter scale/lokasi).
@@ -163,7 +163,7 @@ e. $0{,}8$
 > | **Connected Topics** | [[1.4 Probabilitas Bersyarat]] |
 > | **Referensi** | Miller Bab 2; Hogg-Tanis-Zimm Bab 1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$
 > > $$P(A \cup B^C) = P(A) + P(B^C) - P(A \cap B^C)$$
 > > $$P(A) = P(A \cap B) + P(A \cap B^C)$$
@@ -225,7 +225,7 @@ e. 55
 > | **Connected Topics** | [[4.4 Hukum Bilangan Besar]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5; Miller Bab 7 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Jika $X_i \sim N(\mu, \sigma^2)$ i.i.d., maka $S_n = \sum_{i=1}^n X_i \sim N(n\mu, n\sigma^2)$.
 > > $$P(S_n \geq 40) \geq 0{,}9772$$
 >
@@ -293,7 +293,7 @@ e. $0{,}86$
 > | **Connected Topics** | [[2.1 Variabel Acak Diskrit]] |
 > | **Referensi** | Miller Bab 2; Hogg-Tanis-Zimm Bab 1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > **Teorema Bayes:**
 > > $$P(H \mid E) = \frac{P(E \mid H) \cdot P(H)}{P(E)}$$
 > > **Distribusi Binomial:** $P(X = k \mid n, p) = \binom{n}{k}p^k(1-p)^{n-k}$
@@ -367,7 +367,7 @@ e. $7{,}5$
 > | **Connected Topics** | [[2.6 Distribusi Kontinu Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $Y = \min(X, 4)$: variabel campuran (mixed).
 > > $$E[Y] = \int_0^4 x \cdot f(x)\,dx + 4 \cdot P(X \geq 4)$$
 > > $$E[Y^2] = \int_0^4 x^2 \cdot f(x)\,dx + 16 \cdot P(X \geq 4)$$
@@ -440,7 +440,7 @@ e. $0{,}71$
 > | **Connected Topics** | [[2.1 Variabel Acak Diskrit]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4; Miller Bab 3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$P(Y = y \mid X = x) = \frac{P(X=x, Y=y)}{P(X=x)}$$
 > > $$\text{Var}(Y \mid X=x) = E[Y^2 \mid X=x] - (E[Y \mid X=x])^2$$
 > > Untuk variabel Bernoulli bersyarat: $\text{Var}(Y|X=1) = p(1-p)$ dengan $p = P(Y=1|X=1)$.
@@ -504,7 +504,7 @@ e. $\dfrac{1}{3} + \dfrac{2}{3}e^{3t}$
 > | **Connected Topics** | [[3.8 Transformasi Variabel Acak Gabungan]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$M_Y(t) = E[e^{tY}] = \sum_y e^{ty} P(Y=y)$$
 > > Untuk $Y = X_1 X_2 X_3$ dengan $X_i \in \{0,1\}$: $Y = 1$ hanya jika $X_1 = X_2 = X_3 = 1$.
 >
@@ -564,7 +564,7 @@ e. $0{,}66$
 > | **Connected Topics** | [[2.4 Transformasi Variabel Acak Univariat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $X \sim \text{Exp}(\lambda)$: $F(x) = 1 - e^{-\lambda x}$ untuk $x > 0$.
 > > Di sini $\lambda$ adalah rate (bukan scale). $E[X] = 1/\lambda$.
 >
@@ -624,7 +624,7 @@ e. $0{,}75$
 > | **Connected Topics** | [[3.2 Distribusi Marginal]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4; Miller Bab 3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$P(X + Y \geq 1) = \iint_{x+y \geq 1} f(x,y)\,dx\,dy$$
 > > Lebih mudah: $P(X+Y \geq 1) = 1 - P(X+Y < 1)$.
 >
@@ -692,7 +692,7 @@ e. $16$
 > | **Connected Topics** | [[3.6 Matriks Variansi-Kovariansi]] |
 > | **Referensi** | Miller Bab 3; Hogg-Tanis-Zimm Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Untuk $X$ dan $Y$ independen:
 > > $$\text{Var}(aX + bY + c) = a^2\text{Var}(X) + b^2\text{Var}(Y)$$
 >
@@ -750,7 +750,7 @@ e. $1{,}00$
 > | **Connected Topics** | [[3.3 Distribusi Bersyarat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4; Miller Bab 3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Perangkat gagal saat $Y$ (waktu kegagalan sirkuit kedua). Hitung $E[Y]$ menggunakan distribusi marginal $f_Y(y)$.
 > > $$f_Y(y) = \int_0^y 6e^{-x}e^{-2y}\,dx$$
 >
@@ -818,7 +818,7 @@ e. $100\%$
 > | **Connected Topics** | [[4.2 Distribusi Sampel]] |
 > | **Referensi** | Miller Bab 3; Hogg-Tanis-Zimm Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$E[X] = \sum x \cdot p(x), \quad E[X^2] = \sum x^2 \cdot p(x), \quad \sigma = \sqrt{E[X^2] - (E[X])^2}$$
 > > Interval: $(\mu - \sigma,\, \mu + \sigma)$
 >
@@ -883,7 +883,7 @@ e. $0{,}460$
 > | **Connected Topics** | [[4.4 Hukum Bilangan Besar]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5; Miller Bab 7 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $X_i \sim \text{Exp}(\lambda = 1/1000)$: $\mu = 1000$, $\sigma^2 = 1{.}000^2 = 10^6$.
 > > Premi per polis $= \mu + 100 = 1{.}100$.
 > > Total premi dari 100 polis $= 100 \times 1{.}100 = 110{.}000$.
@@ -944,7 +944,7 @@ e. $0{,}500$
 > | **Connected Topics** | [[1.4 Probabilitas Bersyarat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4; Miller Bab 3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Support: $0 < y < x < 1$ (karena $Y \leq X$: proporsi tambahan ≤ proporsi dasar).
 > > $$f_{Y|X}(y|x) = \frac{f(x,y)}{f_X(x)}$$
 > > $$P(Y < 0{,}05 \mid X = 0{,}10) = \int_0^{0{,}05} f_{Y|X}(y \mid 0{,}10)\,dy$$
@@ -1007,7 +1007,7 @@ e. $250$
 > | **Connected Topics** | [[2.1 Variabel Acak Diskrit]] |
 > | **Referensi** | Miller Bab 4; Hogg-Tanis-Zimm Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Manfaat $B = \min(X, 250)$: variabel campuran.
 > > $X \sim \text{Exp}(\lambda = 0{,}004)$, $c = 0{,}004$.
 > > Median $m$: $P(B \leq m) = 0{,}5$.
@@ -1078,7 +1078,7 @@ e. $1{,}76$
 > | **Connected Topics** | [[2.1 Variabel Acak Diskrit]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4; Miller Bab 3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$P(Q=q \mid P=0) = \frac{P(P=0, Q=q)}{P(P=0)}$$
 > > $$\text{Var}(Q \mid P=0) = E[Q^2 \mid P=0] - (E[Q \mid P=0])^2$$
 >
@@ -1145,7 +1145,7 @@ e. $4$
 > | **Connected Topics** | [[2.3 Fungsi Pembangkit]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $X \sim \text{Poisson}(\lambda)$: $P(X=k) = \dfrac{e^{-\lambda}\lambda^k}{k!}$, $\text{Var}(X) = \lambda$.
 >
 > **Diketahui:**
@@ -1205,7 +1205,7 @@ e. $2{,}58$
 > | **Connected Topics** | [[3.5 Independensi dan Korelasi]] |
 > | **Referensi** | Miller Bab 3; Hogg-Tanis-Zimm Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$P(X=x) = \sum_y P(X=x, Y=y)$$
 > > $$\text{Var}(X) = E[X^2] - (E[X])^2$$
 >
@@ -1269,7 +1269,7 @@ e. $2{,}0$ juta
 > | **Connected Topics** | [[2.6 Distribusi Kontinu Umum]] |
 > | **Referensi** | Miller Bab 4; Hogg-Tanis-Zimm Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Manfaat $B = \min(Y, 10)$.
 > > $$E[B] = \int_1^{10} y \cdot f(y)\,dy + 10 \cdot P(Y > 10)$$
 >
@@ -1330,7 +1330,7 @@ e. $10{.}560$
 > | **Connected Topics** | [[3.8 Transformasi Variabel Acak Gabungan]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Karena J, K, L independen: $M_X(t) = M_J(t) \cdot M_K(t) \cdot M_L(t)$.
 > > MGF berbentuk $(1-2t)^{-\alpha}$ adalah distribusi Gamma dengan parameter shape $\alpha$ dan scale $\beta = 2$.
 > > Momen ke-$k$ dari Gamma($\alpha, \beta$): $E[X^k] = \dfrac{\Gamma(\alpha+k)}{\Gamma(\alpha)} \cdot \beta^k$.
@@ -1387,7 +1387,7 @@ e. $\dfrac{\dbinom{3}{1}\dbinom{4}{2}}{\dbinom{52}{5}}$
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Miller Bab 2; Hogg-Tanis-Zimm Bab 1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Aturan perkalian counting:
 > > - Pilih 1 Raja Sekop dari 1 kartu Raja Sekop: $\binom{1}{1} = 1$
 > > - Pilih 1 Raja lain (non-Sekop) dari 3 Raja yang tersisa: $\binom{3}{1}$
@@ -1454,7 +1454,7 @@ e. $\dfrac{3}{4}$
 > | **Connected Topics** | [[2.3 Fungsi Pembangkit]] |
 > | **Referensi** | Miller Bab 3; Hogg-Tanis-Zimm Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Deret geometri: $\sum_{k=1}^\infty r^k = \dfrac{r}{1-r}$ untuk $|r| < 1$.
 >
 > **Diketahui:**
@@ -1507,7 +1507,7 @@ e. $np(2 - p)$
 > | **Connected Topics** | [[3.7 Distribusi Majemuk]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4; Hogg-McKean-Craig Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > **Hukum Variansi Total:**
 > > $$\text{Var}(Y) = E[\text{Var}(Y|X)] + \text{Var}(E[Y|X])$$
 > > $Y|X=x \sim \text{Poisson}(x)$: $E[Y|X=x] = x$, $\text{Var}(Y|X=x) = x$.
@@ -1574,7 +1574,7 @@ e. $0{,}25$
 > | **Connected Topics** | [[1.5 Kejadian Independen]] |
 > | **Referensi** | Miller Bab 2; Hogg-Tanis-Zimm Bab 1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Teorema Bayes:
 > > $$P(\text{DM} \mid A) = \frac{P(A \mid \text{DM}) \cdot P(\text{DM})}{P(A)}$$
 > > $$P(A) = \sum_i P(A \mid C_i) P(C_i)$$
@@ -1632,7 +1632,7 @@ e. $\dfrac{6}{125{.}000} \int_{20}^{50} \int_{20}^{50-x-y} (50 - x - y) \, dy \,
 > | **Connected Topics** | [[3.2 Distribusi Marginal]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4; Miller Bab 3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Support: $0 < x$, $0 < y$, $x + y < 50$ (segitiga).
 > > Kondisi "kedua komponen masih hidup setelah 20 bulan" = $\{X > 20\} \cap \{Y > 20\}$.
 > > $$P(X>20, Y>20) = \iint_{x>20, y>20, x+y<50} f(x,y)\,dy\,dx$$
@@ -1691,7 +1691,7 @@ e. $0{,}45$
 > | **Connected Topics** | [[4.5 Estimasi Parameter]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5; Miller Bab 7 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $\bar{X} \sim N\!\left(\mu, \dfrac{\sigma^2}{n}\right)$
 > > $$P(\bar{X} > c) = P\!\left(Z > \frac{c - \mu}{\sigma/\sqrt{n}}\right)$$
 >
@@ -1749,7 +1749,7 @@ e. $0{,}92$
 > | **Connected Topics** | [[2.1 Variabel Acak Diskrit]] |
 > | **Referensi** | Miller Bab 5; Hogg-Tanis-Zimm Bab 3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $N \sim B(n=20, p=0{,}05)$
 > > $$P(N < 3) = P(N=0) + P(N=1) + P(N=2)$$
 > > $$P(N=k) = \binom{20}{k}(0{,}05)^k(0{,}95)^{20-k}$$
@@ -1819,7 +1819,7 @@ e. $32{.}222$
 > | **Connected Topics** | [[1.6 Teorema Bayes dan Hukum Probabilitas Total]] |
 > | **Referensi** | Miller Bab 3; Hogg-Tanis-Zimm Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$E[X \mid X > 0] = \frac{E[X \cdot \mathbf{1}_{X>0}]}{P(X>0)} = \frac{\sum_{x>0} x \cdot P(X=x)}{P(X>0)}$$
 >
 > **Diketahui:**
@@ -1872,7 +1872,7 @@ e. $14$ dan $65$
 > | **Connected Topics** | [[2.3 Fungsi Pembangkit]] |
 > | **Referensi** | Hogg-McKean-Craig Bab 2; Miller Bab 3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Untuk $W = aX + bY + cZ$:
 > > $$E[W] = aE[X] + bE[Y] + cE[Z]$$
 > > $$\text{Var}(W) = a^2\text{Var}(X) + b^2\text{Var}(Y) + c^2\text{Var}(Z) + 2ab\text{Cov}(X,Y) + 2ac\text{Cov}(X,Z) + 2bc\text{Cov}(Y,Z)$$

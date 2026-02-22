@@ -20,7 +20,7 @@ e. $2{.}304$
 > | **Connected Topics** | [[1.1 Eksperimen Acak dan Ruang Sampel]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.3; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > **Aturan Perkalian (Rule of Product):** Jika terdapat $k$ tahap yang berurutan dan bebas, dengan masing-masing $n_1, n_2, \ldots, n_k$ pilihan, maka total banyak cara adalah:
 > > $$N = n_1 \times n_2 \times \cdots \times n_k$$
 > > **Permutasi pilihan berbeda:** Jika pada perjalanan pulang tidak boleh menggunakan jalan yang sama dengan pergi, jumlah pilihan berkurang.
@@ -90,7 +90,7 @@ e. $\dfrac{1}{2}$
 > | **Connected Topics** | [[1.6 Teorema Bayes dan Hukum Probabilitas Total]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.4; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Probabilitas bersyarat:
 > > $$P(B \mid A \cap C) = \frac{P(B \cap A \cap C)}{P(A \cap C)}$$
 > > Sifat subset: Jika $B \subset A$, maka $B \cap A = B$, sehingga $B \cap A \cap C = B \cap C$.
@@ -151,7 +151,7 @@ e. $r^{\frac{1}{3}}$
 > | **Connected Topics** | [[1.6 Teorema Bayes dan Hukum Probabilitas Total]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2.4; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Misalkan $T$ = nomor pasien yang dites (distribusi Geometrik). Jika $p$ = probabilitas seorang pasien menderita diabetes, maka:
 > > $$P(T \geq k) = (1-p)^{k-1}$$
 > > karena $T \geq k$ artinya $k-1$ pasien pertama semuanya **tidak** menderita diabetes.
@@ -224,7 +224,7 @@ e. Sekurang-kurangnya $90$
 > | **Connected Topics** | [[2.4 Transformasi Variabel Acak Univariat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.7–2.1; Miller Bab 5.2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > **Momen faktorial dari PGF:** Turunan ke-$k$ PGF dievaluasi di $t=1$ menghasilkan momen faktorial ke-$k$:
 > > $$P_X^{(k)}(1) = E[X(X-1)(X-2)\cdots(X-k+1)]$$
 > > **Hubungan momen biasa dengan momen faktorial:**
@@ -296,7 +296,7 @@ e. $\dfrac{3}{4}$
 > | **Connected Topics** | [[2.3 Fungsi Pembangkit]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2.4; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Distribusi Geometrik: $Y$ = nomor lemparan pertama kali muncul {1,2,3}. Jika $p$ = peluang sukses:
 > > $$\text{Var}(Y) = \frac{1-p}{p^2}$$
 > > Di sini $Y$ dihitung mulai dari lemparan ke-1 (number of trials until first success).
@@ -361,7 +361,7 @@ e. Sekurang-kurangnya $0{,}9$
 > | **Connected Topics** | [[1.6 Teorema Bayes dan Hukum Probabilitas Total]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.1; Miller Bab 4.1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > CDF campuran (*mixture*):
 > > $$F_X(x) = w_1 F_1(x) + w_2 F_2(x)$$
 > > di mana $w_1 + w_2 = 1$ adalah bobot campuran. Median $m$ memenuhi $F_X(m) = 0{,}5$.
@@ -433,7 +433,7 @@ e. $6{.}449$
 > | **Connected Topics** | [[1.1 Eksperimen Acak dan Ruang Sampel]] |
 > | **Referensi** | Miller Bab 2; Hogg-Tanis-Zimm Bab 1.3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
 > > Jika anggota tertentu sudah dipastikan masuk, hitung kombinasi untuk sisa anggota dengan memperhatikan batasan.
 >
@@ -505,7 +505,7 @@ e. $0{,}04$
 > | **Connected Topics** | [[4.2 Distribusi Sampel]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5.5; Walpole Bab 8.1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > **Koreksi bilangan bulat (continuity correction):** Untuk mendekati distribusi diskrit dengan normal:
 > > $$P(a \leq X \leq b) \approx P\left(a - 0{,}5 \leq X \leq b + 0{,}5\right)_{\text{normal}}$$
 > > **Standarisasi:** $Z = (X - \mu)/\sigma$, lalu gunakan tabel $\Phi$.
@@ -581,7 +581,7 @@ e. $\dfrac{4}{3}$
 > | **Connected Topics** | [[3.6 Matriks Variansi-Kovariansi]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4.1; Miller Bab 4.6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$\text{Cov}(X, Y) = E[XY] - E[X]\,E[Y]$$
 >
 > **Diketahui:**
@@ -646,7 +646,7 @@ e. Sekurang-kurangnya $2{,}25$
 > | **Connected Topics** | [[4.5 Estimasi Parameter]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2.2; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Distribusi Seragam Diskrit pada $\{0, 1, \ldots, N\}$ (ada $N+1$ nilai):
 > > $$E[X] = \frac{N}{2}, \qquad \text{Var}(X) = \frac{N(N+2)}{12}$$
 > > Distribusi Poisson: $E[X] = \text{Var}(X) = \lambda$.
@@ -716,7 +716,7 @@ e. $\dfrac{1}{2}$
 > | **Connected Topics** | [[3.2 Distribusi Marginal]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4.4; Miller Bab 4.6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Jika $X_1, X_2, \ldots, X_n$ iid dengan CDF $F(x)$, maka CDF maksimum $M = \max(X_1,\ldots,X_n)$ adalah:
 > > $$P(M \leq m) = [F(m)]^n$$
 >
@@ -775,7 +775,7 @@ e. $1{,}71$
 > | **Connected Topics** | [[4.2 Distribusi Sampel]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.3; Miller Bab 7 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $X \sim N(\mu, \sigma^2)$: $P(X < 0) = \Phi\!\left(\dfrac{-\mu}{\sigma}\right) = \Phi(-\mu/\sigma)$
 > > di mana $\Phi$ adalah CDF distribusi normal standar.
 >
@@ -840,7 +840,7 @@ e. $62{,}5$
 > | **Connected Topics** | [[3.4 Nilai Harapan dan Variansi Bersyarat]] |
 > | **Referensi** | Miller Bab 4.1; Hogg-Tanis-Zimm Bab 2.2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Nilai harapan fungsi variabel acak kontinu:
 > > $$E[g(X)] = \int_{-\infty}^{\infty} g(x) f_X(x)\,dx$$
 > > Untuk $X \sim U[0, 2000]$: $f_X(x) = \dfrac{1}{2000}$ pada $[0, 2000]$.
@@ -905,7 +905,7 @@ e. $0{,}8$
 > | **Connected Topics** | [[1.5 Kejadian Independen]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.4; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > **Teorema Bayes:**
 > > $$P(X \mid \text{no claim}) = \frac{P(\text{no claim} \mid X)\,P(X)}{P(\text{no claim})}$$
 > > **Hukum probabilitas total:**
@@ -968,7 +968,7 @@ e. $120$
 > | **Connected Topics** | [[4.7 Selang Kepercayaan]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2.2; Miller Bab 5.2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $N \sim B(20, 0{,}02)$. Dana tidak cukup jika $C \cdot N > 120$, yaitu $N > 120/C$.
 > > Syarat: $P(N > 120/C) < 0{,}01$, ekuivalen dengan $P(N \leq \lfloor 120/C \rfloor) > 0{,}99$.
 >
@@ -1039,7 +1039,7 @@ e. $\dfrac{5}{8}$
 > | **Connected Topics** | [[3.2 Distribusi Marginal]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4.1; Miller Bab 4.6–4.8 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$P(A \mid B) = \frac{P(A \cap B)}{P(B)}, \quad P(B) = \iint_{B} f(x,y)\,dx\,dy$$
 >
 > **Diketahui:**
@@ -1110,7 +1110,7 @@ e. $\dfrac{7}{6}$
 > | **Connected Topics** | [[3.2 Distribusi Marginal]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4.1; Miller Bab 4.6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > **Hukum Harapan Total (Law of Total Expectation):**
 > > $$E[Y] = E[E[Y \mid X]] = \sum_k E[Y \mid X=k]\, P(X=k)$$
 >
@@ -1181,7 +1181,7 @@ e. Sekurang-kurangnya $0{,}125$
 > | **Connected Topics** | [[3.7 Distribusi Majemuk]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.4–1.5; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > **Teorema Bayes** untuk kasus campuran:
 > > $$P(\text{Vegan} \mid N=2) = \frac{P(N=2 \mid \text{Vegan})\,P(\text{Vegan})}{P(N=2)}$$
 > > Distribusi Poisson: $P(N=k \mid \lambda) = \dfrac{e^{-\lambda}\lambda^k}{k!}$. Di sini $\lambda$ adalah parameter **mean** Poisson.
@@ -1243,7 +1243,7 @@ e. Sekurang-kurangnya $2{.}000$
 > | **Connected Topics** | [[3.4 Nilai Harapan dan Variansi Bersyarat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2.3; Miller Bab 5.3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $X \sim \text{Poisson}(\lambda)$: $P(X=k) = e^{-\lambda}\lambda^k/k!$.
 > > Donasi $D = K \cdot \min(X, 3)$. Target: $E[D] = K \cdot E[\min(X, 3)] = 4000$.
 >
@@ -1313,7 +1313,7 @@ e. $51{,}04$
 > | **Connected Topics** | [[3.6 Matriks Variansi-Kovariansi]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4.1; Miller Bab 4.6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Jika $X$ dan $Z$ independen:
 > > $$\text{Var}(ZX) = E[(ZX)^2] - (E[ZX])^2 = E[Z^2]\,E[X^2] - (E[Z])^2(E[X])^2$$
 > > Untuk $X \sim \text{Exp}(\lambda)$ (rate $\lambda = 1/8$, mean $= 8$, kontinu, support $(0,\infty)$):
@@ -1386,7 +1386,7 @@ e. Sekurang-kurangnya $0{,}004$
 > | **Connected Topics** | [[3.3 Distribusi Bersyarat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4.1; Miller Bab 4.6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Jika CDF dapat difaktorkan: $F(x,y) = F_X(x)\,F_Y(y)$, maka $X$ dan $Y$ **independen**.
 > > PMF bersama: $P(X=x, Y=y) = P(X=x)\,P(Y=y)$ dengan
 > > $$P(X=x) = F_X(x) - F_X(x-1)$$
@@ -1449,7 +1449,7 @@ e. Sekurang-kurangnya $0{,}025$
 > | **Connected Topics** | [[3.1 Distribusi Gabungan]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2.3; Miller Bab 5.2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Misalkan $C$ = jumlah pasien kosmetik. Diberikan $X = x$: $C \mid X=x \sim B(x, 0{,}2)$.
 > > **Hukum probabilitas total:**
 > > $$P(C \geq 3) = \sum_{x} P(C \geq 3 \mid X=x)\,P(X=x)$$
@@ -1521,7 +1521,7 @@ e. Sekurang-kurangnya $0{,}15$
 > | **Connected Topics** | [[3.1 Distribusi Gabungan]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2.3; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $P(X=k) = 0{,}8 \times 0{,}2^k$ adalah distribusi Geometrik (jumlah kegagalan sebelum sukses pertama) dengan $p=0{,}8$.
 > > Total $T = X_1 + X_2 + X_3$ (iid). $P(T \geq 3) = 1 - P(T \leq 2)$.
 >
@@ -1590,7 +1590,7 @@ e. $350$
 > | **Connected Topics** | [[3.4 Nilai Harapan dan Variansi Bersyarat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.4; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $P(H \text{ hidup}) = P(\text{hanya H}) + P(\text{keduanya}) = 0{,}01 + 0{,}96 = 0{,}97$.
 > > Ekspektasi bersyarat:
 > > $$E[\text{klaim} \mid H \text{ hidup}] = 10{.}000 \times P(W \text{ meninggal} \mid H \text{ hidup})$$
@@ -1658,7 +1658,7 @@ e. $xe^{-x}$
 > | **Connected Topics** | [[2.4 Transformasi Variabel Acak Univariat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4.4; Miller Bab 4.6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > PDF rasio $X = C/P$ (dengan $C$ dan $P$ independen positif):
 > > $$f_X(x) = \int_0^{\infty} p\, f_C(xp)\, f_P(p)\, dp, \quad x > 0$$
 > > Untuk $C \sim \text{Exp}(\text{rate}=1)$: $f_C(c)=e^{-c}$; $P \sim \text{Exp}(\text{rate}=1/2)$: $f_P(p)=\frac{1}{2}e^{-p/2}$.
@@ -1724,7 +1724,7 @@ e. $\dfrac{5}{8}$
 > | **Connected Topics** | [[2.4 Transformasi Variabel Acak Univariat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.7–2.1; Miller Bab 5.4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > MGF: $M_X(t) = \sum_{k=0}^{2} P(X=k)\, e^{kt} = P(X=0) + P(X=1)e^t + P(X=2)e^{2t}$.
 > > Koefisien $e^{0} = 1$ dalam $M_X(t)$ adalah $P(X=0)$.
 >
@@ -1783,7 +1783,7 @@ e. Sekurang-kurangnya $0{,}8$
 > | **Connected Topics** | [[3.7 Distribusi Majemuk]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.4; Miller Bab 4.1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > **Teorema Bayes:**
 > > $$P(R \mid T>1) = \frac{P(T>1 \mid R)\,P(R)}{P(T>1 \mid R)\,P(R) + P(T>1 \mid A)\,P(A)}$$
 > > Untuk $T \sim \text{Exp}(\lambda)$: $P(T > t) = e^{-\lambda t}$.
@@ -1844,7 +1844,7 @@ e. $567$
 > | **Connected Topics** | [[3.6 Matriks Variansi-Kovariansi]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4.1; Miller Bab 4.6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Untuk $n$ pemegang polis iid, total pembayaran $T = \sum_{i=1}^{n}(2R_i + 3K_i)$.
 > > Karena independen: $\text{Var}(T) = n\,\text{Var}(2R_i + 3K_i)$.
 > > $\text{Var}(aX + bY) = a^2\text{Var}(X) + b^2\text{Var}(Y) + 2ab\,\text{Cov}(X,Y)$.
@@ -1909,7 +1909,7 @@ e. Sekurang-kurangnya $0{,}65$
 > | **Connected Topics** | [[4.4 Hukum Bilangan Besar]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5.5; Walpole Bab 8.1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $D = N_1 - N_2$: $E[D] = E[N_1] - E[N_2]$, $\text{Var}(D) = \text{Var}(N_1) + \text{Var}(N_2)$ (independen).
 > > Dengan koreksi bilangan bulat: $P(|D| > 3) = P(D > 3 \text{ atau } D < -3) \approx P(|D| > 3{,}5)_{\text{normal}}$.
 >
@@ -1972,7 +1972,7 @@ e. $e$
 > | **Connected Topics** | [[4.2 Distribusi Sampel]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.1; Miller Bab 4.1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Persentil ke-$q$ dari $\text{Exp}(\text{mean}=m)$: CDF $F(x) = 1-e^{-x/m}$.
 > > Persentil ke-$q$: $x_q = -m\ln(1-q)$.
 > > Sehingga $a = x_{0{,}05} = -m\ln(0{,}95)$ dan $b = x_{0{,}95} = -m\ln(0{,}05)$.

@@ -20,7 +20,7 @@ e. $7{.}524$
 > | **Connected Topics** | [[1.2 Aksioma dan Perhitungan Probabilitas]] |
 > | **Referensi** | Miller Bab 2; Hogg-Tanis-Zimm Bab 1.3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Jumlah permutasi $n$ objek berbeda: $n!$
 > > Untuk digit pertama $d$, angka-angka yang berawalan $d$ berjumlah $3! = 6$.
 >
@@ -102,7 +102,7 @@ e. $0{,}674$
 > | **Connected Topics** | [[1.5 Kejadian Independen]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.4; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$P(A \mid B) = \frac{P(A \cap B)}{P(B)}$$
 > > $$P(A^c) = 1 - P(A)$$
 > > Untuk diagram Venn tiga himpunan, probabilitas total:
@@ -182,7 +182,7 @@ e. Sekurang-kurangnya $0{,}08$
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.1–1.2; Miller Bab 3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Deret geometri tak hingga: $\sum_{n=0}^{\infty} r^n = \frac{1}{1-r}$ untuk $|r| < 1$.
 > > Agar PMF valid: $\sum_{n=0}^{\infty} p_n = 1$.
 >
@@ -244,7 +244,7 @@ e. $e^{685}$
 > | **Connected Topics** | [[2.4 Transformasi Variabel Acak Univariat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.2; Miller Bab 7 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Jika $X \sim N(\mu, \sigma^2)$, maka MGF-nya:
 > > $$M_X(t) = E[e^{tX}] = e^{\mu t + \frac{1}{2}\sigma^2 t^2}$$
 > > Sehingga $E[e^{tX}] = e^{\mu t + \frac{1}{2}\sigma^2 t^2}$.
@@ -301,7 +301,7 @@ e. $\dfrac{1}{2} + \dfrac{(n-1)(n-2)}{6n^2}$
 > | **Connected Topics** | [[1.3 Metode Enumerasi]] |
 > | **Referensi** | Miller Bab 2; Hogg-Tanis-Zimm Bab 1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Jumlah dari variabel-variabel independen: jumlah genap $\iff$ jumlah variabel yang bernilai ganjil adalah genap.
 > > Untuk satu dadu standar 6 sisi: $P(\text{genap}) = P(\text{ganjil}) = \frac{3}{6} = \frac{1}{2}$.
 >
@@ -411,7 +411,7 @@ e. $\dfrac{3}{4}$
 > | **Connected Topics** | [[1.5 Kejadian Independen]] |
 > | **Referensi** | Miller Bab 2; Hogg-Tanis-Zimm Bab 1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Operasi: Gambar (G) → $a_{n+1} = 2a_n - 1$; Angka (A) → $a_{n+1} = \frac{a_n}{2} - 1$.
 > > Bilangan bulat $\iff$ tidak ada pembagian yang menghasilkan pecahan.
 >
@@ -480,7 +480,7 @@ e. $0{,}351$
 > | **Connected Topics** | [[3.8 Transformasi Variabel Acak Gabungan]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.3–3.4; Miller Bab 7 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Jika $X, Y \sim N(0,1)$ independen, maka $W = X^2 + Y^2 \sim \chi^2(2) = \text{Exp}\!\left(\frac{1}{2}\right)$.
 > > CDF distribusi $\chi^2(2)$: $F_W(w) = 1 - e^{-w/2}$ untuk $w > 0$.
 >
@@ -546,7 +546,7 @@ e. $0{,}68$
 > | **Connected Topics** | [[3.2 Distribusi Marginal]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5.1; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$P(X + Y \geq 3) = 1 - P(X + Y < 3) = 1 - \int\!\int_{x+y < 3,\ (x,y) \in \text{support}} f(x,y)\, dx\, dy$$
 >
 > **Diketahui:**
@@ -621,7 +621,7 @@ e. $\dfrac{5}{8}$
 > | **Connected Topics** | [[3.3 Distribusi Bersyarat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5.1; Miller Bab 4.6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Distribusi marginal: $f_X(x) = \int_{-\infty}^{\infty} f(x,y)\, dy$
 > > Mean: $E[X] = \int_{-\infty}^{\infty} x \cdot f_X(x)\, dx$
 >
@@ -689,7 +689,7 @@ e. $0{,}51$
 > | **Connected Topics** | [[2.3 Fungsi Pembangkit]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.7, 2.1; Miller Bab 3–4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Untuk variabel acak campuran (mixed):
 > > $$E[X] = \sum_{\text{titik massa}} x_i \cdot p_i + \int_{\text{bagian kontinu}} x \cdot f(x)\, dx$$
 >
@@ -748,7 +748,7 @@ e. $0{,}36$
 > | **Connected Topics** | [[4.1 Penarikan Sampel Acak]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5.5; Walpole Bab 8.1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Distribusi sampling rata-rata: jika $X_i \sim N(\mu, \sigma^2)$ i.i.d., maka
 > > $$\bar{X} \sim N\!\left(\mu, \frac{\sigma^2}{n}\right)$$
 > > Standardisasi: $Z = \dfrac{\bar{X} - \mu}{\sigma/\sqrt{n}} \sim N(0,1)$
@@ -809,7 +809,7 @@ e. $2{.}400$
 > | **Connected Topics** | [[2.4 Transformasi Variabel Acak Univariat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Jika $X \sim U(0, b)$: $E[X] = b/2$, $f_X(x) = 1/b$.
 > > $$E[Y] = \int_D^{3300} (x - D) \cdot \frac{1}{3300}\, dx$$
 >
@@ -876,7 +876,7 @@ e. $0{,}8$
 > | **Connected Topics** | [[1.5 Kejadian Independen]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.4; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Teorema Bayes:
 > > $$P(A \mid B) = \frac{P(B \mid A) \cdot P(A)}{P(B)}$$
 > > Hukum probabilitas total:
@@ -939,7 +939,7 @@ e. $120$
 > | **Connected Topics** | [[4.7 Selang Kepercayaan]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.1; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $X \sim B(n, p)$: $P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$
 > > Dana cukup jika total pembayaran $= X \cdot C \leq 120$, yaitu $X \leq \lfloor 120/C \rfloor$.
 > > Dana tidak cukup jika $X > 120/C$.
@@ -1018,7 +1018,7 @@ e. Sekurang-kurangnya $0{,}8$
 > | **Connected Topics** | [[3.4 Nilai Harapan dan Variansi Bersyarat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5.1; Miller Bab 4.6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$P(A \mid B) = \frac{P(A \cap B)}{P(B)}$$
 >
 > **Diketahui:**
@@ -1083,7 +1083,7 @@ e. $0{,}34$
 > | **Connected Topics** | [[2.6 Distribusi Kontinu Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$P(X > 26 \mid X > 11) = \frac{P(X > 26)}{P(X > 11)}$$
 > > $$P(X > a) = \int_a^{42} \frac{42-x}{882}\, dx = \frac{(42-a)^2}{1764}$$
 >
@@ -1137,7 +1137,7 @@ e. $1{.}397$
 > | **Connected Topics** | [[2.3 Fungsi Pembangkit]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.1; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $N \sim \text{Poisson}(\lambda=0{,}5)$; $Y = 3000 \cdot \min(N, 3)$; $\text{SD}(Y) = 3000\sqrt{\text{Var}(\min(N,3))}$
 >
 > **Diketahui:**
@@ -1198,7 +1198,7 @@ e. $\dfrac{5}{8}$
 > | **Connected Topics** | [[3.4 Nilai Harapan dan Variansi Bersyarat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5.1; Miller Bab 4.6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$P(X+Y \geq 2 \mid X \leq 1) = \frac{P(X+Y \geq 2,\ X \leq 1)}{P(X \leq 1)} = \frac{P(\cdot)}{1/3}$$
 >
 > **Diketahui:**
@@ -1253,7 +1253,7 @@ e. $\dfrac{11L^2}{2}$
 > | **Connected Topics** | [[3.4 Nilai Harapan dan Variansi Bersyarat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5.1; Miller Bab 4.6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Luas segitiga $0\leq s \leq t \leq L$: $L^2/2$, sehingga $f(s,t) = 2/L^2$.
 > > $E[7S^2+8T^2] = 7E[S^2]+8E[T^2]$
 >
@@ -1302,7 +1302,7 @@ e. Sekurang-kurangnya $0{,}15$
 > | **Connected Topics** | [[3.7 Distribusi Majemuk]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.1–3.2; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $P(N=4, K=3) = P(N=4) \cdot P(K=3 \mid N=4)$
 > > $P(N=4) = \frac{e^{-4}\cdot 4^4}{4!}$; $P(K=3\mid N=4) = \binom{4}{3}(0{,}75)^3(0{,}25)^1$
 >
@@ -1351,7 +1351,7 @@ e. $\sqrt{7}$
 > | **Connected Topics** | [[2.3 Fungsi Pembangkit]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.1; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $P(X=k) = \frac{e^{-\lambda}\lambda^k}{k!}$; $\text{Var}(\text{Poisson}(\lambda)) = \lambda$
 >
 > > [!example]- Langkah Pengerjaan
@@ -1396,7 +1396,7 @@ e. $0{,}78$
 > | **Connected Topics** | [[3.1 Distribusi Gabungan]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.1; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $\text{Geom}(p=2/3)$: $P(K=k) = (2/3)(1/3)^{k-1}$, $E[K]=3/2$
 > > Biaya $< 50.000 \iff$ total perawatan $\leq 2$
 >
@@ -1449,7 +1449,7 @@ e. $294$
 > | **Connected Topics** | [[3.4 Nilai Harapan dan Variansi Bersyarat]] |
 > | **Referensi** | Miller Bab 2; Hogg-Tanis-Zimm Bab 1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $P(H_S) = P(\text{keduanya hidup})+P(\text{hanya suami hidup}) = 0{,}95+0{,}02 = 0{,}97$
 > > $E[\text{klaim}\mid H_S] = \frac{0{,}02}{0{,}97}\times 10.000$; Kelebihan $= 1000 - E[\text{klaim}\mid H_S]$
 >
@@ -1502,7 +1502,7 @@ e. $2{.}232$
 > | **Connected Topics** | [[2.4 Transformasi Variabel Acak Univariat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5.6; Miller Bab 4.8–4.9 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > CDF: $F(x) = 1 - x^{-5}$ untuk $x \geq 1$
 > > PDF order statistic maksimum ($n=3$): $f_{X_{(3)}}(x) = 3[F(x)]^2 f(x)$
 >
@@ -1560,7 +1560,7 @@ e. $14$
 > | **Connected Topics** | [[4.2 Distribusi Sampel]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.2; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $M_Y(t) = [M_{X_1}(t)]^{14}$; MGF Poisson$(\lambda) = e^{\lambda(e^t-1)}$
 >
 > > [!example]- Langkah Pengerjaan
@@ -1605,7 +1605,7 @@ e. Sekurang-kurangnya $0{,}8$
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.4, 4.4; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $P(T>1\mid R) = e^{-1/4}$; $P(T>1\mid A) = e^{-1/3}$
 > > Teorema Bayes: $P(R\mid T>1) = \frac{e^{-1/4}\times 0{,}3}{e^{-1/4}\times 0{,}3+e^{-1/3}\times 0{,}7}$
 >
@@ -1658,7 +1658,7 @@ e. $0{,}46$
 > | **Connected Topics** | [[4.3 Teorema Limit Pusat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.1; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $X \sim B(27, 0{,}08)$; $P(X \geq 5) = 1 - P(X \leq 4)$
 >
 > > [!example]- Langkah Pengerjaan
@@ -1706,7 +1706,7 @@ e. Sekurang-kurangnya $0{,}65$
 > | **Connected Topics** | [[3.5 Independensi dan Korelasi]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5.5; Walpole Bab 8.5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $D = N_1-N_2$; $E[D]=0$; $\text{Var}(D) = 40+24 = 64$; $\text{SD}(D) = 8$
 > > Koreksi bilangan bulat: $P(|D|>3) = P(D>3)+P(D<-3) \approx P(|Z|>3{,}5/8)$
 >
@@ -1759,7 +1759,7 @@ e. $2{,}8b$
 > | **Connected Topics** | [[2.1 Variabel Acak Diskrit]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**    
 > > $X \sim U(0,3b)$: $f_X(x) = 1/(3b)$
 > > $Y$: distribusi campuran dengan massa di $Y=0$ dan kontinu di $(b/2,b)$ dan $(2b,3b)$
 >

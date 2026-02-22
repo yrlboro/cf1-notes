@@ -20,7 +20,7 @@ e. $\dfrac{5}{8}$
 > | **Connected Topics** | [[2.1 Variabel Acak Diskrit]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2; Miller Bab 3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Distribusi Binomial: $X \sim B(n, p)$
 > > $$P[X = k] = \binom{n}{k} p^k (1-p)^{n-k}$$
 > > Di sini $p$ adalah probabilitas sukses (lahir perempuan), bukan proporsi populasi (konteks: distribusi diskrit).
@@ -77,7 +77,7 @@ e. $0{,}7$
 > | **Connected Topics** | [[1.6 Teorema Bayes dan Hukum Probabilitas Total]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$P(A|B) = \frac{P(A \cap B)}{P(B)}, \quad P(A'|B') = \frac{P(A' \cap B')}{P(B')}$$
 > > Hukum Probabilitas Total: $P(A) = P(A|B)P(B) + P(A|B')P(B')$
 >
@@ -140,7 +140,7 @@ e. $r^{\frac{1}{3}}$
 > | **Connected Topics** | [[1.5 Kejadian Independen]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2; Miller Bab 3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Distribusi Geometrik: $X \sim \text{Geom}(p)$ — jumlah percobaan hingga sukses pertama.
 > > $$P[X \geq k] = (1-p)^{k-1}$$
 > > Sifat memoryless (tanpa ingatan) distribusi geometrik:
@@ -214,7 +214,7 @@ e. Sekurang-kurangnya $90$
 > | **Connected Topics** | [[2.2 Variabel Acak Kontinu]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Fungsi Pembangkit Probabilitas (PGF): $G_X(t) = E[t^X]$
 > > Momen faktorial: $G_X^{(k)}(1) = E[X(X-1)\cdots(X-k+1)]$
 > > Untuk Binomial $B(n,p)$: $E[X] = np$, $E[X^2] = np(1-p) + n^2p^2$, $\text{Var}(X) = np(1-p)$
@@ -287,7 +287,7 @@ e. Sekurang-kurangnya $1{,}5$
 > | **Connected Topics** | [[3.4 Nilai Harapan dan Variansi Bersyarat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$\text{Cov}(U, V) = E[UV] - E[U]E[V]$$
 > > Untuk $U = X - Y$ dan $V = X + Y$:
 > > $$\text{Cov}(X-Y, X+Y) = \text{Var}(X) - \text{Var}(Y)$$
@@ -362,7 +362,7 @@ e. Sekurang-kurangnya $0{,}9$
 > | **Connected Topics** | [[3.7 Distribusi Majemuk]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2–3; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Distribusi campuran (mixture): $F(x) = w_1 F_1(x) + w_2 F_2(x)$
 > > Eksponensial dengan rata-rata $\theta$: $F(x) = 1 - e^{-x/\theta}$, $x > 0$.
 > > Di sini $\theta$ adalah parameter skala (rata-rata), bukan rate $\lambda = 1/\theta$.
@@ -433,7 +433,7 @@ e. $\dfrac{6}{13}$
 > | **Connected Topics** | [[1.6 Teorema Bayes dan Hukum Probabilitas Total]] |
 > | **Referensi** | Miller Bab 2; Hogg-Tanis-Zimm Bab 1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$P(A|B) = \frac{P(A \cap B)}{P(B)}$$
 > > Enumerasi kubus:
 > > - Kubus sudut (3 sisi merah): 8 buah
@@ -502,7 +502,7 @@ e. $1$
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5; Miller Bab 7 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Kabel tidak putus jika tenaga minimum $> 12{.}400$, yaitu $P(X > 12{.}400)$ untuk $X \sim N(12432, 25^2)$.
 > > Jumlah kabel tidak putus $K \sim B(400, p)$, gunakan pendekatan normal.
 > > $$Z = \frac{X - \mu}{\sigma}$$
@@ -569,7 +569,7 @@ e. $\dfrac{5}{2}$
 > | **Connected Topics** | [[3.4 Nilai Harapan dan Variansi Bersyarat]] |
 > | **Referensi** | Hogg-McKean-Craig Bab 2; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > PDF gabungan dari CDF: $f(x,y) = \dfrac{\partial^2 F}{\partial x \partial y}$
 > > PDF marginal: $f_X(x) = \int_0^5 f(x,y)\,dy$
 > > PDF bersyarat: $f_{Y|X}(y|x) = \dfrac{f(x,y)}{f_X(x)}$
@@ -641,7 +641,7 @@ e. $0{,}4$
 > | **Connected Topics** | [[4.4 Hukum Bilangan Besar]] |
 > | **Referensi** | Miller Bab 3; Hogg-Tanis-Zimm Bab 1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $$E[X] = \sum x \cdot p_X(x), \quad E[X^2] = \sum x^2 \cdot p_X(x)$$
 > > $$\text{Var}(X) = E[X^2] - (E[X])^2, \quad \sigma_X = \sqrt{\text{Var}(X)}$$
 >
@@ -707,7 +707,7 @@ e. Sekurang-kurangnya $6$
 > | **Connected Topics** | [[3.1 Distribusi Gabungan]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5; Miller Bab 6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > CDF dari maksimum: $F_Y(y) = F_{X_1}(y) \cdot F_{X_2}(y) \cdot F_{X_3}(y)$ (karena independen)
 > > Untuk $X_i \sim \text{Exp}(\theta_i)$ (rata-rata $\theta_i$): $F_{X_i}(y) = 1 - e^{-y/\theta_i}$
 > > $$E[Y] = \int_0^\infty [1 - F_Y(y)]\,dy = \int_0^\infty P(Y > y)\,dy$$
@@ -776,7 +776,7 @@ e. $17$
 > | **Connected Topics** | [[4.2 Distribusi Sampel]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5; Miller Bab 7 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $X \sim B(200, 0{,}5)$, pendekatan normal: $X \approx N(\mu, \sigma^2)$
 > > Koreksi kesinambungan (continuity correction): $P(a \leq X \leq b) \approx P(a - 0{,}5 < Z\sigma + \mu < b + 0{,}5)$
 > > Untuk $P(100-k \leq X \leq 100+k)$: setelah koreksi → $P\left(Z \leq \frac{k+0{,}5}{\sigma}\right) - P\left(Z \leq \frac{-(k+0{,}5)}{\sigma}\right)$
@@ -838,7 +838,7 @@ e. $70$
 > | **Connected Topics** | [[2.4 Transformasi Variabel Acak Univariat]] |
 > | **Referensi** | Miller Bab 4; Hogg-Tanis-Zimm Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $L \sim U(0, 2000)$, $f_L(l) = \frac{1}{2000}$
 > > Bonus: $B = 0{,}25(1200 - L)$ jika $L < 1200$, dan $B = 0$ jika $L \geq 1200$
 > > $$E[B] = \int_0^{1200} 0{,}25(1200 - l) \cdot \frac{1}{2000}\,dl$$
@@ -896,7 +896,7 @@ e. $18$
 > | **Connected Topics** | [[1.5 Kejadian Independen]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Teorema Bayes:
 > > $$P(K \mid B) = \frac{P(B \mid K) P(K)}{P(B \mid K)P(K) + P(B \mid K^c)P(K^c)}$$
 > > di mana $K$ = tahu jawaban, $B$ = benar.
@@ -963,7 +963,7 @@ e. Sekurang-kurangnya $3{,}3$
 > | **Connected Topics** | [[2.4 Transformasi Variabel Acak Univariat]] |
 > | **Referensi** | Miller Bab 3; Hogg-Tanis-Zimm Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $X \sim B(3, 0{,}4)$: $P(X=k) = \binom{3}{k}(0{,}4)^k(0{,}6)^{3-k}$
 > > Jumlah anggota keluarga $M = 1 + X \in \{1, 2, 3, 4\}$
 > > $E[g(M)] = \sum_{m} g(m) P(M = m)$
@@ -1023,7 +1023,7 @@ e. $1{,}625$
 > | **Connected Topics** | [[3.1 Distribusi Gabungan]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Hukum ekspektasi total (Law of Total Expectation):
 > > $$E[T] = E[E[T|X]]$$
 > > Jika $T|X=x \sim U(0, 1+x)$, maka $E[T|X=x] = \frac{1+x}{2}$
@@ -1080,7 +1080,7 @@ e. $45\%$
 > | **Connected Topics** | [[1.3 Metode Enumerasi]] |
 > | **Referensi** | Miller Bab 2; Hogg-Tanis-Zimm Bab 1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Misalkan $S$ = telepon seluler, $R$ = telepon rumah.
 > > $P(S|R) = 0{,}75$: $P(S \cap R) = 0{,}75\,P(R)$
 > > $P(R|S) = 0{,}40$: $P(S \cap R) = 0{,}40\,P(S)$
@@ -1146,7 +1146,7 @@ e. $\dfrac{1 - e^{-\lambda}}{1 - 2e^{-\lambda}}$
 > | **Connected Topics** | [[2.3 Fungsi Pembangkit]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2; Miller Bab 3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Axiom normalisasi: $\sum_{k=0}^\infty P[X=k] = 1$
 > > Poisson: $P[Y=k] = \frac{e^{-\lambda}\lambda^k}{k!}$, maka $P[Y=0] = e^{-\lambda}$ dan $\sum_{k=1}^\infty P[Y=k] = 1 - e^{-\lambda}$.
 > > Di sini $\lambda$ adalah parameter mean distribusi Poisson (konteks: distribusi diskrit).
@@ -1205,7 +1205,7 @@ e. $-c\lambda + c\lambda^2 + c^2\lambda^2$
 > | **Connected Topics** | [[2.3 Fungsi Pembangkit]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2; Miller Bab 3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $\text{Var}(X) = E[X^2] - (E[X])^2$
 > > Kontribusi $k=0$: $P[X=0] = e^{-\lambda}/2$ → suku $k=0$ tidak berkontribusi pada $E[X]$ atau $E[X^2]$.
 > > Untuk $k \geq 1$: $P[X=k] = c \cdot \frac{e^{-\lambda}\lambda^k}{k!}$
@@ -1266,7 +1266,7 @@ e. Sekurang-kurangnya $0{,}5$
 > | **Connected Topics** | [[3.2 Distribusi Marginal]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5; Miller Bab 6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > PDF order statistik ke-$k$ dari $n$ sampel dengan PDF $f(x)$ dan CDF $F(x)$:
 > > $$f_{Y_k}(y) = \frac{n!}{(k-1)!(n-k)!} [F(y)]^{k-1}[1-F(y)]^{n-k} f(y)$$
 > > Untuk $X_i \sim U(0,2)$: $f(x) = 1/2$, $F(x) = x/2$ untuk $0 \leq x \leq 2$.
@@ -1331,7 +1331,7 @@ e. Sekurang-kurangnya $0{,}9$ tapi kurang dari $1$
 > | **Connected Topics** | [[3.8 Transformasi Variabel Acak Gabungan]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $X \sim U(8,12)$, $Y \sim U(10,18)$, independen.
 > > $P(X < Y) = \int\int_{x < y} f_X(x)f_Y(y)\,dx\,dy$
 > > Perlu hitung area $\{(x,y): x < y\}$ pada persegi $[8,12] \times [10,18]$.
@@ -1398,7 +1398,7 @@ e. Sekurang-kurangnya $0{,}025$
 > | **Connected Topics** | [[3.7 Distribusi Majemuk]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Misalkan $Z$ = jumlah pasien kosmetik. Kondisi pada $X$: $Z|X=n \sim B(n, 0{,}2)$.
 > > $$P(Z \geq 3) = \sum_{n=3}^4 P(X=n) \cdot P(Z \geq 3 \mid X=n)$$
 > > (jika $X=2$: $Z$ maks 2, tidak bisa $Z \geq 3$)
@@ -1461,7 +1461,7 @@ e. $6{,}8$
 > | **Connected Topics** | [[1.4 Probabilitas Bersyarat]] |
 > | **Referensi** | Hogg-McKean-Craig Bab 2; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Perhatikan bahwa $X$ dan $Y$ **tidak independen** karena berbagi lemparan yang sama.
 > > $p_5 = 1/6$ (peluang muncul 5), $p_2 = 1/6$ (peluang muncul 2).
 > > Kondisi $Y=2$: angka 2 pertama muncul pada lemparan ke-2 → lemparan ke-1 bukan 2, lemparan ke-2 adalah 2.
@@ -1535,7 +1535,7 @@ e. Sekurang-kurangnya $0{,}9$
 > | **Connected Topics** | [[2.4 Transformasi Variabel Acak Univariat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $X$ adalah variabel acak campuran (mixed): memiliki massa diskrit di $x=0$ dan $x=1$, serta bagian kontinu.
 > > Syarat normalisasi: massa diskrit + integral kontinu = 1.
 > > Probabilitas bersyarat: $P(A|B) = P(A \cap B)/P(B)$.
@@ -1604,7 +1604,7 @@ e. $\sqrt{e^{\sigma^2} - 1}$
 > | **Connected Topics** | [[3.8 Transformasi Variabel Acak Gabungan]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > $Y = e^X$ dengan $X \sim N(\mu, \sigma^2)$ → $Y$ berdistribusi Log-Normal.
 > > MGF normal: $M_X(t) = e^{\mu t + \sigma^2 t^2/2}$
 > > $E[Y^k] = E[e^{kX}] = M_X(k) = e^{k\mu + k^2\sigma^2/2}$
@@ -1668,7 +1668,7 @@ e. $\dfrac{5}{8}$
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > MGF untuk variabel diskrit pada $\{0, 1, 2\}$:
 > > $$M_X(t) = P(X=0) + P(X=1)e^t + P(X=2)e^{2t}$$
 > > Koefisien $e^{kt}$ dalam $M_X(t)$ adalah $P(X=k)$.
@@ -1734,7 +1734,7 @@ e. Sekurang-kurangnya $0{,}8$
 > | **Connected Topics** | [[1.2 Aksioma dan Perhitungan Probabilitas]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Teorema Bayes:
 > > $$P(M|B) = \frac{P(B|M)P(M)}{P(B|M)P(M) + P(B|H)P(H)}$$
 > > di mana $M$ = mobil merah, $H$ = mobil hijau, $B$ = klaim $> 10$ juta.
@@ -1794,7 +1794,7 @@ e. Sekurang-kurangnya $0{,}44$
 > | **Connected Topics** | [[1.2 Aksioma dan Perhitungan Probabilitas]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2; Miller Bab 3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Misalkan $A$ = kejadian bahwa suatu kelompok memiliki $\geq 9$ peserta selesai.
 > > $Z_i \sim B(10, 0{,}8)$ (jumlah yang selesai di kelompok $i$, karena $p_{\text{selesai}} = 1 - 0{,}2 = 0{,}8$).
 > > $P(A) = P(Z_i \geq 9) = P(Z_i = 9) + P(Z_i = 10)$
@@ -1858,7 +1858,7 @@ e. Sekurang-kurangnya $0{,}08$
 > | **Connected Topics** | [[4.3 Teorema Limit Pusat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 4; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Jika $J \sim N(\mu_J, \sigma_J^2)$ dan $S \sim N(\mu_S, \sigma_S^2)$ independen, maka:
 > > $$D = J - S \sim N(\mu_J - \mu_S,\ \sigma_J^2 + \sigma_S^2)$$
 > > Target: $P(|D| \leq 1) = P(-1 \leq D \leq 1)$
@@ -1921,7 +1921,7 @@ e. Sekurang-kurangnya $2{,}25$
 > | **Connected Topics** | [[3.8 Transformasi Variabel Acak Gabungan]] |
 > | **Referensi** | Miller Bab 4; Hogg-Tanis-Zimm Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Persentil ke-$p$ dari transformasi monoton: jika $Y = g(X)$ dengan $g$ monoton meningkat, maka persentil ke-$p$ dari $Y$ adalah $g$ dari persentil ke-$p$ dari $X$.
 > > $X \sim U(-1,1)$: persentil ke-80 dari $X$ adalah $x_{0{,}8}$ di mana $F_X(x_{0{,}8}) = 0{,}8$.
 >
