@@ -59,20 +59,20 @@ e. $0{,}885$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Menggunakan $P(1 < Y < 3)$ sebagai pembilang langsung tanpa mengambil irisannya dengan $B$. Pembilang yang benar adalah $P(A \cap B) = P(2 < Y < 3)$.
-> > > - Lupa bahwa $P(A \mid B) \neq P(A) / P(B)$ ketika $A$ dan $B$ tidak saling bebas dan memiliki irisan parsial.
+> > **🐛 Kesalahan Konseptual**
+> > - Menggunakan $P(1 < Y < 3)$ sebagai pembilang langsung tanpa mengambil irisannya dengan $B$. Pembilang yang benar adalah $P(A \cap B) = P(2 < Y < 3)$.
+> > - Lupa bahwa $P(A \mid B) \neq P(A) / P(B)$ ketika $A$ dan $B$ tidak saling bebas dan memiliki irisan parsial.
 > >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - Notasi $P[A \mid B]$ dengan kurung siku identik dengan $P(A \mid B)$ — bukan notasi interval.
-> > > - "Paling mendekati" mengisyaratkan perlu menghitung numerik sampai presisi cukup.
+> > **🐛 Kesalahan Interpretasi Soal**
+> > - Notasi $P[A \mid B]$ dengan kurung siku identik dengan $P(A \mid B)$ — bukan notasi interval.
+> > - "Paling mendekati" mengisyaratkan perlu menghitung numerik sampai presisi cukup.
 > >
-> > > [!CAUTION] Red Flags
-> > > - Jika soal menyebut "diketahui bahwa..." → ini selalu probabilitas bersyarat, hitung irisan dulu.
-> > > - Jika event $A$ dan $B$ overlap sebagian → identifikasi $A \cap B$ sebelum menulis integral manapun.
-
+> > **⚠️ Red Flags**
+> > - Jika soal menyebut "diketahui bahwa..." → ini selalu probabilitas bersyarat, hitung irisan dulu.
+> > - Jika event $A$ dan $B$ overlap sebagian → identifikasi $A \cap B$ sebelum menulis integral manapun.
+>
 ---
-
+>
 ## **No. 2**
 
 Suatu polis asuransi memberikan perlindungan terhadap risiko hujan badai dan pencurian untuk sebuah bangunan selama 10 tahun. Perusahaan asuransi hanya akan menanggung satu kejadian kerugian untuk masing-masing hujan badai dan pencurian dalam suatu tahun kalender tertentu.
@@ -142,15 +142,15 @@ e. $0{,}83$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Menjumlahkan probabilitas per tahun tanpa mempertimbangkan distribusi binomial untuk 10 tahun.
-> > > - Mengasumsikan $N = N_H + N_T$ berdistribusi Binomial tunggal — tidak tepat karena $p$ berbeda.
+> > **🐛 Kesalahan Konseptual**
+> > - Menjumlahkan probabilitas per tahun tanpa mempertimbangkan distribusi binomial untuk 10 tahun.
+> > - Mengasumsikan $N = N_H + N_T$ berdistribusi Binomial tunggal — tidak tepat karena $p$ berbeda.
 > >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - "Kurang dari dua" berarti $N = 0$ atau $N = 1$, bukan $N \leq 2$.
+> > **🐛 Kesalahan Interpretasi Soal**
+> > - "Kurang dari dua" berarti $N = 0$ atau $N = 1$, bukan $N \leq 2$.
 > >
-> > > [!CAUTION] Red Flags
-> > > - Jika ada dua proses independen dengan $p$ berbeda → tidak bisa digabung langsung menjadi satu distribusi Binomial; hitung masing-masing lalu konvolusi.
+> > **⚠️ Red Flags**
+> > - Jika ada dua proses independen dengan $p$ berbeda → tidak bisa digabung langsung menjadi satu distribusi Binomial; hitung masing-masing lalu konvolusi.
 
 ---
 
@@ -159,7 +159,6 @@ e. $0{,}83$
 Misal X merupakan variabel acak kontinu dengan fungsi kepadatan peluang:
 
 $$f(x) = \begin{cases} \dfrac{|x|}{10}, & \text{untuk } -2 \leq x \leq 4 \\ 0, & \text{selainnya} \end{cases}$$
-
 Hitunglah varians dari X! (Pilihlah jawaban yang paling mendekati!)
 
 a. $0{,}25$  
@@ -217,19 +216,19 @@ e. $4{,}93$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Lupa memisahkan integral di $x = 0$ untuk menangani nilai absolut $|x|$ — mengintegral $\dfrac{|x|}{10}$ langsung dari $-2$ hingga $4$ memberikan hasil salah.
-> > > - Menghitung $E[|X|]$ alih-alih $E[X]$ — keduanya berbeda karena support mencakup nilai negatif.
+> > **🐛 Kesalahan Konseptual**
+> > - Lupa memisahkan integral di $x = 0$ untuk menangani nilai absolut $|x|$ — mengintegral $\dfrac{|x|}{10}$ langsung dari $-2$ hingga $4$ memberikan hasil salah.
+> > - Menghitung $E[|X|]$ alih-alih $E[X]$ — keduanya berbeda karena support mencakup nilai negatif.
 > >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - Mengira support simetris hanya karena ada $|x|$ — support $[-2, 4]$ tidak simetris di sekitar 0.
+> > **🐛 Kesalahan Interpretasi Soal**
+> > - Mengira support simetris hanya karena ada $|x|$ — support $[-2, 4]$ tidak simetris di sekitar 0.
 > >
-> > > [!CAUTION] Red Flags
-> > > - Jika PDF mengandung $|x|$ → selalu pecah integral di titik $x = 0$.
-> > > - Jika support tidak simetris → $E[X] \neq 0$ meskipun ada nilai negatif.
-
+> > **⚠️ Red Flags**
+> > - Jika PDF mengandung $|x|$ → selalu pecah integral di titik $x = 0$.
+> > - Jika support tidak simetris → $E[X] \neq 0$ meskipun ada nilai negatif.
+>
 ---
-
+>
 ## **No. 4**
 
 Masa hidup suatu bohlam lampu dalam bulan diketahui mengikuti distribusi seragam $[0, 40]$. Misal $a$ merupakan angka ril positif dengan nilai kurang dari 30. Peluang bahwa bohlam lampu rusak dalam 30 bulan, jika diketahui bahwa bohlam lampu berfungsi dengan baik setelah $a$ bulan sebesar $0{,}6$. Tentukan nilai $a$!
@@ -288,14 +287,14 @@ e. $18$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Menggunakan $P(X \leq 30 \mid X > a) = P(X \leq 30) / P(X > a)$ tanpa mengambil irisan — pembilang yang benar adalah $P(a < X \leq 30)$, bukan $P(X \leq 30)$.
+> > **🐛 Kesalahan Konseptual**
+> > - Menggunakan $P(X \leq 30 \mid X > a) = P(X \leq 30) / P(X > a)$ tanpa mengambil irisan — pembilang yang benar adalah $P(a < X \leq 30)$, bukan $P(X \leq 30)$.
 > >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - "Rusak dalam 30 bulan, diketahui masih hidup setelah $a$ bulan" → ini probabilitas bersyarat $P(X \leq 30 \mid X > a)$, bukan $P(X \leq 30 - a)$.
+> > **🐛 Kesalahan Interpretasi Soal**
+> > - "Rusak dalam 30 bulan, diketahui masih hidup setelah $a$ bulan" → ini probabilitas bersyarat $P(X \leq 30 \mid X > a)$, bukan $P(X \leq 30 - a)$.
 > >
-> > > [!CAUTION] Red Flags
-> > > - Jika soal menyebutkan "diketahui masih hidup/berfungsi setelah $t$" → gunakan probabilitas bersyarat, bukan survival langsung.
+> > **⚠️ Red Flags**
+> > - Jika soal menyebutkan "diketahui masih hidup/berfungsi setelah $t$" → gunakan probabilitas bersyarat, bukan survival langsung.
 
 ---
 
@@ -328,13 +327,13 @@ e. $0{,}832$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Untuk distribusi Poisson, $E[N] = \text{Var}(N) = \lambda$, sehingga $V_1 - V_2 = \lambda_1 - \lambda_2$.
-> > > - Salah membaca "satu setengah kali" sebagai $P(N_1=0) = \tfrac{1}{2}P(N_2=0)$ alih-alih $\tfrac{3}{2}P(N_2=0)$.
+> > **🐛 Kesalahan Konseptual**
+> > - Untuk distribusi Poisson, $E[N] = \text{Var}(N) = \lambda$, sehingga $V_1 - V_2 = \lambda_1 - \lambda_2$.
+> > - Salah membaca "satu setengah kali" sebagai $P(N_1=0) = \tfrac{1}{2}P(N_2=0)$ alih-alih $\tfrac{3}{2}P(N_2=0)$.
 > >
-> > > [!CAUTION] Red Flags
-> > > - Jika hasil perhitungan tidak ada pada pilihan jawaban → periksa kembali interpretasi frasa soal.
-> > > - "Satu setengah kali" = $1{,}5$ kali, bukan $0{,}5$ kali.
+> > **⚠️ Red Flags**
+> > - Jika hasil perhitungan tidak ada pada pilihan jawaban → periksa kembali interpretasi frasa soal.
+> > - "Satu setengah kali" = $1{,}5$ kali, bukan $0{,}5$ kali.
 
 ---
 
@@ -397,18 +396,18 @@ e. Persentil ke-85
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Mengira modus distribusi normal berbeda dari mean — untuk distribusi normal, modus = median = mean = $\mu$.
-> > > - Salah arah standardisasi: $z = (x - \mu)/\sigma$, bukan $(\mu - x)/\sigma$.
+> > **🐛 Kesalahan Konseptual**
+> > - Mengira modus distribusi normal berbeda dari mean — untuk distribusi normal, modus = median = mean = $\mu$.
+> > - Salah arah standardisasi: $z = (x - \mu)/\sigma$, bukan $(\mu - x)/\sigma$.
 > >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - Persentil ke-40 berarti $P(X \leq 52{,}20) = 0{,}40$ — ini memberikan $z < 0$ karena nilai di bawah mean.
+> > **🐛 Kesalahan Interpretasi Soal**
+> > - Persentil ke-40 berarti $P(X \leq 52{,}20) = 0{,}40$ — ini memberikan $z < 0$ karena nilai di bawah mean.
 > >
-> > > [!CAUTION] Red Flags
-> > > - Jika $z^*$ dari tabel Φ bernilai positif tapi nilai yang diberikan di bawah mean → ada kesalahan tanda.
-
+> > **⚠️ Red Flags**
+> > - Jika $z^*$ dari tabel Φ bernilai positif tapi nilai yang diberikan di bawah mean → ada kesalahan tanda.
+>
 ---
-
+>
 ## **No. 7**
 
 Misal $X$ merupakan variabel acak yang merepresentasikan waktu yang diperlukan untuk memperbaiki ban mobil yang kempes total. Anda diberikan informasi berikut:
@@ -424,7 +423,7 @@ b. $2{,}12$
 c. $4{,}58$  
 d. $6{,}62$  
 e. $9{,}41$
-
+>
 > [!summary]+ **Jawaban No. 7**
 > **(e). $9{,}41$**
 >
@@ -438,7 +437,7 @@ e. $9{,}41$
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2.1; Miller Bab 4.1 |
 >
 > > [!info]+ **Rumus**  
-> > Untuk $X \sim U(a, b)$: 
+> > Untuk $X \sim U(a, b)$:
 > > $$\text{Median} = \frac{a+b}{2}, \qquad \text{SD}(X) = \frac{b-a}{\sqrt{12}}$$
 >
 > **Diketahui:**
@@ -470,34 +469,34 @@ e. $9{,}41$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Menggunakan rumus variansi $\sigma^2 = (b-a)^2/12$ lupa mengakarkan — soal memberikan SD bukan variansi.
-> > > - Mengira persentil ke-50 = $a + 0{,}5(b-a)$ (benar) tapi lupa bahwa ini sama dengan $(a+b)/2$.
+> > **🐛 Kesalahan Konseptual**
+> > - Menggunakan rumus variansi $\sigma^2 = (b-a)^2/12$ lupa mengakarkan — soal memberikan SD bukan variansi.
+> > - Mengira persentil ke-50 = $a + 0{,}5(b-a)$ (benar) tapi lupa bahwa ini sama dengan $(a+b)/2$.
 > >
-> > > [!CAUTION] Red Flags
-> > > - Jika soal memberikan SD dan median → langsung bentuk dua persamaan linear dan selesaikan.
-
+> > **⚠️ Red Flags**
+> > - Jika soal memberikan SD dan median → langsung bentuk dua persamaan linear dan selesaikan.
+>
 ---
-
+>
 ## **No. 8**
-
+>
 Suatu pialang asuransi memasarkan 4 produk asuransi yang berbeda. Peluang produk-produk tersebut terjual sebagai berikut:
-
+>
 | Produk | Peluang |
 |--------|---------|
 | Asuransi kendaraan | 0,55 |
 | Asuransi properti | 0,45 |
 | Asuransi kesehatan | 0,50 |
 | Asuransi jiwa | 0,60 |
-
+>
 Penjualan dari produk-produk asuransi di atas diketahui saling bebas. Hitunglah peluang pialang menjual lebih dari dua produk ke seorang klien! (Pilihlah jawaban yang paling mendekati!)
-
+>
 a. $0{,}27$  
 b. $0{,}35$  
 c. $0{,}39$  
 d. $0{,}57$  
 e. $0{,}73$
-
+>
 > [!summary]+ **Jawaban No. 8**
 > **(b). $0{,}35$**
 >
@@ -547,32 +546,32 @@ e. $0{,}73$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Menggunakan distribusi Binomial dengan $p$ rata-rata — tidak valid karena masing-masing $p_i$ berbeda.
-> > > - Menghitung komplemen sebagai $1 - P(N \leq 2)$ lalu melakukan kesalahan di $P(N=2)$.
+> > **🐛 Kesalahan Konseptual**
+> > - Menggunakan distribusi Binomial dengan $p$ rata-rata — tidak valid karena masing-masing $p_i$ berbeda.
+> > - Menghitung komplemen sebagai $1 - P(N \leq 2)$ lalu melakukan kesalahan di $P(N=2)$.
 > >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - "Lebih dari dua" = 3 atau 4, **bukan** 2, 3, atau 4.
+> > **🐛 Kesalahan Interpretasi Soal**
+> > - "Lebih dari dua" = 3 atau 4, **bukan** 2, 3, atau 4.
 > >
-> > > [!CAUTION] Red Flags
-> > > - Jika setiap item memiliki $p$ berbeda → enumerasi semua kombinasi, jangan pakai Binomial biasa.
-
+> > **⚠️ Red Flags**
+> > - Jika setiap item memiliki $p$ berbeda → enumerasi semua kombinasi, jangan pakai Binomial biasa.
+>
 ---
-
+>
 ## **No. 9**
-
+>
 Variabel acak besaran kerugian yang dialami oleh perusahaan asuransi, X, memiliki fungsi densitas sebagai berikut:
-
+>
 $$f(y) = \begin{cases} c(x-5), & \text{untuk } 5 \leq y \leq 8 \\ c(11-x), & \text{untuk } 8 \leq y \leq 11 \\ 0, & \text{selainnya} \end{cases}$$
-
+>
 Dimana $c$ merupakan suatu konstanta. Tentukan persentil ke-30 dari besaran kerugian yang dialami oleh perusahaan tersebut! (Pilihlah jawaban yang paling mendekati!)
-
+>
 a. $5{,}47$  
 b. $6{,}14$  
 c. $6{,}80$  
 d. $7{,}06$  
 e. $7{,}32$
-
+>
 > [!summary]+ **Jawaban No. 9**
 > **(e). $7{,}32$**
 >
@@ -619,28 +618,28 @@ e. $7{,}32$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Lupa memeriksa apakah persentil yang dicari berada di bagian kiri atau kanan distribusi sebelum mengintegral — jika langsung integral dari 5 hingga 11, akan keliru.
-> > > - Salah menghitung $c$: luas segitiga = $\frac{1}{2} \times \text{alas} \times \text{tinggi} = \frac{1}{2} \times 6 \times c \times 3 = 9c$ (perlu verifikasi dengan integral).
+> > **🐛 Kesalahan Konseptual**
+> > - Lupa memeriksa apakah persentil yang dicari berada di bagian kiri atau kanan distribusi sebelum mengintegral — jika langsung integral dari 5 hingga 11, akan keliru.
+> > - Salah menghitung $c$: luas segitiga = $\frac{1}{2} \times \text{alas} \times \text{tinggi} = \frac{1}{2} \times 6 \times c \times 3 = 9c$ (perlu verifikasi dengan integral).
 > >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - Perhatikan bahwa soal mendefinisikan $f(y)$ tetapi menggunakan $x$ di dalam ekspresi — variabel integrasi adalah nilai domain (yang pada dasarnya sama).
+> > **🐛 Kesalahan Interpretasi Soal**
+> > - Perhatikan bahwa soal mendefinisikan $f(y)$ tetapi menggunakan $x$ di dalam ekspresi — variabel integrasi adalah nilai domain (yang pada dasarnya sama).
 > >
-> > > [!CAUTION] Red Flags
-> > > - Untuk distribusi berbentuk segitiga → selalu cek luas masing-masing bagian sebelum menentukan di mana persentil berada.
-
+> > **⚠️ Red Flags**
+> > - Untuk distribusi berbentuk segitiga → selalu cek luas masing-masing bagian sebelum menentukan di mana persentil berada.
+>
 ---
-
+>
 ## **No. 10**
-
+>
 Enam pasien secara saling bebas memiliki peluang yang sama untuk mengidap penyakit tertentu. Peluang bahwa tidak ada pasien yang mengidap penyakit sebesar 10 kali peluang tepat satu orang mengidap penyakit. Peluang bahwa tidak ada pasien yang mengidap penyakit sebesar $x$ kali peluang tepat tiga pasien mengidap penyakit. Tentukan nilai $x$!
-
+>
 a. $300$  
 b. $1{.}000$  
 c. $1{.}800$  
 d. $6{.}000$  
 e. $10{.}800$
-
+>
 > [!summary]+ **Jawaban No. 10**
 > **(e). $10{.}800$**
 >
@@ -687,30 +686,29 @@ e. $10{.}800$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Lupa bahwa $\binom{6}{3} = 20$ ada dalam $P(X=3)$ — jika tidak disertakan, rasio akan salah.
-> > > - Mencari nilai $p$ numerik dan memasukkannya kembali — lebih efisien menggunakan rasio $q/p = 60$.
+> > **🐛 Kesalahan Konseptual**
+> > - Lupa bahwa $\binom{6}{3} = 20$ ada dalam $P(X=3)$ — jika tidak disertakan, rasio akan salah.
+> > - Mencari nilai $p$ numerik dan memasukkannya kembali — lebih efisien menggunakan rasio $q/p = 60$.
 > >
-> > > [!CAUTION] Red Flags
-> > > - Jika soal meminta rasio probabilitas Binomial → cari dulu $q/p$ dari kondisi pertama, lalu gunakan langsung di kondisi kedua.
-
+> > **⚠️ Red Flags**
+> > - Jika soal meminta rasio probabilitas Binomial → cari dulu $q/p$ dari kondisi pertama, lalu gunakan langsung di kondisi kedua.
+>
 ---
-
-
+>
 ## **No. 11**
-
+>
 Di sepanjang jalan tol, mobil-mobil dipilih secara acak untuk pemeriksaan ban. Misal X merepresentasikan banyaknya ban depan yang sudah tidak layak pakai dan Y merepresentasikan banyaknya ban belakang yang sudah tidak layak pakai pada mobil-mobil yang dipilih secara acak. Fungsi peluang bersama dari X dan Y diberikan sebagai berikut:
-
+>
 $$p(x, y) = \begin{cases} \dfrac{(6-x)(3-y)}{58(1+|x+y|)}, & \text{untuk } x = 0,1,2 \text{ dan } y = 0,1,2 \\ 0, & \text{selainnya} \end{cases}$$
-
+>
 Hitunglah varians dari banyaknya ban mobil yang sudah tidak layak pakai dari mobil-mobil yang terpilih dengan satu ban belakang tidak layak pakai!
-
+>
 a. $7/16$  
 b. $49/100$  
 c. $2/3$  
 d. $7/10$  
 e. $1$
-
+>
 > [!summary]+ **Jawaban No. 11**
 > **⚠️ DIANULIR oleh PAI**
 >
@@ -730,25 +728,25 @@ e. $1$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Untuk distribusi bersyarat diskrit: $p_{X|Y}(x|y) = p(x,y) / p_Y(y)$ — marginal $p_Y(y)$ harus dihitung terlebih dahulu dengan menjumlahkan atas semua nilai $x$.
-> > > - Varians bersyarat: $\text{Var}(X|Y=y) = E[X^2|Y=y] - (E[X|Y=y])^2$.
+> > **🐛 Kesalahan Konseptual**
+> > - Untuk distribusi bersyarat diskrit: $p_{X|Y}(x|y) = p(x,y) / p_Y(y)$ — marginal $p_Y(y)$ harus dihitung terlebih dahulu dengan menjumlahkan atas semua nilai $x$.
+> > - Varians bersyarat: $\text{Var}(X|Y=y) = E[X^2|Y=y] - (E[X|Y=y])^2$.
 > >
-> > > [!CAUTION] Red Flags
-> > > - Jika soal mengandung frasa ambigu tentang "variabel yang dimaksud" dalam konteks distribusi bersyarat → identifikasi variabel target secara eksplisit sebelum menghitung.
-
+> > **⚠️ Red Flags**
+> > - Jika soal mengandung frasa ambigu tentang "variabel yang dimaksud" dalam konteks distribusi bersyarat → identifikasi variabel target secara eksplisit sebelum menghitung.
+>
 ---
-
+>
 ## **No. 12**
-
+>
 Dalam suatu tahun kalender, profit yang dihasilkan PT Cuan Terus dari penjualan waran diketahui mengikuti distribusi normal dengan rataan 20 dan varians 16. Hitunglah interval, terpusat pada rataannya, yang memuat 25% peluang atas satu tahun profit! (Pilihlah jawaban yang paling mendekati!)
-
+>
 a. $(12{,}2;\ 27{,}8)$  
 b. $(14{,}9;\ 25{,}1)$  
 c. $(16{,}0;\ 24{,}0)$  
 d. $(17{,}3;\ 22{,}7)$  
 e. $(18{,}7;\ 21{,}3)$  
-
+>
 > [!summary]+ **Jawaban No. 12**
 > **(e). $(18{,}7;\ 21{,}3)$**
 >
@@ -788,29 +786,29 @@ e. $(18{,}7;\ 21{,}3)$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Mencari $z^*$ dari $\Phi(z^*) = 0{,}25$ — yang benar adalah $\Phi(z^*) = 0{,}625$.
-> > > - Menggunakan $\sigma^2 = 16$ sebagai $\sigma$ — ingat $\sigma = \sqrt{16} = 4$.
+> > **🐛 Kesalahan Konseptual**
+> > - Mencari $z^*$ dari $\Phi(z^*) = 0{,}25$ — yang benar adalah $\Phi(z^*) = 0{,}625$.
+> > - Menggunakan $\sigma^2 = 16$ sebagai $\sigma$ — ingat $\sigma = \sqrt{16} = 4$.
 > >
-> > > [!CAUTION] Red Flags
-> > > - "Interval terpusat pada rataan" → $z^* = \Phi^{-1}((1+p)/2)$, bagi peluang secara simetris.
-
+> > **⚠️ Red Flags**
+> > - "Interval terpusat pada rataan" → $z^* = \Phi^{-1}((1+p)/2)$, bagi peluang secara simetris.
+>
 ---
-
+>
 ## **No. 13**
-
+>
 Proporsi tanaman kapas di suatu lahan pertanian yang terdampak hama kumbang kapas dimodelkan menggunakan variabel acak kontinu dengan fungsi kepadatan peluang:
-
+>
 $$f(x) = \begin{cases} 20x^3(1-x), & \text{untuk } 0 \leq x \leq 1 \\ 0, & \text{selainnya} \end{cases}$$
-
+>
 Hitunglah deviasi standar dari proporsi tanaman kapas di lahan tersebut yang terdampak hama kumbang kapas! (Pilihlah jawaban yang paling mendekati!)
-
+>
 a. $0{,}032$  
 b. $0{,}178$  
 c. $0{,}476$  
 d. $0{,}690$  
 e. $0{,}959$
-
+>
 > [!summary]+ **Jawaban No. 13**
 > **(b). $0{,}178$**
 >
@@ -850,24 +848,24 @@ e. $0{,}959$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Lupa mengakarkan variansi. Eksponen dalam PDF Beta adalah $\alpha-1$ dan $\beta-1$, bukan $\alpha$ dan $\beta$.
+> > **🐛 Kesalahan Konseptual**
+> > - Lupa mengakarkan variansi. Eksponen dalam PDF Beta adalah $\alpha-1$ dan $\beta-1$, bukan $\alpha$ dan $\beta$.
 > >
-> > > [!CAUTION] Red Flags
-> > > - PDF berbentuk $cx^a(1-x)^b$ dengan support $[0,1]$ → distribusi Beta dengan $\alpha = a+1$, $\beta = b+1$.
-
+> > **⚠️ Red Flags**
+> > - PDF berbentuk $cx^a(1-x)^b$ dengan support $[0,1]$ → distribusi Beta dengan $\alpha = a+1$, $\beta = b+1$.
+>
 ---
-
+>
 ## **No. 14**
-
+>
 Klaim dari produk asuransi perkapalan diketahui mengikuti distribusi eksponensial dengan rataan $\dfrac{400}{\ln 2}$ (dalam juta). Untuk setiap klaim, besaran yang dibayarkan sebesar besarnya kerugian, hingga maksimum 1000 (dalam juta). Hitunglah nilai ekspektasi dari pembayaran klaim! (Pilihlah jawaban yang paling mendekati!)
-
+>
 a. $298$  
 b. $367$  
 c. $400$  
 d. $475$  
 e. $577$
-
+>
 > [!summary]+ **Jawaban No. 14**
 > **(d). $475$**
 >
@@ -904,24 +902,24 @@ e. $577$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Menggunakan $E[X] = \theta$ tanpa mempertimbangkan batas maksimum — ini mengabaikan efek truncation.
+> > **🐛 Kesalahan Konseptual**
+> > - Menggunakan $E[X] = \theta$ tanpa mempertimbangkan batas maksimum — ini mengabaikan efek truncation.
 > >
-> > > [!CAUTION] Red Flags
-> > > - Jika ada batas maksimum pembayaran → gunakan LEV $E[\min(X,u)]$, bukan $E[X]$.
-
+> > **⚠️ Red Flags**
+> > - Jika ada batas maksimum pembayaran → gunakan LEV $E[\min(X,u)]$, bukan $E[X]$.
+>
 ---
-
+>
 ## **No. 15**
-
+>
 Setiap orang dalam suatu populasi besar yang saling bebas satu sama lain memiliki peluang sebesar $0{,}0625$ untuk mengidap suatu penyakit. Dilakukan pengujian klinis terhadap orang-orang di populasi ini, hingga seseorang teridentifikasi mengidap penyakit tersebut. Tentukan modus dari banyaknya orang yang terkena pengujian klinis!
-
+>
 a. $1$  
 b. $6$  
 c. $11$  
 d. $15$  
 e. $16$
-
+>
 > [!summary]+ **Jawaban No. 15**
 > **(a). $1$**
 >
@@ -957,24 +955,24 @@ e. $16$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Mengira modus = mean = $1/p = 16$. Mean dan modus berbeda untuk distribusi Geometrik.
+> > **🐛 Kesalahan Konseptual**
+> > - Mengira modus = mean = $1/p = 16$. Mean dan modus berbeda untuk distribusi Geometrik.
 > >
-> > > [!CAUTION] Red Flags
-> > > - Distribusi Geometrik: modus selalu 1, mean = $1/p$, median $\approx \lceil -1/\log_2(1-p) \rceil$.
-
+> > **⚠️ Red Flags**
+> > - Distribusi Geometrik: modus selalu 1, mean = $1/p$, median $\approx \lceil -1/\log_2(1-p) \rceil$.
+>
 ---
-
+>
 ## **No. 16**
-
+>
 Di Negara Wakanda, 5% dari seluruh bank yang terdaftar diprediksi akan mengalami kebangkrutan dalam 5 tahun ke depan. Lembaga Penjamin Simpanan (LPS) di negara tersebut menjamin 80% bank yang terdaftar. Hanya terdapat 3% bank yang terdaftar di LPS diprediksi akan mengalami kebangkrutan dalam 5 tahun ke depan. Hitunglah peluang bahwa bank yang mengalami kebangkrutan di negara tersebut dalam 5 tahun kedepan dijamin oleh LPS!
-
+>
 a. $0{,}02$  
 b. $0{,}04$  
 c. $0{,}06$  
 d. $0{,}48$  
 e. $0{,}60$
-
+>
 > [!summary]+ **Jawaban No. 16**
 > **(d). $0{,}48$**
 >
@@ -1003,35 +1001,35 @@ e. $0{,}60$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Salah menerapkan Bayes dengan menukar pembilang dan penyebut.
+> > **🐛 Kesalahan Konseptual**
+> > - Salah menerapkan Bayes dengan menukar pembilang dan penyebut.
 > >
-> > > [!CAUTION] Red Flags
-> > > - "Peluang kondisi A diketahui B" setelah diberi "peluang B diketahui A" → Teorema Bayes.
-
+> > **⚠️ Red Flags**
+> > - "Peluang kondisi A diketahui B" setelah diberi "peluang B diketahui A" → Teorema Bayes.
+>
 ---
-
+>
 ## **No. 17**
-
+>
 Banyaknya klaim bulanan pada suatu produk asuransi memiliki distribusi sebagai berikut:
-
+>
 | Banyaknya Klaim | Peluang |
 |-----------------|---------|
 | 0 | $s$ |
 | 1 | $t$ |
 | 2 | $0{,}75s$ |
 | 3 atau lebih | $0$ |
-
+>
 Diambil sampel acak sebanyak 5 polis dan data klaim di suatu bulan telah tersedia. Banyaknya klaim dari kelima polis tersebut saling bebas. Misal Y merupakan banyaknya polis dari sampel yang diambil memiliki kurang dari 2 klaim bulanan.
-
+>
 Misal $c = P(Y = 5)$. Tentukan mana dari jawaban berikut ini yang merepresentasikan $t$!
-
+>
 a. $\dfrac{4-4c^{0{,}2}}{3}$  
 b. $\dfrac{3-7c^{0{,}2}}{3}$  
 c. $\dfrac{4c^{0{,}2}-4}{3}$  
 d. $\dfrac{5c^{0{,}2}-4}{3}$  
 e. $\dfrac{7c^{0{,}2}-4}{3}$
-
+>
 > [!summary]+ **Jawaban No. 17**
 > **(e). $\dfrac{7c^{0{,}2}-4}{3}$**
 >
@@ -1065,24 +1063,24 @@ e. $\dfrac{7c^{0{,}2}-4}{3}$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - "Kurang dari 2 klaim" = klaim 0 atau 1 (bukan 0, 1, atau 2).
+> > **🐛 Kesalahan Interpretasi Soal**
+> > - "Kurang dari 2 klaim" = klaim 0 atau 1 (bukan 0, 1, atau 2).
 > >
-> > > [!CAUTION] Red Flags
-> > > - PMF dengan simbol tak diketahui → mulai dari normalisasi, bentuk sistem persamaan.
-
+> > **⚠️ Red Flags**
+> > - PMF dengan simbol tak diketahui → mulai dari normalisasi, bentuk sistem persamaan.
+>
 ---
-
+>
 ## **No. 18**
-
+>
 Misal X merupakan random variabel dengan rataan 0 dan varians $a > 0$. Hitunglah $P(X^2 < a)$! (Pilihlah jawaban yang paling mendekati!)
-
+>
 a. $0{,}34$  
 b. $0{,}42$  
 c. $0{,}68$  
 d. $0{,}84$  
 e. $0{,}90$
-
+>
 > [!summary]+ **Jawaban No. 18**
 > **(c). $0{,}68$**
 >
@@ -1110,28 +1108,28 @@ e. $0{,}90$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - $P(X^2 < a) \neq P(X < \sqrt{a})$; harus ambil kedua sisi: $|X| < \sqrt{a}$.
+> > **🐛 Kesalahan Konseptual**
+> > - $P(X^2 < a) \neq P(X < \sqrt{a})$; harus ambil kedua sisi: $|X| < \sqrt{a}$.
 > >
-> > > [!CAUTION] Red Flags
-> > > - Jika opsi berupa nilai tepat dan hanya diketahui mean/variansi → asumsikan distribusi Normal.
-
+> > **⚠️ Red Flags**
+> > - Jika opsi berupa nilai tepat dan hanya diketahui mean/variansi → asumsikan distribusi Normal.
+>
 ---
-
+>
 ## **No. 19**
-
+>
 $(X_1, X_2, X_3)$ merupakan vektor acak dengan distribusi multivariat dengan nilai harapan $(0,0,0)$ dan matriks varians kovarians sebagai berikut:
-
+>
 $$\boldsymbol{\Sigma} = \begin{bmatrix} 4{,}0 & 1{,}5 & 1{,}0 \\ 1{,}5 & 1{,}0 & 0{,}5 \\ 1{,}0 & 0{,}5 & 1{,}0 \end{bmatrix}$$
-
+>
 Jika random variabel $W$ didefinisikan menggunakan formula $X_1 = aX_2 + bX_3 + W$ dan $W$ tidak berkorelasi dengan variabel $X_2$ dan $X_3$, maka koefisien $a$ bernilai:
-
+>
 a. $1$  
 b. $\dfrac{4}{3}$  
 c. $\dfrac{5}{3}$  
 d. $2$  
 e. $\dfrac{7}{3}$
-
+>
 > [!summary]+ **Jawaban No. 19**
 > **(b). $\dfrac{4}{3}$**
 >
@@ -1165,24 +1163,24 @@ e. $\dfrac{7}{3}$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - "Tidak berkorelasi" → $\text{Cov}(W,X_j)=0$, bukan $\text{Var}(W) = 0$.
+> > **🐛 Kesalahan Konseptual**
+> > - "Tidak berkorelasi" → $\text{Cov}(W,X_j)=0$, bukan $\text{Var}(W) = 0$.
 > >
-> > > [!CAUTION] Red Flags
-> > > - Proyeksi ortogonal → bentuk sistem $\text{Cov}(W,X_j)=0$ untuk setiap $j$, selesaikan secara simultan.
-
+> > **⚠️ Red Flags**
+> > - Proyeksi ortogonal → bentuk sistem $\text{Cov}(W,X_j)=0$ untuk setiap $j$, selesaikan secara simultan.
+>
 ---
-
+>
 ## **No. 20**
-
+>
 Anda diberikan X dan Y yang keduanya mengikuti distribusi seragam $[0,1]$ dan saling bebas. Diberikan $U = X + Y$ dan $V = \dfrac{X}{X+Y}$. Tentukan fungsi peluang bersama dari $(U, V)$ yang dievaluasi pada $\left(\dfrac{1}{2}, \dfrac{1}{2}\right)$!
-
+>
 a. $0$  
 b. $\dfrac{1}{4}$  
 c. $\dfrac{1}{3}$  
 d. $\dfrac{1}{2}$  
 e. $1$
-
+>
 > [!summary]+ **Jawaban No. 20**
 > **(d). $\dfrac{1}{2}$**
 >
@@ -1216,29 +1214,29 @@ e. $1$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Lupa mengalikan dengan $|J|$ — faktor Jacobian tidak boleh diabaikan.
+> > **🐛 Kesalahan Konseptual**
+> > - Lupa mengalikan dengan $|J|$ — faktor Jacobian tidak boleh diabaikan.
 > >
-> > > [!CAUTION] Red Flags
-> > > - Transformasi bivariat → (1) invers, (2) Jacobian, (3) support baru, (4) tulis PDF.
-
+> > **⚠️ Red Flags**
+> > - Transformasi bivariat → (1) invers, (2) Jacobian, (3) support baru, (4) tulis PDF.
+>
 ---
 ## **No. 21**
-
+>
 Suatu perusahaan menentukan harga dari asuransi gempa bumi dengan menggunakan asumsi-asumsi sebagai berikut:
-
+>
 i. Di setiap tahun kalender, terdapat hanya satu kali gempa bumi
 ii. Di setiap tahun kalender, peluang terjadinya gempa bumi sebesar $0{,}05$
 iii. Banyaknya gempa bumi yang terjadi di setiap tahun kalender saling bebas
-
+>
 Dengan menggunakan asumsi di atas, tentukan peluang terjadi kurang dari 3 gempa bumi dalam 20 tahun. (Pilihlah jawaban yang paling mendekati!)
-
+>
 a. $0{,}06$  
 b. $0{,}19$  
 c. $0{,}38$  
 d. $0{,}62$  
 e. $0{,}92$
-
+>
 > [!summary]+ **Jawaban No. 21**
 > **(e). $0{,}92$**
 >
@@ -1283,29 +1281,29 @@ e. $0{,}92$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - "Kurang dari 3" = 0, 1, atau 2, bukan 0, 1, 2, atau 3.
+> > **🐛 Kesalahan Interpretasi Soal**
+> > - "Kurang dari 3" = 0, 1, atau 2, bukan 0, 1, 2, atau 3.
 > >
-> > > [!CAUTION] Red Flags
-> > > - Untuk $n$ besar dengan $p$ kecil, bisa digunakan aproksimasi Poisson dengan $\lambda = np = 1$. Cek: $P(X<3) \approx e^{-1}(1 + 1 + 1/2) = e^{-1} \times 2{,}5 = 0{,}920$ — konsisten.
-
+> > **⚠️ Red Flags**
+> > - Untuk $n$ besar dengan $p$ kecil, bisa digunakan aproksimasi Poisson dengan $\lambda = np = 1$. Cek: $P(X<3) \approx e^{-1}(1 + 1 + 1/2) = e^{-1} \times 2{,}5 = 0{,}920$ — konsisten.
+>
 ---
-
+>
 ## **No. 22**
-
+>
 Anda merupakan seorang aktuaris yang bertanggung jawab dalam melakukan negosiasi terhadap kontrak reasuransi di perusahaan tempat anda bekerja. Anda menentukan bahwa besar kerugian (dalam juta) yang ingin direasuransikan mengikuti distribusi seragam pada interval $[1000, 2000]$. Anda memiliki dua pilihan skema kontrak reasuransi untuk risiko ini:
-
+>
 (i) Kontrak pertama membayarkan klaim reasuransi sebesar $90\%$ dari besar kerugian, sedangkan
 (ii) Kontrak kedua membayarkan klaim reasuransi hingga limit maksimum, dimana nilai limit ditentukan sedemikian sehingga nilai harapan dari klaim reasuransi dari kedua kontrak bernilai sama.
-
+>
 Hitunglah rasio dari varians klaim reasuransi atas kontrak kedua terhadap varians klaim reasuransi atas kontrak pertama! (Pilihlah jawaban yang paling mendekati!)
-
+>
 a. $1{,}5$  
 b. $2{,}0$  
 c. $0{,}9$  
 d. $0{,}6$  
 e. $0{,}3$
-
+>
 > [!summary]+ **Jawaban No. 22**
 > **(e). $0{,}3$**
 >
@@ -1379,25 +1377,25 @@ e. $0{,}3$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Lupa bahwa $\text{Var}(aX) = a^2 \text{Var}(X)$ untuk kontrak pertama.
-> > > - Kontrak kedua menggunakan limited payment, bukan pembayaran proporsional.
+> > **🐛 Kesalahan Konseptual**
+> > - Lupa bahwa $\text{Var}(aX) = a^2 \text{Var}(X)$ untuk kontrak pertama.
+> > - Kontrak kedua menggunakan limited payment, bukan pembayaran proporsional.
 > >
-> > > [!CAUTION] Red Flags
-> > > - Jika dua kontrak memiliki ekspektasi sama tetapi mekanisme berbeda → yang satu proporsional akan memiliki variansi lebih tinggi karena mengikuti distribusi aslinya; yang satu truncated akan lebih kecil variansinya.
-
+> > **⚠️ Red Flags**
+> > - Jika dua kontrak memiliki ekspektasi sama tetapi mekanisme berbeda → yang satu proporsional akan memiliki variansi lebih tinggi karena mengikuti distribusi aslinya; yang satu truncated akan lebih kecil variansinya.
+>
 ---
-
+>
 ## **No. 23**
-
+>
 Peluang keterlambatan keberangkatan pesawat terbang dari suatu penerbangan diketahui sebesar $\dfrac{1}{6}$, dengan setiap satu keberangkatan pesawat terbang diperlakukan sebagai suatu percobaan Bernoulli. Hitunglah peluang setidaknya 40 dari 180 keberangkatan pesawat terbang akan mengalami keterlambatan, menggunakan aproksimasi normal dengan koreksi kontinuitas! (Pilihlah jawaban yang paling mendekati!)
-
+>
 a. $0{,}0345$  
 b. $0{,}0287$  
 c. $0{,}0197$  
 d. $0{,}0110$  
 e. $0{,}0096$
-
+>
 > [!summary]+ **Jawaban No. 23**
 > **(b). $0{,}0287$**
 >
@@ -1435,31 +1433,31 @@ e. $0{,}0096$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Tidak menerapkan koreksi kontinuitas: menggunakan $z = (40-30)/5 = 2{,}00$ → $P(Z \geq 2) = 0{,}0228$ (pilihan lain yang mungkin dipilih).
-> > > - Koreksi kontinuitas untuk $P(X \geq k)$: gunakan $k - 0{,}5$, bukan $k + 0{,}5$.
+> > **🐛 Kesalahan Konseptual**
+> > - Tidak menerapkan koreksi kontinuitas: menggunakan $z = (40-30)/5 = 2{,}00$ → $P(Z \geq 2) = 0{,}0228$ (pilihan lain yang mungkin dipilih).
+> > - Koreksi kontinuitas untuk $P(X \geq k)$: gunakan $k - 0{,}5$, bukan $k + 0{,}5$.
 > >
-> > > [!CAUTION] Red Flags
-> > > - "Setidaknya $k$" = $P(X \geq k)$ → koreksi kontinuitas: pakai $k - 0{,}5$ di pembilang.
-> > > - "Lebih dari $k$" = $P(X > k) = P(X \geq k+1)$ → pakai $k + 0{,}5$.
-
+> > **⚠️ Red Flags**
+> > - "Setidaknya $k$" = $P(X \geq k)$ → koreksi kontinuitas: pakai $k - 0{,}5$ di pembilang.
+> > - "Lebih dari $k$" = $P(X > k) = P(X \geq k+1)$ → pakai $k + 0{,}5$.
+>
 ---
-
+>
 ## **No. 24**
-
+>
 Anda diberikan informasi sebagai berikut:
-
+>
 i. $P(A \cup B) = 0{,}7$
 ii. $P(A \cup B^c) = 0{,}9$
-
+>
 Tentukan $P(A)$!
-
+>
 a. $0{,}2$  
 b. $0{,}3$  
 c. $0{,}4$  
 d. $0{,}6$  
 e. $0{,}8$
-
+>
 > [!summary]+ **Jawaban No. 24**
 > **(d). $0{,}6$**
 >
@@ -1498,24 +1496,24 @@ e. $0{,}8$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Mencoba membentuk persamaan dengan lebih banyak variabel ($P(B)$, $P(A \cap B)$) tanpa menyadari identitas yang lebih elegan.
+> > **🐛 Kesalahan Konseptual**
+> > - Mencoba membentuk persamaan dengan lebih banyak variabel ($P(B)$, $P(A \cap B)$) tanpa menyadari identitas yang lebih elegan.
 > >
-> > > [!CAUTION] Red Flags
-> > > - Ingat identitas: $P(E) + P(F) = P(E \cup F) + P(E \cap F)$. Jika $E \cup F = \Omega$, maka $P(E) + P(F) = 1 + P(E \cap F)$.
-
+> > **⚠️ Red Flags**
+> > - Ingat identitas: $P(E) + P(F) = P(E \cup F) + P(E \cap F)$. Jika $E \cup F = \Omega$, maka $P(E) + P(F) = 1 + P(E \cap F)$.
+>
 ---
-
+>
 ## **No. 25**
-
+>
 Tiga kartu diambil dari satu set kartu remi standar. Berapakah peluang ketiga kartu tersebut bergambar hati, jika diketahui setidaknya dua dari tiga kartu tersebut bergambar hati? (Pilihlah jawaban yang paling mendekati!)
-
+>
 a. $0{,}0859$  
 b. $0{,}0781$  
 c. $0{,}0713$  
 d. $0{,}0625$  
 e. $0{,}0576$
-
+>
 > [!summary]+ **Jawaban No. 25**
 > **(a). $0{,}0859$**
 >
@@ -1560,25 +1558,25 @@ e. $0{,}0576$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Salah menghitung $\binom{13}{2}$ atau $\binom{52}{3}$ — verifikasi: $\binom{52}{3} = 52 \times 51 \times 50/6 = 22100$.
-> > > - "Setidaknya 2 hati" = tepat 2 ATAU tepat 3 hati; tidak hanya tepat 2.
+> > **🐛 Kesalahan Konseptual**
+> > - Salah menghitung $\binom{13}{2}$ atau $\binom{52}{3}$ — verifikasi: $\binom{52}{3} = 52 \times 51 \times 50/6 = 22100$.
+> > - "Setidaknya 2 hati" = tepat 2 ATAU tepat 3 hati; tidak hanya tepat 2.
 > >
-> > > [!CAUTION] Red Flags
-> > > - Pengambilan kartu → tanpa pengembalian → gunakan kombinasi $\binom{n}{k}$, bukan permutasi.
-
+> > **⚠️ Red Flags**
+> > - Pengambilan kartu → tanpa pengembalian → gunakan kombinasi $\binom{n}{k}$, bukan permutasi.
+>
 ---
-
+>
 ## **No. 26**
-
+>
 Hitunglah fungsi pembangkit peluang $P_N(t)$ dari variabel acak Poisson N dengan rataan 2 pada $t = \dfrac{1}{2}$! (Pilihlah jawaban yang paling mendekati!)
-
+>
 a. $27{,}0434$  
 b. $7{,}3891$  
 c. $2{,}7183$  
 d. $1{,}6487$  
 e. $0{,}3679$
-
+>
 > [!summary]+ **Jawaban No. 26**
 > **(e). $0{,}3679$**
 >
@@ -1613,27 +1611,27 @@ e. $0{,}3679$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Menggunakan MGF $M_N(t) = e^{\lambda(e^t - 1)}$ alih-alih PGF $G_N(t) = e^{\lambda(t-1)}$ — dua fungsi yang berbeda.
-> > > - Mengira PGF dievaluasi di $t=1/2$ sama dengan $e^{\lambda \cdot t} = e^1$, lupa faktor $t-1$.
+> > **🐛 Kesalahan Konseptual**
+> > - Menggunakan MGF $M_N(t) = e^{\lambda(e^t - 1)}$ alih-alih PGF $G_N(t) = e^{\lambda(t-1)}$ — dua fungsi yang berbeda.
+> > - Mengira PGF dievaluasi di $t=1/2$ sama dengan $e^{\lambda \cdot t} = e^1$, lupa faktor $t-1$.
 > >
-> > > [!CAUTION] Red Flags
-> > > - Soal menyebut PGF (bukan MGF) → gunakan $G_N(t) = E[t^N]$, bukan $M_N(t) = E[e^{tN}]$.
-
+> > **⚠️ Red Flags**
+> > - Soal menyebut PGF (bukan MGF) → gunakan $G_N(t) = E[t^N]$, bukan $M_N(t) = E[e^{tN}]$.
+>
 ---
-
+>
 ## **No. 27**
-
+>
 Misal $X$ memiliki sebaran binomial dengan parameter $n$ dan $p$, dan distribusi bersyarat dari $Y$ jika diketahui $X = x$ mengikuti sebaran Poisson dengan rataan $x$.
-
+>
 Tentukan varians dari $Y$!
-
+>
 a. $x$  
 b. $np$  
 c. $np(1-p)$  
 d. $np^2$  
 e. $np(2-p)$
-
+>
 > [!summary]+ **Jawaban No. 27**
 > **(e). $np(2-p)$**
 >
@@ -1680,29 +1678,29 @@ e. $np(2-p)$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Menjawab $\text{Var}(Y) = np$ (hanya menggunakan $E[\text{Var}(Y|X)]$ tanpa suku kedua).
-> > > - Menjawab $\text{Var}(Y) = np(1-p)$ (hanya mengambil $\text{Var}(X)$ tanpa suku pertama).
+> > **🐛 Kesalahan Konseptual**
+> > - Menjawab $\text{Var}(Y) = np$ (hanya menggunakan $E[\text{Var}(Y|X)]$ tanpa suku kedua).
+> > - Menjawab $\text{Var}(Y) = np(1-p)$ (hanya mengambil $\text{Var}(X)$ tanpa suku pertama).
 > >
-> > > [!CAUTION] Red Flags
-> > > - Soal campuran (compound distribution) → SELALU gunakan kedua hukum: Total Expectation dan Total Variance.
-
+> > **⚠️ Red Flags**
+> > - Soal campuran (compound distribution) → SELALU gunakan kedua hukum: Total Expectation dan Total Variance.
+>
 ---
-
+>
 ## **No. 28**
-
+>
 Misal (X,Y) memiliki fungsi peluang bersama:
-
+>
 $$f_{X,Y}(x, y) = \begin{cases} 6(1-x-y), & \text{untuk } 0 \leq x \leq 1,\ 0 \leq y \leq 1,\ 0 \leq x+y \leq 1 \\ 0, & \text{selainnya} \end{cases}$$
-
+>
 Tentukan $P\!\left(0 \leq X \leq \dfrac{1}{2}\right)$!
-
+>
 a. $\dfrac{1}{12}$  
 b. $\dfrac{1}{8}$  
 c. $\dfrac{7}{12}$  
 d. $\dfrac{1}{4}$  
 e. $\dfrac{7}{8}$
-
+>
 > [!summary]+ **Jawaban No. 28**
 > **(e). $\dfrac{7}{8}$**
 >
@@ -1743,25 +1741,25 @@ e. $\dfrac{7}{8}$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Salah menentukan batas atas integral dalam $y$: untuk titik $(x, y)$ di segitiga, batas $y$ adalah $1-x$ (bukan 1).
-> > > - Mengira $P(0 \leq X \leq 1/2)$ langsung dari integrasi ganda tanpa memarginalkan — bisa dilakukan langsung dengan integral ganda juga, tapi lebih mudah via marginal.
+> > **🐛 Kesalahan Konseptual**
+> > - Salah menentukan batas atas integral dalam $y$: untuk titik $(x, y)$ di segitiga, batas $y$ adalah $1-x$ (bukan 1).
+> > - Mengira $P(0 \leq X \leq 1/2)$ langsung dari integrasi ganda tanpa memarginalkan — bisa dilakukan langsung dengan integral ganda juga, tapi lebih mudah via marginal.
 > >
-> > > [!CAUTION] Red Flags
-> > > - Support berbentuk segitiga → selalu gambar region terlebih dahulu untuk menentukan batas integral yang benar.
-
+> > **⚠️ Red Flags**
+> > - Support berbentuk segitiga → selalu gambar region terlebih dahulu untuk menentukan batas integral yang benar.
+>
 ---
-
+>
 ## **No. 29**
-
+>
 Keluarga Suprapto memiliki 5 anak. Diasumsikan peluang lahir setiap anak Perempuan sebesar $0{,}5$ dan kelahiran dari setiap anak saling bebas, berapakah peluang keluarga Suprapto memiliki setidaknya 1 anak perempuan jika diketahui mereka memiliki setidaknya 1 anak laki-laki?
-
+>
 a. $\dfrac{31}{32}$  
 b. $\dfrac{30}{31}$  
 c. $\dfrac{15}{16}$  
 d. $\dfrac{5}{31}$  
 e. $\dfrac{5}{32}$
-
+>
 > [!summary]+ **Jawaban No. 29**
 > **(b). $\dfrac{30}{31}$**
 >
@@ -1805,24 +1803,24 @@ e. $\dfrac{5}{32}$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Mengira $P(F \mid M) = P(F) / P(M) = (31/32)/(31/32) = 1$ — salah karena pembilang harus $P(F \cap M)$, bukan $P(F)$.
+> > **🐛 Kesalahan Konseptual**
+> > - Mengira $P(F \mid M) = P(F) / P(M) = (31/32)/(31/32) = 1$ — salah karena pembilang harus $P(F \cap M)$, bukan $P(F)$.
 > >
-> > > [!CAUTION] Red Flags
-> > > - $P(F^c \cap M^c) = 0$ karena tidak mungkin semua anak perempuan sekaligus semua laki-laki.
-
+> > **⚠️ Red Flags**
+> > - $P(F^c \cap M^c) = 0$ karena tidak mungkin semua anak perempuan sekaligus semua laki-laki.
+>
 ---
-
+>
 ## **No. 30**
-
+>
 Banyaknya lonjakan daya yang terjadi pada suatu jaringan listrik diketahui mengikuti distribusi Poisson dengan rataan 1 lonjakan daya setiap 12 jam. Berapakah peluang bahwa tidak akan terjadi lonjakan daya lebih dari satu kali dalam 24 jam?
-
+>
 a. $2e^{-2}$  
 b. $3e^{-2}$  
 c. $e^{-1/2}$  
 d. $\dfrac{3}{2}e^{-1/2}$  
 e. $e^{-1}$
-
+>
 > [!summary]+ **Jawaban No. 30**
 > **(b). $3e^{-2}$**
 >
@@ -1863,14 +1861,14 @@ e. $e^{-1}$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Tetap menggunakan $\lambda = 1$ untuk 24 jam — padahal Poisson bersifat aditif, sehingga $\lambda$ harus diskala proporsional dengan waktu.
-> > > - "Tidak lebih dari satu kali" = $P(N \leq 1) = P(N=0) + P(N=1)$, bukan $P(N < 1) = P(N=0)$ saja.
+> > **🐛 Kesalahan Konseptual**
+> > - Tetap menggunakan $\lambda = 1$ untuk 24 jam — padahal Poisson bersifat aditif, sehingga $\lambda$ harus diskala proporsional dengan waktu.
+> > - "Tidak lebih dari satu kali" = $P(N \leq 1) = P(N=0) + P(N=1)$, bukan $P(N < 1) = P(N=0)$ saja.
 > >
-> > > [!CAUTION] Red Flags
-> > > - "Tidak lebih dari $k$" = $P(N \leq k)$; "kurang dari $k$" = $P(N < k)$ = $P(N \leq k-1)$. Ini sering tertukar.
-> > > - Jika rentang waktu berubah → skala $\lambda$ secara linear sebelum menghitung.
-
+> > **⚠️ Red Flags**
+> > - "Tidak lebih dari $k$" = $P(N \leq k)$; "kurang dari $k$" = $P(N < k)$ = $P(N \leq k-1)$. Ini sering tertukar.
+> > - Jika rentang waktu berubah → skala $\lambda$ secara linear sebelum menghitung.
+> > 
 ---
-
+> > 
 *Dokumen ini merupakan pembahasan lengkap Ujian CF2 (Probabilitas dan Statistika) Sesi November 2025. Kunci jawaban resmi diterbitkan oleh Persatuan Aktuaris Indonesia (PAI). Soal No. 5 dan No. 11 dianulir oleh PAI; semua peserta mendapat nilai penuh untuk kedua soal tersebut.*
