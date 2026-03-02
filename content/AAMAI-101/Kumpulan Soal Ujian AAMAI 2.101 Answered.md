@@ -1,5 +1,4 @@
 
----
 > [!INFO] 
 > Klik ikon tanda panah di samping judul soal untuk membuka/menampilkan jawaban.
 
