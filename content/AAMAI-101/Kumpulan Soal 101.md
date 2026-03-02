@@ -66,15 +66,15 @@
 > > 
 > > Parameter yang digunakan dalam pengukuran tingkat risiko meliputi:
 > >
-> > 4. **Frekuensi (Frequency)** — Mengukur seberapa sering suatu peristiwa kerugian diperkirakan terjadi dalam suatu periode waktu tertentu. Semakin tinggi frekuensi, semakin besar kemungkinan risiko terwujud.
+> > 1. **Frekuensi (Frequency)** — Mengukur seberapa sering suatu peristiwa kerugian diperkirakan terjadi dalam suatu periode waktu tertentu. Semakin tinggi frekuensi, semakin besar kemungkinan risiko terwujud.
 > >
-> > 5. **Severity (Keparahan/Besaran Kerugian)** — Mengukur seberapa besar nilai kerugian yang ditimbulkan apabila suatu peristiwa terjadi. Severity bisa diukur dalam nilai uang atau skala dampak.
+> > 2. **Severity (Keparahan/Besaran Kerugian)** — Mengukur seberapa besar nilai kerugian yang ditimbulkan apabila suatu peristiwa terjadi. Severity bisa diukur dalam nilai uang atau skala dampak.
 > >
-> > 6. **Probabilitas (Probability)** — Mengukur kemungkinan secara statistik suatu peristiwa kerugian akan terjadi. Biasanya dinyatakan dalam angka 0 sampai 1 atau dalam persentase.
+> > 3. **Probabilitas (Probability)** — Mengukur kemungkinan secara statistik suatu peristiwa kerugian akan terjadi. Biasanya dinyatakan dalam angka 0 sampai 1 atau dalam persentase.
 > >
-> > 7. **Eksposur (Exposure)** — Mengukur luas atau besarnya nilai objek yang terpapar risiko, misalnya jumlah unit kendaraan, luas bangunan, atau nilai harta.
+> > 4. **Eksposur (Exposure)** — Mengukur luas atau besarnya nilai objek yang terpapar risiko, misalnya jumlah unit kendaraan, luas bangunan, atau nilai harta.
 > >
-> > 8. **Volatilitas (Variability)** — Mengukur tingkat fluktuasi atau penyimpangan hasil aktual dari yang diharapkan. Semakin besar volatilitas, semakin sulit risiko diprediksi.
+> > 5. **Volatilitas (Variability)** — Mengukur tingkat fluktuasi atau penyimpangan hasil aktual dari yang diharapkan. Semakin besar volatilitas, semakin sulit risiko diprediksi.
 
 > [!QUESTION] Soal 5: Peril & Hazard
 > Berkaitan dengan konsep risiko, uraikan pengertian ***peril*** dan ***hazard***, masing-masing disertai contohnya.
