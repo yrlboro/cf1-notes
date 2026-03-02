@@ -1,10 +1,6 @@
 
-
-
-# 50 Soal Latihan Ujian LSPP AAMAI - Tahun 2024
-
 ---
-> [!INFO] Tips Obsidian
+> [!INFO] 
 > Klik ikon tanda panah di samping judul soal untuk membuka/menampilkan jawaban.
 
 > [!QUESTION] Soal 1: Implied & Express Conditions
