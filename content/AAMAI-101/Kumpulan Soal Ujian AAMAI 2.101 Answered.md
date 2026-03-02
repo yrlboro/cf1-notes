@@ -1,11 +1,12 @@
 
 > [!INFO] 
-> Klik ikon tanda panah di samping judul soal untuk membuka/menampilkan jawaban.
+> Klik ikon tanda panah di samping judul soal untuk membuka/menampilkan Jawaban    .
 
 > [!QUESTION] Soal 1: Komponen Utama Risiko
 > Uraikan **3 (tiga) komponen utama** pengertian risiko.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban      
+> > 
 > > Tiga komponen utama pengertian risiko adalah:
 > >
 > > 1. **Ketidakpastian (Uncertainty)** — Risiko selalu mengandung unsur ketidakpastian, yaitu kemungkinan suatu peristiwa terjadi atau tidak terjadi di masa depan tidak dapat dipastikan.
@@ -17,7 +18,8 @@
 > [!QUESTION] Soal 2: Profil Risiko Low Frequency & High Severity
 > Uraikan profil risiko ***low frequency and high severity***, disertai contohnya.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban      
+> > 
 > > **Low Frequency & High Severity** adalah profil risiko di mana peristiwa kerugian jarang terjadi, namun apabila terjadi akan menimbulkan dampak finansial yang sangat besar.
 > >
 > > **Karakteristik:**
@@ -37,7 +39,8 @@
 > [!QUESTION] Soal 3: Elemen & Bentuk Risiko
 > Berkaitan dengan konsep asuransi, identifikasikan **4 (empat) elemen** dalam pengertian umum istilah risiko dan uraikan **3 (tiga) bentuk** pengertian istilah risiko dalam pasar asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban      
+> > 
 > > **4 Elemen dalam Pengertian Umum Risiko:**
 > >
 > > 1. **Ketidakpastian (Uncertainty)** — Adanya kemungkinan suatu peristiwa terjadi atau tidak terjadi.
@@ -59,7 +62,7 @@
 > [!QUESTION] Soal 4: Pengukuran Risiko
 > Jelaskan **parameter-parameter** yang digunakan dalam pengukuran tingkat risiko.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Parameter yang digunakan dalam pengukuran tingkat risiko meliputi:
 > >
 > > 4. **Frekuensi (Frequency)** — Mengukur seberapa sering suatu peristiwa kerugian diperkirakan terjadi dalam suatu periode waktu tertentu. Semakin tinggi frekuensi, semakin besar kemungkinan risiko terwujud.
@@ -75,7 +78,7 @@
 > [!QUESTION] Soal 5: Peril & Hazard
 > Berkaitan dengan konsep risiko, uraikan pengertian ***peril*** dan ***hazard***, masing-masing disertai contohnya.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Peril** adalah penyebab langsung (*immediate cause*) atau sumber terjadinya suatu kerugian. Peril merupakan kejadian atau peristiwa yang secara langsung mengakibatkan kerugian pada objek yang terekspos.
 > >
 > > - **Contoh:** Kebakaran, banjir, gempa bumi, kecelakaan lalu lintas, pencurian, badai.
@@ -87,7 +90,7 @@
 > [!QUESTION] Soal 6: Moral Hazard
 > Berkaitan dengan konsep risiko, jelaskan pengertian ***moral hazard*** dalam asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Moral Hazard** adalah kecenderungan seseorang untuk berperilaku kurang hati-hati, tidak bertanggung jawab, atau bahkan sengaja mengambil tindakan yang dapat menimbulkan kerugian setelah memiliki perlindungan asuransi. Hal ini terjadi karena tertanggung merasa kerugian yang dialaminya akan ditanggung oleh penanggung, sehingga motivasi untuk mencegah atau meminimalkan kerugian menjadi berkurang.
 > >
 > > Moral hazard berkaitan dengan **karakter, sikap mental, dan integritas** dari tertanggung, dan dapat bersifat:
@@ -99,7 +102,7 @@
 > [!QUESTION] Soal 7: Contoh Physical Hazard & Moral Hazard
 > Berikan contoh ***physical hazard*** dan ***moral hazard*** dalam praktik asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Physical Hazard** adalah kondisi fisik atau karakteristik nyata dari suatu objek yang dapat meningkatkan kemungkinan terjadinya peril atau memperparah kerugian.
 > >
 > > Contoh Physical Hazard:
@@ -120,7 +123,7 @@
 > [!QUESTION] Soal 8: Fakta Material & Contoh Hazard
 > Uraikan pengertian **fakta material** dan masing-masing **2 (dua) contoh** *physical* dan *moral hazard* yang termasuk fakta material.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Fakta Material** adalah setiap informasi atau keterangan yang relevan dan signifikan yang dapat mempengaruhi keputusan seorang penanggung dalam hal:
 > >
 > > - Menerima atau menolak suatu permohonan asuransi
@@ -144,7 +147,7 @@
 > [!QUESTION] Soal 9: Definisi Fakta Material
 > Apa yang dimaksud dengan **fakta material** dalam asuransi?
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Fakta Material** (*Material Fact*) dalam asuransi adalah setiap fakta, informasi, atau keterangan yang bersifat penting dan relevan, yang apabila diketahui oleh penanggung akan mempengaruhi pertimbangannya dalam:
 > >
 > > - Menerima atau menolak permohonan penutupan asuransi
@@ -158,7 +161,7 @@
 > [!QUESTION] Soal 10: Risiko Partikular
 > Berkaitan dengan konsep asuransi, uraikan pengertian **risiko partikular** dengan disertai contohnya.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Risiko Partikular** (*Particular Risk*) adalah risiko yang timbul dari tindakan atau peristiwa yang berasal dari individu atau pihak tertentu, dan dampak kerugiannya hanya dirasakan secara lokal atau terbatas pada individu/kelompok kecil yang bersangkutan — bukan masyarakat luas secara keseluruhan.
 > >
 > > **Karakteristik Risiko Partikular:**
@@ -178,7 +181,7 @@
 > [!QUESTION] Soal 11: Risiko Fundamental
 > Uraikan pengertian **risiko fundamental**.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Risiko Fundamental** (*Fundamental Risk*) adalah risiko yang dampak kerugiannya bersifat luas dan dirasakan oleh banyak orang atau masyarakat secara keseluruhan, bukan hanya individu atau kelompok kecil tertentu. Risiko ini umumnya timbul dari kekuatan-kekuatan di luar kendali individu, baik berupa fenomena alam maupun kondisi sosial-ekonomi.
 > >
 > > **Karakteristik Risiko Fundamental:**
@@ -198,7 +201,7 @@
 > [!QUESTION] Soal 12: Risiko Finansial vs Non-Finansial
 > Berkaitan dengan konsep asuransi, uraikan pengertian **risiko finansial** dan **risiko non-finansial**; masing-masing disertai contoh.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Risiko Finansial** adalah risiko yang apabila terjadi akan menimbulkan dampak kerugian yang dapat diukur dan dinilai secara uang (kuantitatif). Karena kerugiannya terukur, risiko jenis ini pada umumnya memenuhi syarat untuk dapat diasuransikan.
 > >
 > > Contoh Risiko Finansial:
@@ -219,7 +222,7 @@
 > [!QUESTION] Soal 13: Risiko Spekulatif vs Risiko Murni
 > Berkaitan dengan konsep asuransi, uraikan pengertian **risiko spekulatif** dan **risiko murni**; masing-masing disertai contoh.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Risiko Spekulatif** (*Speculative Risk*) adalah risiko yang mengandung dua kemungkinan hasil: **untung (gain)** atau **rugi (loss)**, bahkan bisa juga tidak terjadi apa-apa (*break even*). Risiko ini biasanya melibatkan keputusan sadar untuk mengambil peluang demi mendapatkan keuntungan. Risiko spekulatif **tidak dapat diasuransikan** karena mengandung unsur keuntungan yang tidak sesuai dengan prinsip indemnitas asuransi.
 > >
 > > Contoh Risiko Spekulatif:
@@ -239,7 +242,7 @@
 > [!QUESTION] Soal 14: Investasi Saham
 > Berkaitan dengan konsep asuransi, jelaskan mengapa **risiko berinvestasi di pasar saham** tidak dapat diasuransikan.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Risiko berinvestasi di pasar saham **tidak dapat diasuransikan** karena beberapa alasan mendasar:
 > >
 > > 1. **Bersifat Spekulatif** — Investasi saham mengandung kemungkinan untung maupun rugi. Asuransi hanya dapat menutup *pure risk* (risiko murni) yang tidak mengandung potensi keuntungan. Menanggung risiko spekulatif akan bertentangan dengan prinsip dasar asuransi.
@@ -255,7 +258,7 @@
 > [!QUESTION] Soal 15: Kebijakan Publik
 > Berkaitan dengan konsep asuransi, jelaskan mengapa **risiko yang bertentangan dengan kebijakan publik** tidak dapat diasuransikan.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Risiko yang bertentangan dengan kebijakan publik (*against public policy*) tidak dapat diasuransikan karena beberapa alasan mendasar:
 > >
 > > 6. **Melindungi Kepentingan Masyarakat** — Kebijakan publik dirancang untuk menjaga ketertiban, keamanan, dan kesejahteraan masyarakat. Jika asuransi menanggung risiko yang melanggar kebijakan publik, maka asuransi justru menjadi sarana yang memfasilitasi atau mendorong perilaku ilegal dan merugikan masyarakat.
@@ -273,7 +276,7 @@
 > [!QUESTION] Soal 16: Subject Matter
 > Uraikan perbedaan antara ***subject matter of insurance*** dan ***subject matter of contract***; berikan contoh dalam asuransi harta benda serta jelaskan pengertian ***homogeneous exposure***.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Subject Matter of Insurance** adalah objek fisik atau jiwa atau kepentingan yang menjadi dasar atau alasan mengapa seseorang mengambil perlindungan asuransi. Ini adalah benda, orang, atau tanggung jawab yang secara nyata terpapar risiko.
 > >
 > > **Subject Matter of Contract** adalah kepentingan finansial (*insurable interest*) yang dimiliki oleh tertanggung atas *subject matter of insurance* tersebut. Ini adalah aspek legal-finansial yang menjadi pokok perjanjian asuransi.
@@ -290,7 +293,7 @@
 > [!QUESTION] Soal 17: Homogeneous Exposures
 > Berkaitan dengan konsep asuransi, jelaskan pentingnya ***homogeneous exposures*** bagi *underwriter* dalam mempertimbangkan apakah suatu risiko dapat diasuransi atau tidak.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Homogeneous exposures*** sangat penting bagi *underwriter* karena menjadi fondasi utama kemampuan penanggung untuk mengelola risiko secara aktuarial dan finansial. Berikut penjelasannya:
 > >
 > > 1. **Dasar Perhitungan Premi yang Akurat** — Dengan adanya eksposur yang homogen dalam jumlah besar, *underwriter* dapat menggunakan data historis kerugian yang representatif untuk menghitung probabilitas terjadinya kerugian dan menetapkan premi yang adil dan memadai.
@@ -306,7 +309,7 @@
 > [!QUESTION] Soal 18: Risk Transfer
 > Berkaitan dengan konsep asuransi, uraikan fungsi asuransi sebagai perwujudan dari prinsip ***risk transfer***.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Risk Transfer*** (pengalihan risiko) adalah salah satu fungsi mendasar asuransi, di mana seseorang atau badan usaha (**tertanggung**) mengalihkan beban finansial atas suatu risiko kepada pihak lain (**penanggung/perusahaan asuransi**) melalui mekanisme perjanjian polis asuransi dengan membayar sejumlah premi.
 > >
 > > **Mekanisme Risk Transfer dalam Asuransi:**
@@ -326,7 +329,7 @@
 > [!QUESTION] Soal 19: Manfaat Sosial Asuransi
 > Berkaitan dengan konsep asuransi, uraikan **manfaat sosial** dari asuransi di mana tertanggung adalah suatu perusahaan.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Ketika tertanggung adalah suatu perusahaan, asuransi memberikan manfaat sosial yang luas tidak hanya bagi perusahaan itu sendiri, tetapi juga bagi berbagai pemangku kepentingan dan masyarakat sekitarnya:
 > >
 > > 1. **Perlindungan Kelangsungan Usaha (*Business Continuity*)** — Asuransi memungkinkan perusahaan untuk pulih dari kerugian besar dan melanjutkan operasionalnya. Tanpa asuransi, satu peristiwa besar seperti kebakaran pabrik dapat mengakibatkan perusahaan tutup permanen.
@@ -344,7 +347,7 @@
 > [!QUESTION] Soal 20: Risk-Seeking & Risk-Averse
 > Berkaitan dengan konsep risiko, uraikan pengertian ***risk-seeking*** dan ***risk-averse*** sebagai bentuk perilaku seseorang dalam menghadapi risiko.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Risk-Seeking** adalah perilaku seseorang yang **cenderung mencari atau bersedia mengambil risiko** demi mendapatkan potensi keuntungan yang lebih besar. Individu dengan perilaku ini memiliki toleransi tinggi terhadap ketidakpastian dan tidak keberatan menghadapi kemungkinan kerugian selama ada peluang keuntungan yang signifikan.
 > >
 > > Karakteristik Risk-Seeking:
@@ -370,7 +373,7 @@
 > [!QUESTION] Soal 21: Manajemen Risiko
 > Jelaskan pengertian **manajemen risiko** secara umum.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Manajemen Risiko** adalah proses sistematis dan terstruktur dalam mengidentifikasi, menganalisis, mengevaluasi, dan menangani risiko yang dihadapi oleh individu atau organisasi, dengan tujuan meminimalkan dampak kerugian yang mungkin timbul serta mengoptimalkan peluang yang ada.
 > >
 > > Manajemen risiko mencakup serangkaian tahapan yang berkesinambungan, yaitu:
@@ -390,7 +393,7 @@
 > [!QUESTION] Soal 22: Prinsip Manajemen Risiko
 > Uraikan **prinsip-prinsip manajemen risiko** yang baik.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Prinsip-prinsip manajemen risiko yang baik meliputi:
 > >
 > > 6. **Terintegrasi (*Integrated*)** — Manajemen risiko harus menjadi bagian integral dari seluruh proses dan kegiatan organisasi, bukan merupakan fungsi yang berdiri sendiri secara terpisah.
@@ -412,7 +415,7 @@
 > [!QUESTION] Soal 23: Identifikasi Risiko
 > Berkaitan dengan manajemen risiko, uraikan cakupan ***risk identification*** dan peran penanggung di dalamnya.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Risk Identification*** (identifikasi risiko) adalah tahap pertama dan paling mendasar dalam proses manajemen risiko, yaitu proses sistematis untuk mengenali, menemukan, dan mendokumentasikan semua risiko yang berpotensi mempengaruhi pencapaian tujuan individu atau organisasi.
 > >
 > > **Cakupan Risk Identification meliputi:**
@@ -436,7 +439,7 @@
 > [!QUESTION] Soal 24: Eliminasi Risiko
 > Berkaitan dengan manajemen risiko, uraikan pertimbangan yang perlu diambil manajer risiko sebelum memutuskan untuk melakukan **eliminasi risiko**.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Eliminasi risiko** adalah strategi manajemen risiko yang paling radikal, yaitu dengan menghilangkan sumber risiko sepenuhnya, umumnya dengan cara menghentikan atau tidak melakukan suatu aktivitas yang mengandung risiko tersebut.
 > >
 > > Sebelum memutuskan untuk melakukan eliminasi risiko, manajer risiko perlu mempertimbangkan hal-hal berikut:
@@ -456,7 +459,7 @@
 > [!QUESTION] Soal 25: Kontrol Risiko
 > Berkaitan dengan manajemen risiko, uraikan perbedaan antara ***physical control*** dan ***financial control***.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Dalam manajemen risiko, pengendalian risiko (*risk control*) dapat dibedakan menjadi dua pendekatan utama:
 > >
 > > **Physical Control** adalah upaya pengendalian risiko yang dilakukan secara nyata dan langsung terhadap sumber risiko atau objek yang terekspos, dengan tujuan mencegah terjadinya kerugian atau mengurangi dampak kerugian secara fisik.
@@ -486,7 +489,7 @@
 > [!QUESTION] Soal 26: Pencegahan Kerugian
 > Berkaitan dengan manajemen risiko, uraikan **peran asuransi** dalam upaya pencegahan dan pengendalian kerugian.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Asuransi tidak hanya berfungsi sebagai mekanisme *risk transfer*, tetapi juga memainkan peran aktif dalam upaya pencegahan dan pengendalian kerugian (*loss prevention and control*) sebagai berikut:
 > >
 > > 1. **Survei dan Inspeksi Risiko** — Sebelum menerbitkan polis, penanggung melakukan survei risiko (*risk survey*) untuk menilai kondisi objek pertanggungan. Hasil survei ini sering kali mencakup rekomendasi perbaikan yang harus dilakukan tertanggung untuk mengurangi eksposur risiko.
@@ -504,7 +507,7 @@
 > [!QUESTION] Soal 27: Keputusan Tertanggung
 > Berkaitan dengan manajemen risiko, jelaskan **pendekatan** yang umumnya diambil tertanggung individu dalam memutuskan untuk membeli polis asuransi umum.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Tertanggung individu umumnya tidak melakukan analisis risiko yang formal dan mendalam seperti yang dilakukan oleh perusahaan besar. Berikut adalah pendekatan yang lazim diambil:
 > >
 > > 1. **Pendekatan Intuitif dan Subjektif** — Individu cenderung mengambil keputusan berdasarkan persepsi subjektif terhadap risiko yang dirasakan, bukan berdasarkan perhitungan probabilitas yang akurat. Risiko yang pernah dialami sendiri atau orang terdekat cenderung dinilai lebih besar dari yang sebenarnya.
@@ -522,7 +525,7 @@
 > [!QUESTION] Soal 28: POJK No. 44/2020
 > Uraikan cakupan penerapan manajemen risiko secara efektif pada perusahaan asuransi berdasarkan POJK No. 44/POJK.05/2020.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Berdasarkan **POJK No. 44/POJK.05/2020** tentang Penerapan Manajemen Risiko bagi Lembaga Jasa Keuangan Non-Bank, penerapan manajemen risiko yang efektif pada perusahaan asuransi mencakup:
 > >
 > > 1. **Pengawasan Aktif Direksi dan Dewan Komisaris** — Direksi dan Dewan Komisaris wajib terlibat secara aktif dalam penetapan kebijakan, strategi, dan kerangka manajemen risiko, serta memastikan penerapannya berjalan efektif di seluruh lini perusahaan.
@@ -553,7 +556,7 @@
 > [!QUESTION] Soal 29: Struktur Pasar Asuransi
 > Jelaskan **struktur pasar asuransi** serta ruang lingkup usaha perasuransian berdasarkan ketentuan dalam undang-undang yang berlaku.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Berdasarkan **UU No. 40 Tahun 2014 tentang Perasuransian**, struktur pasar asuransi di Indonesia terdiri dari:
 > >
 > > **1. Perusahaan Asuransi dan Reasuransi**
@@ -583,7 +586,7 @@
 > [!QUESTION] Soal 30: Usaha Perasuransian (UU No. 40/2014)
 > Berkaitan dengan struktur pasar asuransi, uraikan pengertian **usaha perasuransian** dan ruang lingkup **usaha asuransi umum** berdasarkan UU No. 40 tahun 2014.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Pengertian Usaha Perasuransian** berdasarkan UU No. 40 Tahun 2014:
 > >
 > > Usaha perasuransian adalah segala usaha menyangkut jasa pertanggungan atau pengelolaan risiko, pertanggungan ulang risiko, pemasaran dan distribusi produk asuransi atau produk asuransi syariah, konsultasi dan keperantaraan asuransi, asuransi syariah, reasuransi, atau reasuransi syariah, atau penilaian kerugian asuransi atau asuransi syariah.
@@ -605,7 +608,7 @@
 > [!QUESTION] Soal 31: Pemegang Polis vs Tertanggung (UU No. 40/2014)
 > Berkaitan dengan struktur pasar asuransi, uraikan perbedaan antara **pemegang polis** dan **tertanggung** berdasarkan UU No. 40 tahun 2014 tentang Perasuransian.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Berdasarkan **UU No. 40 Tahun 2014 tentang Perasuransian**, terdapat perbedaan mendasar antara pemegang polis dan tertanggung:
 > >
 > > **Pemegang Polis** adalah pihak yang mengikatkan diri berdasarkan perjanjian asuransi dengan perusahaan asuransi, dan memiliki kewajiban membayar premi. Pemegang polis adalah pihak yang secara resmi menjadi mitra kontraktual penanggung dan namanya tercantum dalam polis sebagai pihak yang bertanggung jawab atas perjanjian tersebut.
@@ -628,7 +631,7 @@
 > [!QUESTION] Soal 32: Kelompok Pelaku Pasar Asuransi
 > Uraikan **5 (lima) kelompok** pelaku pasar asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Lima kelompok pelaku pasar asuransi adalah:
 > >
 > > 1. **Penanggung (*Insurers/Underwriters*)** — Perusahaan asuransi dan reasuransi yang menanggung risiko dan berkewajiban membayar klaim apabila peristiwa yang dijamin terjadi. Mereka adalah pihak yang menerima premi dan memberikan perlindungan finansial kepada tertanggung.
@@ -652,7 +655,7 @@
 > [!QUESTION] Soal 33: Peran Underwriter
 > Berkaitan dengan pasar asuransi, uraikan **peran *underwriter***.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Underwriter*** adalah profesional dalam perusahaan asuransi yang bertanggung jawab atas proses seleksi, penilaian, dan akseptasi risiko. Peran underwriter mencakup:
 > >
 > > 6. **Seleksi dan Penilaian Risiko (*Risk Selection & Assessment*)** — Underwriter menganalisis dan mengevaluasi setiap risiko yang diajukan untuk diasuransikan, menentukan apakah risiko tersebut memenuhi syarat untuk diterima, dan mengidentifikasi karakteristik serta eksposur risikonya secara menyeluruh.
@@ -670,7 +673,7 @@
 > [!QUESTION] Soal 34: Pialang Asuransi (POJK 70/2016)
 > Berkaitan dengan struktur pasar asuransi, uraikan **peran pialang asuransi** dalam penanganan klaim berdasarkan POJK no. 70/POJK.05/2016.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Berdasarkan **POJK No. 70/POJK.05/2016 tentang Penyelenggaraan Usaha Perusahaan Pialang Asuransi, Perusahaan Pialang Reasuransi, dan Perusahaan Penilai Kerugian Asuransi**, peran pialang asuransi dalam penanganan klaim meliputi:
 > >
 > > 12. **Mewakili Kepentingan Tertanggung** — Dalam proses klaim, pialang asuransi bertindak sebagai wakil dan advokat tertanggung, memastikan bahwa hak-hak tertanggung terlindungi dan klaim ditangani secara adil oleh penanggung.
@@ -688,7 +691,7 @@
 > [!QUESTION] Soal 35: Aggregator
 > Berkaitan dengan struktur pasar asuransi, uraikan peran ***aggregator***.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Aggregator*** adalah platform atau pihak yang mengumpulkan, membandingkan, dan menyajikan informasi produk asuransi dari berbagai penanggung dalam satu tampilan, sehingga memudahkan calon tertanggung dalam membandingkan dan memilih produk asuransi yang paling sesuai dengan kebutuhan dan kemampuan finansialnya.
 > >
 > > **Peran Aggregator dalam Pasar Asuransi:**
@@ -708,7 +711,7 @@
 > [!QUESTION] Soal 36: Saluran Pemasaran (SE OJK No. 19/2020)
 > Uraikan **4 (empat) saluran pemasaran** produk asuransi berdasarkan SE OJK No. 19/SEOJK.05/2020.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Berdasarkan **SE OJK No. 19/SEOJK.05/2020 tentang Saluran Pemasaran Produk Asuransi**, terdapat 4 saluran pemasaran produk asuransi yang diakui, yaitu:
 > >
 > > 24. **Saluran Keagenan** — Pemasaran produk asuransi dilakukan melalui agen asuransi, baik agen individu maupun agen perusahaan, yang telah memiliki izin keagenan dari OJK. Agen bertindak untuk dan atas nama perusahaan asuransi dalam menawarkan, memasarkan, dan menjual produk asuransi kepada calon tertanggung.
@@ -726,7 +729,7 @@
 > [!QUESTION] Soal 37: POJK No. 23/2015
 > Sebutkan **7 (tujuh) ketentuan** yang harus dicantumkan dalam polis asuransi berdasarkan POJK No. 23/POJK.05/2015.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Berdasarkan **POJK No. 23/POJK.05/2015 tentang Produk Asuransi dan Pemasaran Produk Asuransi**, polis asuransi wajib memuat sekurang-kurangnya 7 (tujuh) ketentuan berikut:
 > >
 > > 1. **Saat Berlakunya Pertanggungan** — Polis harus mencantumkan tanggal dan waktu mulai berlakunya perlindungan asuransi secara jelas, termasuk syarat-syarat yang harus dipenuhi agar pertanggungan efektif berlaku.
@@ -746,7 +749,7 @@
 > [!QUESTION] Soal 38: Insurable Interest (Marine & Non-Marine)
 > Uraikan kapan ***insurable interest*** harus ada dalam lini usaha asuransi ***marine*** dan lini usaha asuransi ***non-marine***.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Ketentuan mengenai waktu keberadaan *insurable interest* berbeda antara lini usaha asuransi marine dan non-marine:
 > >
 > > **Asuransi Marine (*Marine Insurance*):**
@@ -764,7 +767,7 @@
 > [!QUESTION] Soal 39: Elemen Insurable Interest
 > Uraikan **3 (tiga) elemen utama** prinsip ***insurable interest***.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Tiga elemen utama yang harus dipenuhi agar prinsip *insurable interest* terpenuhi adalah:
 > >
 > > 1. **Harus Ada Objek yang Dapat Diasuransikan (*Subject Matter of Insurance*)** — Harus terdapat sesuatu yang menjadi objek pertanggungan, baik berupa harta benda, jiwa seseorang, tanggung jawab hukum, maupun kepentingan finansial lainnya. Objek ini harus nyata dan dapat diidentifikasi dengan jelas.
@@ -781,7 +784,7 @@
 > [!QUESTION] Soal 40: Penerapan Insurable Interest (Bailees & Tenants)
 > Uraikan penerapan prinsip ***insurable interest*** dalam hal tertanggung sebagai ***bailees*** dan ***tenants***.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Penerapan Insurable Interest pada Bailees:**
 > >
 > > ***Bailee*** adalah pihak yang menerima, menguasai, atau menyimpan harta benda milik orang lain (*bailor*) berdasarkan suatu perjanjian, dengan kewajiban untuk menjaga dan mengembalikannya dalam kondisi semula.
@@ -809,7 +812,7 @@
 > [!QUESTION] Soal 41: Prosedur Underwriting
 > Berkaitan dengan prosedur underwriting, uraikan fungsi ***quotation*** dan ***proposal form***.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Quotation*** adalah penawaran resmi yang dikeluarkan oleh penanggung kepada calon tertanggung yang memuat informasi mengenai syarat, kondisi, dan besarnya premi yang ditawarkan untuk menutup suatu risiko tertentu. Quotation belum merupakan kontrak yang mengikat, melainkan merupakan tahap awal negosiasi yang memberikan gambaran kepada calon tertanggung mengenai biaya dan cakupan perlindungan yang dapat diperoleh.
 > >
 > > Fungsi Quotation:
@@ -832,7 +835,7 @@
 > [!QUESTION] Soal 42: Prosedur Penerbitan Quotation
 > Uraikan **prosedur penerbitan *quotation*** pada umumnya.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Prosedur penerbitan quotation pada umumnya meliputi tahapan-tahapan berikut:
 > >
 > > 1. **Penerimaan Permintaan Penawaran** — Calon tertanggung atau pialang asuransi mengajukan permintaan penawaran (*request for quotation*) kepada penanggung, disertai informasi awal mengenai objek dan risiko yang akan diasuransikan.
@@ -852,7 +855,7 @@
 > [!QUESTION] Soal 43: Pertanyaan Umum & Khusus SPPA
 > Uraikan **pertanyaan umum** dan **pertanyaan khusus** pada surat permohonan penutupan asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Surat Permohonan Penutupan Asuransi (SPPA) umumnya terdiri dari dua kelompok pertanyaan:
 > >
 > > **Pertanyaan Umum** adalah pertanyaan yang bersifat standar dan berlaku untuk semua jenis produk asuransi, bertujuan untuk mengidentifikasi identitas calon tertanggung dan informasi dasar mengenai penutupan yang diminta. Pertanyaan umum meliputi:
@@ -874,10 +877,10 @@
 > [!QUESTION] Soal 44: Alternatif Proposal Form
 > Uraikan **2 (dua) alternatif** dari cara konvensional pengumpulan informasi dalam ***proposal form*** produk asuransi individual.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Selain cara konvensional pengisian formulir tertulis secara manual, terdapat dua alternatif pengumpulan informasi dalam *proposal form* untuk produk asuransi individual:
 > >
-> > 1. **Wawancara Langsung (*Face-to-Face Interview / Verbal Proposal*)** — Informasi yang diperlukan dikumpulkan melalui wawancara langsung antara agen atau tenaga pemasar asuransi dengan calon tertanggung. Dalam metode ini, agen mengajukan pertanyaan-pertanyaan yang tercantum dalam proposal form secara lisan, mencatat jawaban calon tertanggung, dan kemudian memintanya untuk menandatangani formulir sebagai konfirmasi atas kebenaran informasi yang diberikan.
+> > 1. **Wawancara Langsung (*Face-to-Face Interview / Verbal Proposal*)** — Informasi yang diperlukan dikumpulkan melalui wawancara langsung antara agen atau tenaga pemasar asuransi dengan calon tertanggung. Dalam metode ini, agen mengajukan pertanyaan-pertanyaan yang tercantum dalam proposal form secara lisan, mencatat Jawaban     calon tertanggung, dan kemudian memintanya untuk menandatangani formulir sebagai konfirmasi atas kebenaran informasi yang diberikan.
 > >
 > >    Kelebihan metode ini:
 > >
@@ -897,7 +900,7 @@
 > [!QUESTION] Soal 45: Piramida Informasi
 > Berkaitan dengan proses underwriting, uraikan cakupan data ***operational level*** dalam struktur piramida informasi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Dalam struktur piramida informasi manajemen, **operational level** (tingkat operasional) merupakan lapisan paling dasar dari piramida yang menampung volume data paling besar, paling rinci, dan paling bersifat transaksional. Data pada level ini dihasilkan dari aktivitas sehari-hari operasional asuransi.
 > >
 > > Cakupan data *operational level* dalam proses underwriting meliputi:
@@ -917,7 +920,7 @@
 > [!QUESTION] Soal 46: Fungsi Declaration
 > Uraikan fungsi ***declaration*** dalam *proposal forms*.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Declaration*** (pernyataan) adalah bagian penutup dari *proposal form* yang berisi pernyataan resmi yang harus ditandatangani oleh calon tertanggung. Fungsi declaration dalam proposal form meliputi:
 > >
 > > 6. **Konfirmasi Kebenaran Informasi** — Declaration berfungsi sebagai pernyataan resmi dari calon tertanggung bahwa seluruh informasi yang diberikan dalam proposal form adalah benar, lengkap, dan tidak menyesatkan. Dengan menandatangani declaration, calon tertanggung secara hukum menegaskan kebenaran data yang disampaikan.
@@ -933,7 +936,7 @@
 > [!QUESTION] Soal 47: Fakta Material (Cara Memperoleh)
 > Sebutkan dan jelaskan **tiga cara** penanggung memperoleh fakta material dari tertanggung.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Terdapat tiga cara utama penanggung memperoleh fakta material dari calon tertanggung:
 > >
 > > 11. **Melalui Proposal Form (Surat Permohonan Penutupan Asuransi)** — Cara paling formal dan umum digunakan. Calon tertanggung diwajibkan mengisi formulir yang memuat pertanyaan-pertanyaan terstruktur mengenai objek pertanggungan dan faktor-faktor risiko yang relevan. Proposal form dirancang sedemikian rupa untuk memandu calon tertanggung dalam mengungkapkan fakta-fakta material yang diperlukan oleh underwriter. Declaration di akhir formulir memperkuat kewajiban hukum tertanggung atas kebenaran informasi yang disampaikan.
@@ -945,7 +948,7 @@
 > [!QUESTION] Soal 48: Penanganan Klaim (Polis Belum Terbit)
 > Uraikan penanganan klaim asuransi atas suatu pertanggungan di mana **polis belum diterbitkan** tetapi telah ada kesepakatan penutupan asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Dalam praktik asuransi, kontrak asuransi yang sah dapat terbentuk sebelum polis resmi diterbitkan, asalkan telah terpenuhi unsur-unsur perjanjian yang sah, yaitu adanya penawaran (*offer*), penerimaan (*acceptance*), dan pertimbangan (*consideration* berupa premi). Kondisi ini lazim diwujudkan melalui penerbitan ***cover note*** atau ***binder***.
 > >
 > > **Dasar Hukum Klaim:**
@@ -968,7 +971,7 @@
 > [!QUESTION] Soal 49: Caveat Emptor
 > Uraikan mengapa prinsip ***caveat emptor*** tidak tepat untuk diterapkan pada kontrak asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Caveat emptor*** adalah prinsip hukum dalam transaksi jual beli yang bermakna *"let the buyer beware"* — pembeli bertanggung jawab penuh untuk memeriksa dan menilai sendiri barang atau jasa yang akan dibelinya sebelum transaksi dilakukan. Risiko atas ketidaktahuan pembeli sepenuhnya menjadi tanggung jawab pembeli.
 > >
 > > Prinsip *caveat emptor* **tidak tepat diterapkan pada kontrak asuransi** karena beberapa alasan mendasar berikut:
@@ -984,7 +987,7 @@
 > [!QUESTION] Soal 50: Preamble
 > Uraikan pengertian ***preamble*** dalam polis asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Preamble*** (mukadimah/pembukaan) adalah bagian awal dari polis asuransi yang berfungsi sebagai pengantar dan pernyataan umum yang menggambarkan dasar dan latar belakang terbentuknya kontrak asuransi antara penanggung dan tertanggung.
 > >
 > > **Cakupan dan Fungsi Preamble:**
@@ -1004,7 +1007,7 @@
 > [!QUESTION] Soal 51: Fungsi Ikhtisar Polis
 > Uraikan **fungsi ikhtisar** polis asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Ikhtisar polis** (*policy schedule*) adalah bagian dari polis asuransi yang memuat informasi spesifik mengenai suatu penutupan asuransi tertentu, yang membedakannya dari polis-polis lain yang diterbitkan berdasarkan wording polis yang sama.
 > >
 > > Fungsi ikhtisar polis meliputi:
@@ -1024,7 +1027,7 @@
 > [!QUESTION] Soal 52: Recital Clause
 > Uraikan pengertian ***recital clause*** dalam polis asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Recital clause*** adalah klausul dalam polis asuransi yang berfungsi menyatakan dan mencatat fakta-fakta dasar serta latar belakang yang menjadi landasan terbentuknya kontrak asuransi. Klausul ini pada dasarnya merupakan pernyataan pendahuluan yang menjelaskan mengapa dan atas dasar apa polis tersebut diterbitkan.
 > >
 > > **Cakupan Recital Clause:**
@@ -1044,7 +1047,7 @@
 > [!QUESTION] Soal 53: Operative Clause
 > Uraikan pengertian ***operative clause*** dalam polis asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Operative clause*** (juga disebut *insuring clause*) adalah bagian terpenting dari polis asuransi yang secara eksplisit menyatakan janji dan komitmen penanggung untuk memberikan ganti rugi atau manfaat kepada tertanggung. Klausul ini merupakan inti dari kontrak asuransi karena di sinilah ruang lingkup perlindungan yang diberikan didefinisikan secara resmi.
 > >
 > > **Cakupan Operative Clause:**
@@ -1062,7 +1065,7 @@
 > [!QUESTION] Soal 54: Warranty
 > Uraikan pengertian ***warranty*** dalam polis asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Warranty*** dalam polis asuransi adalah janji atau pernyataan tertentu yang dibuat oleh tertanggung, yang menjadi syarat mutlak berlakunya perlindungan asuransi. Warranty merupakan ketentuan yang bersifat fundamental dalam kontrak asuransi, di mana kepatuhan tertanggung terhadap warranty tersebut merupakan prasyarat mutlak bagi kewajiban penanggung untuk membayar klaim.
 > >
 > > **Karakteristik Warranty:**
@@ -1082,7 +1085,7 @@
 > [!QUESTION] Soal 55: Kondisi Kontrak
 > Berkaitan dengan prinsip underwriting, jelaskan perbedaan antara ***implied condition*** dan ***express condition*** dalam kontrak asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Dalam kontrak asuransi, kondisi (*conditions*) adalah ketentuan-ketentuan yang harus dipenuhi oleh tertanggung agar perlindungan asuransi tetap berlaku dan klaim dapat dibayarkan. Kondisi dibedakan menjadi dua jenis:
 > >
 > > ***Implied Condition*** adalah kondisi yang tidak secara eksplisit tercantum dalam teks polis, namun secara hukum dianggap ada dan berlaku dengan sendirinya karena merupakan bagian inheren dari sifat dasar kontrak asuransi atau karena sudah menjadi kebiasaan yang lazim dalam praktik perasuransian.
@@ -1112,7 +1115,7 @@
 > [!QUESTION] Soal 56: Pengecualian
 > Jelaskan perbedaan antara ***general exclusion*** dan ***specific exclusion*** dalam polis asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Pengecualian (*exclusions*) dalam polis asuransi adalah kondisi, peristiwa, atau kerugian tertentu yang secara tegas tidak dijamin dan tidak akan dibayarkan ganti ruginya oleh penanggung. Pengecualian dibedakan menjadi dua jenis:
 > >
 > > ***General Exclusion*** adalah pengecualian yang berlaku secara menyeluruh untuk semua jenis risiko dan seluruh bagian dari polis, tanpa terkecuali. Pengecualian ini bersifat universal dan umumnya mencerminkan risiko-risiko yang secara prinsip tidak dapat diasuransikan atau yang dikecualikan berdasarkan kebijakan publik.
@@ -1143,7 +1146,7 @@
 > [!QUESTION] Soal 57: Information & Facilities
 > Uraikan isi dari bagian ***information and facilities*** pada polis asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Bagian ***information and facilities*** pada polis asuransi adalah bagian yang memuat informasi praktis dan fasilitas-fasilitas yang tersedia bagi pemegang polis dalam berinteraksi dengan penanggung, khususnya dalam situasi darurat atau saat mengajukan klaim.
 > >
 > > Isi dari bagian *information and facilities* umumnya meliputi:
@@ -1163,7 +1166,7 @@
 > [!QUESTION] Soal 58: Cover Notes
 > Uraikan fungsi dari ***cover notes*** dalam penutupan asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Cover note*** adalah dokumen resmi sementara yang diterbitkan oleh penanggung atau pialang asuransi sebagai bukti bahwa perlindungan asuransi telah berlaku efektif, sementara polis resmi masih dalam proses penerbitan.
 > >
 > > **Fungsi Cover Note:**
@@ -1183,7 +1186,7 @@
 > [!QUESTION] Soal 59: Sertifikat Asuransi
 > Uraikan **fungsi sertifikat asuransi**.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Sertifikat asuransi** adalah dokumen ringkas yang diterbitkan oleh penanggung sebagai bukti adanya perlindungan asuransi atas suatu objek atau kepentingan tertentu, tanpa memuat seluruh syarat dan kondisi polis secara lengkap.
 > >
 > > **Fungsi Sertifikat Asuransi:**
@@ -1204,7 +1207,7 @@
 > [!QUESTION] Soal 60: Fungsi Polis
 > Jelaskan **fungsi polis** dalam konteks kontrak asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Polis asuransi** adalah dokumen tertulis resmi yang memuat seluruh syarat, kondisi, hak, dan kewajiban para pihak dalam kontrak asuransi. Polis merupakan wujud nyata dari perjanjian asuransi yang telah disepakati antara penanggung dan tertanggung.
 > >
 > > **Fungsi Polis dalam Kontrak Asuransi:**
@@ -1224,7 +1227,7 @@
 > [!QUESTION] Soal 61: Uberrimae Fides
 > Uraikan penerapan prinsip ***uberrimae fides*** (itikad baik yang sempurna) dalam kontrak asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Uberrimae fides*** atau *utmost good faith* (itikad terbaik/sempurna) adalah prinsip fundamental yang melandasi seluruh kontrak asuransi, yang mewajibkan **kedua belah pihak** — baik tertanggung maupun penanggung — untuk bersikap jujur secara sempurna dan mengungkapkan semua informasi material yang relevan dalam proses pembentukan dan pelaksanaan kontrak asuransi.
 > >
 > > **Penerapan bagi Tertanggung:**
@@ -1248,7 +1251,7 @@
 > [!QUESTION] Soal 62: Utmost Good Faith & Konsekuensi
 > Uraikan pengertian prinsip ***utmost good faith*** dan konsekuensinya.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Utmost good faith*** (*uberrimae fides*) adalah prinsip fundamental dalam kontrak asuransi yang mewajibkan semua pihak yang terlibat untuk bertindak dengan kejujuran dan keterbukaan yang sempurna dalam setiap aspek pembentukan dan pelaksanaan kontrak asuransi. Prinsip ini melampaui standar itikad baik (*good faith*) yang berlaku dalam kontrak komersial pada umumnya, karena menuntut kejujuran yang bersifat aktif dan proaktif — bukan sekadar tidak berbohong, tetapi juga secara sukarela mengungkapkan semua informasi yang relevan.
 > >
 > > Prinsip ini lahir dari kebutuhan khusus industri asuransi, di mana penanggung sangat bergantung pada informasi yang diberikan oleh calon tertanggung untuk dapat menilai dan menetapkan harga risiko secara akurat, sementara penanggung sendiri tidak memiliki akses langsung untuk memverifikasi semua fakta tersebut.
@@ -1266,7 +1269,7 @@
 > [!QUESTION] Soal 63: Utmost Good Faith (Kedua Pihak)
 > Jelaskan bagaimana prinsip ***utmost good faith*** dalam kontrak asuransi diterapkan pada pihak **tertanggung** maupun **penanggung**.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Prinsip *utmost good faith* bersifat timbal balik dan mengikat kedua belah pihak dalam kontrak asuransi:
 > >
 > > **Penerapan pada Tertanggung:**
@@ -1290,7 +1293,7 @@
 > [!QUESTION] Soal 64: Misrepresentation vs Non-Disclosure
 > Uraikan perbedaan antara ***misrepresentation*** dan ***non-disclosure***.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Misrepresentation*** dan ***non-disclosure*** adalah dua bentuk pelanggaran prinsip *utmost good faith* yang berbeda dalam sifat dan caranya:
 > >
 > > ***Misrepresentation*** adalah tindakan memberikan pernyataan atau keterangan yang **tidak benar, tidak akurat, atau menyesatkan** mengenai fakta material kepada penanggung. Dalam *misrepresentation*, tertanggung secara aktif menyampaikan informasi, namun informasi yang disampaikan tersebut tidak sesuai dengan kebenaran.
@@ -1322,7 +1325,7 @@
 > [!QUESTION] Soal 65: Duty of Disclosure (Waktu)
 > Uraikan ketentuan terkait ***duty of disclosure*** pada saat **permulaan, pertengahan dan perpanjangan** kontrak asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Kewajiban pengungkapan (*duty of disclosure*) berlaku pada beberapa titik waktu kritis dalam siklus kontrak asuransi:
 > >
 > > **1. Pada Saat Permulaan Kontrak (*Inception*):**
@@ -1346,7 +1349,7 @@
 > [!QUESTION] Soal 66: Duty of Disclosure (Kebakaran)
 > Uraikan ketentuan terkait ***duty of disclosure*** pada Polis Standar Asuransi Kebakaran Indonesia.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Polis Standar Asuransi Kebakaran Indonesia (PSAKI) memuat ketentuan-ketentuan spesifik mengenai *duty of disclosure* yang harus dipenuhi oleh tertanggung, sebagai berikut:
 > >
 > > **1. Kewajiban Pengungkapan pada Saat Penutupan:**
@@ -1376,12 +1379,12 @@
 > [!QUESTION] Soal 67: Duty of Disclosure (Pelanggaran)
 > Uraikan syarat agar penanggung dapat melaksanakan opsi yang tersedia baginya dalam hal tertanggung tidak memenuhi ***duty of disclosure*** saat proses penutupan risiko asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Agar penanggung dapat melaksanakan opsi yang tersedia (seperti membatalkan kontrak atau menolak klaim) akibat pelanggaran *duty of disclosure* oleh tertanggung, terdapat beberapa syarat yang harus terpenuhi:
 > >
 > > 1. **Fakta yang Tidak Diungkap Bersifat Material** — Fakta yang tidak diungkapkan atau yang salah dinyatakan harus merupakan fakta material, yaitu fakta yang apabila diketahui oleh penanggung akan mempengaruhi keputusannya dalam menerima risiko, menetapkan premi, atau menentukan syarat penutupan. Fakta yang tidak material tidak memberikan hak kepada penanggung untuk membatalkan kontrak.
 > >
-> > 2. **Fakta Tersebut Diketahui atau Seharusnya Diketahui oleh Tertanggung** — Tertanggung hanya dapat dimintai pertanggungjawaban atas fakta yang diketahuinya atau yang seharusnya diketahuinya dalam kapasitasnya sebagai pemilik atau pengelola objek pertanggungan. Fakta yang benar-benar tidak diketahui dan tidak mungkin diketahui oleh tertanggung tidak dapat menjadi dasar pembatalan kontrak.
+> > 2. **Fakta Tersebut Diketahui atau Seharusnya Diketahui oleh Tertanggung** — Tertanggung hanya dapat dimintai pertanggungJawaban     atas fakta yang diketahuinya atau yang seharusnya diketahuinya dalam kapasitasnya sebagai pemilik atau pengelola objek pertanggungan. Fakta yang benar-benar tidak diketahui dan tidak mungkin diketahui oleh tertanggung tidak dapat menjadi dasar pembatalan kontrak.
 > >
 > > 3. **Penanggung Tidak Mengetahui Fakta Tersebut** — Apabila penanggung telah mengetahui atau seharusnya mengetahui fakta material tersebut melalui informasi yang tersedia secara umum atau melalui survei yang dilakukannya sendiri, maka penanggung tidak dapat menggunakan fakta tersebut sebagai dasar pembatalan kontrak.
 > >
@@ -1394,7 +1397,7 @@
 > [!QUESTION] Soal 68: Fakta yang Tidak Perlu Diungkap
 > Uraikan **5 (lima) jenis fakta** yang tidak perlu diungkapkan calon tertanggung.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Meskipun calon tertanggung memiliki kewajiban luas untuk mengungkapkan fakta material, terdapat beberapa jenis fakta yang dikecualikan dari kewajiban pengungkapan tersebut:
 > >
 > > 1. **Fakta yang Meringankan Risiko** — Calon tertanggung tidak diwajibkan mengungkapkan fakta-fakta yang justru akan mengurangi tingkat risiko yang dinilai oleh penanggung atau yang berdampak menguntungkan bagi penanggung. Kewajiban pengungkapan berlaku untuk fakta yang memberatkan, bukan yang meringankan risiko.
@@ -1410,12 +1413,12 @@
 > [!QUESTION] Soal 69: Tanggung Jawab Penanggung (Duty of Disclosure)
 > Uraikan **tanggung jawab penanggung** dalam penerapan ***duty of disclosure***.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Dalam penerapan prinsip *duty of disclosure*, penanggung tidak hanya berposisi sebagai pihak yang menerima pengungkapan dari tertanggung, tetapi juga memiliki sejumlah tanggung jawab aktif, sebagai berikut:
 > >
 > > 6. **Mengajukan Pertanyaan yang Relevan dan Jelas** — Penanggung bertanggung jawab untuk merancang proposal form yang memuat pertanyaan-pertanyaan yang jelas, relevan, dan komprehensif sehingga memandu calon tertanggung dalam mengungkapkan fakta-fakta material yang diperlukan. Pertanyaan yang ambigu atau tidak jelas dapat mengurangi tanggung jawab calon tertanggung atas fakta yang tidak terungkap.
 > >
-> > 7. **Menindaklanjuti Jawaban yang Memerlukan Klarifikasi** — Apabila jawaban calon tertanggung atas suatu pertanyaan menunjukkan adanya indikasi informasi penting yang belum lengkap, penanggung bertanggung jawab untuk menindaklanjutinya dengan pertanyaan lanjutan. Kegagalan penanggung untuk menindaklanjuti dapat dianggap sebagai *waiver*.
+> > 7. **Menindaklanjuti Jawaban     yang Memerlukan Klarifikasi** — Apabila Jawaban     calon tertanggung atas suatu pertanyaan menunjukkan adanya indikasi informasi penting yang belum lengkap, penanggung bertanggung jawab untuk menindaklanjutinya dengan pertanyaan lanjutan. Kegagalan penanggung untuk menindaklanjuti dapat dianggap sebagai *waiver*.
 > >
 > > 8. **Transparansi dalam Menjelaskan Produk** — Penanggung bertanggung jawab untuk menjelaskan secara jujur dan transparan seluruh aspek produk asuransi yang ditawarkan, termasuk manfaat, pengecualian, kondisi, dan keterbatasan perlindungan, agar calon tertanggung dapat membuat keputusan yang benar-benar *informed*.
 > >
@@ -1428,7 +1431,7 @@
 > [!QUESTION] Soal 70: Concealment
 > Uraikan pengertian ***concealment*** dan pilihan tindakan yang dapat diambil oleh penanggung dalam hal terjadi *concealment*.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Concealment*** adalah tindakan tertanggung yang secara sengaja **menyembunyikan atau tidak mengungkapkan** fakta material yang diketahuinya kepada penanggung, dengan tujuan memperoleh penutupan asuransi yang mungkin tidak akan diberikan atau akan diberikan dengan syarat yang berbeda apabila fakta tersebut diketahui penanggung.
 > >
 > > *Concealment* berbeda dengan *non-disclosure* yang tidak disengaja; *concealment* selalu mengandung unsur kesengajaan (*intentional*) dan merupakan bentuk pelanggaran *utmost good faith* yang paling serius dalam kontrak asuransi.
@@ -1448,7 +1451,7 @@
 > [!QUESTION] Soal 71: Proximate Cause
 > Berkaitan dengan prinsip asuransi, jelaskan cara menentukan ***proximate cause*** dalam suatu peristiwa kerugian.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Proximate cause*** adalah penyebab aktif, efisien, dan dominan yang menggerakkan rantai peristiwa yang mengakibatkan kerugian, tanpa intervensi kekuatan independen dari luar. Prinsip *proximate cause* digunakan untuk menentukan apakah suatu kerugian termasuk dalam cakupan jaminan polis atau tidak.
 > >
 > > **Cara Menentukan Proximate Cause:**
@@ -1472,7 +1475,7 @@
 > [!QUESTION] Soal 72: Prinsip Kontribusi
 > Berkaitan dengan prinsip underwriting, jelaskan pengertian **prinsip kontribusi** dan syarat penerapannya.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Prinsip kontribusi** (*contribution*) adalah prinsip dalam asuransi yang menyatakan bahwa apabila suatu objek pertanggungan yang sama diasuransikan kepada lebih dari satu penanggung secara bersamaan (*double insurance*), maka masing-masing penanggung hanya berkewajiban menanggung kerugian secara proporsional sesuai dengan porsi nilai pertanggungan masing-masing, sehingga total ganti rugi yang diterima tertanggung tidak melebihi nilai kerugian aktual yang dideritanya.
 > >
 > > Prinsip kontribusi merupakan turunan langsung dari prinsip indemnitas, yang bertujuan mencegah tertanggung memperoleh keuntungan finansial dari suatu kerugian melalui *double insurance*.
@@ -1492,7 +1495,7 @@
 > [!QUESTION] Soal 73: Adjustable Premium
 > Berkaitan dengan prinsip underwriting, uraikan pengertian ***adjustable premium***.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Adjustable premium*** adalah sistem penetapan premi asuransi di mana besarnya premi akhir yang dibayarkan oleh tertanggung tidak ditetapkan secara pasti di awal periode pertanggungan, melainkan **disesuaikan** (*adjusted*) di akhir periode berdasarkan data aktual dari variabel-variabel yang menjadi dasar perhitungan premi, yang baru dapat diketahui dengan pasti setelah periode pertanggungan berjalan atau berakhir.
 > >
 > > **Mekanisme Adjustable Premium:**
@@ -1518,7 +1521,7 @@
 > [!QUESTION] Soal 74: Subrogasi (PSAKI)
 > Berkaitan dengan prinsip *underwriting*, uraikan ketentuan **subrogasi** dalam Polis Standar Asuransi Kebakaran Indonesia.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Subrogasi** adalah prinsip asuransi yang memberikan hak kepada penanggung, setelah membayar ganti rugi kepada tertanggung, untuk menggantikan posisi tertanggung dalam menuntut ganti rugi kepada pihak ketiga yang bertanggung jawab atas terjadinya kerugian tersebut. Prinsip subrogasi merupakan turunan dari prinsip indemnitas dan bertujuan mencegah tertanggung mendapatkan ganti rugi ganda (dari penanggung dan dari pihak ketiga yang bersalah).
 > >
 > > **Ketentuan Subrogasi dalam Polis Standar Asuransi Kebakaran Indonesia (PSAKI):**
@@ -1536,7 +1539,7 @@
 > [!QUESTION] Soal 75: Asuransi Kebakaran
 > Uraikan **5 (lima) informasi utama** terkait risiko yang diasuransikan yang diperlukan dalam proses underwriting asuransi kebakaran.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Lima informasi utama yang diperlukan underwriter dalam proses underwriting asuransi kebakaran adalah:
 > >
 > > 1. **Konstruksi Bangunan (*Construction*)** — Underwriter perlu mengetahui material utama yang digunakan dalam konstruksi bangunan, meliputi struktur dinding (bata, beton, kayu, atau campuran), jenis atap (genteng, asbes, seng, atau sirap kayu), dan material lantai. Konstruksi yang menggunakan bahan mudah terbakar seperti kayu akan meningkatkan tingkat risiko secara signifikan dibandingkan bangunan berdinding bata dan beratap genteng.
@@ -1552,7 +1555,7 @@
 > [!QUESTION] Soal 76: Underwriting Asuransi Rumah Tinggal
 > Uraikan **informasi utama** terkait risiko bangunan dan isi bangunan yang diperlukan dalam proses *underwriting* asuransi rumah tinggal.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Dalam proses underwriting asuransi rumah tinggal, underwriter memerlukan informasi yang mencakup dua aspek utama:
 > >
 > > **Informasi Utama Terkait Risiko Bangunan:**
@@ -1578,7 +1581,7 @@
 > [!QUESTION] Soal 77: Peran Asuransi dalam Fire Waste
 > Berkaitan dengan konsep asuransi, jelaskan **peran asuransi** dalam mengendalikan ***fire waste***.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Fire waste*** adalah kerugian total yang ditimbulkan oleh kebakaran, yang tidak hanya mencakup nilai fisik harta benda yang rusak atau musnah, tetapi juga seluruh dampak ekonomi dan sosial yang lebih luas akibat peristiwa kebakaran tersebut, seperti hilangnya lapangan kerja, terganggunya kegiatan usaha, dan dampak pada masyarakat sekitar.
 > >
 > > **Peran Asuransi dalam Mengendalikan Fire Waste:**
@@ -1596,7 +1599,7 @@
 > [!QUESTION] Soal 78: Reasonable Precautions
 > Uraikan pengertian ***reasonable precautions*** dalam polis asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Reasonable precautions*** adalah kondisi (*condition*) yang umumnya terdapat dalam polis asuransi, yang mewajibkan tertanggung untuk senantiasa mengambil tindakan pencegahan yang wajar dan kehati-hatian yang layak untuk mencegah atau meminimalkan terjadinya kerugian, kerusakan, atau tanggung jawab yang dijamin oleh polis.
 > >
 > > **Pengertian dan Cakupan:**
@@ -1619,7 +1622,7 @@
 > [!QUESTION] Soal 79: Jaminan Polis (Basic Cover & Reinstatement)
 > Jelaskan perbedaan antara ***basic cover*** dan ***reinstatement*** dalam polis asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Basic cover*** dan ***reinstatement*** adalah dua pendekatan yang berbeda dalam menentukan dasar penggantian (*basis of indemnity*) atas kerugian harta benda dalam polis asuransi:
 > >
 > > ***Basic Cover*** (Dasar Indemnitas Standar) adalah pendekatan ganti rugi di mana penanggung mengganti kerugian berdasarkan **nilai pasar aktual** (*actual cash value* atau *market value*) dari objek yang rusak atau musnah pada saat terjadinya kerugian. Nilai ini memperhitungkan penyusutan (*depreciation*) akibat usia, keausan, dan kondisi objek tersebut.
@@ -1656,7 +1659,7 @@
 > [!QUESTION] Soal 80: Reasuransi
 > Jelaskan perbedaan antara reasuransi ***proportional*** dan ***non-proportional***.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Reasuransi adalah mekanisme di mana penanggung (*cedant*) mengalihkan sebagian risiko yang telah diterimanya kepada reasuradur. Berdasarkan cara pembagian risiko dan premi, reasuransi dibedakan menjadi dua jenis utama:
 > >
 > > **Reasuransi Proportional** adalah jenis reasuransi di mana penanggung dan reasuradur **berbagi risiko, premi, dan klaim secara proporsional** sesuai dengan porsi yang telah disepakati sejak awal. Reasuradur menerima bagian premi yang sebanding dengan porsi risiko yang ditanggungnya, dan menanggung klaim sesuai proporsi yang sama.
@@ -1687,7 +1690,7 @@
 > [!QUESTION] Soal 81: Premi & Biaya
 > Uraikan ***variable expenses*** (biaya) yang harus diperhitungkan oleh underwriter dalam menetapkan premi asuransi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Variable expenses*** adalah komponen biaya dalam struktur premi asuransi yang besarnya **berubah secara proporsional** sesuai dengan volume premi atau jumlah polis yang diterbitkan — berbeda dengan *fixed expenses* yang tetap konstan tanpa memandang volume bisnis.
 > >
 > > Variable expenses yang harus diperhitungkan underwriter dalam menetapkan premi meliputi:
@@ -1707,7 +1710,7 @@
 > [!QUESTION] Soal 82: Risk Premium
 > Berkaitan dengan prinsip *underwriting*, jelaskan pengertian ***risk premium*** dan **3 (tiga) elemen utamanya**.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Risk premium*** (juga dikenal sebagai *pure premium* atau *burning cost*) adalah komponen inti dari premi asuransi yang secara khusus diperhitungkan untuk menutup **biaya klaim yang diharapkan** (*expected claims cost*) dari suatu risiko yang dipertanggungkan, tanpa memperhitungkan biaya operasional, komisi, atau keuntungan penanggung.
 > >
 > > Dengan kata lain, *risk premium* adalah jumlah premi minimum yang secara teoritis diperlukan agar penanggung dapat membayar semua klaim yang diperkirakan akan terjadi dari suatu portofolio risiko dalam suatu periode pertanggungan.
@@ -1727,7 +1730,7 @@
 > [!QUESTION] Soal 83: Cost of Production
 > Berkaitan dengan prinsip dan praktek underwriting, uraikan pentingnya **data klaim** sebagai ***cost of production*** bagi underwriter dalam penetapan premi.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Dalam industri asuransi, **data klaim** merupakan ***cost of production*** (biaya produksi) yang paling signifikan, karena pembayaran klaim merupakan komponen terbesar dalam struktur biaya perusahaan asuransi — umumnya mencakup 60–80% dari total premi yang diterima. Pemahaman mendalam tentang data klaim sangat kritis bagi underwriter dalam penetapan premi yang akurat dan berkelanjutan.
 > >
 > > **Pentingnya Data Klaim sebagai Cost of Production:**
@@ -1745,7 +1748,7 @@
 > [!QUESTION] Soal 84: Underlying Claims Cost
 > Uraikan pengertian ***underlying claims cost*** dalam analisa underwriter terhadap data historis klaim.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > ***Underlying claims cost*** adalah estimasi biaya klaim yang **sebenarnya mencerminkan tingkat klaim yang sesungguhnya dan berkelanjutan** dari suatu portofolio risiko, setelah dilakukan berbagai penyesuaian dan normalisasi terhadap data historis klaim untuk menghilangkan distorsi dan pengaruh faktor-faktor yang bersifat sementara, tidak representatif, atau tidak akan berulang di masa depan.
 > >
 > > **Mengapa Underlying Claims Cost Diperlukan:**
@@ -1767,7 +1770,7 @@
 > [!QUESTION] Soal 85: Riwayat Klaim
 > Uraikan aspek-aspek utama yang perlu diperhatikan oleh underwriter dalam mengevaluasi **riwayat klaim (*claim history*)** atau data historis klaim.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Dalam mengevaluasi riwayat klaim, underwriter perlu memperhatikan aspek-aspek utama berikut secara menyeluruh dan kritis:
 > >
 > > 10. **Periode Data yang Digunakan** — Underwriter harus memastikan bahwa data historis yang dianalisis mencakup periode yang cukup panjang (umumnya minimal 3–5 tahun) untuk menghasilkan estimasi yang statistik yang representatif, namun tidak terlalu panjang sehingga mengandung data yang sudah tidak relevan dengan kondisi risiko saat ini.
@@ -1787,7 +1790,7 @@
 > [!QUESTION] Soal 86: Risiko Tak Terprediksi
 > Uraikan langkah yang dapat ditempuh underwriter dalam mengelola risiko di mana **data historis klaimnya tidak dapat diprediksi**.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > Underwriter seringkali menghadapi risiko-risiko di mana data historis klaim yang tersedia sangat terbatas, tidak konsisten, atau tidak dapat diandalkan untuk membuat proyeksi yang akurat. Dalam situasi ini, underwriter dapat menempuh langkah-langkah berikut:
 > >
 > > 17. **Menggunakan Data Industri dan Statistik Pasar (*Market Data*)** — Apabila data internal tidak memadai, underwriter dapat merujuk pada data statistik industri yang dikumpulkan oleh asosiasi asuransi, biro tarif, atau lembaga statistik independen. Data industri yang lebih luas dapat memberikan gambaran yang lebih representatif tentang tingkat klaim untuk jenis risiko tersebut.
@@ -1809,7 +1812,7 @@
 > [!QUESTION] Soal 87: Frequency & Severity
 > Uraikan pentingnya ***frequency*** dan ***severity*** dari suatu risiko bagi underwriter.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Frequency** (frekuensi) adalah seberapa sering suatu peristiwa kerugian terjadi dalam suatu periode, sedangkan **severity** (keparahan) adalah besaran kerugian finansial yang ditimbulkan apabila peristiwa tersebut terjadi.
 > >
 > > **Pentingnya bagi Underwriter:**
@@ -1836,7 +1839,7 @@
 > [!QUESTION] Soal 88: Earned Loss Ratio
 > Jelaskan pengertian ***earned loss ratio***.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Earned Loss Ratio** adalah rasio yang mengukur perbandingan antara total klaim yang terjadi (incurred claims) dengan premi yang telah diperoleh (earned premium) dalam suatu periode tertentu.
 > >
 > > **Formula:**
@@ -1858,7 +1861,7 @@
 > [!QUESTION] Soal 89: Claims Loss Ratio
 > Berkaitan dengan prinsip dan praktek underwriting, uraikan pengertian ***claims loss ratio***.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Claims Loss Ratio** adalah rasio yang membandingkan total klaim (baik yang telah dibayar maupun yang masih dalam proses) terhadap premi yang diterima, digunakan sebagai indikator utama kinerja underwriting suatu portofolio asuransi.
 > >
 > > **Formula Umum:**
@@ -1881,7 +1884,7 @@
 > [!QUESTION] Soal 90: Accounting Year
 > Uraikan konsep pemantauan kinerja underwriting berdasarkan ***accounting year***.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Accounting Year** (tahun akuntansi) adalah metode pemantauan kinerja underwriting di mana seluruh pendapatan (premi) dan pengeluaran (klaim serta biaya) yang **dicatat dalam laporan keuangan pada tahun kalender tertentu** dikelompokkan bersama, tanpa memandang kapan polis diterbitkan atau kapan klaim terjadi.
 > >
 > > **Cara Kerja:**
@@ -1905,7 +1908,7 @@
 > [!QUESTION] Soal 91: Underwriting Year
 > Jelaskan konsep pemantauan kinerja underwriting berdasarkan ***underwriting year***; disertai contoh perhitungannya.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Underwriting Year** adalah metode pemantauan kinerja di mana seluruh polis yang **diterbitkan (incepted) dalam tahun tertentu** dilacak bersama, dan semua klaim yang timbul dari polis-polis tersebut — tidak peduli kapan klaimnya terbayar — dibebankan ke tahun penerbitan polis tersebut.
 > >
 > > **Cara Kerja:**
@@ -1942,7 +1945,7 @@
 > [!QUESTION] Soal 92: Policy Year
 > Jelaskan konsep pemantauan kinerja underwriting berdasarkan ***policy year***; disertai contoh perhitungannya.
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Policy Year** adalah metode pemantauan yang mengelompokkan polis berdasarkan **tahun dimulainya periode pertanggungan (inception date)**, kemudian menelusuri seluruh premi dan klaim yang berkaitan dengan polis-polis tersebut hingga tuntas — mirip dengan underwriting year, namun lebih berfokus pada **periode berlakunya polis** bukan tanggal penerbitan administrasinya.
 > >
 > > Dalam praktiknya, **Policy Year** sering disamakan dengan Underwriting Year, namun perbedaannya dapat muncul ketika polis diterbitkan mundur (backdated) atau diperpanjang melewati tahun kalender.
@@ -1981,7 +1984,7 @@
 > [!QUESTION] Soal 93: Aktuaris
 > Apa tugas **aktuaris** dan bagaimana perannya dalam penerapan manajemen risiko pada perusahaan asuransi?
 >
-> > [!CHECK]- Jawaban
+> > [!CHECK]- Jawaban    
 > > **Aktuaris** adalah profesional yang memiliki keahlian dalam matematika, statistika, dan keuangan untuk menganalisis dan mengkuantifikasi risiko, terutama dalam konteks asuransi dan keuangan.
 > >
 > > **Tugas Utama Aktuaris:**
