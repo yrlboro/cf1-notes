@@ -6,12 +6,31 @@
 > [!QUESTION] Soal 1: Komponen Utama Risiko
 > Uraikan **3 (tiga) komponen utama** pengertian risiko.
 > > [!CHECK]- Jawaban
-> > (Isi jawaban Anda di sini)
+> > Tiga komponen utama pengertian risiko adalah: 
+> > 
+> > 
+> > 1. **Ketidakpastian (Uncertainty)** — Risiko selalu mengandung unsur ketidakpastian, yaitu kemungkinan suatu peristiwa terjadi atau tidak terjadi di masa depan tidak dapat dipastikan. 
+> > 2. **Peristiwa yang Menimbulkan Kerugian (Loss/Adverse Outcome)** — Risiko berkaitan dengan kemungkinan terjadinya suatu peristiwa yang dapat menimbulkan kerugian finansial maupun non-finansial bagi pihak yang bersangkutan. 
+> > 3. **Objek yang Terpapar (Exposure)** — Harus terdapat sesuatu (orang, harta benda, atau kepentingan) yang terpapar terhadap kemungkinan kerugian tersebut.
 
 > [!QUESTION] Soal 2: Profil Risiko Low Frequency & High Severity
 > Uraikan profil risiko ***low frequency and high severity***, disertai contohnya.
 > > [!CHECK]- Jawaban
-> > (Isi jawaban Anda di sini)
+> > **Low Frequency & High Severity** adalah profil risiko di mana peristiwa kerugian jarang terjadi, namun apabila terjadi akan menimbulkan dampak finansial yang sangat besar. 
+> > 
+> > 
+> > **Karakteristik:** 
+> > > > 
+> > - Frekuensi kejadian rendah (tidak sering terjadi) 
+> > - Tingkat keparahan/besaran kerugian sangat tinggi 
+> > - Sulit diprediksi waktu terjadinya 
+> > - Umumnya menjadi objek utama yang diasuransikan 
+> >
+> > **Contoh:** 
+> > - Kebakaran besar yang menghanguskan pabrik atau gedung bertingkat 
+> > - Bencana alam seperti gempa bumi atau tsunami yang merusak properti secara masif 
+> > - Kecelakaan pesawat terbang 
+> > - Ledakan kilang minyak
 
 > [!QUESTION] Soal 3: Elemen & Bentuk Risiko
 > Berkaitan dengan konsep asuransi, identifikasikan **4 (empat) elemen** dalam pengertian umum istilah risiko dan uraikan **3 (tiga) bentuk** pengertian istilah risiko dalam pasar asuransi.
