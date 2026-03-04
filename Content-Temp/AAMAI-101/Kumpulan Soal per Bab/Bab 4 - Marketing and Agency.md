@@ -31,5 +31,3 @@
 ### **Jenis Usaha Perasuransian**
 
 - **4.11.** Jelaskan perbedaan antara **usaha asuransi** (asuransi kerugian) dengan **usaha penunjang usaha asuransi** (seperti pialang, penilai kerugian, dan konsultan).
-
-Apakah Anda ingin saya melakukan proses review dan eliminasi duplikat untuk soal-soal di **Bab 5 (How Insurance Operate)**?

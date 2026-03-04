@@ -1,4 +1,3 @@
-# **Relationship Between Risk and Insurance**
 
 ### **Konsep dan Terminologi Risiko**
 

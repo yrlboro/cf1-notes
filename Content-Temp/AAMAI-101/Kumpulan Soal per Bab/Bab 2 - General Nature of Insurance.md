@@ -1,4 +1,3 @@
-# **General Nature of Insurance**
 
 ### **Karakteristik Risiko yang Dapat Diasuransikan (_Insurable Risks_)**
 

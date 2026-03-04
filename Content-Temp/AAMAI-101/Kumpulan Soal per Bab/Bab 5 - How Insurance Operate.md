@@ -80,5 +80,3 @@
 ### **Pendekatan Nasabah**
 
 - **5.33.** Uraikan alasan mengapa keputusan tertanggung individual untuk membeli polis umumnya tidak melalui proses _**formalized approach**_ dan bagaimana tahapan manajemen risiko yang biasanya mereka ambil secara mandiri.
-
-Apakah Anda ingin saya melanjutkan proses ekstraksi dan eliminasi duplikat untuk soal-soal di **Bab 6 (Underwriting and Risk Sharing)**?

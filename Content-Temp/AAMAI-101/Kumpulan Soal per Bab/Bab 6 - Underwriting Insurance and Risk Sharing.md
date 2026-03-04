@@ -53,5 +53,3 @@
 ### **Distribusi Digital**
 
 - **6.23.** Uraikan peran dan fungsi _**aggregator**_ dalam struktur pasar asuransi saat ini.
-
-Apakah Anda ingin saya melakukan hal yang sama (review dan eliminasi duplikat) untuk soal-soal di **Bab 7 (Claim Procedure)**?

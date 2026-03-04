@@ -65,5 +65,3 @@
 ### **Penghentian Pertanggungan**
 
 - **7.33.** Jelaskan ketentuan dalam PSAKBI mengenai prosedur dan konsekuensi dari **penghentian pertanggungan** (_termination_) baik oleh penanggung maupun tertanggung.
-
-Apakah Anda ingin saya melakukan hal yang sama (review dan eliminasi duplikat) untuk soal-soal di **Bab 8 (Supervision of Insurance)**?
