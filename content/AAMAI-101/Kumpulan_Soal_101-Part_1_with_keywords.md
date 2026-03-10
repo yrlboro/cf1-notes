@@ -2520,8 +2520,8 @@
 > > 4. **Stress Testing & Scenario Analysis** — Aktuaris melakukan simulasi skenario terburuk (worst-case scenario) untuk menguji ketahanan keuangan perusahaan dan memastikan kesiapan menghadapi kejadian tidak terduga.
 > >
 > > 5. **Kepatuhan Regulasi** — Aktuaris bertanggung jawab memastikan perusahaan memenuhi persyaratan regulasi terkait cadangan teknis, RBC, dan pelaporan aktuaria kepada otoritas (OJK di Indonesia).
-> 
-
+> >
+>>>
 > >
 > > 🔑 **Keywords to Memorize:**
 > > - **Aktuaris** = ahli matematika + statistika + keuangan → kuantifikasi risiko asuransi

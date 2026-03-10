@@ -662,7 +662,9 @@
 > > **Marine = VALUED POLICY** (nilai disepakati di muka, CIF + 10% profit) — nilai TETAP sejak awal
 > > **Property = UNVALUED POLICY** (nilai ditentukan saat klaim: Market Value atau Reinstatement Value) — nilai SAAT TERJADI
 > > *"Marine: harga sudah DEAL di awal. Property: nilai dihitung SAAT RUSAK"*
-> > *Marine ada Constructive Total Loss & General Average; Property tidak*: Risk Premium dan Tiga Elemennya
+> > *Marine ada Constructive Total Loss & General Average; Property tidak*
+
+> [!QUESTION] Soal 114: Risk Premium dan Tiga Elemennya
 > Apa yang dimaksud dengan ***risk premium***? Sebutkan dan jelaskan **3 elemennya**!
 >
 > > [!CHECK]- Jawaban    
@@ -698,7 +700,9 @@
 > > **Risk Premium = Frequency × Severity** (× Exposure untuk per-unit)
 > > **3 Elemen: FSE** → **F**rekuensi · **S**everity · **E**ksposur
 > > *"Risk Premium = biaya klaim MURNI tanpa loading. Freq × Sev = pure risk cost"*
-> > *Risk Premium ≠ Office Premium (office premium sudah ditambah loading biaya & profit)*: Tiga Aspek Penilaian Underwriter terhadap Sebuah Risiko
+> > *Risk Premium ≠ Office Premium (office premium sudah ditambah loading biaya & profit)*
+
+> [!QUESTION] Soal 115: Tiga Aspek Penilaian Underwriter terhadap Sebuah Risiko
 > Sebutkan dan jelaskan **3 aspek penilaian** underwriter terhadap sebuah risiko!
 >
 > > [!CHECK]- Jawaban    
@@ -725,7 +729,9 @@
 > > **3 Aspek Penilaian UW: FMF** → **F**isik · **M**oral · **F**inansial
 > > *Fisik = kondisi OBJEK | Moral = karakter ORANG | Finansial = kemampuan & kewajaran NILAI*
 > > *"UW menilai BENDA-nya, ORANGNYA, dan ANGKA-nya"*
-> > *Over-insurance → potensi moral hazard | Underinsurance → tertanggung rugi sendiri*: Prinsip Insurable Interest
+> > *Over-insurance → potensi moral hazard | Underinsurance → tertanggung rugi sendiri*
+
+> [!QUESTION] Soal 116: Prinsip Insurable Interest
 > Jelaskan prinsip ***insurable interest***! Uraikan perbedaan antara ***subject matter of insurance*** dan ***subject matter of contract***, beserta contoh dari lini usaha **marine** dan **kendaraan bermotor**!
 >
 > > [!CHECK]- Jawaban    
@@ -761,7 +767,9 @@
 > > **Subject Matter of Insurance** = BENDA/JIWA yang diasuransikan (fisik)
 > > **Subject Matter of Contract** = KEPENTINGAN FINANSIAL atas benda tersebut
 > > *Marine: SMI = kapal & kargo fisik → SMC = kepentingan pemilik/bank*
-> > *Kendaraan: SMI = mobilnya → SMC = kepentingan pemilik/leasing*: Siklus Asuransi (Insurance Cycle)
+> > *Kendaraan: SMI = mobilnya → SMC = kepentingan pemilik/leasing*
+
+> [!QUESTION] Soal 117: Siklus Asuransi (Insurance Cycle)
 > Apa yang dimaksud dengan **siklus asuransi** (*insurance cycle*), dan apa faktor yang memengaruhinya?
 >
 > > [!CHECK]- Jawaban    
@@ -871,7 +879,9 @@
 > > 🔑 **Keywords to Memorize:**
 > > **3 Cara Mendapat Fakta Material: PSB** → **P**roposal Form/SPPA · **S**urvei Risiko · **B**roker/Agen
 > > *Konvensional = analisis SPPA + bandingkan standar industri + survei langsung + cek riwayat klaim*
-> > *"SPPA = cara FORMAL | Survei = cara LANGSUNG | Broker = cara INFORMAL/TAMBAHAN"*: Perbedaan Ruang Lingkup Cover Marine vs Property
+> > *"SPPA = cara FORMAL | Survei = cara LANGSUNG | Broker = cara INFORMAL/TAMBAHAN"*
+
+> [!QUESTION] Soal 120: Perbedaan Ruang Lingkup Cover Marine vs Property
 > Apa perbedaan ruang lingkup *cover* antara **marine insurance** dan **property insurance**?
 >
 > > [!CHECK]- Jawaban    
@@ -898,7 +908,9 @@
 > > **Marine** = BERGERAK (ikuti objek), Valued Policy, ada CTL & General Average, ICC
 > > **Property** = LOKASI TETAP, Unvalued Policy, tidak ada General Average, PSAKI
 > > *"Marine: objek BERGERAK + nilai TETAP di awal. Property: lokasi TETAP + nilai ditentukan SAAT KLAIM"*
-> > *Marine unik: Constructive Total Loss + General Average — property tidak punya ini*: Risk Identification
+> > *Marine unik: Constructive Total Loss + General Average — property tidak punya ini*
+
+> [!QUESTION] Soal 121: Risk Identification
 > Jelaskan apa yang dimaksud dengan ***risk identification*** beserta contohnya! Uraikan pula cakupannya dan peran penanggung dalam proses *risk identification*!
 >
 > > [!CHECK]- Jawaban    
@@ -934,7 +946,9 @@
 > > **Risk Identification** = KENALI semua risiko potensial secara SISTEMATIS
 > > **5 Cakupan: FHORL** → **F**isik · **H**ukum/Liability · **O**perasional · **R**eputasi · **L**ayanan Keuangan/Finansial
 > > **Peran Penanggung: BERN** → **B**antu identifikasi · **E**xpertise teknis · **R**ekomendasi perbaikan · **N**etapkan syarat akseptasi
-> > *"Identifikasi = LANGKAH PERTAMA manajemen risiko sebelum bisa diukur dan ditransfer"*: Perbedaan Underwriting Perorangan vs Komersial
+> > *"Identifikasi = LANGKAH PERTAMA manajemen risiko sebelum bisa diukur dan ditransfer"*
+
+> [!QUESTION] Soal 122: Perbedaan Underwriting Perorangan vs Komersial
 > Apa perbedaan proses **underwriting** antara **asuransi perorangan** dan **asuransi komersial**?
 >
 > > [!CHECK]- Jawaban    
@@ -959,7 +973,9 @@
 > > 🔑 **Keywords to Memorize:**
 > > **Personal Lines** = STANDAR, VOLUME, CEPAT, otomatis | **Commercial Lines** = INDIVIDUAL, KOMPLEKS, LAMA, judgment intensif
 > > *Personal: banyak polis kecil, proses otomatis* | *Commercial: sedikit polis besar, analisis mendalam*
-> > *"Personal = pabrikan (massal). Commercial = skala (custom)"*: Earned Loss Ratio
+> > *"Personal = pabrikan (massal). Commercial = skala (custom)"*
+
+> [!QUESTION] Soal 123: Earned Loss Ratio
 > Jelaskan apa yang dimaksud dengan ***earned loss ratio*** dan bagaimana cara menghitungnya!
 >
 > > [!CHECK]- Jawaban    
@@ -1003,7 +1019,9 @@
 > > *Incurred Claims = Paid + Outstanding Reserve + IBNR*
 > > *Earned Premium = premi yang sudah "diperoleh" (proporsional periode berjalan)*
 > > *"<70% = SEHAT | >100% = RUGI teknis"*
-> > *Beda Earned vs Written Premium: Earned sudah proporsional waktu, Written = total premi diterima*: Premium, Premium Rate, dan Premium Base
+> > *Beda Earned vs Written Premium: Earned sudah proporsional waktu, Written = total premi diterima*
+
+> [!QUESTION] Soal 124: Premium, Premium Rate, dan Premium Base
 > Jelaskan perbedaan antara ***premium***, ***premium rate***, dan ***premium base***, serta uraikan hubungan ketiga konsep tersebut!
 >
 > > [!CHECK]- Jawaban    
@@ -1044,7 +1062,9 @@
 > > *Premium Base = UKURAN EKSPOSUR (nilai pertanggungan, omzet, jumlah karyawan)*
 > > *Premium Rate = PERSENTASE/TARIF per unit eksposur*
 > > *Premium = UANG AKTUAL yang dibayar*
-> > *"Base = BERAPA BESAR risikonya | Rate = HARGA per unit | Premium = TOTAL BAYAR"*: Homogenous Exposure
+> > *"Base = BERAPA BESAR risikonya | Rate = HARGA per unit | Premium = TOTAL BAYAR"*
+
+> [!QUESTION] Soal 125: Homogenous Exposure
 > Apa yang dimaksud dengan ***homogenous exposure*** dan mengapa konsep ini penting dalam asuransi?
 >
 > > [!CHECK]- Jawaban    
@@ -1074,7 +1094,9 @@
 > > **Homogenous Exposure** = risiko yang SERUPA/SETARA dalam satu kelompok
 > > **4 Alasan penting: LAAP** → **L**aw of Large Numbers · **A**kurat tarif · **A**dverse selection dihindari · **P**ortofolio efektif
 > > *"Makin HOMOGEN portofolio → makin AKURAT tarif → makin PREDIKTABEL hasil → makin MENGUNTUNGKAN"*
-> > *Campur risiko tidak homogen = tarif kacau, adverse selection masuk*: Struktur Pasar Asuransi di Indonesia
+> > *Campur risiko tidak homogen = tarif kacau, adverse selection masuk*
+
+> [!QUESTION] Soal 126: Struktur Pasar Asuransi di Indonesia
 > Bagaimana **struktur pasar asuransi di Indonesia** dan apa saja ruang lingkup usaha asuransi berdasarkan undang-undang yang berlaku?
 >
 > > [!CHECK]- Jawaban    
@@ -1116,7 +1138,9 @@
 > > **Regulasi: UU 40/2014 → diubah UU 4/2023 (P2SK) → Pengawas: OJK**
 > > **6 Pelaku Pasar: JARSPPL** → **J**iwa · **A**suransi Umum · **R**easuransi · **S**yariah · **P**ialang · **P**enilai Kerugian (Loss Adjuster) · **L**ainnya
 > > **Lini Usaha Asuransi Umum:** Property · Kendaraan · Marine Cargo · Marine Hull · Aviation · Engineering · Liability · Kecelakaan/Kesehatan · Kredit
-> > *"Pasar asuransi Indonesia diatur OJK, ada 6 jenis pelaku utama"*: Analisis dan Mengatasi Permasalahan Histori Klaim
+> > *"Pasar asuransi Indonesia diatur OJK, ada 6 jenis pelaku utama"*
+
+> [!QUESTION] Soal 127: Analisis dan Mengatasi Permasalahan Histori Klaim
 > Apa saja aspek yang harus diperhatikan underwriter dalam menganalisis dan mengatasi permasalahan terkait **histori klaim**?
 >
 > > [!CHECK]- Jawaban    
@@ -1153,7 +1177,9 @@
 > > 🔑 **Keywords to Memorize:**
 > > **7 Aspek Analisis Histori Klaim: KTABIEP** → **K**elengkapan data · **T**ren · **A**nalisis penyebab · **B**ig loss adjustment · **I**nflasi · **E**valuasi perbaikan · **P**erubahan eksposur
 > > *Data minimal 3–5 tahun! | Klaim besar one-off = dipisahkan dari analisis rutin*
-> > *"KELENGKAPAN data dulu, baru analisa TREN, PENYEBAB, KLAIM BESAR, INFLASI, PERBAIKAN, dan PERUBAHAN eksposur"*: Implied Condition vs Express Condition
+> > *"KELENGKAPAN data dulu, baru analisa TREN, PENYEBAB, KLAIM BESAR, INFLASI, PERBAIKAN, dan PERUBAHAN eksposur"*
+
+> [!QUESTION] Soal 128: Implied Condition vs Express Condition
 > Jelaskan perbedaan antara ***implied condition*** dan ***express condition*** dalam polis asuransi!
 >
 > > [!CHECK]- Jawaban    
@@ -1192,7 +1218,9 @@
 > > **Express** = TERTULIS EKSPLISIT dalam polis (mudah dilihat, disepakati para pihak)
 > > **Implied** = TIDAK TERTULIS, berlaku otomatis dari hukum/kebiasaan/sifat kontrak
 > > *Express: "7 hari lapor klaim" → ada di polis* | *Implied: Utmost Good Faith, Insurable Interest, Seaworthiness → tidak perlu ditulis, sudah berlaku*
-> > *"Express = BISA DIBACA | Implied = SUDAH TERASA sendiri"*: General Exclusion vs Specific Exclusion
+> > *"Express = BISA DIBACA | Implied = SUDAH TERASA sendiri"*
+
+> [!QUESTION] Soal 129: General Exclusion vs Specific Exclusion
 > Jelaskan perbedaan antara ***general exclusion*** dan ***specific exclusion*** dalam polis asuransi, beserta contoh masing-masing!
 >
 > > [!CHECK]- Jawaban    
@@ -1229,7 +1257,9 @@
 > > **General Exclusion** = SELURUH POLIS, tidak bisa diubah (War, Nuclear, Wilful Misconduct, Wear & Tear)
 > > **Specific Exclusion** = BAGIAN TERTENTU/kondisi spesifik, bisa diubah dengan endorsemen
 > > *"General = UNIVERSAL, berlaku untuk semua. Specific = KHUSUS satu polis/kondisi tertentu"*
-> > *General exclusion contoh mudah: PERANG dan NUKLIR — tidak bisa diklaim di polis manapun*: Fakta Material dan Fakta yang Tidak Wajib Diungkapkan
+> > *General exclusion contoh mudah: PERANG dan NUKLIR — tidak bisa diklaim di polis manapun*
+
+> [!QUESTION] Soal 130: Fakta Material dan Fakta yang Tidak Wajib Diungkapkan
 > Apa yang dimaksud dengan **fakta material**? Sebutkan **lima jenis fakta material yang tidak wajib diungkapkan** oleh calon tertanggung!
 >
 > > [!CHECK]- Jawaban    
@@ -1260,7 +1290,9 @@
 > > 🔑 **Keywords to Memorize:**
 > > **Fakta Material** = fakta yang MEMPENGARUHI keputusan penanggung (terima/tolak, tarif, syarat)
 > > **5 Pengecualian Disclosure: SWTTK** → **S**udah diketahui UW · **W**aived penanggung · **T**idak diketahui tertanggung · **T**idak relevan/mengurangi risiko · **K**etentuan hukum
-> > *"Tidak wajib ungkap jika: penanggung SUDAH TAHU, penanggung LEPAS HAK, tertanggung TIDAK TAHU, fakta MENGUNTUNGKAN UW, atau sudah diatur HUKUM"*: Reasuransi Proportional vs Non-Proportional
+> > *"Tidak wajib ungkap jika: penanggung SUDAH TAHU, penanggung LEPAS HAK, tertanggung TIDAK TAHU, fakta MENGUNTUNGKAN UW, atau sudah diatur HUKUM"*
+
+> [!QUESTION] Soal 131: Reasuransi Proportional vs Non-Proportional
 > Apa perbedaan antara **reasuransi proportional** dan **non-proportional**? Jelaskan mekanisme masing-masing!
 >
 > > [!CHECK]- Jawaban    
@@ -1307,7 +1339,9 @@
 > > **Proportional** = BAGI premi & klaim secara %, ada ceding commission | Jenis: Quota Share & Surplus Treaty
 > > **Non-Proportional** = hanya bayar jika klaim MELEBIHI retention/priority | Jenis: XL per Risk, Cat XL, Stop Loss
 > > *"Proportional: bagi-bagi SETIAP klaim. Non-Proportional: bayar HANYA jika melampaui batas"*
-> > *Proportional = sharing capacity | Non-Proportional = proteksi klaim besar/katastrofi*: Basic Cover vs Reinstatement
+> > *Proportional = sharing capacity | Non-Proportional = proteksi klaim besar/katastrofi*
+
+> [!QUESTION] Soal 132: Basic Cover vs Reinstatement
 > Jelaskan perbedaan antara ***basic cover*** dan ***reinstatement*** dalam polis asuransi!
 >
 > > [!CHECK]- Jawaban    
@@ -1344,7 +1378,9 @@
 > > **Basic Cover** = Nilai PASAR/AKTUAL (dikurangi depresiasi) — dapat uang sesuai usia barang
 > > **Reinstatement** = Nilai PENGGANTIAN BARU (tanpa depresiasi) — dapat barang baru setara
 > > *"Basic = dapat nilai BEKAS. Reinstatement = dapat nilai BARU → premi lebih mahal"*
-> > *Reinstatement = klausula TAMBAHAN (endorsemen), bukan jaminan standar*: Empat Pilihan Penyelesaian Klaim Ganti Rugi
+> > *Reinstatement = klausula TAMBAHAN (endorsemen), bukan jaminan standar*
+
+> [!QUESTION] Soal 133: Empat Pilihan Penyelesaian Klaim Ganti Rugi
 > Sebutkan **4 pilihan** yang tersedia bagi penanggung dalam menyelesaikan klaim ganti rugi!
 >
 > > [!CHECK]- Jawaban    
@@ -1379,7 +1415,9 @@
 > > **4 Pilihan Penyelesaian Klaim: TPRR** → **T**unai (Cash) · **P**erbaikan (Repair) · **R**eplacement (Penggantian) · **R**einstatement/Rebuilding
 > > *Hak pilih ada pada PENANGGUNG!*
 > > *Tunai = paling umum, paling fleksibel | Repair = kendaraan & properti parsial | Replacement = elektronik & peralatan | Reinstatement = bangunan*
-> > *"Penanggung pilih yang paling EFISIEN tapi tetap penuhi INDEMNITY"*: Empat Elemen dan Tiga Bentuk Pengertian Risiko
+> > *"Penanggung pilih yang paling EFISIEN tapi tetap penuhi INDEMNITY"*
+
+> [!QUESTION] Soal 134: Empat Elemen dan Tiga Bentuk Pengertian Risiko
 > Jelaskan **4 elemen** dalam pengertian umum istilah risiko, dan uraikan **3 bentuk** pengertian istilah risiko dalam konteks pasar asuransi!
 >
 > > [!CHECK]- Jawaban    
@@ -1416,7 +1454,9 @@
 > > **4 Elemen Risiko: UPKE** → **U**ncertainty · **P**eristiwa/Event · **K**erugian/Loss · **E**ksposur
 > > **3 Makna "Risiko" di Pasar Asuransi: OPC** → **O**bjek pertanggungan · **P**eril (penyebab) · **C**hance/probabilitas kerugian
 > > *"Risiko bisa berarti BENDA-nya, PENYEBAB-nya, atau KEMUNGKINAN-nya — tergantung konteks kalimat"*
-> > *4 elemen HARUS ada semua: tidak pasti + ada peristiwa + ada kerugian + ada objek yang terekspos*: Syarat Penanggung Melaksanakan Opsi atas Pelanggaran Duty of Disclosure
+> > *4 elemen HARUS ada semua: tidak pasti + ada peristiwa + ada kerugian + ada objek yang terekspos*
+
+> [!QUESTION] Soal 135: Syarat Penanggung Melaksanakan Opsi atas Pelanggaran Duty of Disclosure
 > Apa saja syarat yang harus dipenuhi penanggung untuk dapat melaksanakan **opsi yang tersedia** apabila tertanggung terbukti tidak memenuhi *duty of disclosure* saat proses penutupan polis?
 >
 > > [!CHECK]- Jawaban    
@@ -1445,7 +1485,9 @@
 > > ---
 > > 🔑 **Keywords to Memorize:**
 > > **6 Syarat Penanggung Bisa Batalkan Polis: TMBPNW** → **T**erbukti ada fakta tidak diungkap · **M**aterial terhadap akseptasi · **B**elum diketahui UW sebelumnya · **P**ember-tahuan resmi tepat waktu · **N**on-affirmation (belum terima manfaat) · **W**aiver/Estoppel tidak ada
-> > *"Penanggung baru bisa batalkan jika semua 6 syarat TERPENUHI — satu saja gagal, hak batal bisa gugur"*: Special Conditions of Average vs True Conditions of Average
+> > *"Penanggung baru bisa batalkan jika semua 6 syarat TERPENUHI — satu saja gagal, hak batal bisa gugur"*
+
+> [!QUESTION] Soal 136: Special Conditions of Average vs True Conditions of Average
 > Uraikan perbedaan antara ***special conditions of average*** dan ***true conditions of average*** beserta implikasinya dalam penyelesaian klaim!
 >
 > > [!CHECK]- Jawaban    
@@ -1486,7 +1528,9 @@
 > > **True Average** = berlaku untuk SEMUA tingkat underinsurance | Formula: (SI/Nilai Aktual) × Kerugian
 > > **Special Average** = berlaku HANYA jika SI < 75% nilai aktual — aman selama SI ≥ 75%
 > > *"True = KETAT (siapa pun underinsure kena). Special = TOLERAN (aman asal ≥75%)"*
-> > *Contoh True: SI 600 dari 1000 → dapat 60% klaim saja (bukan 100%)*: Fungsi Declaration dalam Proposal Forms
+> > *Contoh True: SI 600 dari 1000 → dapat 60% klaim saja (bukan 100%)*
+
+> [!QUESTION] Soal 137: Fungsi Declaration dalam Proposal Forms
 > Apa fungsi ***declaration*** dalam *proposal forms*, dan informasi apa saja yang biasanya tercantum di dalamnya?
 >
 > > [!CHECK]- Jawaban    
@@ -1523,7 +1567,9 @@
 > > **Declaration** = pernyataan RESMI di akhir SPPA yang mengesahkan semua informasi
 > > **4 Fungsi: KBBP** → **K**onfirmasi kebenaran · **B**ukti utmost good faith · **B**asis of contract clause · **P**emberian kuasa verifikasi
 > > *"Declaration = TANDA TANGAN calon tertanggung yang membuat seluruh isian SPPA jadi MENGIKAT secara hukum"*
-> > *Tanpa declaration, isian SPPA tidak punya kekuatan hukum penuh sebagai dasar kontrak*: Prinsip Kontribusi dan Cara Perhitungan Rateable Proportion
+> > *Tanpa declaration, isian SPPA tidak punya kekuatan hukum penuh sebagai dasar kontrak*
+
+> [!QUESTION] Soal 138: Prinsip Kontribusi dan Cara Perhitungan Rateable Proportion
 > Jelaskan **prinsip kontribusi** dan syarat penerapannya! Uraikan pula perbedaan cara perhitungan ***rateable proportion*** berdasarkan metode **sum insured** dan **independent liability**!
 >
 > > [!CHECK]- Jawaban    
@@ -1568,7 +1614,9 @@
 > > **5 Syarat: LRPPS** → **L**ebih dari satu polis · **R**isiko sama · **P**ihak sama · **P**olis sama objeknya · **S**ah berlaku
 > > **Metode Sum Insured**: (SI-A / Total SI) × Kerugian
 > > **Metode Independent Liability**: (IL-A / Total IL) × Kerugian — lebih akurat jika ada average
-> > *"Kontribusi = semua penanggung tanggung BERSAMA secara proporsional, total tidak lebih dari kerugian nyata"*: Calendar Year vs Accounting Year dalam Pemantauan Underwriting
+> > *"Kontribusi = semua penanggung tanggung BERSAMA secara proporsional, total tidak lebih dari kerugian nyata"*
+
+> [!QUESTION] Soal 139: Calendar Year vs Accounting Year dalam Pemantauan Underwriting
 > Berkaitan dengan pemantauan kinerja underwriting, uraikan perbedaan antara metode pemantauan secara **calendar year** dan **accounting year**!
 >
 > > [!CHECK]- Jawaban    
@@ -1620,7 +1668,9 @@
 > > **Accounting Year** = Written/Received Premium vs Paid/Reserved Claims yang DICATAT di tahun tersebut → untuk LAPORAN KEUANGAN
 > > *Calendar Year: mencerminkan KINERJA AKTUAL tapi bisa campur klaim tahun berbeda*
 > > *Accounting Year: SEDERHANA dan sesuai PSAK/GAAP tapi kurang akurat untuk UW murni*
-> > *"Calendar = EARNED basis. Accounting = WRITTEN/RECEIVED basis"*: Proximate Cause
+> > *"Calendar = EARNED basis. Accounting = WRITTEN/RECEIVED basis"*
+
+> [!QUESTION] Soal 140: Proximate Cause
 > Berkaitan dengan prinsip asuransi, jelaskan bagaimana cara menentukan ***proximate cause*** dari suatu peristiwa kerugian, beserta contoh kasusnya!
 >
 > > [!CHECK]- Jawaban    
