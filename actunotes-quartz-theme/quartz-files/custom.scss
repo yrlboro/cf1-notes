@@ -1,0 +1,988 @@
+/**
+ * ActuNotes — custom.scss
+ * Override lengkap untuk dark mode (Precision Dark) dan light mode (Warm Editorial).
+ * File ini di-load setelah base.scss sehingga semua rule di sini menang.
+ *
+ * Cara pakai: letakkan file ini di quartz/styles/custom.scss
+ * (replace isi file yang sudah ada, pertahankan @use "./base.scss" di baris pertama)
+ */
+
+@use "./base.scss";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 0. IMPORT FONT TAMBAHAN (light mode)
+//    Geist & Instrument Serif sudah di-load via quartz.config.ts
+//    Untuk light mode kita tambahkan Lora, DM Sans, DM Mono
+// ─────────────────────────────────────────────────────────────────────────────
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap');
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 1. CSS VARIABLES — extend Quartz's variables dengan token tambahan
+// ─────────────────────────────────────────────────────────────────────────────
+
+// DARK MODE extra tokens
+:root[saved-theme="dark"],
+:root:not([saved-theme="light"]) {
+  --an-bg-surface:       #1e1d24;
+  --an-bg-elevated:      #26252e;
+  --an-bg-hover:         #2c2b36;
+  --an-border:           rgba(255,255,255,0.10);
+  --an-border-mid:       rgba(255,255,255,0.16);
+  --an-accent:           #d4a853;
+  --an-accent-dim:       rgba(212,168,83,0.14);
+  --an-accent-glow:      rgba(212,168,83,0.07);
+  --an-text-1:           #f2efe9;
+  --an-text-2:           #b8b3aa;
+  --an-text-3:           #857f76;
+  --an-green:            #6ab88f;
+  --an-green-dim:        rgba(106,184,143,0.13);
+  --an-radius-sm:        6px;
+  --an-radius-md:        10px;
+  --an-font-serif:       'Instrument Serif', Georgia, serif;
+  --an-font-mono:        'Geist Mono', monospace;
+  --an-topbar-bg:        rgba(22,21,26,0.88);
+}
+
+// LIGHT MODE extra tokens
+:root[saved-theme="light"] {
+  --an-bg-surface:       #ffffff;
+  --an-bg-elevated:      #f2efe8;
+  --an-bg-hover:         #f0ede5;
+  --an-border:           rgba(0,0,0,0.07);
+  --an-border-mid:       rgba(0,0,0,0.11);
+  --an-border-dark:      rgba(0,0,0,0.18);
+  --an-accent:           #1a6b4a;
+  --an-accent-dim:       rgba(26,107,74,0.08);
+  --an-accent-glow:      rgba(26,107,74,0.04);
+  --an-text-1:           #1c1a16;
+  --an-text-2:           #6b6660;
+  --an-text-3:           #a09a92;
+  --an-amber:            #b06000;
+  --an-amber-bg:         rgba(176,96,0,0.07);
+  --an-radius-sm:        5px;
+  --an-radius-md:        10px;
+  --an-font-serif:       'Lora', Georgia, serif;
+  --an-font-mono:        'DM Mono', monospace;
+  --an-shadow-sm:        0 1px 3px rgba(0,0,0,0.07), 0 1px 2px rgba(0,0,0,0.04);
+  --an-shadow-md:        0 4px 12px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.05);
+  --an-shadow-card:      0 0 0 1px rgba(0,0,0,0.06), 0 2px 8px rgba(0,0,0,0.05);
+  --an-topbar-bg:        rgba(247,245,240,0.92);
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 2. BASE & TYPOGRAPHY
+// ─────────────────────────────────────────────────────────────────────────────
+
+html {
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Light mode: switch ke DM Sans
+:root[saved-theme="light"] body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+}
+
+// Light mode: heading pakai Lora serif
+:root[saved-theme="light"] h1,
+:root[saved-theme="light"] h2,
+:root[saved-theme="light"] h3 {
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 3. LAYOUT SHELL
+// ─────────────────────────────────────────────────────────────────────────────
+
+// Quartz wraps everything in #quartz-root — kita override layoutnya
+#quartz-root {
+  display: flex;
+  min-height: 100vh;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 4. SIDEBAR KIRI
+// ─────────────────────────────────────────────────────────────────────────────
+
+.sidebar.left {
+  background: var(--an-bg-surface);
+  border-right: 1px solid var(--an-border);
+  padding: 0;
+  gap: 0;
+
+  // Scrollbar tipis
+  scrollbar-width: thin;
+  scrollbar-color: var(--an-border-mid) transparent;
+  &::-webkit-scrollbar { width: 4px; }
+  &::-webkit-scrollbar-thumb { background: var(--an-border-mid); border-radius: 2px; }
+}
+
+// ── Page Title / Logo ──
+.page-title {
+  padding: 22px 20px 18px;
+  border-bottom: 1px solid var(--an-border);
+  margin: 0 !important;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--an-text-1) !important;
+
+    &::before {
+      content: "AN";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      font-family: var(--an-font-mono);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      flex-shrink: 0;
+    }
+  }
+}
+
+:root[saved-theme="dark"] .page-title a::before,
+:root:not([saved-theme="light"]) .page-title a::before {
+  background: var(--an-accent);
+  color: #0a0a0b;
+}
+
+:root[saved-theme="light"] .page-title a::before {
+  background: var(--an-text-1);
+  color: var(--an-bg-surface);
+}
+
+.page-title a {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+// ── Search ──
+.search {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--an-border);
+
+  .search-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    background: var(--an-bg-elevated);
+    border: 1px solid var(--an-border-mid);
+    border-radius: var(--an-radius-sm);
+    padding: 7px 11px;
+    cursor: pointer;
+    transition: border-color 0.15s, box-shadow 0.15s;
+    color: var(--an-text-3);
+    font-size: 12px;
+    font-family: var(--an-font-mono);
+
+    &:hover {
+      border-color: var(--an-accent);
+    }
+
+    p {
+      flex: 1;
+      text-align: left;
+      margin: 0;
+    }
+
+    kbd {
+      font-size: 10px;
+      background: var(--lightgray, var(--an-bg-elevated));
+      border: 1px solid var(--an-border-mid);
+      border-radius: 3px;
+      padding: 1px 5px;
+      font-family: var(--an-font-mono);
+    }
+  }
+}
+
+:root[saved-theme="light"] .search .search-button:hover {
+  box-shadow: 0 0 0 3px var(--an-accent-dim);
+}
+
+// ── Darkmode toggle ──
+.darkmode {
+  padding: 10px 14px 0;
+
+  #darkmode-toggle {
+    cursor: pointer;
+    font-size: 11px;
+    font-family: var(--an-font-mono);
+    color: var(--an-text-3);
+    background: none;
+    border: 1px solid var(--an-border);
+    border-radius: var(--an-radius-sm);
+    padding: 5px 10px;
+    transition: border-color 0.15s, color 0.15s;
+    width: 100%;
+    text-align: left;
+
+    &:hover {
+      border-color: var(--an-accent);
+      color: var(--an-accent);
+    }
+  }
+}
+
+// ── Explorer (File Tree) ──
+.explorer {
+  padding: 12px 0;
+  flex: 1;
+
+  // Section label
+  & > .explorer-title {
+    padding: 4px 16px 6px;
+    font-size: 9.5px;
+    font-weight: 500;
+    color: var(--an-text-3);
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-family: var(--an-font-mono);
+    margin: 0;
+  }
+
+  // Nav items
+  .explorer-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li.explorer-li {
+    margin: 0;
+  }
+
+  // File & folder links
+  a.folder-button,
+  a.internal {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 6.5px 16px;
+    font-size: 13px;
+    color: var(--an-text-2);
+    text-decoration: none;
+    transition: background 0.1s, color 0.1s;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:hover {
+      background: var(--an-bg-hover);
+      color: var(--an-text-1);
+    }
+  }
+
+  // Active item
+  a.internal.is-active,
+  li.active > a {
+    color: var(--an-accent) !important;
+    background: var(--an-accent-dim) !important;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 4px; bottom: 4px;
+      width: 2px;
+      background: var(--an-accent);
+      border-radius: 0 2px 2px 0;
+    }
+  }
+
+  // Folder indent
+  .explorer-ul .explorer-ul {
+    padding-left: 12px;
+  }
+}
+
+// Light mode: rounded nav items
+:root[saved-theme="light"] .explorer {
+  a.folder-button,
+  a.internal {
+    border-radius: var(--an-radius-sm);
+    margin: 1px 6px;
+    padding: 6.5px 10px;
+  }
+
+  a.internal.is-active,
+  li.active > a {
+    &::before {
+      left: -6px;
+    }
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 5. TOPBAR / HEADER
+// ─────────────────────────────────────────────────────────────────────────────
+
+header#quartz-header,
+.header {
+  display: none; // Quartz default header disembunyikan, kita pakai breadcrumb inline
+}
+
+// Breadcrumb jadi pseudo-topbar
+.breadcrumb-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 0 24px;
+  font-size: 12px;
+  color: var(--an-text-3);
+  font-family: var(--an-font-mono);
+
+  a {
+    color: var(--an-text-3);
+    text-decoration: none;
+    transition: color 0.1s;
+
+    &:hover { color: var(--an-accent); }
+  }
+
+  .breadcrumb-element:last-child {
+    color: var(--an-text-2);
+  }
+
+  .breadcrumb-element:not(:last-child)::after {
+    content: "/";
+    margin-left: 6px;
+    color: var(--an-text-3);
+    opacity: 0.5;
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 6. ARTICLE TITLE
+// ─────────────────────────────────────────────────────────────────────────────
+
+h1.article-title {
+  font-family: var(--an-font-serif);
+  font-size: clamp(28px, 3.5vw, 44px);
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  color: var(--dark);
+  margin-bottom: 12px;
+  font-weight: 500;
+
+  em {
+    color: var(--an-accent);
+    font-style: italic;
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 7. CONTENT META (tanggal, reading time)
+// ─────────────────────────────────────────────────────────────────────────────
+
+.content-meta {
+  font-size: 11px;
+  color: var(--an-text-3);
+  font-family: var(--an-font-mono);
+  margin-bottom: 28px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+
+  p { margin: 0; }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background: var(--an-accent);
+    opacity: 0.5;
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 8. CONTENT BODY — prose styling
+// ─────────────────────────────────────────────────────────────────────────────
+
+.center.singlePage {
+  padding: 48px 40px 80px;
+  max-width: 860px;
+
+  // Headings
+  h2 {
+    font-family: var(--an-font-serif);
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    color: var(--dark);
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--an-border);
+  }
+
+  h3 {
+    font-family: var(--an-font-serif);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--dark);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  // Paragraphs
+  p {
+    color: var(--darkgray);
+    line-height: 1.75;
+    margin-bottom: 1.1rem;
+  }
+
+  // Inline code
+  code:not(pre code) {
+    font-family: var(--an-font-mono);
+    font-size: 0.85em;
+    background: var(--an-bg-elevated);
+    border: 1px solid var(--an-border-mid);
+    border-radius: 4px;
+    padding: 1px 6px;
+    color: var(--an-accent);
+  }
+
+  // Code blocks
+  pre {
+    background: var(--an-bg-elevated) !important;
+    border: 1px solid var(--an-border) !important;
+    border-radius: var(--an-radius-md);
+    padding: 16px 20px;
+    overflow-x: auto;
+
+    code {
+      font-family: var(--an-font-mono);
+      font-size: 13px;
+    }
+  }
+
+  // Blockquote / callout base
+  blockquote {
+    border-left: 2px solid var(--an-accent);
+    padding: 2px 0 2px 16px;
+    margin: 1.5rem 0;
+    color: var(--an-text-2);
+    font-style: italic;
+  }
+
+  // Links
+  a.internal, a.external {
+    color: var(--an-accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--an-accent-dim);
+    transition: border-color 0.15s, color 0.15s;
+
+    &:hover {
+      border-bottom-color: var(--an-accent);
+    }
+  }
+
+  // Tables
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin: 1.5rem 0;
+
+    th {
+      background: var(--an-bg-elevated);
+      color: var(--an-text-2);
+      font-family: var(--an-font-mono);
+      font-size: 10px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--an-border-mid);
+      text-align: left;
+    }
+
+    td {
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--an-border);
+      color: var(--darkgray);
+      vertical-align: top;
+    }
+
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: var(--an-bg-hover); }
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 9. CALLOUTS (Obsidian-style)
+// ─────────────────────────────────────────────────────────────────────────────
+
+.callout {
+  border-radius: var(--an-radius-md);
+  border: 1px solid var(--an-border-mid);
+  overflow: hidden;
+  margin: 1.25rem 0;
+
+  .callout-title {
+    font-family: var(--an-font-mono);
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 10px 14px;
+  }
+
+  .callout-content {
+    padding: 12px 14px;
+    font-size: 13.5px;
+    line-height: 1.7;
+
+    p:last-child { margin-bottom: 0; }
+  }
+
+  // Variants
+  &[data-callout="note"], &[data-callout="info"] {
+    border-color: rgba(104,153,196,0.3);
+    .callout-title { background: rgba(104,153,196,0.12); color: #6899c4; }
+    .callout-content { background: rgba(104,153,196,0.05); }
+  }
+
+  &[data-callout="tip"], &[data-callout="summary"] {
+    border-color: rgba(106,184,143,0.3);
+    .callout-title { background: rgba(106,184,143,0.12); color: #6ab88f; }
+    .callout-content { background: rgba(106,184,143,0.05); }
+  }
+
+  &[data-callout="warning"], &[data-callout="caution"] {
+    border-color: rgba(212,168,83,0.3);
+    .callout-title { background: rgba(212,168,83,0.12); color: #d4a853; }
+    .callout-content { background: rgba(212,168,83,0.05); }
+  }
+
+  &[data-callout="danger"], &[data-callout="error"] {
+    border-color: rgba(196,112,112,0.3);
+    .callout-title { background: rgba(196,112,112,0.12); color: #c47070; }
+    .callout-content { background: rgba(196,112,112,0.05); }
+  }
+
+  &[data-callout="example"] {
+    border-color: var(--an-accent-dim);
+    .callout-title { background: var(--an-accent-dim); color: var(--an-accent); }
+    .callout-content { background: var(--an-accent-glow); }
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 10. TAG LIST
+// ─────────────────────────────────────────────────────────────────────────────
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 24px;
+
+  li {
+    list-style: none;
+  }
+
+  a.tag-link {
+    font-size: 10px;
+    font-family: var(--an-font-mono);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 3px 9px;
+    border-radius: 20px;
+    border: 1px solid var(--an-border-mid);
+    color: var(--an-text-3);
+    background: var(--an-bg-elevated);
+    text-decoration: none;
+    transition: all 0.15s;
+
+    &:hover {
+      border-color: var(--an-accent);
+      color: var(--an-accent);
+      background: var(--an-accent-dim);
+    }
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 11. SIDEBAR KANAN — TOC, Graph, Backlinks
+// ─────────────────────────────────────────────────────────────────────────────
+
+.sidebar.right {
+  padding: 48px 0 80px 28px;
+
+  scrollbar-width: none;
+  &::-webkit-scrollbar { display: none; }
+}
+
+// TOC
+.toc {
+  margin-bottom: 32px;
+
+  & > button {
+    font-size: 10px;
+    font-family: var(--an-font-mono);
+    color: var(--an-text-3);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: 500;
+
+    &::after { display: none; } // remove default arrow
+  }
+
+  #toc-content {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li a {
+      display: block;
+      padding: 4px 0 4px 10px;
+      font-size: 12px;
+      color: var(--an-text-3);
+      text-decoration: none;
+      border-left: 2px solid var(--an-border);
+      transition: color 0.1s, border-color 0.1s;
+      margin-bottom: 1px;
+
+      &:hover {
+        color: var(--an-text-2);
+        border-left-color: var(--an-border-mid);
+      }
+
+      &.in-view {
+        color: var(--an-accent);
+        border-left-color: var(--an-accent);
+        font-weight: 500;
+      }
+    }
+
+    // Nested TOC indent
+    li li a {
+      padding-left: 20px;
+      font-size: 11px;
+    }
+  }
+}
+
+// Graph view
+.graph {
+  margin-bottom: 28px;
+
+  & > h3 {
+    font-size: 10px;
+    font-family: var(--an-font-mono);
+    color: var(--an-text-3);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  & > .graph-outer {
+    background: var(--an-bg-surface);
+    border: 1px solid var(--an-border);
+    border-radius: var(--an-radius-sm);
+    overflow: hidden;
+  }
+}
+
+// Backlinks
+.backlinks {
+  margin-bottom: 28px;
+
+  & > h3 {
+    font-size: 10px;
+    font-family: var(--an-font-mono);
+    color: var(--an-text-3);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li a {
+    display: block;
+    font-size: 12px;
+    color: var(--an-text-2);
+    text-decoration: none;
+    padding: 5px 0;
+    border-bottom: 1px solid var(--an-border);
+    transition: color 0.1s;
+
+    &:hover { color: var(--an-accent); }
+  }
+
+  li:last-child a { border-bottom: none; }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 12. SEARCH MODAL
+// ─────────────────────────────────────────────────────────────────────────────
+
+#search-container {
+  .search-space {
+    background: var(--an-bg-surface);
+    border: 1px solid var(--an-border-mid);
+    border-radius: var(--an-radius-md);
+    box-shadow: 0 8px 40px rgba(0,0,0,0.35);
+
+    input#search-bar {
+      font-family: var(--an-font-mono);
+      font-size: 14px;
+      color: var(--dark);
+      background: transparent;
+      border: none;
+      outline: none;
+      padding: 16px 20px;
+
+      &::placeholder { color: var(--an-text-3); }
+    }
+
+    .results-container {
+      border-top: 1px solid var(--an-border);
+
+      .result-card {
+        padding: 12px 20px;
+        border-bottom: 1px solid var(--an-border);
+        transition: background 0.1s;
+
+        &:hover { background: var(--an-bg-hover); }
+
+        .result-title {
+          font-size: 13px;
+          font-weight: 600;
+          color: var(--dark);
+          margin-bottom: 3px;
+        }
+
+        .result-path {
+          font-size: 10px;
+          font-family: var(--an-font-mono);
+          color: var(--an-text-3);
+        }
+      }
+    }
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 13. FOLDER PAGE (daftar isi folder)
+// ─────────────────────────────────────────────────────────────────────────────
+
+.page-listing {
+  ul.section-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 2px;
+    background: var(--an-border);
+    border: 1px solid var(--an-border);
+    border-radius: var(--an-radius-md);
+    overflow: hidden;
+  }
+
+  li.section-li {
+    background: var(--an-bg-surface);
+    padding: 18px 20px 16px;
+    transition: background 0.15s;
+
+    &:hover { background: var(--an-bg-hover); }
+
+    a {
+      text-decoration: none;
+      display: block;
+    }
+
+    // Code label (CF1, CF2, etc.) — ambil dari h3
+    h3 {
+      font-family: var(--an-font-mono);
+      font-size: 10px;
+      font-weight: 500;
+      color: var(--an-accent);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    // Description
+    p.section-desc {
+      font-size: 12px;
+      color: var(--an-text-3);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    // Date
+    p.meta {
+      font-size: 10px;
+      font-family: var(--an-font-mono);
+      color: var(--an-text-3);
+      margin-top: 10px;
+    }
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 14. FOOTER
+// ─────────────────────────────────────────────────────────────────────────────
+
+footer {
+  padding: 24px 40px;
+  border-top: 1px solid var(--an-border);
+  font-size: 11px;
+  font-family: var(--an-font-mono);
+  color: var(--an-text-3);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  p { margin: 0; }
+
+  a {
+    color: var(--an-text-3);
+    text-decoration: none;
+    transition: color 0.1s;
+
+    &:hover { color: var(--an-accent); }
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 15. DARK MODE TOGGLE BUTTON (Quartz built-in)
+// ─────────────────────────────────────────────────────────────────────────────
+
+#darkmode-toggle {
+  background: none;
+  border: 1px solid var(--an-border);
+  border-radius: var(--an-radius-sm);
+  color: var(--an-text-3);
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 11px;
+  font-family: var(--an-font-mono);
+  transition: border-color 0.15s, color 0.15s;
+
+  &:hover {
+    border-color: var(--an-accent);
+    color: var(--an-accent);
+  }
+
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 16. POPOVER (hover preview)
+// ─────────────────────────────────────────────────────────────────────────────
+
+.popover {
+  background: var(--an-bg-elevated);
+  border: 1px solid var(--an-border-mid);
+  border-radius: var(--an-radius-md);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  padding: 16px;
+  font-size: 13px;
+  color: var(--an-text-2);
+  max-width: 320px;
+
+  h3 {
+    font-family: var(--an-font-serif);
+    font-size: 14px;
+    color: var(--dark);
+    margin-bottom: 8px;
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 17. SCROLLBAR GLOBAL
+// ─────────────────────────────────────────────────────────────────────────────
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--an-border-mid) transparent;
+}
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--an-border-mid); border-radius: 2px; }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 18. LIGHT MODE OVERRIDES TAMBAHAN
+// ─────────────────────────────────────────────────────────────────────────────
+
+:root[saved-theme="light"] {
+
+  // Card shadow
+  .section-li, .page-listing li.section-li {
+    box-shadow: var(--an-shadow-sm);
+  }
+
+  // Sidebar explorer — rounded items
+  .sidebar.left .explorer {
+    a.folder-button, a.internal {
+      border-radius: var(--an-radius-sm);
+    }
+  }
+
+  // Table hover lebih subtle
+  .center.singlePage table tr:hover td {
+    background: var(--an-bg-elevated);
+  }
+
+  // Callout warning pakai amber
+  .callout[data-callout="warning"] .callout-title {
+    color: var(--an-amber);
+    background: var(--an-amber-bg);
+  }
+
+  // Code block — warm background
+  .center.singlePage pre {
+    background: var(--an-bg-elevated) !important;
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 19. RESPONSIVE
+// ─────────────────────────────────────────────────────────────────────────────
+
+@media (max-width: 800px) {
+  .center.singlePage {
+    padding: 32px 20px 60px;
+  }
+
+  .sidebar.left {
+    // Mobile: Quartz handles ini via overlay, kita cukup pastikan style konsisten
+  }
+}

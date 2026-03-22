@@ -1,0 +1,1 @@
+Itu adalah jawaban yang gue dapet. Bilang kalo jawaban tiap poin sudah sangat clear dan concise. Bilang juga kalo ada poin jawaban yang masih bisa dicounter dengan feedback question. List di bawah ini ya (ingat pakai bahasa simpel bergaya dumb question)

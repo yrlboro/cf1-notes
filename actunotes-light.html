@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ActuNotes — Light Mode Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:           #f7f5f0;
+    --bg-warm:      #f2efe8;
+    --bg-surface:   #ffffff;
+    --bg-hover:     #f0ede5;
+    --border:       rgba(0,0,0,0.07);
+    --border-mid:   rgba(0,0,0,0.11);
+    --border-dark:  rgba(0,0,0,0.18);
+
+    --accent:       #1a6b4a;
+    --accent-light: rgba(26,107,74,0.08);
+    --accent-mid:   rgba(26,107,74,0.15);
+
+    --ink:          #1c1a16;
+    --ink-2:        #6b6660;
+    --ink-3:        #a09a92;
+    --ink-4:        #ccc8c0;
+
+    --amber:        #b06000;
+    --amber-bg:     rgba(176,96,0,0.07);
+    --red:          #9b3535;
+    --blue:         #2d5fa8;
+
+    --sidebar-w:    268px;
+    --font-sans:    'DM Sans', system-ui, sans-serif;
+    --font-mono:    'DM Mono', monospace;
+    --font-serif:   'Lora', Georgia, serif;
+    --radius-sm:    5px;
+    --radius-md:    10px;
+    --radius-lg:    16px;
+    --shadow-sm:    0 1px 3px rgba(0,0,0,0.07), 0 1px 2px rgba(0,0,0,0.04);
+    --shadow-md:    0 4px 12px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.05);
+    --shadow-card:  0 0 0 1px rgba(0,0,0,0.06), 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  html { font-size: 15px; -webkit-font-smoothing: antialiased; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+  }
+
+  /* ── SIDEBAR ── */
+  .sidebar {
+    width: var(--sidebar-w);
+    min-height: 100vh;
+    background: var(--bg-surface);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0; left: 0; bottom: 0;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-mid) transparent;
+    z-index: 10;
+  }
+
+  .sidebar-logo {
+    padding: 22px 20px 18px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 11px;
+  }
+
+  .logo-mark {
+    width: 30px; height: 30px;
+    background: var(--ink);
+    border-radius: 7px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 11px; font-weight: 500;
+    color: var(--bg);
+    letter-spacing: -0.02em;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .logo-mark::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, transparent 40%, rgba(255,255,255,0.12));
+  }
+
+  .logo-text {
+    font-size: 14px; font-weight: 600;
+    color: var(--ink); letter-spacing: -0.02em;
+  }
+  .logo-sub {
+    font-size: 10px; color: var(--ink-3);
+    font-family: var(--font-mono);
+    margin-top: 1px;
+  }
+
+  .sidebar-search {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
+  }
+  .search-box {
+    display: flex; align-items: center; gap: 8px;
+    background: var(--bg);
+    border: 1px solid var(--border-mid);
+    border-radius: var(--radius-sm);
+    padding: 7px 11px;
+    cursor: pointer;
+    transition: border-color .15s, box-shadow .15s;
+  }
+  .search-box:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-light);
+  }
+  .search-box span { font-size: 12px; color: var(--ink-3); flex: 1; }
+  .search-box kbd {
+    font-size: 10px; color: var(--ink-3);
+    background: var(--bg-surface);
+    border: 1px solid var(--border-mid);
+    border-radius: 3px; padding: 1px 5px;
+    font-family: var(--font-mono);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .sidebar-nav { padding: 10px 0; flex: 1; }
+
+  .nav-section { margin-bottom: 4px; }
+  .nav-section-label {
+    padding: 6px 16px 4px;
+    font-size: 9.5px; font-weight: 500;
+    color: var(--ink-3);
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-family: var(--font-mono);
+  }
+
+  .nav-item {
+    display: flex; align-items: center; gap: 9px;
+    padding: 6.5px 14px;
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--ink-2);
+    text-decoration: none;
+    border-radius: 0;
+    transition: background .1s, color .1s;
+    position: relative;
+    margin: 1px 6px;
+    border-radius: var(--radius-sm);
+  }
+  .nav-item:hover { background: var(--bg-hover); color: var(--ink); }
+  .nav-item.active {
+    background: var(--accent-light);
+    color: var(--accent);
+    font-weight: 500;
+  }
+  .nav-item.active::before {
+    content: '';
+    position: absolute; left: -6px; top: 5px; bottom: 5px;
+    width: 2px;
+    background: var(--accent);
+    border-radius: 0 2px 2px 0;
+  }
+
+  .nav-icon {
+    width: 15px; height: 15px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; flex-shrink: 0; opacity: 0.7;
+  }
+  .nav-badge {
+    margin-left: auto; font-size: 9px;
+    font-family: var(--font-mono);
+    padding: 1px 7px; border-radius: 20px;
+    border: 1px solid var(--border-mid);
+    color: var(--ink-3); background: var(--bg);
+  }
+  .nav-badge.active-badge {
+    background: var(--accent-light);
+    border-color: var(--accent-mid);
+    color: var(--accent);
+  }
+
+  .nav-divider {
+    height: 1px; background: var(--border);
+    margin: 8px 14px;
+  }
+
+  .sidebar-footer {
+    padding: 12px 14px;
+    border-top: 1px solid var(--border);
+    display: flex; align-items: center; gap: 10px;
+  }
+  .avatar {
+    width: 27px; height: 27px; border-radius: 50%;
+    background: var(--ink);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 600; color: var(--bg);
+    flex-shrink: 0;
+    font-family: var(--font-mono);
+  }
+  .footer-name { font-size: 12px; font-weight: 500; color: var(--ink); }
+  .footer-role { font-size: 10px; color: var(--ink-3); font-family: var(--font-mono); }
+
+  /* ── MAIN ── */
+  .main {
+    margin-left: var(--sidebar-w);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .topbar {
+    height: 50px;
+    display: flex; align-items: center;
+    padding: 0 40px;
+    border-bottom: 1px solid var(--border);
+    background: rgba(247,245,240,0.92);
+    backdrop-filter: blur(10px);
+    position: sticky; top: 0; z-index: 5;
+    gap: 8px;
+  }
+  .breadcrumb {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 12px; color: var(--ink-3);
+    font-family: var(--font-mono);
+  }
+  .breadcrumb .sep { color: var(--ink-4); }
+  .breadcrumb .current { color: var(--ink-2); }
+
+  .topbar-actions { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+  .btn-ghost {
+    display: flex; align-items: center; gap: 6px;
+    padding: 5px 10px;
+    font-size: 11px; font-family: var(--font-mono);
+    color: var(--ink-3);
+    border: 1px solid var(--border-mid);
+    border-radius: var(--radius-sm);
+    cursor: pointer; background: transparent;
+    transition: all .15s;
+  }
+  .btn-ghost:hover {
+    border-color: var(--border-dark);
+    color: var(--ink-2);
+    background: var(--bg-surface);
+    box-shadow: var(--shadow-sm);
+  }
+
+  /* ── CONTENT ── */
+  .outer-wrapper { display: flex; flex: 1; }
+
+  .content {
+    padding: 52px 44px 80px;
+    max-width: 860px;
+    width: 100%;
+  }
+
+  /* HERO */
+  .hero { margin-bottom: 60px; }
+
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--font-mono); font-size: 10.5px;
+    color: var(--accent); letter-spacing: 0.06em;
+    text-transform: uppercase; margin-bottom: 18px;
+    background: var(--accent-light);
+    border: 1px solid var(--accent-mid);
+    padding: 4px 10px; border-radius: 20px;
+  }
+  .hero-eyebrow::before {
+    content: '◆';
+    font-size: 6px;
+  }
+
+  .hero-title {
+    font-family: var(--font-serif);
+    font-size: clamp(34px, 3.8vw, 50px);
+    line-height: 1.18;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+    margin-bottom: 18px;
+    font-weight: 500;
+  }
+  .hero-title em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .hero-desc {
+    font-size: 15px;
+    color: var(--ink-2);
+    max-width: 500px;
+    line-height: 1.75;
+    margin-bottom: 36px;
+    font-weight: 300;
+  }
+
+  .hero-stats {
+    display: flex; gap: 0;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-mid);
+    border-radius: var(--radius-md);
+    width: fit-content;
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+  }
+  .stat {
+    display: flex; flex-direction: column; gap: 3px;
+    padding: 16px 24px;
+    border-right: 1px solid var(--border);
+  }
+  .stat:last-child { border-right: none; }
+  .stat-value {
+    font-family: var(--font-mono);
+    font-size: 20px; font-weight: 500;
+    color: var(--ink); letter-spacing: -0.03em;
+  }
+  .stat-value.highlight { color: var(--accent); }
+  .stat-label {
+    font-size: 10px; color: var(--ink-3);
+    font-family: var(--font-mono);
+    text-transform: uppercase; letter-spacing: 0.06em;
+  }
+
+  /* SECTION HEADER */
+  .section-header {
+    display: flex; align-items: center; gap: 14px;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-title {
+    font-family: var(--font-mono);
+    font-size: 11px; font-weight: 500;
+    color: var(--ink-2);
+    text-transform: uppercase; letter-spacing: 0.07em;
+  }
+  .section-count {
+    font-size: 11px; color: var(--ink-4);
+    font-family: var(--font-mono);
+  }
+  .section-action {
+    margin-left: auto;
+    font-size: 11px; color: var(--accent);
+    font-family: var(--font-mono);
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .section-action:hover { text-decoration: underline; }
+
+  /* MODULE GRID */
+  .module-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    margin-bottom: 52px;
+  }
+
+  .module-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 18px 20px 14px;
+    cursor: pointer;
+    transition: border-color .15s, box-shadow .15s, transform .15s;
+    display: flex; flex-direction: column; gap: 8px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+  }
+  .module-card:hover {
+    border-color: var(--border-dark);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+  }
+  .module-card:hover .card-arrow { opacity: 1; }
+  .module-card.active-card { border-color: var(--accent-mid); }
+  .module-card.active-card:hover { border-color: var(--accent); }
+
+  /* top accent strip */
+  .module-card.active-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--accent);
+  }
+
+  .card-code {
+    font-family: var(--font-mono);
+    font-size: 10px; font-weight: 500;
+    color: var(--accent);
+    letter-spacing: 0.05em; text-transform: uppercase;
+  }
+  .card-code.muted { color: var(--ink-3); }
+
+  .card-title {
+    font-size: 13px; font-weight: 600;
+    color: var(--ink); letter-spacing: -0.01em;
+    line-height: 1.3;
+  }
+
+  .card-desc {
+    font-size: 12px; color: var(--ink-3);
+    line-height: 1.5; flex: 1;
+    font-weight: 300;
+  }
+
+  .card-footer {
+    display: flex; align-items: center;
+    justify-content: space-between;
+    margin-top: 6px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+
+  .card-status {
+    display: flex; align-items: center; gap: 5px;
+    font-family: var(--font-mono); font-size: 10px;
+  }
+  .status-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
+  .status-dot.active-dot { background: var(--accent); box-shadow: 0 0 0 2px var(--accent-light); }
+  .status-dot.pending-dot { background: var(--ink-4); }
+
+  .card-arrow {
+    font-size: 14px; color: var(--ink-3); opacity: 0;
+    transition: opacity .15s;
+  }
+
+  .card-progress-bar {
+    height: 2px; background: var(--bg-warm);
+    border-radius: 1px; overflow: hidden;
+    position: absolute; bottom: 0; left: 0; right: 0;
+  }
+  .card-progress-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 1px;
+  }
+
+  /* AAMAI */
+  .highlight-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 22px 24px;
+    display: flex; gap: 18px; align-items: flex-start;
+    cursor: pointer; text-decoration: none;
+    transition: border-color .15s, box-shadow .15s, transform .15s;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 52px;
+  }
+  .highlight-card:hover {
+    border-color: var(--border-dark);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+  }
+  .highlight-icon {
+    width: 38px; height: 38px;
+    border-radius: var(--radius-sm);
+    background: var(--bg-warm);
+    border: 1px solid var(--border-mid);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 17px; flex-shrink: 0;
+  }
+  .highlight-label {
+    font-size: 10px; font-family: var(--font-mono);
+    color: var(--ink-3); text-transform: uppercase;
+    letter-spacing: 0.06em; margin-bottom: 4px;
+  }
+  .highlight-title {
+    font-size: 14px; font-weight: 600; color: var(--ink);
+    letter-spacing: -0.01em; margin-bottom: 6px;
+  }
+  .highlight-desc { font-size: 12px; color: var(--ink-3); line-height: 1.55; font-weight: 300; }
+  .highlight-meta { font-size: 10px; font-family: var(--font-mono); color: var(--ink-4); margin-top: 10px; }
+  .highlight-arrow { color: var(--ink-4); flex-shrink: 0; margin-top: 3px; }
+
+  /* QUICK RESOURCES */
+  .resources-list {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 52px;
+  }
+  .resource-item {
+    display: flex; align-items: center; gap: 14px;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer; text-decoration: none;
+    transition: background .1s;
+  }
+  .resource-item:last-child { border-bottom: none; }
+  .resource-item:hover { background: var(--bg-hover); }
+  .resource-icon {
+    width: 28px; height: 28px;
+    border-radius: var(--radius-sm);
+    background: var(--bg-warm);
+    border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; flex-shrink: 0;
+    font-family: var(--font-mono); color: var(--ink-2); font-weight: 500;
+  }
+  .resource-title { font-size: 13px; font-weight: 500; color: var(--ink); flex: 1; }
+  .resource-desc { font-size: 12px; color: var(--ink-3); margin-right: 12px; }
+  .resource-tag {
+    font-size: 10px; font-family: var(--font-mono);
+    padding: 2px 8px; border-radius: 4px;
+    background: var(--bg-warm);
+    border: 1px solid var(--border-mid);
+    color: var(--ink-3);
+    white-space: nowrap;
+  }
+
+  /* ── RIGHT PANEL ── */
+  .right-panel {
+    width: 230px; flex-shrink: 0;
+    padding: 52px 0 80px 32px;
+    position: sticky; top: 50px;
+    align-self: flex-start;
+    max-height: calc(100vh - 50px);
+    overflow-y: auto; scrollbar-width: none;
+  }
+
+  .panel-section { margin-bottom: 28px; }
+  .panel-title {
+    font-size: 10px; font-family: var(--font-mono);
+    color: var(--ink-3); text-transform: uppercase;
+    letter-spacing: 0.08em; margin-bottom: 10px;
+  }
+
+  .toc-item {
+    display: block; padding: 4px 0 4px 10px;
+    font-size: 12px; color: var(--ink-3);
+    text-decoration: none;
+    border-left: 2px solid var(--border);
+    transition: color .1s, border-color .1s;
+    margin-bottom: 1px;
+  }
+  .toc-item:hover { color: var(--ink-2); border-left-color: var(--border-dark); }
+  .toc-item.active { color: var(--accent); border-left-color: var(--accent); font-weight: 500; }
+
+  /* progress ring */
+  .progress-ring {
+    width: 64px; height: 64px;
+    position: relative; margin-bottom: 10px;
+  }
+  .progress-ring svg { transform: rotate(-90deg); }
+  .progress-ring circle { fill: none; stroke-width: 3; }
+  .progress-ring .track { stroke: var(--bg-warm); }
+  .progress-ring .fill { stroke: var(--accent); stroke-linecap: round; }
+  .progress-ring-label {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-mono); font-size: 13px; font-weight: 500;
+    color: var(--ink);
+  }
+  .progress-desc { font-size: 11px; color: var(--ink-3); font-family: var(--font-mono); line-height: 1.5; }
+
+  .mini-graph {
+    height: 78px;
+    background: var(--bg-warm);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; color: var(--ink-3); font-family: var(--font-mono);
+    cursor: pointer; transition: border-color .15s;
+  }
+  .mini-graph:hover { border-color: var(--border-dark); }
+
+  /* note callout */
+  .note-callout {
+    background: var(--amber-bg);
+    border: 1px solid rgba(176,96,0,0.15);
+    border-radius: var(--radius-sm);
+    padding: 10px 12px;
+    font-size: 11px; color: var(--amber);
+    font-family: var(--font-mono);
+    line-height: 1.5;
+  }
+  .note-callout strong { display: block; margin-bottom: 2px; }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .hero           { animation: fadeUp .45s ease both; }
+  .module-grid    { animation: fadeUp .45s .08s ease both; }
+  .highlight-card { animation: fadeUp .45s .14s ease both; }
+  .resources-list { animation: fadeUp .45s .2s ease both; }
+
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border-mid); border-radius: 2px; }
+</style>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <div class="logo-mark">AN</div>
+    <div>
+      <div class="logo-text">ActuNotes</div>
+      <div class="logo-sub">v2.0 · 2026</div>
+    </div>
+  </div>
+
+  <div class="sidebar-search">
+    <div class="search-box">
+      <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
+        <circle cx="6.5" cy="6.5" r="4.5" stroke="#a09a92" stroke-width="1.5"/>
+        <path d="M10 10l3.5 3.5" stroke="#a09a92" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <span>Cari catatan...</span>
+      <kbd>⌘K</kbd>
+    </div>
+  </div>
+
+  <nav class="sidebar-nav">
+    <div class="nav-section">
+      <div class="nav-section-label">Beranda</div>
+      <a class="nav-item active" href="#">
+        <span class="nav-icon">⌂</span> Overview
+      </a>
+      <a class="nav-item" href="#">
+        <span class="nav-icon">◎</span> Study Log
+        <span class="nav-badge active-badge">baru</span>
+      </a>
+    </div>
+
+    <div class="nav-divider"></div>
+
+    <div class="nav-section">
+      <div class="nav-section-label">PAI Exams</div>
+      <a class="nav-item" href="#">
+        <span class="nav-icon" style="color:var(--accent)">◆</span>
+        CF1 — Mat. Keuangan
+        <span class="nav-badge active-badge">aktif</span>
+      </a>
+      <a class="nav-item" href="#">
+        <span class="nav-icon" style="color:var(--accent)">◆</span>
+        CF2 — Prob & Statistika
+        <span class="nav-badge active-badge">aktif</span>
+      </a>
+      <a class="nav-item" href="#">
+        <span class="nav-icon" style="color:var(--ink-4)">◇</span>
+        CF3 — Ekonomi
+      </a>
+      <a class="nav-item" href="#">
+        <span class="nav-icon" style="color:var(--ink-4)">◇</span>
+        CF4 — Akuntansi
+      </a>
+      <a class="nav-item" href="#">
+        <span class="nav-icon" style="color:var(--ink-4)">◇</span>
+        TA1 — Met. Statistika
+      </a>
+      <a class="nav-item" href="#">
+        <span class="nav-icon" style="color:var(--ink-4)">◇</span>
+        TA2 — Teori Risiko
+      </a>
+      <a class="nav-item" href="#">
+        <span class="nav-icon" style="color:var(--ink-4)">◇</span>
+        TA3 — Mat. Aktuaria
+      </a>
+    </div>
+
+    <div class="nav-divider"></div>
+
+    <div class="nav-section">
+      <div class="nav-section-label">Resources</div>
+      <a class="nav-item" href="#">
+        <span class="nav-icon">∑</span> Formula Sheet CF1
+      </a>
+      <a class="nav-item" href="#">
+        <span class="nav-icon">≡</span> Bank Soal
+      </a>
+    </div>
+  </nav>
+
+  <div class="sidebar-footer">
+    <div class="avatar">R</div>
+    <div>
+      <div class="footer-name">Roro</div>
+      <div class="footer-role">ASAI Candidate · 2026</div>
+    </div>
+  </div>
+</aside>
+
+<!-- MAIN -->
+<div class="main">
+  <header class="topbar">
+    <div class="breadcrumb">
+      <span>actunotes</span>
+      <span class="sep"> / </span>
+      <span class="current">overview</span>
+    </div>
+    <div class="topbar-actions">
+      <button class="btn-ghost">
+        <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
+          <circle cx="6" cy="6" r="5" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M6 3.5v3l1.5 1.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        Updated Feb 16
+      </button>
+      <button class="btn-ghost">☀ Light</button>
+    </div>
+  </header>
+
+  <div class="outer-wrapper">
+    <div class="content">
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-eyebrow">ASAI Study Notes · PAI & AAMAI</div>
+        <h1 class="hero-title">Navigating the<br><em>Actuarial Maze.</em></h1>
+        <p class="hero-desc">
+          Catatan personal untuk persiapan ujian PAI dan AAMAI. Disusun sebagai dokumentasi mandiri agar materi bisa diakses kapan saja dan di mana saja.
+        </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-value">12</span>
+            <span class="stat-label">Modul</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">CF1–2</span>
+            <span class="stat-label">Aktif</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">2026</span>
+            <span class="stat-label">Target</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value highlight">18%</span>
+            <span class="stat-label">Progress</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAI GRID -->
+      <div class="section-header">
+        <span class="section-title">PAI Exams</span>
+        <span class="section-count">11 modul</span>
+        <a class="section-action" href="#">Lihat semua →</a>
+      </div>
+
+      <div class="module-grid">
+        <a class="module-card active-card" href="#">
+          <div class="card-code">CF1</div>
+          <div class="card-title">Matematika Keuangan</div>
+          <div class="card-desc">Nilai waktu uang, anuitas, pinjaman, dan obligasi.</div>
+          <div class="card-footer">
+            <div class="card-status">
+              <div class="status-dot active-dot"></div>
+              <span style="color:var(--accent);font-family:var(--font-mono);font-size:10px">Aktif · 65%</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </div>
+          <div class="card-progress-bar"><div class="card-progress-fill" style="width:65%"></div></div>
+        </a>
+
+        <a class="module-card active-card" href="#">
+          <div class="card-code">CF2</div>
+          <div class="card-title">Probabilitas & Statistika</div>
+          <div class="card-desc">Distribusi peluang, variabel acak, dan teori estimasi.</div>
+          <div class="card-footer">
+            <div class="card-status">
+              <div class="status-dot active-dot"></div>
+              <span style="color:var(--accent);font-family:var(--font-mono);font-size:10px">Aktif · 40%</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </div>
+          <div class="card-progress-bar"><div class="card-progress-fill" style="width:40%"></div></div>
+        </a>
+
+        <a class="module-card" href="#">
+          <div class="card-code muted">CF3</div>
+          <div class="card-title">Ekonomi & Pasar Keuangan</div>
+          <div class="card-desc">Makroekonomi, mikroekonomi, dan ekonomi keuangan.</div>
+          <div class="card-footer">
+            <div class="card-status">
+              <div class="status-dot pending-dot"></div>
+              <span style="color:var(--ink-3);font-family:var(--font-mono);font-size:10px">Belum mulai</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </div>
+        </a>
+
+        <a class="module-card" href="#">
+          <div class="card-code muted">CF4</div>
+          <div class="card-title">Akuntansi & Manaj. Keuangan</div>
+          <div class="card-desc">Laporan keuangan, manajemen modal, dan analisis rasio.</div>
+          <div class="card-footer">
+            <div class="card-status">
+              <div class="status-dot pending-dot"></div>
+              <span style="color:var(--ink-3);font-family:var(--font-mono);font-size:10px">Belum mulai</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </div>
+        </a>
+
+        <a class="module-card" href="#">
+          <div class="card-code muted">TA1</div>
+          <div class="card-title">Metode Statistika</div>
+          <div class="card-desc">Analisis regresi, model linear, dan pengolahan data.</div>
+          <div class="card-footer">
+            <div class="card-status">
+              <div class="status-dot pending-dot"></div>
+              <span style="color:var(--ink-3);font-family:var(--font-mono);font-size:10px">Belum mulai</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </div>
+        </a>
+
+        <a class="module-card" href="#">
+          <div class="card-code muted">TA2</div>
+          <div class="card-title">Teori Risiko</div>
+          <div class="card-desc">Model risiko, teori kredibilitas, dan ruin theory.</div>
+          <div class="card-footer">
+            <div class="card-status">
+              <div class="status-dot pending-dot"></div>
+              <span style="color:var(--ink-3);font-family:var(--font-mono);font-size:10px">Belum mulai</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </div>
+        </a>
+
+        <a class="module-card" href="#">
+          <div class="card-code muted">TA3</div>
+          <div class="card-title">Matematika Aktuaria</div>
+          <div class="card-desc">Model asuransi jiwa jangka panjang dan anuitas hidup.</div>
+          <div class="card-footer">
+            <div class="card-status">
+              <div class="status-dot pending-dot"></div>
+              <span style="color:var(--ink-3);font-family:var(--font-mono);font-size:10px">Belum mulai</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </div>
+        </a>
+
+        <a class="module-card" href="#">
+          <div class="card-code muted">BA1</div>
+          <div class="card-title">Investasi</div>
+          <div class="card-desc">Teori portofolio, pasar modal, dan instrumen derivatif.</div>
+          <div class="card-footer">
+            <div class="card-status">
+              <div class="status-dot pending-dot"></div>
+              <span style="color:var(--ink-3);font-family:var(--font-mono);font-size:10px">Belum mulai</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </div>
+        </a>
+
+        <a class="module-card" href="#">
+          <div class="card-code muted">BA2</div>
+          <div class="card-title">Manajemen Risiko Perusahaan</div>
+          <div class="card-desc">Identifikasi, mitigasi, dan manajemen risiko korporat.</div>
+          <div class="card-footer">
+            <div class="card-status">
+              <div class="status-dot pending-dot"></div>
+              <span style="color:var(--ink-3);font-family:var(--font-mono);font-size:10px">Belum mulai</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </div>
+        </a>
+
+        <a class="module-card" href="#">
+          <div class="card-code muted">BA4G</div>
+          <div class="card-title">Asuransi Umum</div>
+          <div class="card-desc">Rating, cadangan klaim, dan reasuransi asuransi umum.</div>
+          <div class="card-footer">
+            <div class="card-status">
+              <div class="status-dot pending-dot"></div>
+              <span style="color:var(--ink-3);font-family:var(--font-mono);font-size:10px">Belum mulai</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </div>
+        </a>
+
+        <a class="module-card" href="#">
+          <div class="card-code muted">PM2</div>
+          <div class="card-title">Manajemen Aktuaria</div>
+          <div class="card-desc">Siklus kontrol aktuaria dan manajemen produk asuransi.</div>
+          <div class="card-footer">
+            <div class="card-status">
+              <div class="status-dot pending-dot"></div>
+              <span style="color:var(--ink-3);font-family:var(--font-mono);font-size:10px">Belum mulai</span>
+            </div>
+            <span class="card-arrow">↗</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- AAMAI -->
+      <div class="section-header">
+        <span class="section-title">AAMAI Exams</span>
+        <span class="section-count">1 modul</span>
+      </div>
+
+      <a class="highlight-card" href="#">
+        <div class="highlight-icon">🛡️</div>
+        <div style="flex:1">
+          <div class="highlight-label">AAMAI 101</div>
+          <div class="highlight-title">Prinsip Dasar Asuransi & Manajemen Risiko</div>
+          <div class="highlight-desc">Fondasi konseptual asuransi: prinsip indemnitas, insurable interest, subrogasi, dan kerangka manajemen risiko.</div>
+          <div class="highlight-meta">Belum mulai · 0 catatan</div>
+        </div>
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" class="highlight-arrow">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+      <!-- QUICK RESOURCES -->
+      <div class="section-header">
+        <span class="section-title">Quick Resources</span>
+        <span class="section-count">Akses cepat</span>
+      </div>
+
+      <div class="resources-list">
+        <a class="resource-item" href="#">
+          <div class="resource-icon">∑</div>
+          <span class="resource-title">Formula Sheet CF1</span>
+          <span class="resource-desc">Rangkuman rumus "haram" dilupakan</span>
+          <span class="resource-tag">Formula</span>
+        </a>
+        <a class="resource-item" href="#">
+          <div class="resource-icon">≡</div>
+          <span class="resource-title">Daftar Soal Latihan</span>
+          <span class="resource-desc">Langsung lompat ke bank soal</span>
+          <span class="resource-tag">Bank Soal</span>
+        </a>
+        <a class="resource-item" href="#">
+          <div class="resource-icon">◎</div>
+          <span class="resource-title">Study Log</span>
+          <span class="resource-desc">Lacak progress belajar harian</span>
+          <span class="resource-tag">Tracker</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <aside class="right-panel">
+      <div class="panel-section">
+        <div class="panel-title">On this page</div>
+        <a class="toc-item active" href="#">Overview</a>
+        <a class="toc-item" href="#">PAI Exams</a>
+        <a class="toc-item" href="#">AAMAI Exams</a>
+        <a class="toc-item" href="#">Quick Resources</a>
+      </div>
+
+      <div class="panel-section">
+        <div class="panel-title">Progress CF1</div>
+        <div class="progress-ring">
+          <svg width="64" height="64" viewBox="0 0 64 64">
+            <circle class="track" cx="32" cy="32" r="27"/>
+            <circle class="fill" cx="32" cy="32" r="27"
+              stroke-dasharray="169.6"
+              stroke-dashoffset="59.4"/>
+          </svg>
+          <div class="progress-ring-label">65%</div>
+        </div>
+        <div class="progress-desc">Materi utama selesai.<br>Bank soal dalam progress.</div>
+      </div>
+
+      <div class="panel-section">
+        <div class="panel-title">Reminder</div>
+        <div class="note-callout">
+          <strong>Ujian 2026</strong>
+          Fokus CF1 & CF2 dulu. Jangan skip latihan soal past papers.
+        </div>
+      </div>
+
+      <div class="panel-section">
+        <div class="panel-title">Graph View</div>
+        <div class="mini-graph">⬡ Klik untuk buka</div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+</body>
+</html>

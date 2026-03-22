@@ -1,91 +1,44 @@
 
-**1. Identifikasi Variabel**
-- $A(0) = 10.000.000$
-- $A(2) = 12.500.000$
-- $n = 2$
-- Dicari: (a) $i$ (compound), (b) $i_{\text{simple}}$, (c) PV dengan $d = 0.10$
+### I. Jeroan Tabel Amortisasi (Bunga vs. Pokok)
 
-**2. Time Diagram**
-```
-t=0                              t=2
-|--------------------------------|
-A(0)=10,000,000            A(2)=12,500,000
+1. **Siapa yang Duluan?** "Prof, kalau saya bayar cicilan, kenapa bank selalu ambil jatah **Bunga** dulu baru sisanya buat ngurangin **Pokok**? Kenapa nggak boleh dibalik, Pokok dulu yang diabisin biar bunganya nggak numpuk?"
+    
+2. **Pertumbuhan Pokok:** "Saya perhatiin di tabel, porsi Pokok yang dibayar itu naik terus secara **geometris** (dikali $1+i$). Kok bisa ya? Padahal kan cicilan saya tiap bulan jumlahnya sama (_level_)?"
+    
+3. **Saldo Nol:** "Di baris terakhir tabel amortisasi, saldo utang (OB) harus tepat **NOL**. Kalau pas saya hitung ternyata sisa Rp50 atau minus Rp100 karena pembulatan, saya harus maksa jadi nol atau biarin aja?"
+    
 
-Compound: A(2) = A(0)(1+i)^2
-Simple: A(2) = A(0)(1 + 2i)
-```
+### II. Outstanding Balance (OB): Prospektif vs. Retrospektif
 
-**3. Equation of Value**
+4. **Dua Cara, Satu Hasil?** "Kenapa kita harus belajar dua metode (Prospektif & Retrospektif)? Apa ada kondisi di mana hasil keduanya **beda**? Kalau beda, siapa yang salah hitung?"
+    
+5. **Metode Prospektif (Melihat ke Depan):** "Kalau saya pakai cara Prospektif, saya cuma peduli sama **sisa cicilan** yang belum dibayar kan? Terus kalau tiba-tiba suku bunga di masa depan naik, apakah sisa utang saya detik ini juga langsung berubah?"
+    
+6. **Metode Retrospektif (Melihat ke Belakang):** "Cara ini kan rumusnya: (Utang Awal + Bunga) - (Cicilan yang sudah dibayar). Berarti kalau saya pernah telat bayar satu kali di masa lalu, angka OB Retrospektif saya bakal jadi kacau ya?"
+    
+7. **Jebakan Waktu:** "Apa bedanya hitung OB **tepat setelah** pembayaran ke-k dengan **tepat sebelum** pembayaran ke-k? Selisihnya cuma satu detik, tapi kenapa angkanya bisa beda satu cicilan penuh?"
+    
 
-**(a) Compound interest:**
-$$
-A(2) = A(0)(1+i)^2
-$$
+### III. Balloon & Drop Payment (Cicilan Terakhir)
 
-**(b) Simple interest:**
-$$
-A(2) = A(0)(1 + ni)
-$$
+8. **Drop Payment:** "Kalau cicilan saya Rp1 juta, tapi di akhir tinggal sisa utang Rp300 ribu, itu yang disebut _Drop Payment_ kan? Berarti di bulan terakhir saya **seneng** karena bayar lebih dikit?"
+    
+9. **Balloon Payment:** "Sebaliknya, kalau di bulan terakhir saya malah disuruh bayar Rp5 juta padahal biasanya cuma Rp1 juta, itu _Balloon_ kan? Kenapa ada orang yang mau dijebak bayar gede di akhir?"
+    
+10. **Kapan Dipakai?** "Di soal ujian, gimana cara bedain kapan saya harus pakai _Drop_ dan kapan harus pakai _Balloon_ kalau nggak disebutin eksplisit? Ada kode rahasianya nggak di kalimat soal?"
+    
 
-**(c) Present value dengan discount rate:**
-$$
-PV = A(2) \times v^2 = A(2) \times (1-d)^2
-$$
+### IV. Total Bunga & Pembayaran Tidak Level
 
-**4. Eksekusi Aljabar**
+11. **Total Bunga:** "Cara paling 'males' buat hitung total bunga itu tinggal (Total Semua Cicilan - Utang Awal) kan? Ada nggak jebakan di mana rumus simpel ini nggak laku lagi?"
+    
+12. **Cicilan Naik/Turun:** "Kalau cicilannya nggak sama (misal: tiap bulan naik Rp100 ribu), apakah porsi bunga di tiap periode tetep dihitung dari saldo terakhir, atau ada rumus 'borongan'-nya?"
+    
+13. **Bunga Berubah:** "Kalau suku bunga berubah di tengah jalan (misal: 5 tahun pertama 10%, sisanya 12%), metode mana yang paling aman buat hitung sisa utang: Prospektif atau Retrospektif?"
+    
 
-**(a) Compound Interest Rate:**
+### V. Logika "Dumb Question" yang Menghujam
 
-$$
-12.500.000 = 10.000.000 (1+i)^2
-$$
-
-$$
-(1+i)^2 = \frac{12.500.000}{10.000.000} = 1.25
-$$
-
-$$
-1+i = \sqrt{1.25} = 1.118034
-$$
-
-$$
-i = 1.118034 - 1 = 0.118034 \approx 11.80\%
-$$
-
-**(b) Simple Interest Rate:**
-
-$$
-12.500.000 = 10.000.000 (1 + 2i_{\text{simple}})
-$$
-
-$$
-1 + 2i_{\text{simple}} = 1.25
-$$
-
-$$
-2i_{\text{simple}} = 0.25
-$$
-
-$$
-i_{\text{simple}} = 0.125 = 12.5\%
-$$
-
-**(c) Present Value dengan $d = 10\%$:**
-
-Discount factor:
-$$
-v = 1 - d = 1 - 0.10 = 0.90
-$$
-
-Present value:
-$$
-PV = 12.500.000 \times (0.90)^2 = 12.500.000 \times 0.81 = 10.125.000
-$$
-
-**5. Verification**
-
-Cek compound: $(1.118034)^2 = 1.25$ ✓
-
-Cek simple: $1 + 2(0.125) = 1.25$ ✓
-
-Logika finansial: Compound rate (11.80%) < simple rate (12.5%) untuk same growth karena compound benefit dari reinvestment. Present value dengan $d=10\%$ adalah Rp 10.125 juta, sedikit lebih tinggi dari principal Rp 10 juta karena discount rate (10%) < implied interest rate (~11.8%).
+14. **Sinking Fund vs. Amortisasi:** "Prof, kalau saya bayar utang pakai metode Amortisasi, utang saya berkurang tiap bulan. Tapi kalau pakai _Sinking Fund_, utang saya utuh terus sampai akhir. Berarti Amortisasi itu lebih 'baik hati' daripada _Sinking Fund_ ya?"
+    
+15. **Prinsip Keadilan:** "Kenapa kalau kita lunasin utang lebih cepet di tengah jalan, bank sering hitung sisa utang pakai metode Prospektif yang bunganya sudah dikunci di awal? Apa itu nggak ngerugiin nasabah?"
