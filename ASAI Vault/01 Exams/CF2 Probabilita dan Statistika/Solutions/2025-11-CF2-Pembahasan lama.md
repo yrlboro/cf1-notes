@@ -857,6 +857,7 @@ e. $0{,}959$
 > > > - PDF berbentuk $cx^a(1-x)^b$ dengan support $[0,1]$ → distribusi Beta dengan $\alpha = a+1$, $\beta = b+1$.
 
 ---
+
 ## **No. 14**
 
 Klaim dari produk asuransi perkapalan diketahui mengikuti distribusi eksponensial dengan rataan $\dfrac{400}{\ln 2}$ (dalam juta). Untuk setiap klaim, besaran yang dibayarkan sebesar besarnya kerugian, hingga maksimum 1000 (dalam juta). Hitunglah nilai ekspektasi dari pembayaran klaim! (Pilihlah jawaban yang paling mendekati!)
@@ -877,65 +878,38 @@ e. $577$
 > | **Difficulty** | Medium |
 > | **Prerequisite** | [[2.2 Variabel Acak Kontinu]] |
 > | **Connected Topics** | [[2.4 Transformasi Variabel Acak Univariat]] |
-> | **Referensi** | Hogg-Tanis-Zimm Bab 3.3; Miller Bab 4 |
+> | **Referensi** | Hogg-Tanis-Zimm Bab 2.1; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
-> > **Limited Expected Value (LEV)** untuk $X \sim \text{Exp}(\theta)$ dengan rataan $\theta = 1/\lambda$:
-> > $$E[\min(X, u)] = \theta\left(1 - e^{-u/\theta}\right) = \frac{1}{\lambda}\left(1 - e^{-\lambda u}\right)$$
-> > Turunan dari definisi langsung:
-> > $$E[\min(X,u)] = \int_0^u x \cdot \lambda e^{-\lambda x}\,dx + u \cdot P(X > u)$$
-> > dengan $P(X > u) = e^{-\lambda u}$ untuk distribusi eksponensial.
+> > [!info]+ **Rumus**  
+> > Limited Expected Value (LEV) untuk $X \sim \text{Exp}$ dengan rate $\lambda = 1/\theta$:
+> > $$E[\min(X, u)] = \frac{1}{\lambda}(1 - e^{-\lambda u}) = \theta(1 - e^{-u/\theta})$$
 >
 > **Diketahui:**
-> - $X \sim \text{Exp}$ dengan rataan $\theta = \dfrac{400}{\ln 2}$, sehingga rate $\lambda = \dfrac{\ln 2}{400}$
-> - Pembayaran per klaim: $Y = \min(X,\, 1000)$ (dibayar penuh hingga batas 1000)
-> - Target: $E[Y] = E[\min(X, 1000)]$
+> - $\theta = 400/\ln 2$, rate $\lambda = \ln 2 / 400$
+> - Pembayaran: $Y = \min(X, 1000)$
+> - Target: $E[Y]$
 >
 > > [!example]- Langkah Pengerjaan
 > >
-> > **Langkah 1: Pahami Struktur Pembayaran**
+> > **Langkah 1: Terapkan rumus LEV**
 > >
-> > Karena ada batas maksimum pembayaran sebesar 1000, variabel pembayaran $Y$ bukan lagi $X$, melainkan:
-> > $$Y = \min(X, 1000) = \begin{cases} X, & X \leq 1000 \\ 1000, & X > 1000 \end{cases}$$
-> > Ini disebut **variabel terpotong dari atas** (*right-censored*). Nilai ekspektasinya — yang dikenal sebagai **Limited Expected Value** — harus dihitung dengan rumus khusus, bukan sekadar $E[X] = \theta$.
+> > $$\lambda u = \frac{\ln 2}{400} \times 1000 = 2{,}5\ln 2$$
+> > $$e^{-\lambda u} = e^{-2{,}5\ln 2} = 2^{-2{,}5} = \frac{1}{4\sqrt{2}} \approx 0{,}17678$$
 > >
-> > **Langkah 2: Hitung Eksponen $\lambda u$**
+> > **Langkah 2: Hitung LEV**
 > >
-> > Substitusi $\lambda = \dfrac{\ln 2}{400}$ dan $u = 1000$:
-> > $$\lambda u = \frac{\ln 2}{400} \times 1000 = \frac{1000 \ln 2}{400} = \frac{5\ln 2}{2} = 2{,}5\ln 2$$
-> >
-> > **Langkah 3: Sederhanakan $e^{-\lambda u}$ menggunakan sifat logaritma**
-> >
-> > $$e^{-\lambda u} = e^{-2{,}5 \ln 2}$$
-> > Gunakan sifat $e^{a \ln b} = b^a$:
-> > $$e^{-2{,}5 \ln 2} = 2^{-2{,}5} = \frac{1}{2^{2{,}5}} = \frac{1}{2^2 \cdot 2^{0{,}5}} = \frac{1}{4\sqrt{2}}$$
-> > Secara numerik: $2^{2{,}5} = 4\sqrt{2} \approx 4 \times 1{,}41421 = 5{,}65685$, sehingga:
-> > $$e^{-\lambda u} \approx \frac{1}{5{,}65685} \approx 0{,}17678$$
-> >
-> > **Langkah 4: Terapkan Rumus LEV**
-> >
-> > $$E[\min(X, 1000)] = \theta\left(1 - e^{-\lambda u}\right) = \frac{400}{\ln 2}\left(1 - 0{,}17678\right)$$
-> > $$= \frac{400}{\ln 2} \times 0{,}82322$$
-> > Gunakan $\ln 2 \approx 0{,}69315$:
-> > $$= \frac{400 \times 0{,}82322}{0{,}69315} = \frac{329{,}288}{0{,}69315} \approx 475{,}0$$
+> > $$E[\min(X,1000)] = \frac{400}{\ln 2}(1 - 0{,}17678) = \frac{400 \times 0{,}82322}{0{,}69315} \approx 475$$
 > >
 > > **Hasil Akhir:** **(d)**. $475$
 >
 > > [!tip] Jebakan Umum
 > >
 > > > [!BUG] Kesalahan Konseptual
-> > > - Menggunakan $E[Y] = E[X] = \theta = \dfrac{400}{\ln 2} \approx 577$ tanpa mempertimbangkan batas pembayaran — ini mengabaikan efek *censoring* dan menghasilkan nilai yang **terlalu besar** (opsi e).
-> > > - Salah menghitung $e^{-2{,}5\ln 2}$: sebagian siswa menghitung $e^{-2{,}5} \times \ln 2$ (urutan operasi keliru) alih-alih $e^{-2{,}5\ln 2} = 2^{-2{,}5}$.
-> > > - Lupa bahwa rumus LEV untuk eksponensial sudah dalam bentuk tertutup — tidak perlu integrasi manual jika rumus diingat.
-> >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - "Dibayarkan sebesar besarnya kerugian, hingga maksimum 1000" berarti $Y = \min(X, 1000)$, **bukan** $Y = X - 1000$ atau $Y = \max(X - 1000, 0)$ (yang merupakan rumus *excess of deductible*).
+> > > - Menggunakan $E[X] = \theta$ tanpa mempertimbangkan batas maksimum — ini mengabaikan efek truncation.
 > >
 > > > [!CAUTION] Red Flags
-> > > - Jika soal menyebut **"hingga maksimum"** atau **"policy limit"** → gunakan $E[\min(X, u)]$, bukan $E[X]$.
-> > > - Jika hasilnya $\approx \theta$ (rataan penuh) → curigai lupa menerapkan batas; nilai LEV selalu **lebih kecil** dari $E[X]$.
-> > > - Jika muncul bentuk $e^{-a \ln b}$ → konversi ke $b^{-a}$ untuk menghindari galat numerik.
->
+> > > - Jika ada batas maksimum pembayaran → gunakan LEV $E[\min(X,u)]$, bukan $E[X]$.
+
 ---
 
 ## **No. 15**
@@ -960,67 +934,35 @@ e. $16$
 > | **Connected Topics** | [[1.5 Kejadian Independen]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.1; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
-> > **Distribusi Geometrik** $X \sim \text{Geom}(p)$: memodelkan banyaknya percobaan Bernoulli yang dibutuhkan hingga sukses pertama.
-> > $$P(X = k) = (1-p)^{k-1} \cdot p, \quad k = 1, 2, 3, \ldots$$
-> > - Rataan: $E[X] = \dfrac{1}{p}$
-> > - Variansi: $\text{Var}(X) = \dfrac{1-p}{p^2}$
-> > - **Modus: selalu $= 1$** karena PMF bersifat menurun monoton dalam $k$.
+> > [!info]+ **Rumus**  
+> > Distribusi Geometrik $X \sim \text{Geom}(p)$: $P(X=k) = (1-p)^{k-1}p$ untuk $k = 1,2,\ldots$
+> > Modus distribusi Geometrik selalu $= 1$ karena PMF menurun monoton.
 >
 > **Diketahui:**
-> - $p = 0{,}0625 = \dfrac{1}{16}$ (peluang seseorang mengidap penyakit)
-> - Pengujian dilakukan hingga **pertama kali** ditemukan seseorang yang sakit → model Geometrik
-> - $X$ = banyaknya orang yang diuji
+> - $p = 0{,}0625$, $X \sim \text{Geom}(0{,}0625)$
 > - Target: modus $X$
 >
 > > [!example]- Langkah Pengerjaan
 > >
-> > **Langkah 1: Identifikasi Model Distribusi**
+> > **Langkah 1: PMF geometrik**
 > >
-> > Setiap orang diuji secara independen dengan peluang sukses (sakit) $p = 0{,}0625$. Pengujian berhenti saat pertama kali ditemukan yang sakit. Ini persis merupakan percobaan Bernoulli berulang hingga sukses pertama, sehingga:
-> > $$X \sim \text{Geom}(p = 0{,}0625)$$
+> > $P(X=k) = (0{,}9375)^{k-1}(0{,}0625)$ — fungsi **menurun monoton** dalam $k$.
 > >
-> > **Langkah 2: Tuliskan PMF secara Eksplisit**
+> > **Langkah 2: Tentukan modus**
 > >
-> > $$P(X = k) = (1 - 0{,}0625)^{k-1} \times 0{,}0625 = (0{,}9375)^{k-1} \times 0{,}0625, \quad k = 1, 2, 3, \ldots$$
-> > Hitung beberapa nilai awal untuk melihat polanya:
-> >
-> > | $k$ | $(0{,}9375)^{k-1}$ | $P(X=k)$ |
-> > |:-:|:-:|:-:|
-> > | $1$ | $1{,}0000$ | $0{,}06250$ |
-> > | $2$ | $0{,}9375$ | $0{,}05859$ |
-> > | $3$ | $0{,}8789$ | $0{,}05493$ |
-> > | $4$ | $0{,}8240$ | $0{,}05150$ |
-> >
-> > **Langkah 3: Buktikan Bahwa PMF Menurun Monoton**
-> >
-> > Perhatikan rasio antara dua nilai PMF berurutan:
-> > $$\frac{P(X = k+1)}{P(X = k)} = \frac{(0{,}9375)^k \times 0{,}0625}{(0{,}9375)^{k-1} \times 0{,}0625} = 0{,}9375 < 1$$
-> > Karena rasio ini **kurang dari 1 untuk semua $k$**, PMF bersifat **menurun monoton** — artinya $P(X=1) > P(X=2) > P(X=3) > \cdots$
-> >
-> > **Langkah 4: Tentukan Modus**
-> >
-> > Modus adalah nilai $k$ yang memaksimalkan $P(X=k)$. Karena PMF menurun monoton mulai dari $k=1$, nilai maksimumnya dicapai di $k = 1$. Jadi:
-> > $$\text{Modus} = 1$$
+> > PMF bernilai maksimum di $k=1$: $P(X=1) = 0{,}0625 > P(X=2) > \ldots$
+> > Modus $= 1$.
 > >
 > > **Hasil Akhir:** **(a)**. $1$
 >
 > > [!tip] Jebakan Umum
 > >
 > > > [!BUG] Kesalahan Konseptual
-> > > - Mengira **modus = mean**: $E[X] = 1/p = 1/0{,}0625 = 16$ (opsi e). Mean dan modus untuk distribusi Geometrik **tidak pernah sama** kecuali $p=1$.
-> > > - Mengira modus distribusi Geometrik mengikuti formula serupa distribusi Binomial Negatif atau distribusi diskrit lain yang memiliki modus $> 1$.
-> > > - Lupa bahwa modus distribusi Geometrik adalah **properti tetap**: selalu 1, tidak bergantung pada nilai $p$.
-> >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - Menggunakan distribusi Binomial Negatif (menunggu $r > 1$ sukses) alih-alih Geometrik — soal ini menunggu tepat **1 sukses pertama**.
-> > > - Mengira $X$ dimulai dari $k = 0$ (versi alternatif Geometrik yang menghitung *kegagalan* sebelum sukses pertama). Soal ini jelas menyatakan "banyaknya orang yang terkena pengujian", sehingga $k = 1, 2, 3, \ldots$
+> > > - Mengira modus = mean = $1/p = 16$. Mean dan modus berbeda untuk distribusi Geometrik.
 > >
 > > > [!CAUTION] Red Flags
-> > > - Jika soal menyebut **"hingga pertama kali"** atau **"sampai ditemukan yang pertama"** → $X \sim \text{Geom}(p)$ dengan modus $= 1$.
-> > > - Jika diminta **modus** (bukan mean/median) pada distribusi Geometrik → jawabannya langsung $1$ tanpa perlu hitung numerik.
-> > > - Opsi dengan nilai $1/p$ (di sini: $16$, opsi e) adalah **jebakan klasik** yang merepresentasikan mean, bukan modus.
->
+> > > - Distribusi Geometrik: modus selalu 1, mean = $1/p$, median $\approx \lceil -1/\log_2(1-p) \rceil$.
+
 ---
 
 ## **No. 16**
@@ -1039,66 +981,34 @@ e. $0{,}60$
 > | Field | Isi |
 > |-------|-----|
 > | **Topik CF2** | Topik 1 — Dasar-Dasar Probabilitas |
-> | **Sub-topik** | [[1.6 Teorema Bayes dan Hukum Probabilitas Total]], [[1.4 Probabilitas Bersyarat]] |
+> | **Sub-topik** | [[1.6 Teorema Bayes dan Hukum Probabilitas Total]] |
 > | **Difficulty** | Easy |
 > | **Prerequisite** | [[1.4 Probabilitas Bersyarat]] |
-> | **Connected Topics** | [[1.5 Kejadian Independen]] |
+> | **Connected Topics** | [[1.6 Teorema Bayes dan Hukum Probabilitas Total]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.4; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
-> > **Teorema Bayes** (bentuk dua partisi):
-> > $$P(A \mid B) = \frac{P(B \mid A) \cdot P(A)}{P(B)}$$
-> > Ekuivalen, menggunakan **probabilitas gabungan**:
-> > $$P(A \mid B) = \frac{P(A \cap B)}{P(B)}, \quad \text{dengan } P(A \cap B) = P(B \mid A) \cdot P(A)$$
+> > [!info]+ **Rumus**  
+> > Teorema Bayes: $P(L \mid B) = \dfrac{P(B \mid L) \cdot P(L)}{P(B)}$
 >
 > **Diketahui:**
-> - Definisikan kejadian:
->   - $B$ = bank mengalami kebangkrutan dalam 5 tahun ke depan
->   - $L$ = bank dijamin oleh LPS
-> - $P(B) = 0{,}05$ (5% bank akan bangkrut)
-> - $P(L) = 0{,}80$ (80% bank dijamin LPS)
-> - $P(B \mid L) = 0{,}03$ (3% bank yang dijamin LPS diprediksi bangkrut)
-> - Target: $P(L \mid B)$ — peluang bank dijamin LPS, **diketahui** bank tersebut bangkrut
+> - $P(B) = 0{,}05$, $P(L) = 0{,}80$, $P(B \mid L) = 0{,}03$
+> - Target: $P(L \mid B)$
 >
 > > [!example]- Langkah Pengerjaan
 > >
-> > **Langkah 1: Identifikasi Jenis Pertanyaan**
-> >
-> > Soal memberikan $P(B \mid L)$ dan menanyakan $P(L \mid B)$ — ini adalah **pembalikan kondisional**, ciri khas Teorema Bayes. Perhatikan perbedaannya:
-> > - $P(B \mid L)$ = "dari bank yang dijamin LPS, berapa yang bangkrut?" → diberikan
-> > - $P(L \mid B)$ = "dari bank yang bangkrut, berapa yang ternyata dijamin LPS?" → ditanya
-> >
-> > **Langkah 2: Hitung Probabilitas Gabungan $P(B \cap L)$**
-> >
-> > Gunakan definisi probabilitas bersyarat:
-> > $$P(B \cap L) = P(B \mid L) \cdot P(L) = 0{,}03 \times 0{,}80 = 0{,}024$$
-> > Artinya: 2,4% dari seluruh bank terdaftar adalah bank yang dijamin LPS **dan** akan bangkrut.
-> >
-> > **Langkah 3: Terapkan Teorema Bayes**
-> >
-> > $$P(L \mid B) = \frac{P(B \cap L)}{P(B)} = \frac{0{,}024}{0{,}05} = 0{,}48$$
-> >
-> > **Verifikasi Konsistensi:** Perlu dicek apakah informasi soal konsisten. Bank yang tidak dijamin LPS: proporsi $P(L^c) = 0{,}20$. Probabilitas bangkrut bagi yang tidak dijamin:
-> > $$P(B \mid L^c) = \frac{P(B) - P(B \cap L)}{P(L^c)} = \frac{0{,}05 - 0{,}024}{0{,}20} = \frac{0{,}026}{0{,}20} = 0{,}13$$
-> > Ini berarti 13% bank yang tidak dijamin LPS diprediksi bangkrut — lebih tinggi dari 3% yang dijamin LPS. Masuk akal secara kontekstual (bank tanpa jaminan lebih rentan).
+> > $$P(B \cap L) = 0{,}03 \times 0{,}80 = 0{,}024$$
+> > $$P(L \mid B) = \frac{0{,}024}{0{,}05} = 0{,}48$$
 > >
 > > **Hasil Akhir:** **(d)**. $0{,}48$
 >
 > > [!tip] Jebakan Umum
 > >
 > > > [!BUG] Kesalahan Konseptual
-> > > - Langsung menjawab $P(L \mid B) = P(B \mid L) = 0{,}03$ — ini adalah kesalahan klasik **menukar kondisi** (*confusion of the inverse*). $P(A \mid B) \neq P(B \mid A)$ secara umum.
-> > > - Mengira $P(L \mid B) = P(L) \times P(B \mid L) = 0{,}80 \times 0{,}03 = 0{,}024$ — ini menghitung $P(L \cap B)$, bukan $P(L \mid B)$.
-> >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - "3% bank yang terdaftar di LPS diprediksi bangkrut" = $P(B \mid L) = 0{,}03$, **bukan** $P(B \cap L) = 0{,}03$. Frasa "dari bank yang terdaftar di LPS" menandakan kondisi, sehingga ini adalah probabilitas bersyarat.
-> > > - "Peluang bank yang mengalami kebangkrutan dijamin LPS" = $P(L \mid B)$, **bukan** $P(B \cap L)$.
+> > > - Salah menerapkan Bayes dengan menukar pembilang dan penyebut.
 > >
 > > > [!CAUTION] Red Flags
-> > > - Jika soal memberikan $P(A \mid B)$ lalu menanya $P(B \mid A)$ → **Teorema Bayes** wajib digunakan.
-> > > - Frasa **"dari [kelompok X], berapa persen yang [kondisi Y]"** → selalu probabilitas bersyarat $P(Y \mid X)$.
-> > > - Jika $P(B \mid L) \times P(L) \neq P(B)$ perlu dicek, karena bisa diverifikasi via hukum probabilitas total.
->
+> > > - "Peluang kondisi A diketahui B" setelah diberi "peluang B diketahui A" → Teorema Bayes.
+
 ---
 
 ## **No. 17**
@@ -1134,78 +1044,35 @@ e. $\dfrac{7c^{0{,}2}-4}{3}$
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.1; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
-> > **Aksioma Normalisasi PMF:**
-> > $$\sum_{\text{semua } k} P(X = k) = 1$$
-> > **Distribusi Binomial** $Y \sim B(n, p)$:
-> > $$P(Y = k) = \binom{n}{k} p^k (1-p)^{n-k}, \quad k = 0, 1, \ldots, n$$
-> > Khususnya: $P(Y = n) = p^n$ (semua $n$ percobaan sukses).
+> > [!info]+ **Rumus**  
+> > Normalisasi PMF: $s + t + 0{,}75s = 1$. Distribusi Binomial: $Y \sim B(5, s+t)$, $c = P(Y=5) = (s+t)^5$.
 >
 > **Diketahui:**
-> - PMF klaim per polis: $P(X=0)=s$, $P(X=1)=t$, $P(X=2)=0{,}75s$, $P(X \geq 3)=0$
-> - $n = 5$ polis, klaim masing-masing independen
-> - $Y$ = banyaknya polis (dari 5) yang memiliki **kurang dari 2 klaim** (yaitu 0 atau 1 klaim)
-> - $c = P(Y=5)$
-> - Target: nyatakan $t$ dalam $c$
+> - $1{,}75s + t = 1$ (normalisasi)
+> - $c = (s+t)^5 \implies s+t = c^{0{,}2}$
+> - Target: $t$ dalam $c$
 >
 > > [!example]- Langkah Pengerjaan
 > >
-> > **Langkah 1: Terapkan Normalisasi PMF**
+> > **Langkah 1:** $s + t = c^{0{,}2}$, dan $t = 1 - 1{,}75s$ dari normalisasi.
 > >
-> > Total probabilitas harus sama dengan 1:
-> > $$s + t + 0{,}75s + 0 = 1$$
-> > $$1{,}75s + t = 1 \quad \Longrightarrow \quad t = 1 - 1{,}75s \tag{1}$$
+> > **Langkah 2:** $s + (1-1{,}75s) = c^{0{,}2} \implies 1 - 0{,}75s = c^{0{,}2} \implies s = \dfrac{4(1-c^{0{,}2})}{3}$
 > >
-> > **Langkah 2: Tentukan Probabilitas Sukses untuk $Y$**
-> >
-> > $Y$ menghitung banyaknya polis dengan **kurang dari 2 klaim** = klaim 0 atau klaim 1. Probabilitas satu polis memiliki kurang dari 2 klaim:
-> > $$p = P(X < 2) = P(X=0) + P(X=1) = s + t$$
-> > Karena 5 polis saling bebas dan masing-masing "sukses" dengan peluang $p = s + t$, maka:
-> > $$Y \sim B(5,\, s+t)$$
-> >
-> > **Langkah 3: Gunakan Definisi $c = P(Y=5)$**
-> >
-> > Untuk $Y \sim B(5, p)$:
-> > $$P(Y=5) = \binom{5}{5}(s+t)^5 \cdot (1-(s+t))^0 = (s+t)^5$$
-> > Maka:
-> > $$c = (s+t)^5 \quad \Longrightarrow \quad s + t = c^{1/5} = c^{0{,}2} \tag{2}$$
-> >
-> > **Langkah 4: Selesaikan Sistem Persamaan untuk $s$**
-> >
-> > Dari persamaan (1): $t = 1 - 1{,}75s$, substitusi ke persamaan (2):
-> > $$s + (1 - 1{,}75s) = c^{0{,}2}$$
-> > $$1 - 0{,}75s = c^{0{,}2}$$
-> > $$0{,}75s = 1 - c^{0{,}2}$$
-> > $$s = \frac{1 - c^{0{,}2}}{0{,}75} = \frac{4(1 - c^{0{,}2})}{3} \tag{3}$$
-> >
-> > **Langkah 5: Hitung $t$ dari $s$**
-> >
-> > Substitusi (3) ke (1):
-> > $$t = 1 - 1{,}75s = 1 - \frac{7}{4} \cdot \frac{4(1-c^{0{,}2})}{3} = 1 - \frac{7(1-c^{0{,}2})}{3}$$
-> > $$t = \frac{3}{3} - \frac{7(1-c^{0{,}2})}{3} = \frac{3 - 7(1 - c^{0{,}2})}{3} = \frac{3 - 7 + 7c^{0{,}2}}{3}$$
-> > $$\boxed{t = \frac{7c^{0{,}2} - 4}{3}}$$
-> >
-> > **Verifikasi Konsistensi:** Agar $t \geq 0$, perlu $7c^{0{,}2} \geq 4$, yaitu $c^{0{,}2} \geq \dfrac{4}{7}$, atau $c \geq \left(\dfrac{4}{7}\right)^5 \approx 0{,}126$. Ini adalah syarat agar distribusi valid.
+> > **Langkah 3:**
+> > $$t = 1 - 1{,}75s = 1 - \frac{7}{4} \cdot \frac{4(1-c^{0{,}2})}{3} = 1 - \frac{7(1-c^{0{,}2})}{3} = \frac{7c^{0{,}2}-4}{3}$$
 > >
 > > **Hasil Akhir:** **(e)**. $t = \dfrac{7c^{0{,}2}-4}{3}$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Salah membentuk persamaan normalisasi: misalnya menulis $s + t + 0{,}75 = 1$ (lupa bahwa $0{,}75$ adalah koefisien dari $s$, bukan nilai mandiri).
-> > > - Salah mengidentifikasi distribusi $Y$: mengira $Y$ berdistribusi Poisson atau distribusi lain, padahal 5 percobaan independen dengan peluang sukses tetap $\to Y \sim \text{Binomial}$.
-> > > - Salah menuliskan $P(Y=5)$: menggunakan $\binom{5}{5}(s+t)^5(1-s-t)^0$ dan lupa bahwa $\binom{5}{5} = 1$ dan $(1-s-t)^0 = 1$ — hasilnya tetap benar, tetapi bisa membingungkan.
-> >
 > > > [!BUG] Kesalahan Interpretasi Soal
-> > > - **"Kurang dari 2 klaim"** = $\{X = 0\} \cup \{X = 1\}$, **bukan** $\{X = 0\} \cup \{X = 1\} \cup \{X = 2\}$. Kata "kurang dari" (*strict inequality*) tidak mencakup 2.
-> > > - Mengira $Y$ = total klaim dari 5 polis, bukan banyaknya polis yang memenuhi kondisi tertentu.
+> > > - "Kurang dari 2 klaim" = klaim 0 atau 1 (bukan 0, 1, atau 2).
 > >
 > > > [!CAUTION] Red Flags
-> > > - Jika PMF ditulis dengan simbol tak diketahui ($s$, $t$, dll.) → **langkah pertama selalu normalisasi** untuk membentuk persamaan.
-> > > - Jika soal menyebut **"kurang dari $k$"** → batas atas tidak ikut dihitung; tulis ulang secara eksplisit: $\{X = 0, 1, \ldots, k-1\}$.
-> > > - Jika hasil $c = p^n$ muncul → segera balikkan dengan $p = c^{1/n}$ untuk mendapatkan peluang sukses per trial.
+> > > - PMF dengan simbol tak diketahui → mulai dari normalisasi, bentuk sistem persamaan.
 
 ---
+
 ## **No. 18**
 
 Misal X merupakan random variabel dengan rataan 0 dan varians $a > 0$. Hitunglah $P(X^2 < a)$! (Pilihlah jawaban yang paling mendekati!)
@@ -1228,50 +1095,26 @@ e. $0{,}90$
 > | **Connected Topics** | [[4.4 Hukum Bilangan Besar]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.3; Miller Bab 6 |
 >
-> > [!info]+ **Rumus**
-> > **Distribusi Normal Standar** $Z \sim N(0,1)$:
-> > $$P(-1 < Z < 1) = 2\Phi(1) - 1 \approx 0{,}6827$$
-> > **Standardisasi:** Jika $X \sim N(\mu, \sigma^2)$, maka $Z = \dfrac{X - \mu}{\sigma} \sim N(0,1)$.
+> > [!info]+ **Rumus**  
+> > Untuk $X \sim N(0, a)$: $P(X^2 < a) = P(-\sqrt{a} < X < \sqrt{a}) = P(-1 < Z < 1) \approx 0{,}6827$.
 >
 > **Diketahui:**
-> - $E[X] = 0$, $\text{Var}(X) = a$ → standar deviasi $= \sqrt{a}$
-> - Soal meminta nilai **tepat** yang cocok dengan salah satu opsi → asumsikan $X \sim N(0, a)$
+> - $E[X]=0$, $\text{Var}(X)=a$; soal mengisyaratkan asumsi $X \sim N(0,a)$ (nilai tepat pada opsi).
 > - Target: $P(X^2 < a)$
 >
 > > [!example]- Langkah Pengerjaan
 > >
-> > **Langkah 1: Ubah Pertidaksamaan $X^2 < a$ menjadi Pertidaksamaan Linear**
-> >
-> > $X^2 < a$ berarti $|X| < \sqrt{a}$, yang ekuivalen dengan:
-> > $$-\sqrt{a} < X < \sqrt{a}$$
-> > Jadi kita tidak boleh hanya menulis $X < \sqrt{a}$ (keliru karena mengabaikan sisi kiri).
-> >
-> > **Langkah 2: Standardisasi ke $Z \sim N(0,1)$**
-> >
-> > Karena $X \sim N(0, a)$ dengan $\mu = 0$ dan $\sigma = \sqrt{a}$:
-> > $$P(-\sqrt{a} < X < \sqrt{a}) = P\!\left(\frac{-\sqrt{a} - 0}{\sqrt{a}} < Z < \frac{\sqrt{a} - 0}{\sqrt{a}}\right) = P(-1 < Z < 1)$$
-> >
-> > **Langkah 3: Hitung Probabilitas dari Tabel Normal**
-> >
-> > $$P(-1 < Z < 1) = \Phi(1) - \Phi(-1) = \Phi(1) - (1 - \Phi(1)) = 2\Phi(1) - 1$$
-> > $$= 2(0{,}8413) - 1 = 1{,}6827 - 1 = 0{,}6827 \approx 0{,}68$$
-> >
-> > Ini adalah "aturan 68-95-99,7": sekitar 68% nilai distribusi normal jatuh dalam satu standar deviasi dari mean.
+> > $$P(X^2 < a) = P(-\sqrt{a} < X < \sqrt{a}) = P(-1 < Z < 1) = 2\Phi(1)-1 = 0{,}6827 \approx 0{,}68$$
 > >
 > > **Hasil Akhir:** **(c)**. $0{,}68$
 >
 > > [!tip] Jebakan Umum
 > >
 > > > [!BUG] Kesalahan Konseptual
-> > > - Menulis $P(X^2 < a) = P(X < \sqrt{a})$ — ini **salah** karena mengabaikan sisi negatif. $X^2 < a$ berarti $-\sqrt{a} < X < \sqrt{a}$ (kedua sisi).
-> > > - Menggunakan ketidaksamaan Chebyshev: $P(|X - \mu| < k\sigma) \geq 1 - 1/k^2$. Dengan $k=1$, batas bawahnya $\geq 0$ — tidak informatif dan tidak menghasilkan nilai tepat sesuai opsi.
-> >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - Soal hanya menyebut mean dan variansi, tanpa menyebut distribusi secara eksplisit. Namun karena opsi jawaban berupa nilai **tepat** (bukan batas bawah/atas) dan salah satu opsi adalah $0{,}68$ (nilai khas $P(-1 < Z < 1)$), maka diasumsikan $X \sim N(0, a)$.
+> > > - $P(X^2 < a) \neq P(X < \sqrt{a})$; harus ambil kedua sisi: $|X| < \sqrt{a}$.
 > >
 > > > [!CAUTION] Red Flags
-> > > - Jika soal hanya diketahui mean dan variansi tetapi meminta nilai probabilitas **tepat** → asumsikan distribusi Normal.
-> > > - Ekspresi $P(X^2 < \sigma^2)$ selalu ekuivalen dengan $P(-\sigma < X < \sigma) = P(-1 < Z < 1) \approx 0{,}68$ untuk distribusi Normal.
+> > > - Jika opsi berupa nilai tepat dan hanya diketahui mean/variansi → asumsikan distribusi Normal.
 
 ---
 
@@ -1301,61 +1144,32 @@ e. $\dfrac{7}{3}$
 > | **Connected Topics** | [[3.4 Nilai Harapan dan Variansi Bersyarat]] |
 > | **Referensi** | Hogg-McKean-Craig Bab 4.4 |
 >
-> > [!info]+ **Rumus**
-> > **Sifat Linearitas Kovarians:** Untuk konstanta $a, b$ dan variabel acak $W, X_2, X_3$:
-> > $$\text{Cov}(aU + bV + W,\, X_j) = a\,\text{Cov}(U, X_j) + b\,\text{Cov}(V, X_j) + \text{Cov}(W, X_j)$$
-> > **Notasi Matriks Kovarians:** $\sigma_{ij} = \text{Cov}(X_i, X_j)$, dengan elemen diagonal $\sigma_{ii} = \text{Var}(X_i)$.
+> > [!info]+ **Rumus**  
+> > Kondisi ortogonalitas: $\text{Cov}(W, X_j) = 0$ untuk $j=2,3$, dengan $W = X_1 - aX_2 - bX_3$:
+> > $$\sigma_{1j} - a\sigma_{2j} - b\sigma_{3j} = 0$$
 >
 > **Diketahui:**
-> - $\boldsymbol{\Sigma}$: $\sigma_{12} = 1{,}5$, $\sigma_{13} = 1{,}0$, $\sigma_{22} = 1{,}0$, $\sigma_{23} = 0{,}5$, $\sigma_{33} = 1{,}0$
-> - $W = X_1 - aX_2 - bX_3$ (dari definisi $X_1 = aX_2 + bX_3 + W$)
-> - $\text{Cov}(W, X_2) = 0$ dan $\text{Cov}(W, X_3) = 0$
-> - Target: nilai $a$
+> - $\sigma_{12}=1{,}5$, $\sigma_{13}=1{,}0$, $\sigma_{22}=1{,}0$, $\sigma_{23}=0{,}5$, $\sigma_{33}=1{,}0$
+> - Target: $a$
 >
 > > [!example]- Langkah Pengerjaan
 > >
-> > **Langkah 1: Jabarkan Kondisi $\text{Cov}(W, X_2) = 0$**
+> > **Dari $\text{Cov}(W,X_2)=0$:** $1{,}5 - a(1{,}0) - b(0{,}5) = 0 \implies a + 0{,}5b = 1{,}5 \quad\cdots(1)$
 > >
-> > Substitusi $W = X_1 - aX_2 - bX_3$:
-> > $$\text{Cov}(X_1 - aX_2 - bX_3,\; X_2) = 0$$
-> > Gunakan linearitas kovarians:
-> > $$\text{Cov}(X_1, X_2) - a\,\text{Cov}(X_2, X_2) - b\,\text{Cov}(X_3, X_2) = 0$$
-> > $$\sigma_{12} - a\,\sigma_{22} - b\,\sigma_{32} = 0$$
-> > $$1{,}5 - a(1{,}0) - b(0{,}5) = 0$$
-> > $$a + 0{,}5b = 1{,}5 \tag{1}$$
+> > **Dari $\text{Cov}(W,X_3)=0$:** $1{,}0 - a(0{,}5) - b(1{,}0) = 0 \implies 0{,}5a + b = 1{,}0 \quad\cdots(2)$
 > >
-> > **Langkah 2: Jabarkan Kondisi $\text{Cov}(W, X_3) = 0$**
-> >
-> > $$\text{Cov}(X_1 - aX_2 - bX_3,\; X_3) = 0$$
-> > $$\sigma_{13} - a\,\sigma_{23} - b\,\sigma_{33} = 0$$
-> > $$1{,}0 - a(0{,}5) - b(1{,}0) = 0$$
-> > $$0{,}5a + b = 1{,}0 \tag{2}$$
-> >
-> > **Langkah 3: Selesaikan Sistem Persamaan Linear**
-> >
-> > Dari persamaan (2): $b = 1{,}0 - 0{,}5a$. Substitusi ke persamaan (1):
-> > $$a + 0{,}5(1{,}0 - 0{,}5a) = 1{,}5$$
-> > $$a + 0{,}5 - 0{,}25a = 1{,}5$$
-> > $$0{,}75a = 1{,}0$$
-> > $$a = \frac{1{,}0}{0{,}75} = \frac{4}{3}$$
-> >
-> > Sebagai pelengkap: $b = 1{,}0 - 0{,}5 \times \dfrac{4}{3} = 1{,}0 - \dfrac{2}{3} = \dfrac{1}{3}$.
+> > **Dari (2):** $b = 1 - 0{,}5a$. Substitusi ke (1):
+> > $$a + 0{,}5(1-0{,}5a) = 1{,}5 \implies 0{,}75a = 1 \implies a = \frac{4}{3}$$
 > >
 > > **Hasil Akhir:** **(b)**. $a = \dfrac{4}{3}$
 >
 > > [!tip] Jebakan Umum
 > >
 > > > [!BUG] Kesalahan Konseptual
-> > > - Mengira "tidak berkorelasi" berarti $W$ dan $X_j$ independen — padahal tidak berkorelasi hanya berarti $\text{Cov}(W, X_j) = 0$. Independensi adalah kondisi yang lebih kuat.
-> > > - Salah membaca matriks $\boldsymbol{\Sigma}$: ingat $\sigma_{ij}$ adalah elemen baris $i$, kolom $j$. Matriks ini simetris, sehingga $\sigma_{23} = \sigma_{32} = 0{,}5$.
-> > > - Mencoba menghitung $\text{Var}(W)$ terlebih dahulu — tidak perlu untuk mencari $a$.
-> >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - $X_1 = aX_2 + bX_3 + W$ berarti $W = X_1 - aX_2 - bX_3$. Ini adalah **regresi linear** $X_1$ pada $X_2$ dan $X_3$, dan kondisi ortogonalitas $\text{Cov}(W, X_j)=0$ adalah syarat persamaan normal (*normal equations*) dalam regresi.
+> > > - "Tidak berkorelasi" → $\text{Cov}(W,X_j)=0$, bukan $\text{Var}(W) = 0$.
 > >
 > > > [!CAUTION] Red Flags
-> > > - Soal menyebut "$W$ tidak berkorelasi dengan $X_j$" → tulis $\text{Cov}(W, X_j) = 0$ untuk setiap $j$, lalu bentuk sistem persamaan linear dari elemen-elemen $\boldsymbol{\Sigma}$.
-> > > - Sistem persamaan (1) dan (2) adalah $2 \times 2$ — selalu cukup untuk mencari dua koefisien $a$ dan $b$.
+> > > - Proyeksi ortogonal → bentuk sistem $\text{Cov}(W,X_j)=0$ untuk setiap $j$, selesaikan secara simultan.
 
 ---
 
@@ -1381,77 +1195,41 @@ e. $1$
 > | **Connected Topics** | [[2.4 Transformasi Variabel Acak Univariat]] |
 > | **Referensi** | Hogg-McKean-Craig Bab 2.6; Hogg-Tanis-Zimm Bab 5.6 |
 >
-> > [!info]+ **Rumus**
-> > **Teknik Jacobian untuk transformasi bivariat:** Jika $(X,Y) \mapsto (U,V)$ adalah transformasi satu-satu dengan invers $(X,Y) = (h_1(U,V),\, h_2(U,V))$, maka:
-> > $$f_{U,V}(u,v) = f_{X,Y}(h_1(u,v),\, h_2(u,v)) \cdot |J|$$
-> > dengan Jacobian invers:
-> > $$J = \det\begin{pmatrix} \partial x/\partial u & \partial x/\partial v \\ \partial y/\partial u & \partial y/\partial v \end{pmatrix}$$
+> > [!info]+ **Rumus**  
+> > Teknik Jacobian: $f_{U,V}(u,v) = f_{X,Y}(x(u,v),y(u,v)) \cdot |J|$ dengan $J = \det(\partial(x,y)/\partial(u,v))$.
 >
 > **Diketahui:**
-> - $X, Y \sim U[0,1]$ independen, sehingga $f_{X,Y}(x,y) = 1$ untuk $0 \leq x, y \leq 1$
-> - Transformasi maju: $U = X + Y$, $V = \dfrac{X}{X+Y}$
-> - Target: $f_{U,V}\!\left(\tfrac{1}{2}, \tfrac{1}{2}\right)$
+> - $f_{X,Y}(x,y)=1$ untuk $0\leq x,y\leq 1$
+> - $U=X+Y$, $V=X/(X+Y)$ → invers: $X=UV$, $Y=U(1-V)$
+> - Target: $f_{U,V}(1/2, 1/2)$
 >
 > > [!example]- Langkah Pengerjaan
 > >
-> > **Langkah 1: Cari Transformasi Invers $(U,V) \to (X,Y)$**
+> > **Jacobian:**
+> > $$J = \det\begin{pmatrix} v & u \\ 1-v & -u \end{pmatrix} = -uv - u(1-v) = -u, \quad |J|=u$$
 > >
-> > Dari definisi $U = X+Y$ dan $V = X/(X+Y)$:
-> > $$X = UV \quad \text{dan} \quad Y = U - X = U - UV = U(1-V)$$
-> > Jadi: $x = uv$ dan $y = u(1-v)$.
+> > **PDF bersama:** $f_{U,V}(u,v) = 1 \cdot u = u$ (pada support yang valid).
 > >
-> > **Langkah 2: Hitung Jacobian Invers**
-> >
-> > $$J = \det\begin{pmatrix} \partial x/\partial u & \partial x/\partial v \\ \partial y/\partial u & \partial y/\partial v \end{pmatrix} = \det\begin{pmatrix} v & u \\ 1-v & -u \end{pmatrix}$$
-> > $$= v \cdot (-u) - u \cdot (1-v) = -uv - u + uv = -u$$
-> > $$|J| = |-u| = u$$
-> >
-> > **Langkah 3: Tentukan Support $(U,V)$**
-> >
-> > Dari $x = uv \geq 0$ dan $y = u(1-v) \geq 0$ dengan $x \leq 1$ dan $y \leq 1$:
-> > - $u \geq 0$, $0 \leq v \leq 1$
-> > - $x + y = u \leq 2$ (karena $x \leq 1$ dan $y \leq 1$)
-> > - Lebih tepatnya: $0 < u \leq 2$ dan $0 < v < 1$, dengan syarat $uv \leq 1$ dan $u(1-v) \leq 1$
-> >
-> > **Langkah 4: Tulis PDF Bersama $(U,V)$**
-> >
-> > $$f_{U,V}(u,v) = f_{X,Y}(uv,\, u(1-v)) \cdot |J| = 1 \cdot u = u$$
-> > (berlaku pada support yang valid)
-> >
-> > **Langkah 5: Evaluasi di $(u,v) = (1/2, 1/2)$ dan Verifikasi Support**
-> >
-> > Cek apakah titik $(1/2, 1/2)$ berada di support:
-> > - $x = uv = \tfrac{1}{2} \times \tfrac{1}{2} = \tfrac{1}{4} \in [0,1]$ ✓
-> > - $y = u(1-v) = \tfrac{1}{2} \times \tfrac{1}{2} = \tfrac{1}{4} \in [0,1]$ ✓
-> >
-> > Evaluasi:
-> > $$f_{U,V}\!\left(\tfrac{1}{2}, \tfrac{1}{2}\right) = u = \frac{1}{2}$$
+> > **Evaluasi:** $f_{U,V}(1/2, 1/2) = 1/2$. Cek support: $x = (1/2)(1/2)=1/4\in[0,1]$ ✓
 > >
 > > **Hasil Akhir:** **(d)**. $\dfrac{1}{2}$
 >
 > > [!tip] Jebakan Umum
 > >
 > > > [!BUG] Kesalahan Konseptual
-> > > - Lupa mengalikan dengan $|J|$ — ini adalah kesalahan paling umum dalam soal transformasi bivariat. Tanpa Jacobian, jawabannya keliru menjadi $f_{U,V} = 1$.
-> > > - Salah menghitung determinan matriks $2 \times 2$: ingat $\det\begin{pmatrix}a&b\\c&d\end{pmatrix} = ad - bc$.
-> > > - Menggunakan Jacobian **maju** $(x,y) \to (u,v)$ alih-alih Jacobian **invers** $(u,v) \to (x,y)$. Rumus Jacobian dalam transformasi PDF selalu menggunakan Jacobian invers.
-> >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - Lupa memverifikasi bahwa titik evaluasi berada di dalam support sebelum menghitung. Jika titik di luar support, PDF-nya $= 0$.
+> > > - Lupa mengalikan dengan $|J|$ — faktor Jacobian tidak boleh diabaikan.
 > >
 > > > [!CAUTION] Red Flags
-> > > - Transformasi bivariat → ikuti prosedur 4 langkah: **(1)** cari invers, **(2)** hitung Jacobian invers, **(3)** tentukan support baru, **(4)** tulis PDF dan evaluasi.
-> > > - Jika $f_{X,Y}(x,y) = 1$ (seragam), maka $f_{U,V}(u,v) = |J|$ langsung — sesederhana itu.
+> > > - Transformasi bivariat → (1) invers, (2) Jacobian, (3) support baru, (4) tulis PDF.
 
 ---
-
 ## **No. 21**
 
 Suatu perusahaan menentukan harga dari asuransi gempa bumi dengan menggunakan asumsi-asumsi sebagai berikut:
 
-i. Di setiap tahun kalender, terdapat hanya satu kali gempa bumi  
-ii. Di setiap tahun kalender, peluang terjadinya gempa bumi sebesar $0{,}05$  
-iii. Banyaknya gempa bumi yang terjadi di setiap tahun kalender saling bebas  
+i. Di setiap tahun kalender, terdapat hanya satu kali gempa bumi
+ii. Di setiap tahun kalender, peluang terjadinya gempa bumi sebesar $0{,}05$
+iii. Banyaknya gempa bumi yang terjadi di setiap tahun kalender saling bebas
 
 Dengan menggunakan asumsi di atas, tentukan peluang terjadi kurang dari 3 gempa bumi dalam 20 tahun. (Pilihlah jawaban yang paling mendekati!)
 
@@ -1473,56 +1251,43 @@ e. $0{,}92$
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.1; Miller Bab 5.2 |
 >
-> > [!info]+ **Rumus**
-> > **Distribusi Binomial** $X \sim B(n, p)$:
-> > $$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}, \quad k = 0, 1, \ldots, n$$
-> > Syarat: $n$ percobaan Bernoulli yang **independen** dengan peluang sukses **tetap** $p$.
+> > [!info]+ **Rumus**  
+> > Distribusi Binomial $X \sim B(n, p)$:
+> > $$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$$
+> > Dengan $n = 20$, $p = 0{,}05$.
 >
 > **Diketahui:**
-> - Setiap tahun: independen, peluang gempa $p = 0{,}05$, paling banyak 1 gempa per tahun (asumsi i)
-> - Jumlah tahun: $n = 20$
-> - $X$ = banyaknya tahun yang terjadi gempa dalam 20 tahun → $X \sim B(20,\, 0{,}05)$
+> - $n = 20$ tahun, $p = 0{,}05$ per tahun
+> - $X \sim B(20, 0{,}05)$ = banyaknya gempa bumi dalam 20 tahun
 > - Target: $P(X < 3) = P(X=0) + P(X=1) + P(X=2)$
 >
 > > [!example]- Langkah Pengerjaan
 > >
 > > **Langkah 1: Hitung $P(X=0)$**
 > >
-> > $$P(X=0) = \binom{20}{0}(0{,}05)^0(0{,}95)^{20} = 1 \times 1 \times (0{,}95)^{20}$$
-> > $(0{,}95)^{20} = e^{20\ln(0{,}95)} = e^{20 \times (-0{,}05129)} = e^{-1{,}0258} \approx 0{,}35849$
+> > $$P(X=0) = (0{,}95)^{20} = 0{,}35849$$
 > >
 > > **Langkah 2: Hitung $P(X=1)$**
 > >
-> > $$P(X=1) = \binom{20}{1}(0{,}05)^1(0{,}95)^{19} = 20 \times 0{,}05 \times \frac{(0{,}95)^{20}}{0{,}95}$$
-> > $$= 1 \times \frac{0{,}35849}{0{,}95} = 20 \times 0{,}05 \times 0{,}37736 = 0{,}37736$$
+> > $$P(X=1) = \binom{20}{1}(0{,}05)(0{,}95)^{19} = 20 \times 0{,}05 \times 0{,}37736 = 0{,}37736$$
 > >
 > > **Langkah 3: Hitung $P(X=2)$**
 > >
-> > $$P(X=2) = \binom{20}{2}(0{,}05)^2(0{,}95)^{18} = 190 \times 0{,}0025 \times \frac{(0{,}95)^{20}}{(0{,}95)^2}$$
-> > $$= 190 \times 0{,}0025 \times \frac{0{,}35849}{0{,}9025} = 190 \times 0{,}0025 \times 0{,}39722 = 0{,}18868$$
+> > $$P(X=2) = \binom{20}{2}(0{,}05)^2(0{,}95)^{18} = 190 \times 0{,}0025 \times 0{,}39722 = 0{,}18868$$
 > >
-> > **Langkah 4: Jumlahkan Ketiga Probabilitas**
+> > **Langkah 4: Jumlahkan**
 > >
 > > $$P(X < 3) = 0{,}35849 + 0{,}37736 + 0{,}18868 = 0{,}92453 \approx 0{,}92$$
-> >
-> > **Verifikasi via Aproksimasi Poisson** (opsional, untuk mengecek kewajaran):
-> > Dengan $\lambda = np = 20 \times 0{,}05 = 1$, dan $X \approx \text{Poisson}(1)$:
-> > $$P(X<3) \approx e^{-1}\!\left(1 + 1 + \frac{1}{2}\right) = e^{-1} \times 2{,}5 = 0{,}920 \checkmark$$
 > >
 > > **Hasil Akhir:** **(e)**. $0{,}92$
 >
 > > [!tip] Jebakan Umum
 > >
-> > > [!BUG] Kesalahan Konseptual
-> > > - Salah mengidentifikasi distribusi: mengira ini distribusi Poisson secara langsung. Soal secara eksplisit menyebut Bernoulli per tahun dengan $n$ terbatas → Binomial. Poisson hanya sebagai aproksimasi.
-> > > - Salah menghitung $(0{,}95)^{19}$ atau $(0{,}95)^{18}$: gunakan hubungan rekursif $(0{,}95)^{k-1} = (0{,}95)^k / 0{,}95$ untuk efisiensi.
-> >
 > > > [!BUG] Kesalahan Interpretasi Soal
-> > > - **"Kurang dari 3"** = $\{X=0\} \cup \{X=1\} \cup \{X=2\}$, **tidak mencakup $X=3$**. Jika soal mengatakan "paling banyak 3" atau "tidak lebih dari 3", barulah $X=3$ dimasukkan.
+> > > - "Kurang dari 3" = 0, 1, atau 2, bukan 0, 1, 2, atau 3.
 > >
 > > > [!CAUTION] Red Flags
-> > > - Jika ada kata **"saling bebas"** + **peluang tetap per periode** + **jumlah periode terbatas** → $X \sim \text{Binomial}$.
-> > > - Gunakan aproksimasi Poisson ($\lambda = np$) hanya untuk verifikasi, bukan sebagai jawaban utama saat $n$ kecil.
+> > > - Untuk $n$ besar dengan $p$ kecil, bisa digunakan aproksimasi Poisson dengan $\lambda = np = 1$. Cek: $P(X<3) \approx e^{-1}(1 + 1 + 1/2) = e^{-1} \times 2{,}5 = 0{,}920$ — konsisten.
 
 ---
 
@@ -1530,7 +1295,7 @@ e. $0{,}92$
 
 Anda merupakan seorang aktuaris yang bertanggung jawab dalam melakukan negosiasi terhadap kontrak reasuransi di perusahaan tempat anda bekerja. Anda menentukan bahwa besar kerugian (dalam juta) yang ingin direasuransikan mengikuti distribusi seragam pada interval $[1000, 2000]$. Anda memiliki dua pilihan skema kontrak reasuransi untuk risiko ini:
 
-(i) Kontrak pertama membayarkan klaim reasuransi sebesar $90\%$ dari besar kerugian, sedangkan  
+(i) Kontrak pertama membayarkan klaim reasuransi sebesar $90\%$ dari besar kerugian, sedangkan
 (ii) Kontrak kedua membayarkan klaim reasuransi hingga limit maksimum, dimana nilai limit ditentukan sedemikian sehingga nilai harapan dari klaim reasuransi dari kedua kontrak bernilai sama.
 
 Hitunglah rasio dari varians klaim reasuransi atas kontrak kedua terhadap varians klaim reasuransi atas kontrak pertama! (Pilihlah jawaban yang paling mendekati!)
@@ -1553,84 +1318,73 @@ e. $0{,}3$
 > | **Connected Topics** | [[2.4 Transformasi Variabel Acak Univariat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 2.1; Miller Bab 4 |
 >
-> > [!info]+ **Rumus**
-> > Untuk $X \sim U[a, b]$: $E[X] = \dfrac{a+b}{2}$, $\text{Var}(X) = \dfrac{(b-a)^2}{12}$, $f(x) = \dfrac{1}{b-a}$.
+> > [!info]+ **Rumus**  
+> > Untuk $X \sim U(1000, 2000)$: mean $= 1500$, variansi $= (2000-1000)^2/12 = 1000^2/12$.
 > >
-> > **Variansi transformasi linear:** $\text{Var}(cX) = c^2\,\text{Var}(X)$.
+> > Kontrak 1: $Y_1 = 0{,}9X$ → $E[Y_1] = 0{,}9 \times 1500 = 1350$, $\text{Var}(Y_1) = 0{,}81 \times \dfrac{10^6}{12}$.
 > >
-> > **Variansi LEV** $Y_2 = \min(X, L)$:
-> > $$E[Y_2^2] = \int_a^L x^2 \cdot \frac{1}{b-a}\,dx + L^2 \cdot P(X > L)$$
-> > $$\text{Var}(Y_2) = E[Y_2^2] - (E[Y_2])^2$$
+> > Kontrak 2: $Y_2 = \min(X, L)$ dengan $E[Y_2] = E[Y_1] = 1350$.
 >
 > **Diketahui:**
-> - $X \sim U[1000, 2000]$: rataan $= 1500$, variansi $= \dfrac{(1000)^2}{12} = \dfrac{10^6}{12}$
-> - Kontrak 1: $Y_1 = 0{,}9X$ (proporsional)
-> - Kontrak 2: $Y_2 = \min(X, L)$ (limited payment) dengan $E[Y_2] = E[Y_1]$
-> - Target: $\dfrac{\text{Var}(Y_2)}{\text{Var}(Y_1)}$
+> - $X \sim U(1000, 2000)$
+> - $Y_1 = 0{,}9X$, $Y_2 = \min(X, L)$, $E[Y_1] = E[Y_2]$
+> - Target: $\text{Var}(Y_2)/\text{Var}(Y_1)$
 >
 > > [!example]- Langkah Pengerjaan
 > >
 > > **Langkah 1: Hitung $E[Y_1]$ dan $\text{Var}(Y_1)$**
 > >
-> > $$E[Y_1] = 0{,}9 \times E[X] = 0{,}9 \times 1500 = 1350$$
-> > $$\text{Var}(Y_1) = (0{,}9)^2 \times \text{Var}(X) = 0{,}81 \times \frac{10^6}{12} = \frac{810{.}000}{12} = 67{.}500$$
+> > $$E[Y_1] = 0{,}9 \times 1500 = 1350$$
+> > $$\text{Var}(Y_1) = (0{,}9)^2 \times \frac{(1000)^2}{12} = 0{,}81 \times \frac{10^6}{12} = \frac{810000}{12} = 67500$$
 > >
-> > **Langkah 2: Cari Limit $L$ dari Syarat $E[Y_2] = 1350$**
+> > **Langkah 2: Cari limit $L$ menggunakan $E[Y_2] = 1350$**
 > >
-> > Karena $L$ harus berada dalam $[1000, 2000]$, dan $f(x) = 1/1000$:
-> > $$E[\min(X,L)] = \int_{1000}^{L} x \cdot \frac{1}{1000}\,dx + L \cdot \int_L^{2000} \frac{1}{1000}\,dx$$
-> > $$= \frac{1}{1000}\cdot\frac{L^2 - 1000^2}{2} + \frac{L(2000-L)}{1000}$$
-> > $$= \frac{L^2 - 10^6}{2000} + \frac{2000L - L^2}{1000} = \frac{L^2 - 10^6 + 4000L - 2L^2}{2000}$$
-> > $$= \frac{-L^2 + 4000L - 10^6}{2000} = 1350$$
-> > $$-L^2 + 4000L - 10^6 = 2{.}700{.}000$$
-> > $$L^2 - 4000L + 3{.}700{.}000 = 0$$
+> > Untuk $Y_2 = \min(X, L)$ dengan $X \sim U(1000, 2000)$, kita perlu $L \in [1000, 2000]$.
 > >
-> > Gunakan rumus kuadrat:
-> > $$L = \frac{4000 \pm \sqrt{4000^2 - 4(3{.}700{.}000)}}{2} = \frac{4000 \pm \sqrt{16{.}000{.}000 - 14{.}800{.}000}}{2}$$
-> > $$= \frac{4000 \pm \sqrt{1{.}200{.}000}}{2} = \frac{4000 \pm 1095{,}4}{2}$$
+> > $$E[\min(X, L)] = \int_{1000}^{L} x \cdot \frac{1}{1000} dx + \int_L^{2000} L \cdot \frac{1}{1000} dx$$
+> > $$= \frac{1}{1000}\left[\frac{x^2}{2}\right]_{1000}^L + \frac{L(2000-L)}{1000}$$
+> > $$= \frac{L^2 - 10^6}{2000} + \frac{L(2000-L)}{1000}$$
+> > $$= \frac{L^2 - 10^6}{2000} + \frac{2000L - L^2}{1000}$$
+> > $$= \frac{L^2 - 10^6 + 4000L - 2L^2}{2000} = \frac{-L^2 + 4000L - 10^6}{2000}$$
 > >
-> > Dua solusi: $L \approx 2547{,}7$ (di luar $[1000,2000]$, **ditolak**) atau $L \approx 1452{,}3$ ✓
+> > Set sama dengan 1350:
+> > $$\frac{-L^2 + 4000L - 10^6}{2000} = 1350$$
+> > $$-L^2 + 4000L - 10^6 = 2{,}7 \times 10^6$$
+> > $$-L^2 + 4000L - 3{,}7 \times 10^6 = 0$$
+> > $$L^2 - 4000L + 3{,}7 \times 10^6 = 0$$
+> > $$L = \frac{4000 \pm \sqrt{16 \times 10^6 - 14{,}8 \times 10^6}}{2} = \frac{4000 \pm \sqrt{1{,}2 \times 10^6}}{2}$$
+> > $$= \frac{4000 \pm 1095{,}45}{2}$$
+> > $L = 2547{,}7$ (di luar support, ditolak) atau $L = 1452{,}3$
 > >
-> > **Langkah 3: Hitung $E[Y_2^2]$**
+> > Sehingga $L = 1452{,}3$.
 > >
-> > Dengan $L = 1452{,}3$ dan $P(X > L) = \dfrac{2000 - 1452{,}3}{1000} = \dfrac{547{,}7}{1000} = 0{,}5477$:
+> > **Langkah 3: Hitung $\text{Var}(Y_2)$**
 > >
-> > $$E[Y_2^2] = \frac{1}{1000}\int_{1000}^{1452{,}3} x^2\,dx + (1452{,}3)^2 \times 0{,}5477$$
-> > $$= \frac{1}{1000} \cdot \frac{(1452{,}3)^3 - (1000)^3}{3} + (1452{,}3)^2 \times 0{,}5477$$
+> > $$E[Y_2^2] = \int_{1000}^{L} x^2 \cdot \frac{1}{1000} dx + L^2 \cdot P(X > L)$$
+> > $$= \frac{1}{1000}\cdot\frac{L^3 - 10^9}{3} + L^2 \cdot \frac{2000-L}{1000}$$
 > >
-> > Hitung suku pertama:
-> > $$(1452{,}3)^3 \approx 3{,}0646 \times 10^9$$
-> > $$\frac{3{,}0646 \times 10^9 - 10^9}{3000} = \frac{2{,}0646 \times 10^9}{3000} \approx 688{.}200$$
+> > Dengan $L = 1452{,}3$:
+> > $$\frac{L^3 - 10^9}{3000} = \frac{(1452{,}3)^3 - 10^9}{3000} = \frac{3{,}0646 \times 10^9 - 10^9}{3000} = \frac{2{,}0646 \times 10^9}{3000} = 688{,}200$$
 > >
-> > Hitung suku kedua:
-> > $$(1452{,}3)^2 \approx 2{,}1092 \times 10^6$$
-> > $$2{,}1092 \times 10^6 \times 0{,}5477 \approx 1{.}155{.}410$$
+> > $$L^2 \cdot \frac{2000-L}{1000} = \frac{(1452{,}3)^2 \times 547{,}7}{1000} = \frac{2{,}109 \times 10^6 \times 547{,}7}{1000} = 1{,}1553 \times 10^6$$
 > >
-> > $$E[Y_2^2] \approx 688{.}200 + 1{.}155{.}410 = 1{.}843{.}610$$
+> > $$E[Y_2^2] = 688200 + 1155300 = 1{,}8435 \times 10^6$$
+> > $$\text{Var}(Y_2) = E[Y_2^2] - (E[Y_2])^2 = 1843500 - 1350^2 = 1843500 - 1822500 = 21000$$
 > >
-> > **Langkah 4: Hitung $\text{Var}(Y_2)$**
+> > **Langkah 4: Hitung rasio**
 > >
-> > $$\text{Var}(Y_2) = E[Y_2^2] - (E[Y_2])^2 = 1{.}843{.}610 - (1350)^2 = 1{.}843{.}610 - 1{.}822{.}500 = 21{.}110$$
-> >
-> > **Langkah 5: Hitung Rasio**
-> >
-> > $$\frac{\text{Var}(Y_2)}{\text{Var}(Y_1)} = \frac{21{.}110}{67{.}500} \approx 0{,}313 \approx 0{,}3$$
+> > $$\frac{\text{Var}(Y_2)}{\text{Var}(Y_1)} = \frac{21000}{67500} = 0{,}311 \approx 0{,}3$$
 > >
 > > **Hasil Akhir:** **(e)**. $0{,}3$
 >
 > > [!tip] Jebakan Umum
 > >
 > > > [!BUG] Kesalahan Konseptual
-> > > - Lupa bahwa $\text{Var}(cX) = c^2\,\text{Var}(X)$, bukan $c \cdot \text{Var}(X)$. Koefisien $0{,}9$ harus dikuadratkan: $(0{,}9)^2 = 0{,}81$.
-> > > - Salah dalam mengintegrasikan $E[\min(X,L)]$: harus dibagi dua bagian — satu untuk $X \leq L$ (bayar $X$) dan satu untuk $X > L$ (bayar $L$).
-> > > - Mengambil solusi $L = 2547{,}7$ tanpa mengecek apakah $L \in [1000, 2000]$ — selalu verifikasi domain solusi.
-> >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - Kontrak 2 adalah **limited payment** $\min(X,L)$ (bayar kerugian penuh hingga batas $L$), **bukan** *excess of loss* (bayar kelebihan di atas deductible).
+> > > - Lupa bahwa $\text{Var}(aX) = a^2 \text{Var}(X)$ untuk kontrak pertama.
+> > > - Kontrak kedua menggunakan limited payment, bukan pembayaran proporsional.
 > >
 > > > [!CAUTION] Red Flags
-> > > - Kontrak proporsional ($cX$) cenderung memiliki variansi **lebih besar** dari kontrak limited ($\min(X,L)$) dengan mean yang sama, karena kontrak limited memotong ekor distribusi sehingga mengurangi dispersi.
-> > > - Rasio $< 1$ menandakan kontrak kedua (limited) **lebih stabil** — masuk akal secara intuisi reasuransi.
+> > > - Jika dua kontrak memiliki ekspektasi sama tetapi mekanisme berbeda → yang satu proporsional akan memiliki variansi lebih tinggi karena mengikuti distribusi aslinya; yang satu truncated akan lebih kecil variansinya.
 
 ---
 
@@ -1656,26 +1410,24 @@ e. $0{,}0096$
 > | **Connected Topics** | [[2.6 Distribusi Kontinu Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 5.5; Walpole Bab 8.5 |
 >
-> > [!info]+ **Rumus**
-> > **Aproksimasi Normal dengan Koreksi Kontinuitas** untuk $X \sim B(n,p)$:
-> > $$\mu = np, \quad \sigma = \sqrt{np(1-p)}$$
+> > [!info]+ **Rumus**  
+> > Aproksimasi Normal dengan koreksi kontinuitas (Kasus 6):
 > > $$P(X \geq k) \approx P\!\left(Z \geq \frac{k - 0{,}5 - \mu}{\sigma}\right)$$
-> > Alasan koreksi: distribusi Binomial bersifat **diskrit**, sedangkan Normal bersifat **kontinu**. Nilai diskrit $X = k$ direpresentasikan sebagai interval kontinu $[k - 0{,}5,\; k + 0{,}5]$.
+> > di mana $\mu = np$ dan $\sigma = \sqrt{np(1-p)}$.
 >
 > **Diketahui:**
-> - $n = 180$, $p = \dfrac{1}{6}$
-> - $\mu = np = 180 \times \dfrac{1}{6} = 30$
-> - $\sigma^2 = np(1-p) = 180 \times \dfrac{1}{6} \times \dfrac{5}{6} = 25$, sehingga $\sigma = 5$
-> - Target: $P(X \geq 40)$ menggunakan aproksimasi Normal dengan koreksi kontinuitas
+> - $n = 180$, $p = 1/6$
+> - $\mu = np = 30$, $\sigma^2 = np(1-p) = 180 \times \tfrac{1}{6} \times \tfrac{5}{6} = 25$, $\sigma = 5$
+> - Target: $P(X \geq 40)$ dengan koreksi kontinuitas
 >
 > > [!example]- Langkah Pengerjaan
 > >
-> > **Langkah 1: Terapkan Koreksi Kontinuitas untuk $P(X \geq 40)$**
+> > **Langkah 1: Terapkan koreksi kontinuitas**
 > >
-> > "Setidaknya 40" berarti $X \geq 40$ (inklusif). Dalam aproksimasi kontinu, ini direpresentasikan sebagai $X_{\text{kontinu}} \geq 40 - 0{,}5 = 39{,}5$:
-> > $$P(X \geq 40) \approx P\!\left(Z \geq \frac{39{,}5 - 30}{5}\right) = P\!\left(Z \geq \frac{9{,}5}{5}\right) = P(Z \geq 1{,}90)$$
+> > "Setidaknya 40" = $P(X \geq 40)$. Dengan koreksi kontinuitas:
+> > $$P(X \geq 40) \approx P\!\left(Z \geq \frac{40 - 0{,}5 - 30}{5}\right) = P\!\left(Z \geq \frac{9{,}5}{5}\right) = P(Z \geq 1{,}90)$$
 > >
-> > **Langkah 2: Hitung dari Tabel Normal Standar**
+> > **Langkah 2: Baca dari tabel normal standar**
 > >
 > > $$P(Z \geq 1{,}90) = 1 - \Phi(1{,}90) = 1 - 0{,}9713 = 0{,}0287$$
 > >
@@ -1684,21 +1436,12 @@ e. $0{,}0096$
 > > [!tip] Jebakan Umum
 > >
 > > > [!BUG] Kesalahan Konseptual
-> > > - **Tidak menggunakan koreksi kontinuitas**: $z = (40 - 30)/5 = 2{,}00$ → $P(Z \geq 2{,}00) = 0{,}0228$. Ini bukan jawaban yang diminta soal dan tidak menggunakan koreksi yang diminta.
-> > > - **Koreksi arah yang salah**: untuk $P(X \geq k)$, gunakan $k - 0{,}5$ (geser ke kiri). Untuk $P(X \leq k)$, gunakan $k + 0{,}5$ (geser ke kanan). Mudah diingat: koreksi selalu ke arah yang **memperluas** wilayah event.
-> >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - **"Setidaknya 40"** = $P(X \geq 40)$, inklusif. Berbeda dengan **"lebih dari 40"** = $P(X > 40) = P(X \geq 41)$, yang menggunakan koreksi $40 + 0{,}5 = 40{,}5$.
+> > > - Tidak menerapkan koreksi kontinuitas: menggunakan $z = (40-30)/5 = 2{,}00$ → $P(Z \geq 2) = 0{,}0228$ (pilihan lain yang mungkin dipilih).
+> > > - Koreksi kontinuitas untuk $P(X \geq k)$: gunakan $k - 0{,}5$, bukan $k + 0{,}5$.
 > >
 > > > [!CAUTION] Red Flags
-> > > - Tabel koreksi kontinuitas yang wajib dihapal:
-> > >
-> > > | Kejadian Diskrit | Koreksi Kontinu |
-> > > |:-:|:-:|
-> > > | $P(X \geq k)$ | $P(Z \geq \frac{k-0{,}5-\mu}{\sigma})$ |
-> > > | $P(X > k)$ | $P(Z \geq \frac{k+0{,}5-\mu}{\sigma})$ |
-> > > | $P(X \leq k)$ | $P(Z \leq \frac{k+0{,}5-\mu}{\sigma})$ |
-> > > | $P(X < k)$ | $P(Z \leq \frac{k-0{,}5-\mu}{\sigma})$ |
+> > > - "Setidaknya $k$" = $P(X \geq k)$ → koreksi kontinuitas: pakai $k - 0{,}5$ di pembilang.
+> > > - "Lebih dari $k$" = $P(X > k) = P(X \geq k+1)$ → pakai $k + 0{,}5$.
 
 ---
 
@@ -1706,8 +1449,8 @@ e. $0{,}0096$
 
 Anda diberikan informasi sebagai berikut:
 
-i. $P(A \cup B) = 0{,}7$  
-ii. $P(A \cup B^c) = 0{,}9$  
+i. $P(A \cup B) = 0{,}7$
+ii. $P(A \cup B^c) = 0{,}9$
 
 Tentukan $P(A)$!
 
@@ -1729,12 +1472,10 @@ e. $0{,}8$
 > | **Connected Topics** | [[1.4 Probabilitas Bersyarat]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.2; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
-> > **Identitas Probabilitas untuk Dua Kejadian:**
-> > $$P(E) + P(F) = P(E \cup F) + P(E \cap F)$$
-> > Ini adalah analog probabilitas dari identitas himpunan $|E| + |F| = |E \cup F| + |E \cap F|$.
-> >
-> > **Sifat Komplementer:** $B \cup B^c = \Omega$ dan $B \cap B^c = \emptyset$.
+> > [!info]+ **Rumus**  
+> > $$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$
+> > $$P(A \cup B^c) = P(A) + P(B^c) - P(A \cap B^c)$$
+> > Perhatikan: $P(B) + P(B^c) = 1$ dan $P(A) = P(A \cap B) + P(A \cap B^c)$.
 >
 > **Diketahui:**
 > - $P(A \cup B) = 0{,}7$
@@ -1743,39 +1484,28 @@ e. $0{,}8$
 >
 > > [!example]- Langkah Pengerjaan
 > >
-> > **Langkah 1: Identifikasi Gabungan dan Irisan dari Dua Kejadian**
+> > **Langkah 1: Gunakan identitas $P(A \cup B) + P(A \cup B^c)$**
 > >
-> > Terapkan identitas $P(E) + P(F) = P(E \cup F) + P(E \cap F)$ dengan $E = A \cup B$ dan $F = A \cup B^c$:
+> > Perhatikan bahwa $(A \cup B) \cup (A \cup B^c) = A \cup B \cup B^c = \Omega$, sehingga $P(\Omega)=1$.
+> > Juga, $(A \cup B) \cap (A \cup B^c) = A \cup (B \cap B^c) = A$.
 > >
-> > **Hitung gabungan:** $(A \cup B) \cup (A \cup B^c) = A \cup B \cup B^c = A \cup \Omega = \Omega$
-> > $$\therefore P((A\cup B) \cup (A \cup B^c)) = P(\Omega) = 1$$
-> >
-> > **Hitung irisan:** $(A \cup B) \cap (A \cup B^c) = A \cup (B \cap B^c) = A \cup \emptyset = A$
-> > $$\therefore P((A\cup B) \cap (A \cup B^c)) = P(A)$$
-> >
-> > **Langkah 2: Substitusi ke Identitas**
-> >
-> > $$P(A \cup B) + P(A \cup B^c) = P(\Omega) + P(A)$$
+> > Dari hukum probabilitas:
+> > $$P(A \cup B) + P(A \cup B^c) = P((A\cup B)\cup(A\cup B^c)) + P((A\cup B)\cap(A\cup B^c))$$
 > > $$0{,}7 + 0{,}9 = 1 + P(A)$$
-> > $$1{,}6 = 1 + P(A)$$
-> > $$P(A) = 0{,}6$$
+> > $$P(A) = 1{,}6 - 1 = 0{,}6$$
 > >
 > > **Hasil Akhir:** **(d)**. $P(A) = 0{,}6$
 >
 > > [!tip] Jebakan Umum
 > >
 > > > [!BUG] Kesalahan Konseptual
-> > > - Mencoba membentuk sistem persamaan dengan tiga variabel $P(A)$, $P(B)$, $P(A \cap B)$ menggunakan rumus $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ — ini menghasilkan dua persamaan dengan tiga variabel (underdetermined). Sistem tidak cukup untuk diselesaikan tanpa identitas tambahan.
-> > > - Lupa sifat distribusif himpunan: $A \cup (B \cap B^c) = A \cup \emptyset = A$, bukan $(A \cup B) \cap (A \cup B^c) = A \cap B$ atau bentuk keliru lainnya.
-> >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - Mengira $P(A \cup B^c)$ adalah komplemen dari $P(A \cup B)$, sehingga $P(A \cup B^c) = 1 - P(A \cup B) = 0{,}3$ — ini **keliru**. $B^c$ adalah komplemen $B$, bukan komplemen $A \cup B$.
+> > > - Mencoba membentuk persamaan dengan lebih banyak variabel ($P(B)$, $P(A \cap B)$) tanpa menyadari identitas yang lebih elegan.
 > >
 > > > [!CAUTION] Red Flags
-> > > - Jika soal memberikan $P(E)$ dan $P(F)$ di mana $E \cup F = \Omega$ → langsung gunakan $P(E) + P(F) = 1 + P(E \cap F)$ untuk mencari $P(E \cap F)$.
-> > > - Selalu cek apakah gabungan dua kejadian bisa disederhanakan menjadi $\Omega$ atau irisan menjadi $\emptyset$ — ini sering menghasilkan solusi yang elegan tanpa perlu variabel tambahan.
+> > > - Ingat identitas: $P(E) + P(F) = P(E \cup F) + P(E \cap F)$. Jika $E \cup F = \Omega$, maka $P(E) + P(F) = 1 + P(E \cap F)$.
 
 ---
+
 ## **No. 25**
 
 Tiga kartu diambil dari satu set kartu remi standar. Berapakah peluang ketiga kartu tersebut bergambar hati, jika diketahui setidaknya dua dari tiga kartu tersebut bergambar hati? (Pilihlah jawaban yang paling mendekati!)
@@ -1798,69 +1528,44 @@ e. $0{,}0576$
 > | **Connected Topics** | [[1.2 Aksioma dan Perhitungan Probabilitas]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.3–1.4; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
-> > **Probabilitas Bersyarat:**
+> > [!info]+ **Rumus**  
 > > $$P(A \mid B) = \frac{P(A \cap B)}{P(B)}$$
-> > **Kombinasi** (pengambilan tanpa urutan, tanpa pengembalian):
-> > $$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
-> > Kartu remi standar: 52 kartu total, 13 kartu hati, 39 kartu bukan hati.
+> > Kartu remi standar: 52 kartu, 13 kartu hati. Pengambilan tanpa pengembalian.
 >
 > **Diketahui:**
-> - Deck standar: 52 kartu, 13 hati ($\heartsuit$), 39 bukan hati
-> - Diambil 3 kartu **tanpa pengembalian** (urutan tidak penting → kombinasi)
-> - Kejadian $A$ = ketiga kartu adalah hati
-> - Kejadian $B$ = setidaknya 2 dari 3 kartu adalah hati
-> - Perhatikan: $A \subset B$ (jika semua 3 hati, pasti setidaknya 2 hati), sehingga $A \cap B = A$
-> - Target: $P(A \mid B)$
+> - Deck standar: 52 kartu, 13 hati, 39 bukan hati
+> - Diambil 3 kartu tanpa pengembalian
+> - $A$ = ketiga kartu hati, $B$ = setidaknya 2 dari 3 kartu hati
+> - Target: $P(A \mid B) = P(\text{3 hati} \mid \text{setidaknya 2 hati})$
 >
 > > [!example]- Langkah Pengerjaan
 > >
-> > **Langkah 1: Hitung Ruang Sampel Total**
+> > **Langkah 1: Hitung $P(A) = P(\text{3 hati})$**
 > >
-> > Banyaknya cara memilih 3 kartu dari 52:
-> > $$\binom{52}{3} = \frac{52 \times 51 \times 50}{3 \times 2 \times 1} = \frac{132{.}600}{6} = 22{.}100$$
+> > $$P(\text{3 hati}) = \frac{\binom{13}{3}}{\binom{52}{3}} = \frac{286}{22100}$$
 > >
-> > **Langkah 2: Hitung $P(A) = P(\text{tepat 3 hati})$**
+> > **Langkah 2: Hitung $P(\text{tepat 2 hati})$**
 > >
-> > Memilih 3 kartu hati dari 13 kartu hati yang tersedia:
-> > $$\binom{13}{3} = \frac{13 \times 12 \times 11}{6} = 286$$
-> > $$P(A) = \frac{286}{22{.}100}$$
+> > $$P(\text{2 hati}) = \frac{\binom{13}{2}\binom{39}{1}}{\binom{52}{3}} = \frac{78 \times 39}{22100} = \frac{3042}{22100}$$
 > >
-> > **Langkah 3: Hitung $P(\text{tepat 2 hati})$**
+> > **Langkah 3: Hitung $P(B) = P(\text{setidaknya 2 hati})$**
 > >
-> > Memilih 2 hati dari 13, dan 1 bukan hati dari 39:
-> > $$\binom{13}{2} \times \binom{39}{1} = \frac{13 \times 12}{2} \times 39 = 78 \times 39 = 3{.}042$$
-> > $$P(\text{tepat 2 hati}) = \frac{3{.}042}{22{.}100}$$
+> > $$P(B) = \frac{3042 + 286}{22100} = \frac{3328}{22100}$$
 > >
-> > **Langkah 4: Hitung $P(B) = P(\text{setidaknya 2 hati})$**
+> > **Langkah 4: Hitung $P(A \mid B)$**
 > >
-> > "Setidaknya 2 hati" mencakup tepat 2 hati **atau** tepat 3 hati:
-> > $$P(B) = P(\text{tepat 2 hati}) + P(\text{tepat 3 hati}) = \frac{3{.}042 + 286}{22{.}100} = \frac{3{.}328}{22{.}100}$$
-> >
-> > **Langkah 5: Terapkan Rumus Probabilitas Bersyarat**
-> >
-> > Karena $A \subset B$, maka $P(A \cap B) = P(A)$:
-> > $$P(A \mid B) = \frac{P(A \cap B)}{P(B)} = \frac{P(A)}{P(B)} = \frac{286/22{.}100}{3{.}328/22{.}100} = \frac{286}{3{.}328}$$
-> >
-> > Penyebut $22{.}100$ saling menghilangkan — kita hanya perlu membandingkan **jumlah cara** (bukan probabilitas):
-> > $$P(A \mid B) = \frac{286}{3{.}328} = 0{,}08594 \approx 0{,}0859$$
+> > $$P(A \mid B) = \frac{P(A \cap B)}{P(B)} = \frac{286/22100}{3328/22100} = \frac{286}{3328} = 0{,}08594 \approx 0{,}0859$$
 > >
 > > **Hasil Akhir:** **(a)**. $0{,}0859$
 >
 > > [!tip] Jebakan Umum
 > >
 > > > [!BUG] Kesalahan Konseptual
-> > > - Salah menghitung $\binom{52}{3}$: ingat rumusnya $\frac{52 \times 51 \times 50}{6} = 22{.}100$, bukan $52 \times 51 \times 50$ tanpa dibagi $6$.
-> > > - Mengira $P(A \cap B) = P(A) \times P(B)$ — ini hanya berlaku jika $A$ dan $B$ **independen**, yang jelas tidak berlaku di sini (karena $A \subset B$).
-> > > - Lupa bahwa "setidaknya 2 hati" mencakup **dua** kasus: tepat 2 dan tepat 3. Hanya menghitung tepat 2 hati sebagai penyebut adalah kesalahan umum.
-> >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - Pengambilan kartu selalu **tanpa pengembalian** kecuali dinyatakan lain → gunakan kombinasi $\binom{n}{k}$, bukan pangkat $p^k(1-p)^{n-k}$ (yang untuk Binomial dengan pengembalian).
-> > > - "Setidaknya 2" = $\geq 2$, artinya inklusif terhadap nilai 2 itu sendiri.
+> > > - Salah menghitung $\binom{13}{2}$ atau $\binom{52}{3}$ — verifikasi: $\binom{52}{3} = 52 \times 51 \times 50/6 = 22100$.
+> > > - "Setidaknya 2 hati" = tepat 2 ATAU tepat 3 hati; tidak hanya tepat 2.
 > >
 > > > [!CAUTION] Red Flags
-> > > - Soal kombinatorik dengan "diketahui bahwa..." → selalu $P(A \mid B) = P(A \cap B) / P(B)$.
-> > > - Jika $A \subset B$ (kejadian A adalah bagian dari B) → $P(A \cap B) = P(A)$, sehingga $P(A \mid B) = P(A)/P(B)$. Identifikasi relasi subset ini untuk menyederhanakan perhitungan.
+> > > - Pengambilan kartu → tanpa pengembalian → gunakan kombinasi $\binom{n}{k}$, bukan permutasi.
 
 ---
 
@@ -1886,52 +1591,34 @@ e. $0{,}3679$
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.2; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
-> > **Fungsi Pembangkit Peluang (PGF)** untuk variabel acak diskrit $N$ dengan support $\{0,1,2,\ldots\}$:
-> > $$G_N(t) = E[t^N] = \sum_{k=0}^{\infty} t^k \cdot P(N=k)$$
-> > **PGF khusus untuk $N \sim \text{Poisson}(\lambda)$:**
-> > $$G_N(t) = e^{\lambda(t-1)}$$
-> > **Perbedaan PGF vs MGF** (wajib dihapal):
-> > - PGF: $G_N(t) = E[t^N] = e^{\lambda(t-1)}$ — argumennya adalah $t^N$
-> > - MGF: $M_N(t) = E[e^{tN}] = e^{\lambda(e^t - 1)}$ — argumennya adalah $e^{tN}$
+> > [!info]+ **Rumus**  
+> > Fungsi Pembangkit Peluang (PGF) untuk $N \sim \text{Poisson}(\lambda)$:
+> > $$G_N(t) = E[t^N] = e^{\lambda(t-1)}$$
 >
 > **Diketahui:**
-> - $N \sim \text{Poisson}(\lambda = 2)$
-> - Target: $G_N\!\left(\dfrac{1}{2}\right)$
+> - $N \sim \text{Poisson}(\lambda = 2)$ (diskrit, support $\{0, 1, 2, \ldots\}$)
+> - Target: $G_N(1/2)$
 >
 > > [!example]- Langkah Pengerjaan
 > >
-> > **Langkah 1: Tulis Rumus PGF untuk Poisson**
+> > **Langkah 1: Gunakan rumus PGF Poisson**
 > >
-> > Untuk $N \sim \text{Poisson}(\lambda = 2)$:
 > > $$G_N(t) = e^{\lambda(t-1)} = e^{2(t-1)}$$
 > >
-> > **Langkah 2: Substitusi $t = \dfrac{1}{2}$**
+> > **Langkah 2: Substitusi $t = 1/2$**
 > >
-> > $$G_N\!\left(\tfrac{1}{2}\right) = e^{2\left(\frac{1}{2} - 1\right)} = e^{2 \times (-\frac{1}{2})} = e^{-1}$$
-> >
-> > **Langkah 3: Evaluasi Numerik**
-> >
-> > $$e^{-1} = \frac{1}{e} \approx \frac{1}{2{,}71828} \approx 0{,}3679$$
-> >
-> > Sebagai sanity check: nilai PGF di $t = 1$ selalu $= 1$ (karena $G_N(1) = E[1^N] = 1$). Di sini $t = 1/2 < 1$, sehingga wajar hasilnya $< 1$. ✓
+> > $$G_N\!\left(\tfrac{1}{2}\right) = e^{2(1/2 - 1)} = e^{2(-1/2)} = e^{-1} = \frac{1}{e} \approx 0{,}3679$$
 > >
 > > **Hasil Akhir:** **(e)**. $0{,}3679$
 >
 > > [!tip] Jebakan Umum
 > >
 > > > [!BUG] Kesalahan Konseptual
-> > > - **Menggunakan MGF alih-alih PGF**: MGF Poisson adalah $M_N(t) = e^{\lambda(e^t - 1)}$. Jika menggunakan MGF dengan $t = 1/2$: $M_N(1/2) = e^{2(e^{0{,}5}-1)} = e^{2(1{,}6487-1)} = e^{1{,}2974} \approx 3{,}66$ — tidak ada di opsi, namun jelas bukan jawaban yang diminta.
-> > > - Salah menghitung eksponen: $2(1/2 - 1) = 2 \times (-1/2) = -1$, **bukan** $2 \times 1/2 = 1$.
-> > > - Mengira $G_N(1/2) = e^{\lambda \cdot t} = e^{2 \times 1/2} = e^1 \approx 2{,}718$ — lupa faktor $(t-1)$, bukan hanya $t$.
-> >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - "Fungsi pembangkit peluang" (PGF) berbeda dari "fungsi pembangkit momen" (MGF). Soal secara eksplisit menyebut PGF — gunakan $G_N(t) = E[t^N]$, bukan $M_N(t) = E[e^{tN}]$.
+> > > - Menggunakan MGF $M_N(t) = e^{\lambda(e^t - 1)}$ alih-alih PGF $G_N(t) = e^{\lambda(t-1)}$ — dua fungsi yang berbeda.
+> > > - Mengira PGF dievaluasi di $t=1/2$ sama dengan $e^{\lambda \cdot t} = e^1$, lupa faktor $t-1$.
 > >
 > > > [!CAUTION] Red Flags
-> > > - Opsi (c) $\approx 2{,}718 = e^1$ adalah jebakan untuk yang menggunakan $e^{\lambda t}$ tanpa faktor $-1$.
-> > > - Opsi (d) $\approx 1{,}6487 = e^{0{,}5}$ adalah jebakan untuk yang hanya menghitung $e^{t}$ atau $e^{\lambda/2}$.
-> > > - Selalu cek: PGF di $t=1$ harus $= 1$. Ini berguna untuk verifikasi rumus.
+> > > - Soal menyebut PGF (bukan MGF) → gunakan $G_N(t) = E[t^N]$, bukan $M_N(t) = E[e^{tN}]$.
 
 ---
 
@@ -1953,70 +1640,52 @@ e. $np(2-p)$
 > | Field | Isi |
 > |-------|-----|
 > | **Topik CF2** | Topik 3 — Variabel Acak Multivariat |
-> | **Sub-topik** | [[3.4 Nilai Harapan dan Variansi Bersyarat]], [[3.7 Distribusi Majemuk (Compound Distribution)]] |
+> | **Sub-topik** | [[3.4 Nilai Harapan dan Variansi Bersyarat]], [[3.7 Distribusi Majemuk]] |
 > | **Difficulty** | Hard |
-> | **Prerequisite** | [[3.3 Distribusi Bersyarat (Conditional Distribution)]], [[3.4 Nilai Harapan dan Variansi Bersyarat]] |
+> | **Prerequisite** | [[3.3 Distribusi Bersyarat]], [[3.4 Nilai Harapan dan Variansi Bersyarat]] |
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Hogg-McKean-Craig Bab 2.1–2.6; Hogg-Tanis-Zimm Bab 4.4 |
 >
-> > [!info]+ **Rumus**
-> > **Hukum Ekspektasi Total (Law of Total Expectation / Adam's Law):**
-> > $$E[Y] = E\!\left[E[Y \mid X]\right]$$
-> > **Hukum Variansi Total (Law of Total Variance / Eve's Law):**
-> > $$\text{Var}(Y) = E\!\left[\text{Var}(Y \mid X)\right] + \text{Var}\!\left(E[Y \mid X]\right)$$
-> > Untuk $Y \mid X = x \sim \text{Poisson}(x)$: $E[Y \mid X=x] = x$ dan $\text{Var}(Y \mid X=x) = x$.
+> > [!info]+ **Rumus**  
+> > Hukum Variansi Total (Eve's Law):
+> > $$\text{Var}(Y) = E[\text{Var}(Y \mid X)] + \text{Var}(E[Y \mid X])$$
+> > Untuk $Y \mid X = x \sim \text{Poisson}(x)$: $E[Y \mid X] = X$ dan $\text{Var}(Y \mid X) = X$.
 > > Untuk $X \sim B(n,p)$: $E[X] = np$ dan $\text{Var}(X) = np(1-p)$.
 >
 > **Diketahui:**
-> - $X \sim B(n, p)$: variabel acak "luar" (mixing variable)
-> - $Y \mid X = x \sim \text{Poisson}(x)$: distribusi $Y$ bergantung pada nilai $X$
-> - Ini adalah **distribusi majemuk (compound distribution)**
-> - Target: $\text{Var}(Y)$ — variansi marginal (tanpa syarat) dari $Y$
+> - $X \sim B(n, p)$ (diskrit)
+> - $Y \mid X = x \sim \text{Poisson}(x)$ (diskrit, support $\{0,1,2,\ldots\}$)
+> - Target: $\text{Var}(Y)$
 >
 > > [!example]- Langkah Pengerjaan
 > >
-> > **Langkah 1: Identifikasi Momen Bersyarat dari $Y \mid X$**
+> > **Langkah 1: Identifikasi momen bersyarat**
 > >
-> > Karena $Y \mid X = x \sim \text{Poisson}(x)$, dan Poisson dengan rataan $\mu$ memiliki mean dan variansi keduanya $= \mu$:
-> > $$E[Y \mid X = x] = x \quad \Longrightarrow \quad E[Y \mid X] = X$$
-> > $$\text{Var}(Y \mid X = x) = x \quad \Longrightarrow \quad \text{Var}(Y \mid X) = X$$
-> > (Perhatikan: $E[Y \mid X]$ dan $\text{Var}(Y \mid X)$ adalah **fungsi dari** $X$, bukan konstanta.)
+> > Karena $Y \mid X = x \sim \text{Poisson}(x)$:
+> > $$E[Y \mid X] = X \quad \text{dan} \quad \text{Var}(Y \mid X) = X$$
 > >
-> > **Langkah 2: Hitung Suku Pertama Eve's Law — $E[\text{Var}(Y \mid X)]$**
+> > **Langkah 2: Terapkan Hukum Ekspektasi Total**
 > >
-> > $$E\!\left[\text{Var}(Y \mid X)\right] = E[X] = np$$
-> > (menggunakan Hukum Ekspektasi Total: $E[X] = np$ untuk $X \sim B(n,p)$)
+> > $$E[Y] = E[E[Y \mid X]] = E[X] = np$$
 > >
-> > **Langkah 3: Hitung Suku Kedua Eve's Law — $\text{Var}(E[Y \mid X])$**
+> > **Langkah 3: Terapkan Hukum Variansi Total**
 > >
-> > $$\text{Var}\!\left(E[Y \mid X]\right) = \text{Var}(X) = np(1-p)$$
-> > (karena $E[Y \mid X] = X$, variansinya sama dengan variansi $X$)
-> >
-> > **Langkah 4: Jumlahkan Kedua Suku**
-> >
-> > $$\text{Var}(Y) = E\!\left[\text{Var}(Y \mid X)\right] + \text{Var}\!\left(E[Y \mid X]\right)$$
+> > $$\text{Var}(Y) = E[\text{Var}(Y \mid X)] + \text{Var}(E[Y \mid X])$$
+> > $$= E[X] + \text{Var}(X)$$
 > > $$= np + np(1-p)$$
-> > $$= np\left[1 + (1-p)\right]$$
+> > $$= np[1 + (1-p)]$$
 > > $$= np(2-p)$$
-> >
-> > **Verifikasi dengan nilai khusus:** Coba $p = 1$: $X = n$ pasti, sehingga $Y \sim \text{Poisson}(n)$ dan $\text{Var}(Y) = n$. Formula: $np(2-p) = n \cdot 1 \cdot (2-1) = n$. ✓
 > >
 > > **Hasil Akhir:** **(e)**. $\text{Var}(Y) = np(2-p)$
 >
 > > [!tip] Jebakan Umum
 > >
 > > > [!BUG] Kesalahan Konseptual
-> > > - **Hanya mengambil suku pertama**: $\text{Var}(Y) = E[\text{Var}(Y|X)] = E[X] = np$ — ini opsi (b), **tidak lengkap** karena mengabaikan suku kedua Eve's Law.
-> > > - **Hanya mengambil suku kedua**: $\text{Var}(Y) = \text{Var}(E[Y|X]) = \text{Var}(X) = np(1-p)$ — ini opsi (c), juga **tidak lengkap**.
-> > > - **Mengira $\text{Var}(Y) = \text{Var}(Y|X=x) = x$** — opsi (a) ini salah karena $x$ adalah nilai tertentu (bukan variabel), dan variansi marginal tidak sama dengan variansi bersyarat di satu titik.
-> >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - "Distribusi bersyarat $Y|X=x$ adalah Poisson dengan rataan $x$" berarti rataan Poisson **bervariasi** bergantung pada $X$ — ini adalah struktur distribusi majemuk, bukan distribusi Poisson biasa.
-> > > - Jawaban $Y$ (marginal) **bukan** Poisson — distribusi marginal campuran umumnya lebih kompleks.
+> > > - Menjawab $\text{Var}(Y) = np$ (hanya menggunakan $E[\text{Var}(Y|X)]$ tanpa suku kedua).
+> > > - Menjawab $\text{Var}(Y) = np(1-p)$ (hanya mengambil $\text{Var}(X)$ tanpa suku pertama).
 > >
 > > > [!CAUTION] Red Flags
-> > > - Kata kunci **"distribusi bersyarat dari $Y$ jika diketahui $X$"** + "tentukan variansi $Y$" → selalu gunakan **Eve's Law** (kedua suku, jangan ada yang dilewat).
-> > > - Soal **compound distribution** (Poisson-Binomial, Poisson-Gamma, dll.) → Eve's Law adalah senjata utama.
+> > > - Soal campuran (compound distribution) → SELALU gunakan kedua hukum: Total Expectation dan Total Variance.
 
 ---
 
@@ -2040,74 +1709,46 @@ e. $\dfrac{7}{8}$
 > | Field | Isi |
 > |-------|-----|
 > | **Topik CF2** | Topik 3 — Variabel Acak Multivariat |
-> | **Sub-topik** | [[3.2 Distribusi Marginal]], [[3.1 Distribusi Gabungan (Joint Distribution)]] |
+> | **Sub-topik** | [[3.2 Distribusi Marginal]], [[3.1 Distribusi Gabungan]] |
 > | **Difficulty** | Medium |
-> | **Prerequisite** | [[3.1 Distribusi Gabungan (Joint Distribution)]], [[3.2 Distribusi Marginal]] |
+> | **Prerequisite** | [[3.1 Distribusi Gabungan]], [[3.2 Distribusi Marginal]] |
 > | **Connected Topics** | [[2.2 Variabel Acak Kontinu]] |
 > | **Referensi** | Hogg-McKean-Craig Bab 2.1; Hogg-Tanis-Zimm Bab 4.1 |
 >
-> > [!info]+ **Rumus**
-> > **PDF Marginal** dari $X$:
+> > [!info]+ **Rumus**  
+> > Marginal PDF:
 > > $$f_X(x) = \int_{-\infty}^{\infty} f_{X,Y}(x,y)\,dy$$
-> > Batas integral $y$ harus memperhatikan **support** (region dimana $f_{X,Y} > 0$).
-> >
-> > Untuk support segitiga $\{x \geq 0,\, y \geq 0,\, x+y \leq 1\}$: batas $y$ adalah dari $0$ hingga $1-x$ (untuk $x$ tetap).
+> > Untuk support segitiga $\{x+y \leq 1, x \geq 0, y \geq 0\}$: batas integral $y$ dari $0$ hingga $1-x$.
 >
 > **Diketahui:**
-> - $f_{X,Y}(x,y) = 6(1-x-y)$ pada region segitiga: $x \geq 0$, $y \geq 0$, $x+y \leq 1$
-> - Region ini adalah segitiga dengan sudut di $(0,0)$, $(1,0)$, dan $(0,1)$
-> - Target: $P\!\left(0 \leq X \leq \dfrac{1}{2}\right) = \displaystyle\int_0^{1/2} f_X(x)\,dx$
+> - $f_{X,Y}(x,y) = 6(1-x-y)$ pada segitiga $0 \leq x$, $0 \leq y$, $x+y \leq 1$
+> - Target: $P(0 \leq X \leq 1/2) = \int_0^{1/2} f_X(x)\,dx$
 >
 > > [!example]- Langkah Pengerjaan
 > >
-> > **Langkah 1: Tentukan Batas Integral untuk Marginalisasi**
+> > **Langkah 1: Hitung marginal $f_X(x)$**
 > >
-> > Untuk nilai $x$ yang tetap ($0 \leq x \leq 1$), variabel $y$ harus memenuhi:
-> > - $y \geq 0$ (dari syarat support)
-> > - $x + y \leq 1$, sehingga $y \leq 1 - x$
-> >
-> > Jadi batas integral $y$: dari $0$ sampai $1-x$.
-> >
-> > **Langkah 2: Hitung PDF Marginal $f_X(x)$**
-> >
+> > Untuk $0 \leq x \leq 1$, batas $y$: dari $0$ hingga $1-x$.
 > > $$f_X(x) = \int_0^{1-x} 6(1-x-y)\,dy$$
+> > Misal $u = 1-x$:
+> > $$= 6\left[uy - \frac{y^2}{2}\right]_0^u = 6\left(u^2 - \frac{u^2}{2}\right) = 6 \cdot \frac{u^2}{2} = 3(1-x)^2$$
 > >
-> > Misal $u = 1-x$ (konstanta saat mengintegralkan terhadap $y$):
-> > $$= \int_0^{u} 6(u - y)\,dy = 6\left[uy - \frac{y^2}{2}\right]_0^{u}$$
-> > $$= 6\left(u^2 - \frac{u^2}{2}\right) = 6 \cdot \frac{u^2}{2} = 3u^2 = 3(1-x)^2$$
-> >
-> > Jadi: $f_X(x) = 3(1-x)^2$ untuk $0 \leq x \leq 1$.
-> >
-> > **Verifikasi:** $\displaystyle\int_0^1 3(1-x)^2\,dx = \left[-(1-x)^3\right]_0^1 = 0 - (-1) = 1$ ✓
-> >
-> > **Langkah 3: Hitung $P\!\left(0 \leq X \leq \dfrac{1}{2}\right)$**
+> > **Langkah 2: Hitung $P(0 \leq X \leq 1/2)$**
 > >
 > > $$P\!\left(0 \leq X \leq \tfrac{1}{2}\right) = \int_0^{1/2} 3(1-x)^2\,dx$$
-> >
-> > Gunakan substitusi $u = 1-x$, $du = -dx$:
-> > - Saat $x = 0$: $u = 1$
-> > - Saat $x = 1/2$: $u = 1/2$
-> >
-> > $$= \int_1^{1/2} 3u^2 (-du) = \int_{1/2}^{1} 3u^2\,du = \left[u^3\right]_{1/2}^{1} = 1^3 - \left(\tfrac{1}{2}\right)^3 = 1 - \frac{1}{8} = \frac{7}{8}$$
-> >
-> > Atau langsung (tanpa substitusi):
-> > $$= \left[-(1-x)^3\right]_0^{1/2} = -(1-\tfrac{1}{2})^3 - (-(1-0)^3) = -\frac{1}{8} + 1 = \frac{7}{8}$$
+> > $$= 3\left[-\frac{(1-x)^3}{3}\right]_0^{1/2} = \left[-(1-x)^3\right]_0^{1/2}$$
+> > $$= -(1-\tfrac{1}{2})^3 - (-(1-0)^3) = -\frac{1}{8} + 1 = \frac{7}{8}$$
 > >
 > > **Hasil Akhir:** **(e)**. $\dfrac{7}{8}$
 >
 > > [!tip] Jebakan Umum
 > >
 > > > [!BUG] Kesalahan Konseptual
-> > > - **Salah menentukan batas atas $y$**: menggunakan $y$ dari $0$ hingga $1$ (alih-alih $1-x$). Ini mengintegrasikan di luar support, menghasilkan nilai $f_X(x)$ yang salah dan bahkan mungkin tidak valid sebagai PDF.
-> > > - **Menghitung $P(0 \leq X \leq 1/2)$ via integral ganda langsung** tanpa memarginalkan lebih dulu — sebenarnya bisa, tetapi lebih rawan kesalahan dalam menentukan region integrasi. Pendekatan via marginal lebih sistematis.
-> > > - Salah tanda saat mengevaluasi anti-turunan $-(1-x)^3$: pastikan substitusi batas atas dan bawah dilakukan dengan benar.
-> >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - $P(0 \leq X \leq 1/2)$ adalah probabilitas **marginal** — artinya $Y$ bisa bernilai apa saja (sesuai support), bukan $Y = 0$ atau nilai tertentu.
+> > > - Salah menentukan batas atas integral dalam $y$: untuk titik $(x, y)$ di segitiga, batas $y$ adalah $1-x$ (bukan 1).
+> > > - Mengira $P(0 \leq X \leq 1/2)$ langsung dari integrasi ganda tanpa memarginalkan — bisa dilakukan langsung dengan integral ganda juga, tapi lebih mudah via marginal.
 > >
 > > > [!CAUTION] Red Flags
-> > > - Support berbentuk **segitiga** (ada syarat $x + y \leq 1$) → **selalu gambar region** terlebih dahulu sebelum menentukan batas integral. Batas atas $y$ bergantung pada $x$: $y_{\max} = 1-x$, **bukan** $1$.
-> > > - Setelah mendapat $f_X(x)$, verifikasi dengan $\displaystyle\int_0^1 f_X(x)\,dx = 1$ sebelum melanjutkan.
+> > > - Support berbentuk segitiga → selalu gambar region terlebih dahulu untuk menentukan batas integral yang benar.
 
 ---
 
@@ -2133,49 +1774,30 @@ e. $\dfrac{5}{32}$
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 1.4; Miller Bab 2 |
 >
-> > [!info]+ **Rumus**
-> > **Probabilitas Bersyarat:**
+> > [!info]+ **Rumus**  
 > > $$P(A \mid B) = \frac{P(A \cap B)}{P(B)}$$
-> > **Hukum De Morgan:**
-> > $$P(A \cup B) = 1 - P(A^c \cap B^c)$$
-> > **Inklusi-Eksklusi:**
-> > $$P(A \cap B) = 1 - P(A^c) - P(B^c) + P(A^c \cap B^c)$$
+> > Misal $F$ = kejadian "setidaknya 1 perempuan", $M$ = "setidaknya 1 laki-laki".
 >
 > **Diketahui:**
-> - 5 anak, $p(\text{perempuan}) = 0{,}5$, setiap kelahiran independen
-> - Definisikan:
->   - $F$ = setidaknya 1 anak perempuan
->   - $M$ = setidaknya 1 anak laki-laki
->   - $F^c$ = tidak ada anak perempuan = semua 5 anak laki-laki
->   - $M^c$ = tidak ada anak laki-laki = semua 5 anak perempuan
+> - $n = 5$ anak, $p = 0{,}5$, saling bebas
+> - $A = F$ = setidaknya 1 perempuan, $B = M$ = setidaknya 1 laki-laki
 > - Target: $P(F \mid M)$
 >
 > > [!example]- Langkah Pengerjaan
 > >
-> > **Langkah 1: Hitung Probabilitas Komplemen**
+> > **Langkah 1: Hitung $P(M^c)$ dan $P(F^c)$**
 > >
-> > $$P(F^c) = P(\text{semua laki-laki}) = \left(\frac{1}{2}\right)^5 = \frac{1}{32}$$
-> > $$P(M^c) = P(\text{semua perempuan}) = \left(\frac{1}{2}\right)^5 = \frac{1}{32}$$
+> > $$P(M^c) = P(\text{0 laki-laki}) = P(\text{5 perempuan}) = (1/2)^5 = 1/32$$
+> > $$P(F^c) = P(\text{0 perempuan}) = P(\text{5 laki-laki}) = (1/2)^5 = 1/32$$
 > >
-> > **Langkah 2: Hitung $P(M)$ — Penyebut**
+> > **Langkah 2: Hitung $P(M)$ dan $P(F \cap M)$**
 > >
-> > $$P(M) = 1 - P(M^c) = 1 - \frac{1}{32} = \frac{31}{32}$$
+> > $$P(M) = 1 - P(M^c) = 1 - 1/32 = 31/32$$
+> > $$P(F \cap M) = 1 - P(F^c) - P(M^c) + P(F^c \cap M^c)$$
+> > Karena $F^c \cap M^c = \emptyset$ (tidak mungkin 5 anak semuanya perempuan DAN semuanya laki-laki):
+> > $$P(F \cap M) = 1 - 1/32 - 1/32 = 30/32$$
 > >
-> > **Langkah 3: Hitung $P(F \cap M)$ — Pembilang**
-> >
-> > $F \cap M$ = ada setidaknya 1 perempuan **dan** setidaknya 1 laki-laki = **bukan** (semua perempuan atau semua laki-laki).
-> >
-> > Gunakan inklusi-eksklusi pada komplemen:
-> > $$P((F \cap M)^c) = P(F^c \cup M^c) = P(F^c) + P(M^c) - P(F^c \cap M^c)$$
-> >
-> > Perhatikan: $F^c \cap M^c$ = semua perempuan **sekaligus** semua laki-laki = **mustahil** ($\emptyset$):
-> > $$P(F^c \cap M^c) = 0$$
-> >
-> > Maka:
-> > $$P((F \cap M)^c) = \frac{1}{32} + \frac{1}{32} - 0 = \frac{2}{32}$$
-> > $$P(F \cap M) = 1 - \frac{2}{32} = \frac{30}{32}$$
-> >
-> > **Langkah 4: Terapkan Rumus Probabilitas Bersyarat**
+> > **Langkah 3: Terapkan rumus bersyarat**
 > >
 > > $$P(F \mid M) = \frac{P(F \cap M)}{P(M)} = \frac{30/32}{31/32} = \frac{30}{31}$$
 > >
@@ -2184,16 +1806,10 @@ e. $\dfrac{5}{32}$
 > > [!tip] Jebakan Umum
 > >
 > > > [!BUG] Kesalahan Konseptual
-> > > - Mengira $P(F \mid M) = P(F) / P(M) = \dfrac{31/32}{31/32} = 1$ — ini salah karena pembilang harus $P(F \cap M)$, bukan $P(F)$.
-> > > - Mengira $F$ dan $M$ saling bebas sehingga $P(F \cap M) = P(F) \times P(M)$ — tidak berlaku karena keduanya bergantung pada komposisi yang sama (5 anak).
-> > > - Salah mengidentifikasi $F^c \cap M^c$: ini adalah kejadian **mustahil** (tidak mungkin 5 anak semuanya perempuan DAN semuanya laki-laki secara bersamaan), sehingga $P(F^c \cap M^c) = 0$.
-> >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - "Setidaknya 1 perempuan" bukan berarti "tepat 1 perempuan". Komplemen dari "setidaknya 1 perempuan" adalah "tidak ada perempuan sama sekali" (semua laki-laki).
+> > > - Mengira $P(F \mid M) = P(F) / P(M) = (31/32)/(31/32) = 1$ — salah karena pembilang harus $P(F \cap M)$, bukan $P(F)$.
 > >
 > > > [!CAUTION] Red Flags
-> > > - Soal bertipe "setidaknya... diketahui setidaknya..." → gunakan $P(A|B) = P(A \cap B)/P(B)$, dan hitung $P(A \cap B)$ via **komplemen** karena lebih mudah.
-> > > - Strategi umum: $P(\text{setidaknya 1 dari X}) = 1 - P(\text{tidak ada X}) = 1 - (1-p)^n$.
+> > > - $P(F^c \cap M^c) = 0$ karena tidak mungkin semua anak perempuan sekaligus semua laki-laki.
 
 ---
 
@@ -2219,67 +1835,42 @@ e. $e^{-1}$
 > | **Connected Topics** | [[2.5 Distribusi Diskrit Umum]] |
 > | **Referensi** | Hogg-Tanis-Zimm Bab 3.2; Miller Bab 5 |
 >
-> > [!info]+ **Rumus**
-> > **PMF Distribusi Poisson** dengan rate $\lambda$:
-> > $$P(N = k) = \frac{e^{-\lambda}\lambda^k}{k!}, \quad k = 0, 1, 2, \ldots$$
-> > **Sifat Skalabilitas Poisson terhadap Waktu:** Jika rata-rata kejadian adalah $\lambda_0$ per satuan waktu $t_0$, maka dalam waktu $t$:
-> > $$\lambda_t = \lambda_0 \times \frac{t}{t_0}$$
-> > Sehingga $N_t \sim \text{Poisson}(\lambda_t)$.
+> > [!info]+ **Rumus**  
+> > Distribusi Poisson bersifat aditif terhadap waktu: jika $N_{12h} \sim \text{Poisson}(1)$, maka $N_{24h} \sim \text{Poisson}(2)$.
+> > $$P(N = k) = \frac{e^{-\lambda}\lambda^k}{k!}$$
 >
 > **Diketahui:**
-> - Rata-rata: 1 lonjakan per 12 jam → $\lambda_{12} = 1$
-> - Periode yang ditanya: 24 jam
-> - $\lambda_{24} = 1 \times \dfrac{24}{12} = 2$, sehingga $N_{24} \sim \text{Poisson}(2)$
-> - "Tidak lebih dari satu kali" = $P(N_{24} \leq 1) = P(N_{24}=0) + P(N_{24}=1)$
-> - Target: $P(N_{24} \leq 1)$
+> - Rata-rata 1 lonjakan per 12 jam → $\lambda_{12} = 1$
+> - Dalam 24 jam: $\lambda_{24} = 2$
+> - $N_{24} \sim \text{Poisson}(2)$
+> - Target: $P(N_{24} \leq 1)$, "tidak lebih dari satu kali" = $P(N \leq 1)$
 >
 > > [!example]- Langkah Pengerjaan
 > >
-> > **Langkah 1: Skala Parameter Poisson ke Periode 24 Jam**
+> > **Langkah 1: Skalakan parameter Poisson ke 24 jam**
 > >
-> > Distribusi Poisson bersifat **aditif terhadap waktu**: jika dalam 12 jam rata-rata 1 lonjakan, maka dalam 24 jam (dua kali lipat periodenya) rata-ratanya dua kali lipat:
 > > $$\lambda_{24} = 1 \times \frac{24}{12} = 2$$
 > > Sehingga $N_{24} \sim \text{Poisson}(2)$.
 > >
-> > **Langkah 2: Interpretasi "Tidak Lebih dari Satu Kali"**
+> > **Langkah 2: Hitung $P(N_{24} \leq 1)$**
 > >
-> > "Tidak lebih dari satu kali" = $N_{24} \leq 1$ = $N_{24} \in \{0, 1\}$.
-> > Ini mencakup dua kasus: **nol lonjakan** dan **tepat satu lonjakan**.
-> >
-> > **Langkah 3: Hitung $P(N_{24} = 0)$**
-> >
-> > $$P(N_{24} = 0) = \frac{e^{-2} \cdot 2^0}{0!} = \frac{e^{-2} \cdot 1}{1} = e^{-2}$$
-> >
-> > **Langkah 4: Hitung $P(N_{24} = 1)$**
-> >
-> > $$P(N_{24} = 1) = \frac{e^{-2} \cdot 2^1}{1!} = \frac{2e^{-2}}{1} = 2e^{-2}$$
-> >
-> > **Langkah 5: Jumlahkan**
+> > $$P(N=0) = \frac{e^{-2} \cdot 2^0}{0!} = e^{-2}$$
+> > $$P(N=1) = \frac{e^{-2} \cdot 2^1}{1!} = 2e^{-2}$$
 > >
 > > $$P(N_{24} \leq 1) = e^{-2} + 2e^{-2} = 3e^{-2}$$
-> >
-> > Secara numerik: $3e^{-2} \approx 3 \times 0{,}1353 = 0{,}4060$.
 > >
 > > **Hasil Akhir:** **(b)**. $3e^{-2}$
 >
 > > [!tip] Jebakan Umum
 > >
 > > > [!BUG] Kesalahan Konseptual
-> > > - **Lupa menskalakan $\lambda$**: menggunakan $\lambda = 1$ untuk 24 jam (alih-alih $\lambda = 2$). Ini menghasilkan $P(N \leq 1) = e^{-1} + e^{-1} = 2e^{-1}$ — tidak ada di opsi.
-> > > - **Salah arah skala**: menggunakan $\lambda_{24} = 1/2$ (membagi alih-alih mengalikan) — ini keliru; periode yang **lebih panjang** → $\lambda$ **lebih besar**.
-> > > - Lupa bahwa $0! = 1$ dan $1! = 1$, sehingga penyebutnya $= 1$ untuk kedua suku.
-> >
-> > > [!BUG] Kesalahan Interpretasi Soal
-> > > - **"Tidak lebih dari satu kali"** = $P(N \leq 1)$, mencakup $N=0$ dan $N=1$ — **bukan** hanya $P(N=1)$ atau $P(N < 1)$.
-> > > - Bandingkan frasa yang sering dipertukarkan:
-> > >   - "Tidak lebih dari 1" = $N \leq 1$ → hitung $P(0) + P(1)$
-> > >   - "Kurang dari 1" = $N < 1$ → hanya $P(0)$
-> > >   - "Setidaknya 1" = $N \geq 1$ → $1 - P(0)$
-> > >   - "Lebih dari 1" = $N > 1$ → $1 - P(0) - P(1)$
+> > > - Tetap menggunakan $\lambda = 1$ untuk 24 jam — padahal Poisson bersifat aditif, sehingga $\lambda$ harus diskala proporsional dengan waktu.
+> > > - "Tidak lebih dari satu kali" = $P(N \leq 1) = P(N=0) + P(N=1)$, bukan $P(N < 1) = P(N=0)$ saja.
 > >
 > > > [!CAUTION] Red Flags
-> > > - Soal Poisson dengan **perubahan satuan waktu** → **skala $\lambda$ secara proporsional** sebelum menghitung apapun. Ini adalah langkah pertama yang wajib.
-> > > - Jika opsi jawaban berbentuk $ke^{-\lambda}$ → pastikan nilai $\lambda$ sudah benar setelah penskalaaan.
+> > > - "Tidak lebih dari $k$" = $P(N \leq k)$; "kurang dari $k$" = $P(N < k)$ = $P(N \leq k-1)$. Ini sering tertukar.
+> > > - Jika rentang waktu berubah → skala $\lambda$ secara linear sebelum menghitung.
 
 ---
 
+*Dokumen ini merupakan pembahasan lengkap Ujian CF2 (Probabilitas dan Statistika) Sesi November 2025. Kunci jawaban resmi diterbitkan oleh Persatuan Aktuaris Indonesia (PAI). Soal No. 5 dan No. 11 dianulir oleh PAI; semua peserta mendapat nilai penuh untuk kedua soal tersebut.*

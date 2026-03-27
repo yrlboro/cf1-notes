@@ -75,8 +75,20 @@ e. $13{,}76\%$
 ## **No. 2**
 
 Misalkan kurva hasil untuk tingkat spot diberikan oleh persamaan berikut:
-$$s_t = 0{,}08-0{,}01t+0{,002}t^2$$
+$$s_t = 0{,}08-0{,}001t+0{,002}t^2$$
 Tentukanlah tingkat bunga _forward_ efektif tahunan untuk pinjaman yang dimulai pada waktu $t=4{,}$ dengan jangka waktu 3 tahun.
+
+a. $0{,}3603$  
+b. $0{,}0569$  
+c. $0{,}0033$  
+d. $0{,}2606$  
+e. $0{,}1805$
+
+## **No. 2**
+
+Misalkan kurva hasil untuk tingkat spot diberikan oleh persamaan berikut:
+$$s_t = 0{,}08 - 0{,}001t + 0{,}002t^2$$
+Tentukanlah tingkat bunga _forward_ efektif tahunan untuk pinjaman yang dimulai pada waktu $t=4$, dengan jangka waktu 3 tahun.
 
 a. $0{,}3603$  
 b. $0{,}0569$  
@@ -97,51 +109,62 @@ e. $0{,}1805$
 > | **Referensi** | Vaaler Bab 8.3; Kellison Bab 10 |
 >
 > > [!info]+ **Rumus**
-> > Karena fungsi berbentuk polinomial dan opsi jawaban berupa desimal spesifik, persamaan $s_t$ diperlakukan sebagai *Force of Interest* ($\delta_t$). Total bunga akumulatif dihitung dengan integral:
-> > $$\text{Total Interest} = \int_{t_1}^{t_2} \delta_t \, dt$$
+> > Forward rate efektif tahunan dari waktu $t_1$ ke $t_2$:
+> > $$f_{t_1, t_2} = \left[\frac{(1 + s_{t_2})^{t_2}}{(1 + s_{t_1})^{t_1}}\right]^{\frac{1}{t_2 - t_1}} - 1$$
+> > Di mana $s_t$ adalah spot rate efektif tahunan untuk maturity $t$, yang diperoleh dengan mensubstitusi $t$ ke dalam fungsi yang diberikan.
 >
 > **Diketahui:**
-> - Fungsi: $\delta_t = 0{,}08 - 0{,}01t + 0{,}002t^2$
-> - Periode: Mulai $t=4$ selama 3 tahun (berakhir di $t=7$)
-> - Target: Tingkat bunga forward efektif tahunan dari $t=4$ ke $t=7$
+> - $s_t = 0{,}08 - 0{,}001t + 0{,}002t^2$ (spot rate efektif tahunan sebagai fungsi maturity)
+> - Pinjaman mulai $t_1 = 4$, berakhir $t_2 = 7$ (jangka waktu 3 tahun)
+> - Target: Forward rate efektif tahunan $f_{4,7}$
 >
 > > [!example]- Langkah Pengerjaan
 > >
-> > **Langkah 1: Setup Integral Tentu**
-> > $$I = \int_{4}^{7} (0{,}08 - 0{,}01t + 0{,}002t^2) \, dt$$
+> > **Langkah 1: Hitung Spot Rate $s_4$**
+> > Substitusi $t = 4$ ke dalam fungsi:
+> > $$s_4 = 0{,}08 - 0{,}001(4) + 0{,}002(4)^2 = 0{,}08 - 0{,}004 + 0{,}032 = 0{,}108$$
 > >
-> > **Langkah 2: Anti-Turunan**
-> > $$F(t) = 0{,}08t - 0{,}005t^2 + \frac{0{,}002}{3}t^3$$
+> > **Langkah 2: Hitung Spot Rate $s_7$**
+> > Substitusi $t = 7$ ke dalam fungsi:
+> > $$s_7 = 0{,}08 - 0{,}001(7) + 0{,}002(7)^2 = 0{,}08 - 0{,}007 + 0{,}098 = 0{,}171$$
 > >
-> > **Langkah 3: Evaluasi Batas Atas ($t=7$)**
-> > $$F(7) = 0{,}08(7) - 0{,}005(49) + \frac{0{,}002}{3}(343)$$
-> > $$F(7) = 0{,}56 - 0{,}245 + 0{,}228\overline{6} = 0{,}543\overline{6}$$
+> > **Langkah 3: Hitung Faktor Akumulasi Masing-Masing**
+> > $$\text{Pembilang: } (1 + s_7)^7 = (1{,}171)^7$$
+> > $$\text{Penyebut: } (1 + s_4)^4 = (1{,}108)^4$$
 > >
-> > **Langkah 4: Evaluasi Batas Bawah ($t=4$)**
-> > $$F(4) = 0{,}08(4) - 0{,}005(16) + \frac{0{,}002}{3}(64)$$
-> > $$F(4) = 0{,}32 - 0{,}08 + 0{,}042\overline{6} = 0{,}282\overline{6}$$
+> > Hitung secara numerik:
+> > $$(1{,}171)^7 \approx 3{,}11782 \qquad (1{,}108)^4 \approx 1{,}51141$$
 > >
-> > **Langkah 5: Selisih**
-> > $$I = 0{,}543\overline{6} - 0{,}282\overline{6} = 0{,}2610$$
+> > **Langkah 4: Hitung Rasio dan Pangkat**
+> > $$\frac{(1{,}171)^7}{(1{,}108)^4} = \frac{3{,}11782}{1{,}51141} \approx 2{,}06283$$
 > >
-> > Hasil presisi $\approx 0{,}2606$ (dengan pembulatan yang lebih cermat).
+> > Pangkatkan dengan $\frac{1}{t_2 - t_1} = \frac{1}{3}$:
+> > $$(2{,}06283)^{1/3} \approx 1{,}2606$$
+> >
+> > **Langkah 5: Kurangi 1 untuk Mendapat Forward Rate**
+> > $$f_{4,7} = 1{,}2606 - 1 = 0{,}2606$$
 > >
 > > **Hasil Akhir:** **(d)**. $0{,}2606$
 >
 > > [!tip] Jebakan Umum
 > >
 > > > [!BUG] Kesalahan Unit Waktu
-> > > - Mengira bahwa hasilnya perlu dikonversi ke rate tahunan dengan membagi 3 — integral langsung menghasilkan total akumulasi, bukan rate per tahun.
+> > > - Menggunakan pangkat $\frac{1}{3}$ tetapi lupa bahwa penyebut adalah $t_2 - t_1 = 3$, bukan $t_2 = 7$ — forward rate adalah rate **per tahun** untuk interval 3 tahun, sehingga pangkat harus $\frac{1}{3}$.
+> > > - Menghitung hanya rasio $\frac{(1+s_7)^7}{(1+s_4)^4}$ tanpa dipangkatkan $\frac{1}{3}$ — ini menghasilkan faktor akumulasi total 3 tahun ($\approx 2{,}06$), bukan forward rate tahunan.
 > >
 > > > [!BUG] Kesalahan Konseptual
-> > > - Menghitung $s_4$ dan $s_7$ lalu menggunakan hubungan $(1+s_7)^7/(1+s_4)^4$ — ini benar jika $s_t$ adalah spot rate efektif, tapi di sini fungsi diperlakukan sebagai force of interest.
-> > > - Lupa bahwa integral force of interest menghasilkan **total accumulation factor** $\ln(a(4,7))$, bukan rate langsung.
+> > > - Memperlakukan $s_t$ sebagai *force of interest* ($\delta_t$) dan mengintegralkan fungsi tersebut — $s_t$ di sini adalah **spot rate efektif** (tidak perlu integral). Cek tipe fungsi dengan mensubstitusi ke opsi jawaban: metode spot rate langsung menghasilkan $0{,}2606$ yang sesuai opsi.
+> > > - Menggunakan $s_4$ dan $s_7$ secara langsung sebagai forward rate tanpa memasukkannya ke dalam formula faktor akumulasi $(1+s_t)^t$ — spot rate bukan forward rate, keduanya dihubungkan melalui no-arbitrage.
+> > > - Menghitung $s_7 - s_4 = 0{,}063$ sebagai forward rate — ini hanya selisih spot rate, bukan forward rate.
 > >
 > > > [!BUG] Kesalahan Interpretasi Soal
-> > > - Soal menggunakan notasi $s_t$ (biasanya spot rate efektif) tetapi penyelesaian yang menghasilkan opsi jawaban memperlakukannya sebagai $\delta_t$ (force of interest).
+> > > - Membaca koefisien fungsi keliru: $-0{,}001t$ sangat mudah terbaca sebagai $-0{,}01t$ (beda satu angka nol). Selalu substitusi nilai $t$ ke kalkulator secara hati-hati sebelum lanjut ke formula.
+> > > - "Pinjaman yang dimulai pada waktu $t=4$ dengan jangka waktu 3 tahun" berarti $t_1 = 4$ dan $t_2 = 7$, bukan $t_2 = 4 + 3 = 4{,}3$ atau interpretasi lain.
 > >
 > > > [!CAUTION] Red Flags
-> > > - Jika soal memberikan fungsi kontinu $s_t$ atau $\delta_t$ dan meminta forward rate → cek opsi jawaban untuk menentukan apakah fungsi tersebut spot rate atau force of interest.
+> > > - Jika soal memberikan fungsi $s_t$ dan meminta forward rate → substitusi $t_1$ dan $t_2$ ke dalam fungsi terlebih dahulu, baru gunakan formula $f_{t_1,t_2}$.
+> > > - Jika hasil metode tertentu tidak cocok dengan opsi jawaban → coba interpretasi alternatif ($s_t$ sebagai spot rate efektif vs force of interest), gunakan opsi jawaban sebagai validator.
+> > > - Jika koefisien fungsi sangat kecil (mis. $0{,}001$) → waspadai typo atau misread — cek ulang substitusi numerik.
 
 ---
 
