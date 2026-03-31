@@ -740,6 +740,7 @@ e. $285$
 > | **Referensi** | Vaaler Bab 3; Kellison Bab 3 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > Konversi bunga: $(1+i) = (1+j)^{12}$  
 > >
 > > Future Value Annuity-Due:  
@@ -806,6 +807,7 @@ e. $134$
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 4 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > **Metode Superposisi (Layering):**  
 > > $$PV = PV_{\text{Base}} + PV_{\text{TopUp1}} + PV_{\text{TopUp2}}$$  
 >
@@ -878,6 +880,7 @@ e. $9.731$
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 4 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > **Geometric Gradient Annuity-Immediate:**  
 > > $$PV_{t-1} = P_1 \cdot \frac{1 - \left(\frac{1+g}{1+i}\right)^n}{i - g}$$  
 > > Rumus ini menghasilkan nilai **satu periode sebelum** pembayaran pertama.
@@ -939,6 +942,7 @@ e. $47{,}99$
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 4 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > **P-Q Formula (Arithmetic Annuity):**  
 > > $$PV = P \cdot a_{\overline{n}|i} + Q \cdot \frac{a_{\overline{n}|i} - nv^n}{i}$$
 >
@@ -1007,6 +1011,7 @@ e. $871{,}6$
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 4 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > **Dekomposisi Waktu (Annuity-Due):**  
 > > $$PV = PV_{\text{Fase1}} + v^{24} \cdot PV_{\text{Fase2}(@ t=24)}$$
 >
@@ -1079,6 +1084,7 @@ e. $384$
 > | **Referensi** | Vaaler Bab 5; Kellison Bab 5 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > **Outstanding Balance — Metode Prospektif:**  
 > > $$OB_t = R \cdot a_{\overline{n-t}|i}$$  
 > >
@@ -1150,6 +1156,7 @@ e. $136.159$
 > | **Referensi** | Vaaler Bab 5; Kellison Bab 5 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > **Konversi Bunga:**  
 > > $$j = (1+i)^{1/12} - 1$$  
 > >
@@ -1256,6 +1263,7 @@ e. $308$
 > | **Referensi** | Vaaler Bab 5; Kellison Bab 5 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > **Biaya Insentif = PV (selisih cicilan) dinilai pada rate pasar**  
 > > $$\text{Cost} = (R_{\text{pasar}} - R_{\text{insentif}}) \cdot a_{\overline{36}|j_{\text{pasar}}}$$  
 > >
@@ -1335,6 +1343,7 @@ e. $506$
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 3–4 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > **PV Annuity-Immediate:**  
 > > $$PV_1 = R_1 \cdot a_{\overline{n}|j}$$  
 > >
@@ -1413,6 +1422,7 @@ e. Harga secara teoritis salah dan terdapat peluang arbitrase
 > | **Referensi** | McDonald Bab 3 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > **Bull Put Spread:**  
 > > Long Put ($K_L$) + Short Put ($K_H$), di mana $K_L < K_H$.  
 > > Profit maksimal saat $S_T \ge K_H$ (kedua put hangus, trader menyimpan net credit).  
@@ -1477,6 +1487,7 @@ e. $3{,}287$
 > | **Referensi** | Vaaler Bab 9; Kellison Bab 11 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > $$D_{Mod} = \frac{D_{Mac}}{1+i}$$  
 > > $$D_{Mac} = \frac{\sum_{t=1}^{n} t \cdot CF_t \cdot v^t}{P}$$  
 >
@@ -1547,6 +1558,7 @@ e. $2{,}253$
 > | **Referensi** | Vaaler Bab 9; Kellison Bab 11 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > $$D_{Mac} = \frac{\sum_{t=1}^{n} t \cdot CF_t \cdot v^t}{PV_{total}}$$  
 >
 > **Diketahui:**
@@ -1615,6 +1627,7 @@ e. $4.862$
 > | **Referensi** | Vaaler Bab 6; Kellison Bab 6 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > **Bond Price (Two-Stage DCF):**  
 > > $$P_0 = Fr \cdot a_{\overline{15}|i_1} + v_{i_1}^{15} \cdot P_{15}$$  
 > > $$P_{15} = Fr \cdot a_{\overline{15}|i_2} + F \cdot v_{i_2}^{15}$$  
@@ -1681,6 +1694,7 @@ e. $5{,}5\%$
 > | **Referensi** | Vaaler Bab 6; Kellison Bab 6 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > $$BV_t = F + (Fr - Fi) \cdot a_{\overline{n-t}|i}$$  
 > > Atau ekuivalen, premi obligasi di waktu $t$:  
 > > $$BV_t - F = (Fr - Fi) \cdot a_{\overline{n-t}|i}$$  
@@ -1756,6 +1770,7 @@ e. $100$
 > | **Referensi** | Vaaler Bab 9; Kellison Bab 11 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > **Dedication (Cash Flow Matching) — Backward Induction:**  
 > > $$\text{Total Inflow}_t = \text{Liability}_t \quad \forall t$$  
 >
@@ -1830,6 +1845,7 @@ e. $1.029$
 > | **Referensi** | Vaaler Bab 6; Kellison Bab 6 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > $$P = Fr \cdot a_{\overline{n}|i} + C \cdot v^n$$  
 > > Kunci: Jika yield to maturity = yield to call, maka harga obligasi sama di kedua skenario.  
 >
@@ -1903,6 +1919,7 @@ e. $4{,}61\%-4{,}75\%$
 > | **Referensi** | Vaaler Bab 8.3; Kellison Bab 10 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > **Swap Rate ($R$) dan Discount Factors ($P_t$):**  
 > > $$R = \frac{1 - P_n}{\sum_{t=1}^{n} P_t}$$  
 > > Di mana $P_t = (1+s_t)^{-t}$ (harga zero-coupon bond).  
@@ -1977,6 +1994,7 @@ e. $1.025$
 > | **Referensi** | McDonald Bab 2–3 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > **Put-Call Parity:**  
 > > $$S_0 + P = C + Ke^{-rT}$$  
 > > Di sini $r$ adalah risk-free rate yang dicompound secara kontinu (bukan coupon rate).  
@@ -2042,6 +2060,7 @@ e. Anda tidak membayar atau menerima apa pun.
 > | **Referensi** | McDonald Bab 5 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > **Value of Long Forward (at inception):**  
 > > $$V_{long} = S_0 - Ke^{-rT}$$  
 > > Di mana $K$ = delivery price (harga forward yang dikutip), $r$ = risk-free rate (kontinu), $T$ = waktu sampai maturity.  
