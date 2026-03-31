@@ -25,18 +25,18 @@ e. $9{,}8\%$
 > | **Connected Topics** | [[1.4 Accumulation and Present Value]] |
 > | **Referensi** | Vaaler Bab 1–2; Kellison Bab 1–2 |
 >
-> > [!info]+ **Rumus**
-> > Persamaan nilai sekarang (equation of value):
-> > $$PV = C \cdot v^t = C \cdot (1+i)^{-t}$$
-> > Di mana $v = \frac{1}{1+i}$ adalah faktor diskonto dan $i$ adalah suku bunga efektif tahunan.
+> > [!info]+ **Rumus**  
+> > Persamaan nilai sekarang (equation of value):  
+> > $$PV = C \cdot v^t = C \cdot (1+i)^{-t}$$  
+> > Di mana $v = \frac{1}{1+i}$ adalah faktor diskonto dan $i$ adalah suku bunga efektif tahunan.  
 >
-> **Diketahui:**
-> - Arus kas 1: $675$ pada $t=2$
-> - Arus kas 2: $200$ pada $t=1$ dan $500$ pada $t=3$
-> - Kedua arus kas memiliki PV yang sama
-> - Target: $i$ (suku bunga efektif tahunan)
+> **Diketahui:**  
+> - Arus kas 1: $675$ pada $t=2$  
+> - Arus kas 2: $200$ pada $t=1$ dan $500$ pada $t=3$  
+> - Kedua arus kas memiliki PV yang sama  
+> - Target: $i$ (suku bunga efektif tahunan)  
 >
-> > [!example]- Langkah Pengerjaan
+> > [!example]- Langkah Pengerjaan  
 > >
 > > **Langkah 1: Susun Equation of Value**
 > > Karena kedua set pembayaran memiliki PV yang sama:
@@ -105,7 +105,7 @@ e. $0{,}0742$
 > | **Connected Topics** | [[2.6 Varying Interest Rates]] |
 > | **Referensi** | Vaaler Bab 1–2; Kellison Bab 1–2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Faktor akumulasi dari suku bunga nominal:
 > > $$\left(1 + \frac{i^{(m)}}{m}\right)^{mt}$$
 > > Faktor akumulasi dari diskonto nominal:
@@ -188,7 +188,7 @@ e. $5988$
 > | **Connected Topics** | [[3.3 Duration (Macaulay and Modified)]] |
 > | **Referensi** | Vaaler Bab 8.3 & 9; Kellison Bab 10–11 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Harga zero-coupon bond:
 > > $$P = \frac{F}{(1+i)^n}$$
 > > Dedication (exact matching): beli obligasi yang arus kasnya tepat cocok dengan kewajiban.
@@ -261,7 +261,7 @@ e. $4{,}74\%$
 > | **Connected Topics** | [[3.2 Yield Curve]] |
 > | **Referensi** | Vaaler Bab 8.3; Kellison Bab 10 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Hubungan spot rate dan forward rate:
 > > $$(1 + s_n)^n = (1 + s_m)^m \cdot (1 + f_{m,n})^{n-m}$$
 > > Forward rate dari tahun $m$ ke tahun $n$:
@@ -396,7 +396,7 @@ e. $6{,}74\%$
 > | **Connected Topics** | [[1.3 Cash Flow Equations and Inflation]] |
 > | **Referensi** | Vaaler Bab 2; Kellison Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Time-Weighted Rate of Return (TWRR):
 > > $$1 + i_{TW} = \prod_{k} \frac{B_{k}^{\text{after}}}{B_{k}^{\text{before}}}$$
 > > Di mana rasio dihitung untuk setiap sub-periode antara arus kas.
@@ -480,7 +480,7 @@ e. $882$
 > | **Connected Topics** | [[1.3 Cash Flow Equations and Inflation]] |
 > | **Referensi** | Vaaler Bab 2; Kellison Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Dollar-Weighted Rate of Return:
 > > $$i_{DW} = \frac{I}{A + \sum C_t (1 - t)}$$
 > > Sehingga bunga:
@@ -549,7 +549,7 @@ e. $8{,}1\%$
 > | **Connected Topics** | [[1.2 Effective, Nominal, and Force of Interest]] |
 > | **Referensi** | Vaaler Bab 6; Kellison Bab 6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Harga obligasi:
 > > $$P = Fr \cdot a_{\overline{n}|j} + F \cdot v^n_j$$
 > > Di mana $j$ adalah yield per periode kupon, $r$ adalah coupon rate per periode, $n$ jumlah periode kupon.
@@ -653,7 +653,7 @@ e. $7{,}3\%$
 > | **Connected Topics** | [[5.3 Yield Rate and Coupon Calculations]] |
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 3–4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Future value annuity-immediate:
 > > $$\text{FV} = R \cdot s_{\overline{n}|j} = R \cdot \frac{(1+j)^n - 1}{j}$$
 > > Annual yield dari investasi:
@@ -727,7 +727,7 @@ e. $1288$
 > | **Connected Topics** | [[2.2 Perpetuity]] |
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 3–4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > PV annuity-immediate level:
 > > $$a_{\overline{n}|i} = \frac{1 - v^n}{i}$$
 > > PV geometric annuity (pembayaran pertama $P_1$, growth rate $g$, discount rate $i$, $n$ pembayaran):
@@ -802,7 +802,7 @@ e. $151{,}28$
 > | **Connected Topics** | [[1.2 Effective, Nominal, and Force of Interest]] |
 > | **Referensi** | Vaaler Bab 6; Kellison Bab 6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Harga obligasi:
 > > $$P = Fr \cdot a_{\overline{n}|j} + F \cdot v^n_j$$
 > > Akumulasi kupon yang di-reinvest:
@@ -1003,7 +1003,7 @@ e. $4894$
 > | **Connected Topics** | [[2.5 Deferred Annuities]] |
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 3–4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > PV decreasing annuity:
 > > $$(Da)_{\overline{n}|i} = \frac{n - a_{\overline{n}|i}}{i}$$
 > > PV level annuity:
@@ -1082,7 +1082,7 @@ e. $849$
 > | **Connected Topics** | [[2.5 Deferred Annuities]] |
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 3–4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > PV increasing annuity:
 > > $$(Ia)_{\overline{n}|i} = \frac{\ddot{a}_{\overline{n}|i} - nv^n}{i}$$
 > > PV decreasing annuity:
@@ -1158,7 +1158,7 @@ e. $1252$
 > | **Connected Topics** | [[4.2 Amortization Method]] |
 > | **Referensi** | Vaaler Bab 5; Kellison Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Sinking fund: akumulasi kontribusi harus sama dengan pokok pinjaman pada akhir tenor.
 > > $$\text{FV} = X \cdot s_{\overline{n_1}|j} \cdot (1+j)^{n_2} + 2X \cdot s_{\overline{n_2}|j} = L$$
 > > Di mana $L$ = pokok pinjaman, $j$ = sinking fund rate.
@@ -1227,7 +1227,7 @@ e. $8395$
 > | **Connected Topics** | [[2.2 Perpetuity]] |
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 3–4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > PV increasing annuity:
 > > $$(Ia)_{\overline{n}|i} = \frac{\ddot{a}_{\overline{n}|i} - nv^n}{i}$$
 > > PV geometric annuity ($P_1$ = pembayaran pertama, $g$ = growth rate):
@@ -1307,7 +1307,7 @@ e. $7{,}6\%$
 > | **Connected Topics** | [[4.1 Loan Terminology]] |
 > | **Referensi** | Vaaler Bab 5; Kellison Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Bagian pokok dalam pembayaran ke-$t$ (level payment loan):
 > > $$PR_t = R \cdot v^{n-t+1}$$
 > > Di mana $R$ = pembayaran tetap, $v = 1/(1+j)$, $j$ = rate per periode, $n$ = total periode.
@@ -1416,7 +1416,7 @@ e. $1913$
 > | **Connected Topics** | [[4.1 Loan Terminology]] |
 > | **Referensi** | Vaaler Bab 5; Kellison Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Pembayaran level: $R = \frac{L}{a_{\overline{n}|i}}$
 > > Bagian pokok: $PR_t = R \cdot v^{n-t+1}$
 > > Bagian bunga: $I_t = R \cdot (1 - v^{n-t+1})$
@@ -1493,7 +1493,7 @@ e. $762{,}38$
 > | **Connected Topics** | [[4.1 Loan Terminology]] |
 > | **Referensi** | Vaaler Bab 5; Kellison Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Pembayaran level bulanan: $R = \frac{L}{a_{\overline{n}|j}}$
 > > Outstanding balance (metode prospektif): $OB_t = R \cdot a_{\overline{n-t}|j}$
 >
@@ -1569,7 +1569,7 @@ e. $2165$
 > | **Connected Topics** | [[2.5 Deferred Annuities]] |
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 3–4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > PV annuity-due:
 > > $$\ddot{a}_{\overline{n}|j} = (1+j) \cdot a_{\overline{n}|j} = (1+j) \cdot \frac{1 - v^n}{j}$$
 >
@@ -1642,7 +1642,7 @@ e. $5486$
 > | **Connected Topics** | [[2.5 Deferred Annuities]] |
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 3–4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > PV perpetuity-immediate level: $\frac{P}{i}$
 > > PV growing perpetuity (pembayaran pertama $P_1$, growth $g$, rate $i$, $i > g$):
 > > $$\text{PV} = \frac{P_1}{i - g}$$
@@ -1716,7 +1716,7 @@ e. $372$
 > | **Connected Topics** | [[7.1 CAPM and Factor Models]] |
 > | **Referensi** | Vaaler Bab 3–4; Ross Bab 12–13 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Dividend Discount Model (DDM):
 > > $$P_0 = \sum_{t=1}^{\infty} \frac{D_t}{(1+i)^t}$$
 > > Growing perpetuity: $\text{PV} = \frac{D}{i-g}$ (pada satu periode sebelum pembayaran pertama)
@@ -1791,7 +1791,7 @@ e. $2{,}515$
 > | **Connected Topics** | [[3.4 Convexity]], [[3.5 Immunization]] |
 > | **Referensi** | Vaaler Bab 9; Kellison Bab 11 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Macaulay Duration:
 > > $$D_{Mac} = \frac{\sum_{t} t \cdot PV(CF_t)}{\sum_{t} PV(CF_t)} = \frac{\sum_{t} t \cdot CF_t \cdot v^t}{\sum_{t} CF_t \cdot v^t}$$
 >
@@ -1861,7 +1861,7 @@ e. $3{,}65$
 > | **Connected Topics** | [[3.4 Convexity]] |
 > | **Referensi** | Vaaler Bab 9; Kellison Bab 11 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Portfolio modified duration (weighted average):
 > > $$D_{Mod}^P = \sum_k w_k \cdot D_{Mod}^k$$
 > > Di mana $w_k = \frac{V_k}{\sum V_k}$ adalah bobot berdasarkan market value.
@@ -1925,7 +1925,7 @@ e. $5{,}9\%$
 > | **Connected Topics** | [[3.3 Duration (Macaulay and Modified)]] |
 > | **Referensi** | Vaaler Bab 8.3 & 9; Kellison Bab 10–11 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Dedication (exact matching) dengan ZCB:
 > > - Beli ZCB yang jatuh tempo sesuai kewajiban
 > > - Harga ZCB: $P = \frac{F}{(1+i_k)^k}$
@@ -2004,7 +2004,7 @@ e. $1004$
 > | **Connected Topics** | [[3.2 Yield Curve]] |
 > | **Referensi** | Vaaler Bab 8.3; Kellison Bab 10 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Hubungan forward rate dan spot rate:
 > > $$(1+s_n)^n = (1+i_{0,1})(1+i_{1,2})\cdots(1+i_{n-1,n})$$
 > > Harga obligasi menggunakan spot rates:
@@ -2073,7 +2073,7 @@ e. $1{,}45$
 > | **Connected Topics** | [[5.3 Yield Rate and Coupon Calculations]] |
 > | **Referensi** | Vaaler Bab 6; Kellison Bab 6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Premi yang diamortisasi pada periode ke-$t$:
 > > $$PA_t = (Fr - Cj) \cdot v^{n-t+1}$$
 > > Di mana $Fr$ = kupon per periode, $j$ = yield per periode, $C$ = redemption value, $n$ = total periode kupon.
@@ -2140,7 +2140,7 @@ e. $1276$
 > | **Connected Topics** | [[5.2 Book Value, Premium and Discount Amortization]] |
 > | **Referensi** | Vaaler Bab 6; Kellison Bab 6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Harga obligasi (callable):
 > > $$P = Fr \cdot a_{\overline{n}|j} + C \cdot v_j^n$$
 > > Untuk obligasi callable, investor menjamin yield minimum saat:
@@ -2234,7 +2234,7 @@ e. $0{,}08$
 > | **Connected Topics** | [[6.3 Option Strategies]] |
 > | **Referensi** | McDonald Bab 5.1–5.4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Swap price (fixed price per barel):
 > > $$\bar{F} = \frac{\sum_{k=1}^{n} P(0,t_k) \cdot F_{0,t_k}}{\sum_{k=1}^{n} P(0,t_k)}$$
 > > Di mana $P(0,t_k)$ = harga ZCB (discount factor) untuk kuartal ke-$k$, $F_{0,t_k}$ = forward price untuk kuartal ke-$k$.
@@ -2308,7 +2308,7 @@ e. $0{,}0195$
 > | **Connected Topics** | [[6.3 Option Strategies]] |
 > | **Referensi** | McDonald Bab 5.1–5.4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Implied forward rate dari harga ZCB:
 > > $$r_{t-1,t} = \frac{P(0,t-1)}{P(0,t)} - 1$$
 > > Interest rate swap: fixed rate $R$ sehingga PV fixed payments = PV floating payments:
@@ -2369,7 +2369,7 @@ e. $0{,}5$
 > | **Connected Topics** | [[6.1 Options – Call and Put]] |
 > | **Referensi** | McDonald Bab 5.1–5.4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Di sini $r$ adalah risk-free rate (continuously compounded) dan $\delta$ adalah dividend yield (continuously compounded), bukan coupon rate atau force of interest.
 > >
 > > Forward price:
@@ -2443,7 +2443,7 @@ e. $129500$
 > | **Connected Topics** | [[1.3 Cash Flow Equations and Inflation]] |
 > | **Referensi** | Ross Bab 12–13 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**  
 > > Beta portofolio (weighted average):
 > > $$\beta_P = \sum_k w_k \cdot \beta_k$$
 > > Beta aset bebas risiko: $\beta_{rf} = 0$

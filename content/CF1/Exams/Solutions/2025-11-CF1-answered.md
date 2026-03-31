@@ -30,27 +30,27 @@ e. $13{,}76\%$
 > | **Connected Topics** | [[3.2 Yield Curve]] |
 > | **Referensi** | Vaaler Bab 8.3; Kellison Bab 10 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**        
 > > Hubungan antara Harga Obligasi Zero-Coupon ($P_t$) dan Forward Rate ($f$):
 > > $$f_{t, t+1} = \frac{P_t}{P_{t+1}} - 1$$
 >
-> **Diketahui:**
+> **Diketahui:**  
 > - $P_4 = 84{,}59$ (Harga obligasi zero-coupon jatuh tempo $t=4$)
 > - $P_5 = 82{,}48$ (Harga obligasi zero-coupon jatuh tempo $t=5$)
 > - Target: Forward rate tahun ke-4 ($f_{4,5}$)
 >
-> > [!example]- Langkah Pengerjaan
+> > [!example]- Langkah Pengerjaan  
 > >
-> > **Langkah 1: Identifikasi Periode Forward Rate**
-> > "Forward rate untuk tahun ke-4" berarti rate yang berlaku dari akhir tahun ke-4 hingga akhir tahun ke-5, yaitu $f_{4,5}$.
+> > **Langkah 1: Identifikasi Periode Forward Rate**  
+> > "Forward rate untuk tahun ke-4" berarti rate yang berlaku dari akhir tahun ke-4 hingga akhir tahun ke-5, yaitu $f_{4,5}$.  
 > >
-> > **Langkah 2: Substitusi ke Rumus**
+> > **Langkah 2: Substitusi ke Rumus**  
 > > $$f_{4,5} = \frac{P_4}{P_5} - 1 = \frac{84{,}59}{82{,}48} - 1$$
 > >
-> > **Langkah 3: Hitung Rasio**
+> > **Langkah 3: Hitung Rasio**  
 > > $$\frac{84{,}59}{82{,}48} \approx 1{,}025582$$
 > >
-> > **Langkah 4: Hasil Akhir**
+> > **Langkah 4: Hasil Akhir**  
 > > $$f_{4,5} = 1{,}025582 - 1 = 0{,}025582 \approx 2{,}56\%$$
 > >
 > > **Hasil Akhir:** **(a)**. $2{,}56\%$
@@ -96,40 +96,40 @@ e. $0{,}1805$
 > | **Connected Topics** | [[3.2 Yield Curve]] |
 > | **Referensi** | Vaaler Bab 8.3; Kellison Bab 10 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > Forward rate efektif tahunan dari waktu $t_1$ ke $t_2$:
-> > $$f_{t_1, t_2} = \left[\frac{(1 + s_{t_2})^{t_2}}{(1 + s_{t_1})^{t_1}}\right]^{\frac{1}{t_2 - t_1}} - 1$$
-> > Di mana $s_t$ adalah spot rate efektif tahunan untuk maturity $t$, yang diperoleh dengan mensubstitusi $t$ ke dalam fungsi yang diberikan.
+> > $$f_{t_1, t_2} = \left[\frac{(1 + s_{t_2})^{t_2}}{(1 + s_{t_1})^{t_1}}\right]^{\frac{1}{t_2 - t_1}} - 1$$  
+> > Di mana $s_t$ adalah spot rate efektif tahunan untuk maturity $t$, yang diperoleh dengan mensubstitusi $t$ ke dalam fungsi yang diberikan.  
 >
-> **Diketahui:**
+> **Diketahui:**  
 > - $s_t = 0{,}08 - 0{,}001t + 0{,}002t^2$ (spot rate efektif tahunan sebagai fungsi maturity)
 > - Pinjaman mulai $t_1 = 4$, berakhir $t_2 = 7$ (jangka waktu 3 tahun)
 > - Target: Forward rate efektif tahunan $f_{4,7}$
 >
 > > [!example]- Langkah Pengerjaan
 > >
-> > **Langkah 1: Hitung Spot Rate $s_4$**
-> > Substitusi $t = 4$ ke dalam fungsi:
+> > **Langkah 1: Hitung Spot Rate $s_4$**  
+> > Substitusi $t = 4$ ke dalam fungsi:  
 > > $$s_4 = 0{,}08 - 0{,}001(4) + 0{,}002(4)^2 = 0{,}08 - 0{,}004 + 0{,}032 = 0{,}108$$
 > >
-> > **Langkah 2: Hitung Spot Rate $s_7$**
-> > Substitusi $t = 7$ ke dalam fungsi:
+> > **Langkah 2: Hitung Spot Rate $s_7$**  
+> > Substitusi $t = 7$ ke dalam fungsi:  
 > > $$s_7 = 0{,}08 - 0{,}001(7) + 0{,}002(7)^2 = 0{,}08 - 0{,}007 + 0{,}098 = 0{,}171$$
 > >
-> > **Langkah 3: Hitung Faktor Akumulasi Masing-Masing**
-> > $$\text{Pembilang: } (1 + s_7)^7 = (1{,}171)^7$$
-> > $$\text{Penyebut: } (1 + s_4)^4 = (1{,}108)^4$$
+> > **Langkah 3: Hitung Faktor Akumulasi Masing-Masing**  
+> > $$\text{Pembilang: } (1 + s_7)^7 = (1{,}171)^7$$  
+> > $$\text{Penyebut: } (1 + s_4)^4 = (1{,}108)^4$$  
 > >
-> > Hitung secara numerik:
+> > Hitung secara numerik:  
 > > $$(1{,}171)^7 \approx 3{,}11782 \qquad (1{,}108)^4 \approx 1{,}51141$$
 > >
-> > **Langkah 4: Hitung Rasio dan Pangkat**
+> > **Langkah 4: Hitung Rasio dan Pangkat**  
 > > $$\frac{(1{,}171)^7}{(1{,}108)^4} = \frac{3{,}11782}{1{,}51141} \approx 2{,}06283$$
 > >
 > > Pangkatkan dengan $\frac{1}{t_2 - t_1} = \frac{1}{3}$:
-> > $$(2{,}06283)^{1/3} \approx 1{,}2606$$
+> > $$(2{,}06283)^{1/3} \approx 1{,}2606$$  
 > >
-> > **Langkah 5: Kurangi 1 untuk Mendapat Forward Rate**
+> > **Langkah 5: Kurangi 1 untuk Mendapat Forward Rate**  
 > > $$f_{4,7} = 1{,}2606 - 1 = 0{,}2606$$
 > >
 > > **Hasil Akhir:** **(d)**. $0{,}2606$
@@ -178,7 +178,7 @@ e. $90.379$
 > | **Connected Topics** | [[1.5 NPV, IRR, DWRR, TWRR]] |
 > | **Referensi** | Vaaler Bab 1–2; Kellison Bab 1–2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > **Equation of Value (Time $t=0$):**
 > > $$NPV_{Grace} = NPV_{Shanice}$$
 > > $$-100.000 + 60.000v^3 + 60.000v^4 = -Xv + 60.000v^4 + 60.000v^5$$
@@ -193,26 +193,26 @@ e. $90.379$
 >
 > > [!example]- Langkah Pengerjaan
 > >
-> > **Langkah 1: Penyederhanaan Persamaan**
-> > Suku $+60.000v^4$ ada di kedua sisi, sehingga bisa dicoret:
+> > **Langkah 1: Penyederhanaan Persamaan**  
+> > Suku $+60.000v^4$ ada di kedua sisi, sehingga bisa dicoret:  
 > > $$-100.000 + 60.000v^3 = -Xv + 60.000v^5$$
 > >
-> > **Langkah 2: Isolasi Variabel $X$**
-> > Pindahkan $-Xv$ ke ruas kiri:
+> > **Langkah 2: Isolasi Variabel $X$**  
+> > Pindahkan $-Xv$ ke ruas kiri:  
 > > $$Xv = 100.000 - 60.000v^3 + 60.000v^5$$
 > >
-> > Bagi dengan $v$ (kalikan dengan $(1+i)$):
+> > Bagi dengan $v$ (kalikan dengan $(1+i)$):  
 > > $$X = 100.000(1+i) - 60.000v^2 + 60.000v^4$$
 > >
-> > **Langkah 3: Hitung Faktor Diskonto**
-> > - $(1+i) = 1{,}15$
-> > - $v^2 = (1{,}15)^{-2} = 0{,}756144$
-> > - $v^4 = (1{,}15)^{-4} = 0{,}571753$
+> > **Langkah 3: Hitung Faktor Diskonto**  
+> > - $(1+i) = 1{,}15$  
+> > - $v^2 = (1{,}15)^{-2} = 0{,}756144$  
+> > - $v^4 = (1{,}15)^{-4} = 0{,}571753$  
 > >
-> > **Langkah 4: Substitusi dan Hitung**
-> > $$X = 100.000(1{,}15) - 60.000(0{,}756144) + 60.000(0{,}571753)$$
-> > $$X = 115.000 - 45.368{,}62 + 34.305{,}19$$
-> > $$X = 103.936{,}57$$
+> > **Langkah 4: Substitusi dan Hitung**  
+> > $$X = 100.000(1{,}15) - 60.000(0{,}756144) + 60.000(0{,}571753)$$  
+> > $$X = 115.000 - 45.368{,}62 + 34.305{,}19$$  
+> > $$X = 103.936{,}57$$  
 > >
 > > **Hasil Akhir:** **(d)**. $103.937$
 >
@@ -255,33 +255,33 @@ e. $52{,}6$
 > | **Connected Topics** | [[1.2 Effective, Nominal, and Force of Interest]] |
 > | **Referensi** | Vaaler Bab 1; Kellison Bab 1 |
 >
-> > [!info]+ **Rumus**
-> > **Bunga pada Tahun ke-$n$:**
+> > [!info]+ **Rumus**      
+> > **Bunga pada Tahun ke-$n$:**  
 > > $$I_n = P(1+i)^{n-1} \cdot i$$
 >
-> **Diketahui:**
+> **Diketahui:**  
 > - $P_{Niel} = 200$, $P_{Elis} = 80$
 > - Kondisi: $I_{Niel,10} = I_{Elis,20}$
 > - Target: $I_{Niel,13}$
 >
 > > [!example]- Langkah Pengerjaan
 > >
-> > **Langkah 1: Susun Persamaan Keseimbangan**
+> > **Langkah 1: Susun Persamaan Keseimbangan**  
 > > $$200(1+i)^9 \cdot i = 80(1+i)^{19} \cdot i$$
 > >
-> > **Langkah 2: Sederhanakan**
-> > Bagi kedua ruas dengan $i$ (karena $i \neq 0$):
+> > **Langkah 2: Sederhanakan**  
+> > Bagi kedua ruas dengan $i$ (karena $i \neq 0$):  
 > > $$\frac{200}{80} = \frac{(1+i)^{19}}{(1+i)^9} = (1+i)^{10}$$
-> > $$2{,}5 = (1+i)^{10}$$
+> > $$2{,}5 = (1+i)^{10}$$  
 > >
-> > **Langkah 3: Dapatkan Nilai $i$**
+> > **Langkah 3: Dapatkan Nilai $i$**  
 > > $$(1+i) = 2{,}5^{0{,}1} \approx 1{,}095958$$
 > > $$i \approx 0{,}095958$$
 > >
-> > **Langkah 4: Hitung Target $I_{Niel,13}$**
+> > **Langkah 4: Hitung Target $I_{Niel,13}$**  
 > > $$I_{N,13} = 200(1+i)^{12} \cdot i$$
 > >
-> > Gunakan trik: $(1+i)^{12} = (1+i)^{10} \cdot (1+i)^2 = 2{,}5 \times (1{,}095958)^2 = 2{,}5 \times 1{,}201124 = 3{,}00281$
+> > Gunakan trik: $(1+i)^{12} = (1+i)^{10} \cdot (1+i)^2 = 2{,}5 \times (1{,}095958)^2 = 2{,}5 \times 1{,}201124 = 3{,}00281$  
 > >
 > > $$I_{N,13} = 200 \times 3{,}00281 \times 0{,}095958 = 57{,}63$$
 > >
@@ -326,7 +326,7 @@ e. **1 Oktober**
 > | **Connected Topics** | [[1.3 Cash Flow Equations and Inflation]] |
 > | **Referensi** | Kellison Bab 2 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > **Dollar-Weighted Rate of Return:**
 > > $$i_{dw} = \frac{I}{A_0 + C(1-K)}$$
 > > Di mana $I$ = pendapatan investasi, $A_0$ = saldo awal, $C$ = setoran, $K$ = waktu setoran (dalam fraksi tahun).
@@ -396,7 +396,7 @@ e. $450$
 > | **Connected Topics** | [[2.6 Varying Interest Rates]] |
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 3–4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > $$FV_{30} = PMT \cdot \frac{(1+j)^n - 1}{j} \cdot (1+i)^{\Delta t}$$
 > > Di mana $j$ = suku bunga efektif per semester, $\Delta t$ = sisa waktu setelah pembayaran terakhir.
 >
@@ -466,7 +466,7 @@ e. $92{,}2$
 > | **Connected Topics** | [[1.4 Accumulation and Present Value]] |
 > | **Referensi** | Vaaler Bab 1; Kellison Bab 1 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > $$PV = FV \cdot \left(1 - \frac{d^{(m)}}{m}\right)^{m \cdot t}$$
 >
 > **Diketahui:**
@@ -529,7 +529,7 @@ e. $120{,}0$
 > | **Connected Topics** | [[2.2 Perpetuity]] |
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > **Geometric Gradient Annuity (PV):**
 > > $$PV = PMT_1 \cdot \frac{1 - \left(\frac{1+g}{1+i}\right)^n}{i - g}$$
 >
@@ -598,7 +598,7 @@ e. $93$
 > | **Connected Topics** | [[2.6 Varying Interest Rates]] |
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > **Strategi 2 Tahap:**
 > > 1. Hitung PV satu blok (4 tahun annuity-due): $PV_{block} = \ddot{a}_{\overline{4}|i}$
 > > 2. Akumulasi blok-blok sebagai deret geometris ke masa depan.
@@ -666,7 +666,7 @@ e. $464$
 > | **Connected Topics** | [[4.3 Sinking Fund Method]] |
 > | **Referensi** | Vaaler Bab 5; Kellison Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > $$\text{Total Bunga} = n \cdot R - L$$
 > > $$I_1 = i \cdot L$$
 >
@@ -729,7 +729,7 @@ e. $285$
 > | **Connected Topics** | [[2.5 Deferred Annuities]] |
 > | **Referensi** | Vaaler Bab 3; Kellison Bab 3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > Konversi bunga: $(1+i) = (1+j)^{12}$
 > >
 > > Future Value Annuity-Due:
@@ -795,7 +795,7 @@ e. $134$
 > | **Connected Topics** | [[2.2 Perpetuity]] |
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > **Metode Superposisi (Layering):**
 > > $$PV = PV_{\text{Base}} + PV_{\text{TopUp1}} + PV_{\text{TopUp2}}$$
 >
@@ -867,7 +867,7 @@ e. $9.731$
 > | **Connected Topics** | [[2.6 Varying Interest Rates]] |
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > **Geometric Gradient Annuity-Immediate:**
 > > $$PV_{t-1} = P_1 \cdot \frac{1 - \left(\frac{1+g}{1+i}\right)^n}{i - g}$$
 > > Rumus ini menghasilkan nilai **satu periode sebelum** pembayaran pertama.
@@ -928,7 +928,7 @@ e. $47{,}99$
 > | **Connected Topics** | [[2.2 Perpetuity]] |
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > **P-Q Formula (Arithmetic Annuity):**
 > > $$PV = P \cdot a_{\overline{n}|i} + Q \cdot \frac{a_{\overline{n}|i} - nv^n}{i}$$
 >
@@ -996,7 +996,7 @@ e. $871{,}6$
 > | **Connected Topics** | [[2.5 Deferred Annuities]] |
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > **Dekomposisi Waktu (Annuity-Due):**
 > > $$PV = PV_{\text{Fase1}} + v^{24} \cdot PV_{\text{Fase2}(@ t=24)}$$
 >
@@ -1068,7 +1068,7 @@ e. $384$
 > | **Connected Topics** | [[4.3 Sinking Fund Method]] |
 > | **Referensi** | Vaaler Bab 5; Kellison Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > **Outstanding Balance — Metode Prospektif:**
 > > $$OB_t = R \cdot a_{\overline{n-t}|i}$$
 > >
@@ -1139,7 +1139,7 @@ e. $136.159$
 > | **Connected Topics** | [[4.3 Sinking Fund Method]] |
 > | **Referensi** | Vaaler Bab 5; Kellison Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > **Konversi Bunga:**
 > > $$j = (1+i)^{1/12} - 1$$
 > >
@@ -1245,7 +1245,7 @@ e. $308$
 > | **Connected Topics** | [[4.1 Loan Terminology]] |
 > | **Referensi** | Vaaler Bab 5; Kellison Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > **Biaya Insentif = PV (selisih cicilan) dinilai pada rate pasar**
 > > $$\text{Cost} = (R_{\text{pasar}} - R_{\text{insentif}}) \cdot a_{\overline{36}|j_{\text{pasar}}}$$
 > >
@@ -1324,7 +1324,7 @@ e. $506$
 > | **Connected Topics** | [[2.3 Varying Annuities]] |
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 3–4 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > **PV Annuity-Immediate:**
 > > $$PV_1 = R_1 \cdot a_{\overline{n}|j}$$
 > >
@@ -1402,7 +1402,7 @@ e. Harga secara teoritis salah dan terdapat peluang arbitrase
 > | **Connected Topics** | [[6.2 Forwards and Futures]] |
 > | **Referensi** | McDonald Bab 3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > **Bull Put Spread:**
 > > Long Put ($K_L$) + Short Put ($K_H$), di mana $K_L < K_H$.
 > > Profit maksimal saat $S_T \ge K_H$ (kedua put hangus, trader menyimpan net credit).
@@ -1466,7 +1466,7 @@ e. $3{,}287$
 > | **Connected Topics** | [[3.4 Convexity]], [[3.5 Immunization]] |
 > | **Referensi** | Vaaler Bab 9; Kellison Bab 11 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > $$D_{Mod} = \frac{D_{Mac}}{1+i}$$
 > > $$D_{Mac} = \frac{\sum_{t=1}^{n} t \cdot CF_t \cdot v^t}{P}$$
 >
@@ -1537,7 +1537,7 @@ e. $2{,}253$
 > | **Connected Topics** | [[3.4 Convexity]] |
 > | **Referensi** | Vaaler Bab 9; Kellison Bab 11 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > $$D_{Mac} = \frac{\sum_{t=1}^{n} t \cdot CF_t \cdot v^t}{PV_{total}}$$
 >
 > **Diketahui:**
@@ -1605,7 +1605,7 @@ e. $4.862$
 > | **Connected Topics** | [[5.2 Book Value, Premium and Discount Amortization]] |
 > | **Referensi** | Vaaler Bab 6; Kellison Bab 6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > **Bond Price (Two-Stage DCF):**
 > > $$P_0 = Fr \cdot a_{\overline{15}|i_1} + v_{i_1}^{15} \cdot P_{15}$$
 > > $$P_{15} = Fr \cdot a_{\overline{15}|i_2} + F \cdot v_{i_2}^{15}$$
@@ -1671,7 +1671,7 @@ e. $5{,}5\%$
 > | **Connected Topics** | [[5.3 Yield Rate and Coupon Calculations]] |
 > | **Referensi** | Vaaler Bab 6; Kellison Bab 6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > $$BV_t = F + (Fr - Fi) \cdot a_{\overline{n-t}|i}$$
 > > Atau ekuivalen, premi obligasi di waktu $t$:
 > > $$BV_t - F = (Fr - Fi) \cdot a_{\overline{n-t}|i}$$
@@ -1746,7 +1746,7 @@ e. $100$
 > | **Connected Topics** | [[3.4 Convexity]] |
 > | **Referensi** | Vaaler Bab 9; Kellison Bab 11 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > **Dedication (Cash Flow Matching) — Backward Induction:**
 > > $$\text{Total Inflow}_t = \text{Liability}_t \quad \forall t$$
 >
@@ -1820,7 +1820,7 @@ e. $1.029$
 > | **Connected Topics** | [[5.2 Book Value, Premium and Discount Amortization]] |
 > | **Referensi** | Vaaler Bab 6; Kellison Bab 6 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > $$P = Fr \cdot a_{\overline{n}|i} + C \cdot v^n$$
 > > Kunci: Jika yield to maturity = yield to call, maka harga obligasi sama di kedua skenario.
 >
@@ -1893,7 +1893,7 @@ e. $4{,}61\%-4{,}75\%$
 > | **Connected Topics** | [[3.5 Immunization]] |
 > | **Referensi** | Vaaler Bab 8.3; Kellison Bab 10 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > **Swap Rate ($R$) dan Discount Factors ($P_t$):**
 > > $$R = \frac{1 - P_n}{\sum_{t=1}^{n} P_t}$$
 > > Di mana $P_t = (1+s_t)^{-t}$ (harga zero-coupon bond).
@@ -1967,7 +1967,7 @@ e. $1.025$
 > | **Connected Topics** | [[6.3 Option Strategies]] |
 > | **Referensi** | McDonald Bab 2–3 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > **Put-Call Parity:**
 > > $$S_0 + P = C + Ke^{-rT}$$
 > > Di sini $r$ adalah risk-free rate yang dicompound secara kontinu (bukan coupon rate).
@@ -2032,7 +2032,7 @@ e. Anda tidak membayar atau menerima apa pun.
 > | **Connected Topics** | [[6.3 Option Strategies]] |
 > | **Referensi** | McDonald Bab 5 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > **Value of Long Forward (at inception):**
 > > $$V_{long} = S_0 - Ke^{-rT}$$
 > > Di mana $K$ = delivery price (harga forward yang dikutip), $r$ = risk-free rate (kontinu), $T$ = waktu sampai maturity.
@@ -2105,7 +2105,7 @@ e. $153.500$
 > | **Connected Topics** | [[7.1 CAPM and Factor Models]] |
 > | **Referensi** | Ross Bab 12–13 |
 >
-> > [!info]+ **Rumus**
+> > [!info]+ **Rumus**      
 > > **Dollar Beta Portfolio:**
 > > $$W_{total} \cdot \beta_P = \sum_i W_i \cdot \beta_i$$
 > > Aset bebas risiko memiliki $\beta_{rf} = 0$.
