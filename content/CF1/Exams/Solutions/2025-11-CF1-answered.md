@@ -31,6 +31,7 @@ e. $13{,}76\%$
 > | **Referensi** | Vaaler Bab 8.3; Kellison Bab 10 |
 >
 > > [!info]+ **Rumus**   
+> > 
 > > Hubungan antara Harga Obligasi Zero-Coupon ($P_t$) dan Forward Rate ($f$):  
 > > $$f_{t, t+1} = \frac{P_t}{P_{t+1}} - 1$$
 >
@@ -97,6 +98,7 @@ e. $0{,}1805$
 > | **Referensi** | Vaaler Bab 8.3; Kellison Bab 10 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > Forward rate efektif tahunan dari waktu $t_1$ ke $t_2$:  
 > > $$f_{t_1, t_2} = \left[\frac{(1 + s_{t_2})^{t_2}}{(1 + s_{t_1})^{t_1}}\right]^{\frac{1}{t_2 - t_1}} - 1$$  
 > > Di mana $s_t$ adalah spot rate efektif tahunan untuk maturity $t$, yang diperoleh dengan mensubstitusi $t$ ke dalam fungsi yang diberikan.  
@@ -179,6 +181,7 @@ e. $90.379$
 > | **Referensi** | Vaaler Bab 1–2; Kellison Bab 1–2 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > **Equation of Value (Time $t=0$):**
 > > $$NPV_{Grace} = NPV_{Shanice}$$
 > > $$-100.000 + 60.000v^3 + 60.000v^4 = -Xv + 60.000v^4 + 60.000v^5$$
@@ -256,6 +259,7 @@ e. $52{,}6$
 > | **Referensi** | Vaaler Bab 1; Kellison Bab 1 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > **Bunga pada Tahun ke-$n$:**  
 > > $$I_n = P(1+i)^{n-1} \cdot i$$
 >
@@ -327,6 +331,7 @@ e. **1 Oktober**
 > | **Referensi** | Kellison Bab 2 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > **Dollar-Weighted Rate of Return:**
 > > $$i_{dw} = \frac{I}{A_0 + C(1-K)}$$
 > > Di mana $I$ = pendapatan investasi, $A_0$ = saldo awal, $C$ = setoran, $K$ = waktu setoran (dalam fraksi tahun).
@@ -397,6 +402,7 @@ e. $450$
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 3–4 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > $$FV_{30} = PMT \cdot \frac{(1+j)^n - 1}{j} \cdot (1+i)^{\Delta t}$$  
 > > Di mana $j$ = suku bunga efektif per semester, $\Delta t$ = sisa waktu setelah pembayaran terakhir.  
 >
@@ -467,6 +473,7 @@ e. $92{,}2$
 > | **Referensi** | Vaaler Bab 1; Kellison Bab 1 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > $$PV = FV \cdot \left(1 - \frac{d^{(m)}}{m}\right)^{m \cdot t}$$
 >
 > **Diketahui:**
@@ -530,6 +537,7 @@ e. $120{,}0$
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 4 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > **Geometric Gradient Annuity (PV):**  
 > > $$PV = PMT_1 \cdot \frac{1 - \left(\frac{1+g}{1+i}\right)^n}{i - g}$$
 >
@@ -599,6 +607,7 @@ e. $93$
 > | **Referensi** | Vaaler Bab 3–4; Kellison Bab 4 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > **Strategi 2 Tahap:**  
 > > 1. Hitung PV satu blok (4 tahun annuity-due): $PV_{block} = \ddot{a}_{\overline{4}|i}$  
 > > 2. Akumulasi blok-blok sebagai deret geometris ke masa depan.  
@@ -667,6 +676,7 @@ e. $464$
 > | **Referensi** | Vaaler Bab 5; Kellison Bab 5 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > $$\text{Total Bunga} = n \cdot R - L$$  
 > > $$I_1 = i \cdot L$$  
 >
@@ -2105,6 +2115,7 @@ e. $153.500$
 > | **Referensi** | Ross Bab 12–13 |
 >
 > > [!info]+ **Rumus**  
+> > 
 > > **Dollar Beta Portfolio:**  
 > > $$W_{total} \cdot \beta_P = \sum_i W_i \cdot \beta_i$$  
 > > Aset bebas risiko memiliki $\beta_{rf} = 0$.  
