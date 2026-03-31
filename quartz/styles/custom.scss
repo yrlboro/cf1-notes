@@ -74,7 +74,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 html {
-  font-size: 15px;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -120,51 +120,20 @@ html {
   &::-webkit-scrollbar-thumb { background: var(--an-border-mid); border-radius: 2px; }
 }
 
-// ── Page Title / Logo ──
+// ── Page Title ──
 .page-title {
   padding: 22px 20px 18px;
   border-bottom: 1px solid var(--an-border);
   margin: 0 !important;
 
   a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    display: block;
     text-decoration: none;
     color: var(--an-text-1) !important;
-
-    &::before {
-      content: "AN";
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 28px;
-      height: 28px;
-      border-radius: 6px;
-      font-family: var(--an-font-mono);
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: -0.02em;
-      flex-shrink: 0;
-    }
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
   }
-}
-
-:root[saved-theme="dark"] .page-title a::before,
-:root:not([saved-theme="light"]) .page-title a::before {
-  background: var(--an-accent);
-  color: #0a0a0b;
-}
-
-:root[saved-theme="light"] .page-title a::before {
-  background: var(--an-text-1);
-  color: var(--an-bg-surface);
-}
-
-.page-title a {
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
 }
 
 // ── Search ──
@@ -1026,6 +995,11 @@ footer {
   .callout-title {
     background: transparent !important;
     padding: 14px 16px 6px !important;
+    font-family: var(--an-font-serif) !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+    letter-spacing: 0 !important;
 
     .callout-title-inner strong,
     .callout-title-inner a {
@@ -1033,6 +1007,8 @@ footer {
       background: transparent !important;
       text-decoration: none;
       font-family: var(--an-font-serif);
+      font-size: 1rem;
+      font-weight: 500;
     }
   }
 
