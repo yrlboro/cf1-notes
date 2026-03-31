@@ -1040,3 +1040,88 @@ footer {
   background: var(--an-bg-surface) !important;
   box-shadow: var(--an-shadow-card) !important;
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 21. CALLOUT VARIANTS — konsisten dengan warna tema
+// ─────────────────────────────────────────────────────────────────────────────
+
+.callout[data-callout="tip"],
+.callout[data-callout="success"] {
+  border-color: rgba(106, 184, 143, 0.3);
+  .callout-title { background: rgba(106, 184, 143, 0.12); color: #6ab88f; }
+  .callout-content { background: rgba(106, 184, 143, 0.04); }
+}
+
+.callout[data-callout="warning"],
+.callout[data-callout="caution"] {
+  border-color: rgba(212, 168, 83, 0.3);
+  .callout-title { background: rgba(212, 168, 83, 0.12); color: #d4a853; }
+  .callout-content { background: rgba(212, 168, 83, 0.04); }
+}
+
+.callout[data-callout="danger"],
+.callout[data-callout="error"] {
+  border-color: rgba(196, 112, 112, 0.3);
+  .callout-title { background: rgba(196, 112, 112, 0.12); color: #c47070; }
+  .callout-content { background: rgba(196, 112, 112, 0.04); }
+}
+
+.callout[data-callout="example"],
+.callout[data-callout="note"] {
+  border-color: rgba(212, 168, 83, 0.2);
+  .callout-title { background: rgba(212, 168, 83, 0.1); color: var(--secondary); }
+  .callout-content { background: rgba(212, 168, 83, 0.03); }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 22. TABLE & INLINE CODE — detail styling
+// ─────────────────────────────────────────────────────────────────────────────
+
+.center.singlePage table th {
+  background: var(--an-bg-elevated);
+  font-family: var(--codeFont);
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--darkgray);
+  padding: 8px 12px;
+}
+
+.center.singlePage table td {
+  padding: 9px 12px;
+  color: var(--darkgray);
+  border-bottom: 1px solid var(--lightgray);
+  vertical-align: top;
+}
+
+.center.singlePage p code,
+.center.singlePage li code {
+  color: var(--secondary);
+  background: var(--an-bg-elevated);
+  border: 1px solid var(--an-border);
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 0.85em;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 23. PAGE TRANSITIONS (SPA mode)
+// ─────────────────────────────────────────────────────────────────────────────
+
+::view-transition-old(root) {
+  animation: 150ms ease-out an-fade-out;
+}
+::view-transition-new(root) {
+  animation: 200ms ease-in an-fade-in;
+}
+
+@keyframes an-fade-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+@keyframes an-fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

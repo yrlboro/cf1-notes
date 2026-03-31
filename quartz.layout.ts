@@ -22,6 +22,8 @@ export const sharedPageComponents: SharedLayout = {
 // ── DEFAULT: halaman konten biasa (note, folder, tag) ────────────────────────
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
+    Component.HeroSection(),
+    Component.ModuleGrid(),
     Component.Breadcrumbs(),
     Component.ArticleTitle(),
     Component.ContentMeta(),
@@ -33,7 +35,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Search(),
     Component.Darkmode(),
     Component.DesktopOnly(Component.Explorer({
-      title: "Navigator",
+      title: "Modul",
       folderClickBehavior: "collapse",
       folderDefaultState: "collapsed",
       useSavedFolderState: true,
@@ -80,6 +82,8 @@ export const defaultContentPageLayout: PageLayout = {
 // ── INDEX: halaman homepage & folder index ───────────────────────────────────
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [
+    Component.HeroSection(),
+    Component.ModuleGrid(),
     Component.Breadcrumbs(),
     Component.ArticleTitle(),
     Component.ContentMeta(),
@@ -90,7 +94,7 @@ export const defaultListPageLayout: PageLayout = {
     Component.Search(),
     Component.Darkmode(),
     Component.DesktopOnly(Component.Explorer({
-      title: "Navigator",
+      title: "Modul",
       folderClickBehavior: "collapse",
       folderDefaultState: "collapsed",
       useSavedFolderState: true,

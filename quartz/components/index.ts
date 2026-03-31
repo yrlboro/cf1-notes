@@ -24,6 +24,8 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import QuizWidget from "./QuizWidget"
+import HeroSection from "./HeroSection"
+import ModuleGrid from "./ModuleGrid"
 
 
 export {
@@ -53,5 +55,7 @@ export {
   Flex,
   ConditionalRender,
   QuizWidget,
+  HeroSection,
+  ModuleGrid,
 }
 
